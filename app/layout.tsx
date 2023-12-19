@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       {/* border section */}
       <div className="w-screen  left-0 top-0 fixed">
-        <div className="left-0 top-0 h-[50px] border-r-black border-2  bg-stone-200" />
+        <div className="left-0 top-0 h-[50px] border-b-black border-2  bg-stone-200" />
       </div>
       <div className="w-[50px] h-screen left-0 top-0 fixed ">
         <div className="left-0 top-0 relative min-h-screen border-r-black border-2  bg-stone-200" />
@@ -30,8 +30,10 @@ export default function RootLayout({
           2regards
         </div>
       </div>
-      <div className="fixed left-[100px] bottom-0 justify-start items-start gap-14 inline-flex">
-        <div className="text-black text-[17px] font-normal leading-loose">
+      <div className="fixed left-0 bottom-0">
+      <div className=" h-[50px]  w-screen border-t-black border-2  bg-stone-200" >
+      <div className="ml-20 justify-start items-start gap-14 inline-flex">
+      <        div className="text-black text-[17px] font-normal leading-loose">
           Products
         </div>
         <div className="text-black text-[17px] font-normal leading-loose">
@@ -46,6 +48,8 @@ export default function RootLayout({
         <div className="text-black text-[17px] font-normal leading-loose">
           Contact
         </div>
+      </div>
+      </div>
       </div>
       <body className={`${italiana.variable}  bg-stone-200`}>{children}</body>
     </html>
