@@ -1,6 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Italiana } from "next/font/google";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const italiana = Italiana({
   weight: "400",
@@ -20,38 +22,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* border section */}
-      <div className="w-screen  left-0 top-0 fixed">
-        <div className="left-0 top-0 h-[50px] border-b-black border-2  bg-stone-200" />
-      </div>
-      <div className="w-[50px] h-screen left-0 top-0 fixed ">
-        <div className="left-0 top-0 relative min-h-screen border-r-black border-2  bg-stone-200" />
-        <div className="left-[10px] absolute top-[50%] bg-stone-200 origin-top-left -rotate-90 text-black text-2xl ">
-          2regards
-        </div>
-      </div>
-      <div className="fixed left-0 bottom-0">
-      <div className=" h-[50px]  w-screen border-t-black border-2  bg-stone-200" >
-      <div className="ml-20 justify-start items-start gap-14 inline-flex">
-      <        div className="text-black text-[17px] font-normal leading-loose">
-          Products
-        </div>
-        <div className="text-black text-[17px] font-normal leading-loose">
-          Studio
-        </div>
-        <div className="text-black text-[17px] font-normal leading-loose">
-          Gallery
-        </div>
-        <div className="text-black text-[17px] font-normal leading-loose">
-          About
-        </div>
-        <div className="text-black text-[17px] font-normal leading-loose">
-          Contact
-        </div>
-      </div>
-      </div>
-      </div>
-      <body className={`${italiana.variable}  bg-stone-200`}>{children}</body>
+      <body className={`${italiana.variable}  bg-stone-200`}>
+        <Header />
+        {children}
+        <Footer/>
+      </body>
     </html>
   );
 }

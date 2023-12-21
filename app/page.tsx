@@ -13,28 +13,20 @@ export default function Home() {
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
 
   return (
-    <main className="font-italiana max-h-screen">
+    <main className="font-italiana">
       <section
         ref={targetRef}
         className="relative h-[300vh] bg-stone-200 font-italiana"
       >
         <div className="sticky top-0 flex h-screen items-center overflow-hidden">
           <motion.div style={{ x }} className="flex-col gap-2">
-            <div className="flex h-[28%]">
-              {cards.map((card) => {
-                return <Card card={card} key={card.id} />;
-              })}
-            </div>
-            <div className="flex h-[28%]">
-              {cards.map((card) => {
-                return <Card card={card} key={card.id} />;
-              })}
-            </div>
-            <div className="flex h-[28%]">
-              {cards.map((card) => {
-                return <Card card={card} key={card.id} />;
-              })}
-            </div>
+          {Array.from({ length: 3 }).map((_, rowIndex) => (
+              <div key={rowIndex} className="flex">
+                {cards.map((card) => (
+                  <Card key={card.id} card={card} />
+                ))}
+              </div>
+            ))}
           </motion.div>
         </div>
       </section>
@@ -47,11 +39,11 @@ const Card = ({ card }: { card: CardType }) => {
     
     <div
       
-      className="group h-[225px] w-[350px] relative overflow-hidden"
+      className="group h-[200px]  w-[200px] relative overflow-hidden"
    
     >
       <Image key={card.id}
-        className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
+        className="absolute inset-0 z-0 object-contain transition-transform duration-300 group-hover:scale-110"
         src={card.img}
         fill
         alt=""
