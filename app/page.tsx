@@ -13,37 +13,35 @@ export default function Home() {
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
 
   return (
-    <main className="font-italiana">
-      <section
-        ref={targetRef}
-        className="relative h-[300vh] bg-stone-200 font-italiana"
-      >
+    <div className="font-italiana bg-stone-200">
+   
+
+    {/* Main Content with Horizontal Scroll */}
+    <main>
+      <section className="relative h-screen overflow-hidden">
         <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-          <motion.div style={{ x }} className="flex-col gap-2">
-          {Array.from({ length: 3 }).map((_, rowIndex) => (
+          {/* Scroll Container */}
+          <div className="flex-col gap-2 overflow-x-auto" ref={targetRef}>
+            {Array.from({ length: 3 }).map((_, rowIndex) => (
               <div key={rowIndex} className="flex">
                 {cards.map((card) => (
                   <Card key={card.id} card={card} />
                 ))}
               </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
     </main>
+  </div>
   );
-}
+};
 
 const Card = ({ card }: { card: CardType }) => {
   return (
-    
-    <div
-      
-      className="group h-[200px]  w-[200px] relative overflow-hidden"
-   
-    >
-      <Image key={card.id}
-        className="absolute inset-0 z-0 object-contain transition-transform duration-300 group-hover:scale-110"
+    <div className="group h-[200px] w-[300px] relative overflow-hidden">
+      <Image
+        className="absolute "
         src={card.img}
         fill
         alt=""
@@ -57,6 +55,7 @@ const Card = ({ card }: { card: CardType }) => {
     </div>
   );
 };
+
 
 type CardType = {
   img: string;
