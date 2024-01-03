@@ -19,7 +19,7 @@ export default function Home() {
         className="relative h-[300vh] bg-stone-200"
       >
         <div className="sticky top-0 ml-16 flex h-screen items-center overflow-hidden">
-        <header className="z-999 fixed w- top-0 left-0 right-0">
+        <header className="z-999 fixed  top-0 left-0 right-0">
       <div className=" left-0 top-0 w-screen h-[50px] ">
         <div className="w-screen h-[50px]  border-b-black border-2" />
       </div>
@@ -30,7 +30,7 @@ export default function Home() {
         </div>
       </div>
     </header>
-          <motion.div style={{ x }} className="flex gap-5">
+          <motion.div style={{ x }} className="flex gap-5 overflow-hiddeny">
           
               {cards.map((card) => {
                 return <Card card={card} key={card.id} />;
@@ -45,11 +45,12 @@ export default function Home() {
 
 const Card = ({ card }: { card: CardType }) => {
   return (
-    <div className="h-[250px] w-[250px] relative">
+    <div className={`relative h-[200px]`}>
       <Image
-        className="object-cover"
+      className="object-cover"
         src={card.img}
-        fill
+        height={600}
+        width={800}
         alt=""
         sizes="33vw sm:50vw md:75vw lg:100vw"
       />
@@ -62,6 +63,7 @@ type CardType = {
   img: string;
   title: string;
   id: number;
+  width?: string;
 };
 
 const cards: CardType[] = [
@@ -69,45 +71,61 @@ const cards: CardType[] = [
     img: "/images/2regards.png",
     title: "Title 1",
     id: 1,
+    width: "300px"
   },
   {
-    img: "/images/2regards.png",
+    img: "/images/lights.png",
     title: "Title 2",
     id: 2,
-  },
+      width: "100px"},
   {
-    img: "/images/2regards.png",
+    img: "/images/waves.png",
     title: "Title 3",
     id: 3,
-  },
+      width: "600px"},
   {
     img: "/images/2regards.png",
     title: "Title 1",
     id: 4,
-  },
+      width: "600px"},
   {
-    img: "/images/2regards.png",
+    img: "/images/bottles.png",
     title: "Title 2",
     id: 5,
-  },
+    width: "600px"},
   {
     img: "/images/2regards.png",
     title: "Title 3",
     id: 6,
-  },
+    width: "600px" },
   {
-    img: "/images/2regards.png",
+    img: "/images/waves.png",
     title: "Title 1",
     id: 7,
-  },
+      width: "600px"},
   {
     img: "/images/2regards.png",
     title: "Title 2",
     id: 8,
-  },
+      width: "600px"},
   {
-    img: "/images/2regards.png",
+    img: "/images/bottles.png",
     title: "Title 9",
     id: 9,
-  },
+      width: "600px"},
+  {
+    img: "/images/waves.png",
+    title: "Title 1",
+    id: 7,
+      width: "600px"},
+  {
+    img: "/images/2regards.png",
+    title: "Title 2",
+    id: 8,
+      width: "600px"},
+  {
+    img: "/images/bottles.png",
+    title: "Title 9",
+    id: 9,
+      width: "600px"},
 ];
