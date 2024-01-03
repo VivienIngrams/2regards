@@ -13,45 +13,46 @@ export default function Home() {
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
 
   return (
-    <div className="font-italiana bg-stone-200">
-   
-
-    {/* Main Content with Horizontal Scroll */}
-    <main>
-      <section className="relative h-screen overflow-hidden">
-        <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-          {/* Scroll Container */}
-          <div className="flex-col gap-2 overflow-x-auto" ref={targetRef}>
-            {Array.from({ length: 3 }).map((_, rowIndex) => (
-              <div key={rowIndex} className="flex">
-                {cards.map((card) => (
-                  <Card key={card.id} card={card} />
-                ))}
-              </div>
-            ))}
-          </div>
+    <main className="font-italiana max-h-screen">
+      <section
+        ref={targetRef}
+        className="relative h-[300vh] bg-stone-200"
+      >
+        <div className="sticky top-0 ml-16 flex h-screen items-center overflow-hidden">
+        <header className="z-999 fixed w- top-0 left-0 right-0">
+      <div className=" left-0 top-0 w-screen h-[50px] ">
+        <div className="w-screen h-[50px]  border-b-black border-2" />
+      </div>
+      <div className="w-[50px] z-999 fixed h-screen left-0 top-0">
+        <div className="left-0 top-0 relative min-h-screen border-r-black border-2 bg-stone-200" />
+        <div className="left-[10px] absolute top-[50%] bg-stone-200 origin-top-left -rotate-90 text-black text-2xl">
+          2regards
+        </div>
+      </div>
+    </header>
+          <motion.div style={{ x }} className="flex gap-5">
+          
+              {cards.map((card) => {
+                return <Card card={card} key={card.id} />;
+              })}
+            
+          </motion.div>
         </div>
       </section>
-    </main>
-  </div>
+      </main>
   );
 };
 
 const Card = ({ card }: { card: CardType }) => {
   return (
-    <div className="group h-[200px] w-[300px] relative overflow-hidden">
+    <div className="h-[250px] w-[250px] relative">
       <Image
-        className="absolute "
+        className="object-cover"
         src={card.img}
         fill
         alt=""
-        sizes="100vw sm:100vw md:100vw lg:100vw xl:100vw 2xl:100vw"
+        sizes="33vw sm:50vw md:75vw lg:100vw"
       />
-      <div className="absolute inset-0 z-10 grid place-content-center">
-        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-4xl text-white backdrop-blur-sm">
-          {card.title}
-        </p>
-      </div>
     </div>
   );
 };
