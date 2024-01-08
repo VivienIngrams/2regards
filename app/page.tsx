@@ -4,7 +4,7 @@ import React from "react";
 
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import 'react-horizontal-scrolling-menu/dist/styles.css';
-
+import Header from "./components/Header";
 import { LeftArrow, RightArrow } from "./components/Arrows";
 import Card from "./components/Card";
 import usePreventBodyScroll from "./components/usePreventBodyScroll";
@@ -40,7 +40,7 @@ function Home() {
 
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <div className="example" style={{ paddingTop: "100px", height: "150vh" }}>
         <div onMouseEnter={disableScroll} onMouseLeave={enableScroll}>
           <ScrollMenu
