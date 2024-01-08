@@ -13,28 +13,24 @@ type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 const elemPrefix = "test";
 const getId = (index: number) => `${elemPrefix}${index}`;
 
-// const getItems = () =>
-//   Array(20)
-//     .fill(0)
-//     .map((_, ind) => ({ id: getId(ind) }));
-
 function Home() {
-  // const [items] = React.useState(getItems);
   const { disableScroll, enableScroll } = usePreventBodyScroll();
 
   return (
     <>
-      <div className="pl-12 pt-3 h-150vh">
-        <div onMouseEnter={disableScroll}>
+      <div className="pl-12 pt-3 h-[95%] justify-center">
+        <div onMouseEnter={disableScroll} className="h-full">
           <ScrollMenu onWheel={onWheel}>
-            {cards.map(({ img, title, id }) => (
-              <Card
-                img={img}
-                title={title}
-                id={id} // NOTE: itemId is required for track items
-                key={id}
-              />
-            ))}
+           
+                {cards.map(({ img, title, id }) => (
+                  <Card
+                    img={img}
+                    title={title}
+                    id={id} // NOTE: itemId is required for track items
+                    key={id}
+                  />
+                ))}
+             
           </ScrollMenu>
         </div>
       </div>
