@@ -1,8 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Italiana } from "next/font/google";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+
 
 const italiana = Italiana({
   weight: "400",
@@ -23,9 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${italiana.variable}  bg-stone-200`}>
-        <Header />
         {children}
-        <Footer/>
+      
       </body>
     </html>
   );
