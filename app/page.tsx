@@ -49,13 +49,12 @@ function Home() {
             // Footer={Arrows}
             onWheel={onWheel}
           >
-             {cards.map(({ img, title, id, width }) => (
+            {cards.map(({ img, title, id }) => (
               <Card
-              img={img}
+                img={img}
                 title={title}
                 id={id} // NOTE: itemId is required for track items
                 key={id}
-                width={width || 600}
               />
             ))}
           </ScrollMenu>
@@ -80,36 +79,6 @@ function onWheel(apiObj: scrollVisibilityApiType, ev: React.WheelEvent): void {
     apiObj.scrollPrev();
   }
 }
-
-// import Image from "next/image";
-// import { motion, useTransform, useScroll } from "framer-motion";
-// import { useRef } from "react";
-// import Header from "./components/Header";
-
-// export default function Home() {
-//   const targetRef = useRef<HTMLDivElement | null>(null);
-//   const { scrollYProgress } = useScroll({
-//     target: targetRef,
-//   });
-
-//   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
-
-//   return (
-//     <main className="font-italiana max-h-screen">
-//       <section ref={targetRef} className="relative h-[300vh] bg-stone-200">
-//         <div className="sticky top-0 ml-16 flex h-screen items-center overflow-hidden">
-//           <Header/>
-//           <motion.div style={{ x }} className="flex w-full gap-5 overflow-hidden">
-//             {cards.map((card) => {
-//               return <Card card={card} key={card.id} />;
-//             })}
-//           </motion.div>
-//         </div>
-//       </section>
-//     </main>
-//   );
-// }
-
 
 type CardType = {
   img: string;
@@ -165,7 +134,6 @@ const cards: CardType[] = [
     img: "/images/2regards.png",
     title: "Title 2",
     id: "8",
-
   },
   {
     img: "/images/waves.png",
@@ -177,7 +145,5 @@ const cards: CardType[] = [
     img: "/images/2regards.png",
     title: "Title 2",
     id: "8",
-
   },
-
 ];
