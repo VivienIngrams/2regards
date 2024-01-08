@@ -5,10 +5,8 @@ import React from "react";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import "react-horizontal-scrolling-menu/dist/styles.css";
 
-import { LeftArrow, RightArrow } from "./components/Arrows";
 import Card from "./components/Card";
 import usePreventBodyScroll from "./components/usePreventBodyScroll";
-import { title } from "process";
 
 type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
@@ -20,28 +18,13 @@ const getId = (index: number) => `${elemPrefix}${index}`;
 //     .fill(0)
 //     .map((_, ind) => ({ id: getId(ind) }));
 
-const Arrows = () => (
-  <div
-    style={{
-      width: "100%",
-      display: "flex",
-      justifyContent: "center",
-    }}
-  >
-    Some other content
-    <div style={{ marginLeft: "10px", display: "flex" }}>
-      <LeftArrow /> <RightArrow />
-    </div>
-  </div>
-);
-
 function Home() {
   // const [items] = React.useState(getItems);
   const { disableScroll, enableScroll } = usePreventBodyScroll();
 
   return (
     <>
-      <div className="example" style={{ paddingTop: "100px", height: "150vh" }}>
+      <div className="pl-8 pt-1 h-150vh">
         <div onMouseEnter={disableScroll} onMouseLeave={enableScroll}>
           <ScrollMenu
             // or on top
