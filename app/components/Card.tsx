@@ -1,17 +1,22 @@
 
 import React from "react";
 import { VisibilityContext } from "react-horizontal-scrolling-menu";
+import Image from "next/image";
 
-export default function Card({ title, itemId }: { title: string; itemId: string }) {
+export default function Card({ img, title, id, width }: { img: string;
+  title: string;
+  id: string;
+  width?: number; }) {
   const visibility = React.useContext(VisibilityContext);
 
-  const visible = visibility.isItemVisible(itemId);
+  const visible = visibility.isItemVisible(id);
 
   return (
     <div
-      role="button"
+    key={id}
+    // className='flex justify-center items-center'
       style={{
-        border: "1px solid",
+       
         display: "inline-block",
         margin: "0 10px",
         width: "160px",
@@ -20,18 +25,29 @@ export default function Card({ title, itemId }: { title: string; itemId: string 
       tabIndex={0}
       className="card"
     >
-      <div>
-        <div>{title}</div>
-        <div style={{ backgroundColor: visible ? "transparent" : "gray" }}>
-          visible: {JSON.stringify(visible)}
-        </div>
-      </div>
-      <div
-        style={{
-          backgroundColor: "bisque",
-          height: "200px"
-        }}
-      />
+      <Image src={img} height={500} width={500} alt={title} />
     </div>
   );
 }
+
+// const Card = ({ card }: { card: CardType }) => {
+//   return (
+//     <div className={` relative h-[400px] w-[800px] overflow-hidden inset-0`}>
+//       <Image
+//         // className="object-fill"
+//         src={card.img}
+//         fill
+//         // height={600}
+//         // width={card.width || 600}
+//         alt=""
+//         // sizes="33vw sm:50vw md:75vw lg:100vw"
+//       />
+//     </div>
+//   );
+// };
+type CardType = {
+  img: string;
+  title: string;
+  id: string;
+  width?: number;
+};

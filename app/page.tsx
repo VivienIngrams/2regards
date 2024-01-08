@@ -1,30 +1,31 @@
-'use client'
+"use client";
 
 import React from "react";
 
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
-import 'react-horizontal-scrolling-menu/dist/styles.css';
-import Header from "./components/Header";
+import "react-horizontal-scrolling-menu/dist/styles.css";
+
 import { LeftArrow, RightArrow } from "./components/Arrows";
 import Card from "./components/Card";
 import usePreventBodyScroll from "./components/usePreventBodyScroll";
+import { title } from "process";
 
 type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
 const elemPrefix = "test";
 const getId = (index: number) => `${elemPrefix}${index}`;
 
-const getItems = () =>
-  Array(20)
-    .fill(0)
-    .map((_, ind) => ({ id: getId(ind) }));
+// const getItems = () =>
+//   Array(20)
+//     .fill(0)
+//     .map((_, ind) => ({ id: getId(ind) }));
 
 const Arrows = () => (
   <div
     style={{
       width: "100%",
       display: "flex",
-      justifyContent: "center"
+      justifyContent: "center",
     }}
   >
     Some other content
@@ -35,30 +36,30 @@ const Arrows = () => (
 );
 
 function Home() {
-  const [items] = React.useState(getItems);
+  // const [items] = React.useState(getItems);
   const { disableScroll, enableScroll } = usePreventBodyScroll();
 
   return (
     <>
-      <Header />
       <div className="example" style={{ paddingTop: "100px", height: "150vh" }}>
         <div onMouseEnter={disableScroll} onMouseLeave={enableScroll}>
           <ScrollMenu
             // or on top
             // Header={Arrows}
-            Footer={Arrows}
+            // Footer={Arrows}
             onWheel={onWheel}
           >
-            {items.map(({ id }) => (
+             {cards.map(({ img, title, id, width }) => (
               <Card
-                title={id}
-                itemId={id} // NOTE: itemId is required for track items
+              img={img}
+                title={title}
+                id={id} // NOTE: itemId is required for track items
                 key={id}
+                width={width || 600}
               />
             ))}
           </ScrollMenu>
         </div>
-        {/* <Footer /> */}
       </div>
     </>
   );
@@ -79,9 +80,6 @@ function onWheel(apiObj: scrollVisibilityApiType, ev: React.WheelEvent): void {
     apiObj.scrollPrev();
   }
 }
-
-
-
 
 // import Image from "next/image";
 // import { motion, useTransform, useScroll } from "framer-motion";
@@ -112,89 +110,74 @@ function onWheel(apiObj: scrollVisibilityApiType, ev: React.WheelEvent): void {
 //   );
 // }
 
-// const Card = ({ card }: { card: CardType }) => {
-//   return (
-//     <div className={` relative h-[400px] w-[800px] overflow-hidden inset-0`}>
-//       <Image
-//         // className="object-fill"
-//         src={card.img}
-//         fill
-//         // height={600}
-//         // width={card.width || 600}
-//         alt=""
-//         // sizes="33vw sm:50vw md:75vw lg:100vw"
-//       />
-//     </div>
-//   );
-// };
 
-// type CardType = {
-//   img: string;
-//   title: string;
-//   id: number;
-//   width?: number;
-// };
+type CardType = {
+  img: string;
+  title: string;
+  id: string;
+  width?: number;
+};
 
-// const cards: CardType[] = [
-//   {
-//     img: "/images/2regards.png",
-//     title: "Title 1",
-//     id: 1,
-//     width: 300,
-//   },
-//   {
-//     img: "/images/lights.png",
-//     title: "Title 2",
-//     id: 2,
-//     width: 100,
-//   },
-//   {
-//     img: "/images/waves.png",
-//     title: "Title 3",
-//     id: 3,
-//     width: 200,
-//   },
-//   {
-//     img: "/images/2regards.png",
-//     title: "Title 1",
-//     id: 4,
-//     width: 500,
-//   },
-//   {
-//     img: "/images/bottles.png",
-//     title: "Title 2",
-//     id: 5,
-//     width: 500,
-//   },
-//   {
-//     img: "/images/2regards.png",
-//     title: "Title 3",
-//     id: 6,
-//     width: 800,
-//   },
-//   {
-//     img: "/images/waves.png",
-//     title: "Title 1",
-//     id: 7,
-//     width: 500,
-//   },
-//   {
-//     img: "/images/2regards.png",
-//     title: "Title 2",
-//     id: 8,
+const cards: CardType[] = [
+  {
+    img: "/images/2regards.png",
+    title: "Title 1",
+    id: "1",
+    width: 300,
+  },
+  {
+    img: "/images/lights.png",
+    title: "Title 2",
+    id: "2",
+    width: 100,
+  },
+  {
+    img: "/images/waves.png",
+    title: "Title 3",
+    id: "3",
+    width: 200,
+  },
+  {
+    img: "/images/2regards.png",
+    title: "Title 1",
+    id: "4",
+    width: 500,
+  },
+  {
+    img: "/images/bottles.png",
+    title: "Title 2",
+    id: "5",
+    width: 500,
+  },
+  {
+    img: "/images/2regards.png",
+    title: "Title 3",
+    id: "6",
+    width: 800,
+  },
+  {
+    img: "/images/waves.png",
+    title: "Title 1",
+    id: "7",
+    width: 500,
+  },
+  {
+    img: "/images/2regards.png",
+    title: "Title 2",
+    id: "8",
 
-//   },
-//   {
-//     img: "/images/waves.png",
-//     title: "Title 1",
-//     id: 7,
-//     width: 500,
-//   },
-//   {
-//     img: "/images/2regards.png",
-//     title: "Title 2",
-//     id: 8,
+  },
+  {
+    img: "/images/waves.png",
+    title: "Title 1",
+    id: "7",
+    width: 500,
+  },
+  {
+    img: "/images/2regards.png",
+    title: "Title 2",
+    id: "8",
 
-//   },
- 
-// ];
+  },
+
+];
