@@ -13,7 +13,7 @@ export default function Card({ img, title, id }: { img: string;
   return (
     <div
     key={id}
-    className='inline-block w-40 card m-4 select-none'
+    className='inline-block w-40 m-2 select-none'
            tabIndex={0}
       >
       <Image src={img} height={200} width={500} alt={title} />

@@ -24,14 +24,9 @@ function Home() {
 
   return (
     <>
-      <div className="pl-8 pt-1 h-150vh">
-        <div onMouseEnter={disableScroll} onMouseLeave={enableScroll}>
-          <ScrollMenu
-            // or on top
-            // Header={Arrows}
-            // Footer={Arrows}
-            onWheel={onWheel}
-          >
+      <div className="pl-12 pt-3 h-150vh">
+        <div onMouseEnter={disableScroll}>
+          <ScrollMenu onWheel={onWheel}>
             {cards.map(({ img, title, id }) => (
               <Card
                 img={img}
@@ -71,6 +66,67 @@ type CardType = {
 };
 
 const cards: CardType[] = [
+  {
+    img: "/images/2regards.png",
+    title: "Title 1",
+    id: "1",
+    width: 300,
+  },
+  {
+    img: "/images/lights.png",
+    title: "Title 2",
+    id: "2",
+    width: 100,
+  },
+  {
+    img: "/images/waves.png",
+    title: "Title 3",
+    id: "3",
+    width: 200,
+  },
+  {
+    img: "/images/2regards.png",
+    title: "Title 1",
+    id: "4",
+    width: 500,
+  },
+  {
+    img: "/images/bottles.png",
+    title: "Title 2",
+    id: "5",
+    width: 500,
+  },
+  {
+    img: "/images/2regards.png",
+    title: "Title 3",
+    id: "6",
+    width: 800,
+  },
+  {
+    img: "/images/waves.png",
+    title: "Title 1",
+    id: "7",
+    width: 500,
+  },
+  {
+    img: "/images/2regards.png",
+    title: "Title 2",
+    id: "8",
+  },
+  {
+    img: "/images/waves.png",
+    title: "Title 1",
+    id: "7",
+    width: 500,
+  },
+  {
+    img: "/images/2regards.png",
+    title: "Title 2",
+    id: "8",
+  },
+];
+
+const cards2: CardType[] = [
   {
     img: "/images/2regards.png",
     title: "Title 1",
