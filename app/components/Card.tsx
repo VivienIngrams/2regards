@@ -6,10 +6,12 @@ export default function Card({
   img,
   title,
   id,
+  width,
 }: {
   img: string;
   title: string;
   id: string;
+  width?: number;
 }) {
   const visibility = React.useContext(VisibilityContext);
 
@@ -18,18 +20,24 @@ export default function Card({
   return (
     <div
       key={id}
-      className="flex-col justify-between w-[400px] h-full m-2 select-none"
+      className="flex flex-col justify-between w-[400px] h-full m-2 select-none"
       tabIndex={0}
     >
       <div className="h-1/2 w-auto relative">
-        <Image className="" src={img} height={300} width={300} alt={title} />
-      </div>
-      <div className="h-1/2 w-auto relative">
         <Image
-          className=""
+          className="shadow-md"
           src={img}
-          height={300}
-          width={300}
+          height={200}
+          width={width || 300}
+          alt={title}
+        />
+      </div>
+      <div className="h-1/2 w-auto relative ">
+        <Image
+          className="shadow-md"
+          src={img}
+          height={200}
+          width={200}
           alt={title}
         />
       </div>

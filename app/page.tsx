@@ -10,24 +10,25 @@ import usePreventBodyScroll from "./components/usePreventBodyScroll";
 
 type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
-const elemPrefix = "test";
-const getId = (index: number) => `${elemPrefix}${index}`;
+// const elemPrefix = "test";
+// const getId = (index: number) => `${elemPrefix}${index}`;
 
 function Home() {
   const { disableScroll, enableScroll } = usePreventBodyScroll();
 
   return (
     <>
-      <div className="pl-12 pt-3 h-[95%] justify-center">
+      <div className="pl-8 md:pl-12 pt-1 md:pt-3 h-[95%] justify-center">
         <div onMouseEnter={disableScroll} className="h-full">
-          <ScrollMenu onWheel={onWheel}>
+          <ScrollMenu onWheel={onWheel} transitionBehavior="smooth" transitionDuration={3000}>
            
-                {cards.map(({ img, title, id }) => (
+                {cards.map(({ img, title, id, width }) => (
                   <Card
                     img={img}
                     title={title}
                     id={id} // NOTE: itemId is required for track items
                     key={id}
+                    width={width || 300}
                   />
                 ))}
              

@@ -2,22 +2,23 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="fixed left-0 bottom-0 w-screen h-6 bg-stone-200">
-      <div className="relative min-w-screen border-t-black border-2">
-        <div className="absolute ml-20 -bottom-6 font-italiana justify-start items-start gap-10 inline-flex">
-          <div className="text-black text-xl p-1 font-normal leading-loose bg-stone-200">
+    <footer className="fixed left-0 bottom-0 w-screen h-4 md:h-6 bg-stone-200">
+      <div className="relative min-w-screen z-25 border-t-black border-[1px]">
+      <div className="absolute bottom-[2px] z-10 w-screen ml-6 bg-stone-200 h-3 md:h-6"/>
+        <div className="absolute text-md md:text-xl ml-6 md:ml-10 z-20 leading-loose -bottom-5  font-italiana gap-2 md:gap-10 flex">
+          <div className="bg-stone-200 p-1">
             Products
           </div>
-          <div className="text-black text-xl p-1 font-normal leading-loose bg-stone-200">
+          <div className="bg-stone-200 p-1">
             Studio
           </div>
-          <div className="text-black text-xl p-1 font-normal leading-loose bg-stone-200">
+          <div className="bg-stone-200 p-1">
             Gallery
           </div>
-          <div className="text-black text-xl p-1 font-normal leading-loose bg-stone-200">
+          <div className="bg-stone-200 p-1">
             About
           </div>
-          <div className="text-black text-xl p-1 font-normal leading-loose bg-stone-200">
+          <div className="bg-stone-200 p-1">
             Contact
           </div>
         </div>
