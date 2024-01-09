@@ -8,12 +8,15 @@
   
 
   .react-horizontal-scrolling-menu--wrapper {
-    height: 90%;
+    height: 100%;
     /* display: flex;
     flex-direction: column;
     overflow: hidden; */
   }
   .react-horizontal-scrolling-menu--inner-wrapper {
+    height: 100%;
+  }
+  .react-horizontal-scrolling-menu--item {
     height: 100%;
   }
 
@@ -24,4 +27,5 @@
   .react-horizontal-scrolling-menu--scroll-container {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+    height: 100% !important;
   }

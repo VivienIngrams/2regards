@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${italiana.variable}  bg-stone-200`}>
+      <body className={`${italiana.variable}  bg-stone-200 h-screen`}>
         <Header />
         {children}
         <Footer />
