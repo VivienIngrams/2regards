@@ -15,12 +15,13 @@ type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
 function Home() {
   const { disableScroll, enableScroll } = usePreventBodyScroll();
+  const isMobileScreen = window.innerWidth <= 768;
 
   return (
     <>
       <div className="pl-8 md:pl-12 pt-1 md:pt-3 h-[95%] justify-center">
         <div onMouseEnter={disableScroll} className="h-full">
-          <ScrollMenu onWheel={onWheel} transitionBehavior="smooth" transitionDuration={3000}>
+          <ScrollMenu onWheel={onWheel} transitionBehavior="smooth" transitionDuration={isMobileScreen ? 500 : 3000}>
            
                 {cards.map(({ img, title, id, width }) => (
                   <Card
