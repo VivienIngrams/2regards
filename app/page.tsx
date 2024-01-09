@@ -16,7 +16,6 @@ function Home() {
 
   return (
     <>
-      <div className="pl-8 md:pl-12 pt-1 md:pt-3 h-[95%] justify-center">
         <div onMouseEnter={disableScroll} className="h-full">
           <ScrollMenu onWheel={onWheel} transitionBehavior="smooth" transitionDuration={isMobileScreen ? 500 : 3000}>
            
@@ -32,7 +31,6 @@ function Home() {
              
           </ScrollMenu>
         </div>
-      </div>
     </>
   );
 }

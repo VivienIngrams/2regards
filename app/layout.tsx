@@ -24,7 +24,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${italiana.variable}  bg-stone-200 h-screen`}>
         <Header />
+        <div className="pl-8 md:pl-12 pt-1 md:pt-3 h-[95%]">
         {children}
+        </div>
         <Footer />
       </body>
     </html>

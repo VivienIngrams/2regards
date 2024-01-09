@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   const menuItems = [
-    { text: "Products", href: "/products" },
+    { text: "Products", href: "/" },
     { text: "Studio", href: "/studio" },
     { text: "Gallery", href: "/gallery" },
     { text: "About", href: "/about" },
