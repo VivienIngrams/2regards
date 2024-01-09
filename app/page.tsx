@@ -10,9 +10,6 @@ import usePreventBodyScroll from "./components/usePreventBodyScroll";
 
 type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
-// const elemPrefix = "test";
-// const getId = (index: number) => `${elemPrefix}${index}`;
-
 function Home() {
   const { disableScroll, enableScroll } = usePreventBodyScroll();
   const isMobileScreen = window.innerWidth <= 768;

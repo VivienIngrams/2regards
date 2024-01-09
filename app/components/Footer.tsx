@@ -1,26 +1,25 @@
 import React from "react";
+import Link from "next/link";
 
 const Footer = () => {
+  const menuItems = [
+    { text: "Products", href: "/products" },
+    { text: "Studio", href: "/studio" },
+    { text: "Gallery", href: "/gallery" },
+    { text: "About", href: "/about" },
+    { text: "Contact", href: "/contact" },
+  ];
+
   return (
     <footer className="fixed left-0 bottom-0 w-screen h-4 md:h-6 bg-stone-200">
       <div className="relative min-w-screen z-25 border-t-black border-[1px]">
-      <div className="absolute bottom-[2px] z-10 w-screen ml-6 bg-stone-200 h-3 md:h-6"/>
+        <div className="absolute bottom-[2px] z-10 w-screen ml-6 bg-stone-200 h-3 md:h-6" />
         <div className="absolute text-md md:text-xl ml-6 md:ml-10 z-20 leading-loose -bottom-5  font-italiana gap-2 md:gap-10 flex">
-          <div className="bg-stone-200 p-1">
-            Products
-          </div>
-          <div className="bg-stone-200 p-1">
-            Studio
-          </div>
-          <div className="bg-stone-200 p-1">
-            Gallery
-          </div>
-          <div className="bg-stone-200 p-1">
-            About
-          </div>
-          <div className="bg-stone-200 p-1">
-            Contact
-          </div>
+          {menuItems.map((item) => (
+            <Link key={item.text} href={item.href} className="bg-stone-200 p-1">
+              {item.text}
+            </Link>
+          ))}
         </div>
       </div>
     </footer>
@@ -28,3 +27,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
