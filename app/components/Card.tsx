@@ -20,7 +20,7 @@ export default function Card({
   return (
     <div
       key={id}
-      className="flex flex-col justify-between w-[400px] h-full m-2 select-none"
+      className="flex flex-col justify-between w-[400px] h-full p-2 select-none"
       tabIndex={0}
     >
       <div className="h-1/2 w-auto relative">
