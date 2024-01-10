@@ -3,25 +3,44 @@ import React from "react";
 const About = () => {
   return (
     <div className="mr-8 md:mr-12">
-      <div>About</div>
+      
+      <div className="w-[656px] h-[201px] text-right">
+        <span className="text-neutral-500 text-[80px] font-normal font-italiana leading-[38px]">
+          <br /> <br /> 2{" "}
+        </span>
+        <span className="text-neutral-500 text-[80px] font-normal font-italiana uppercase leading-[38px]">
+          regards{" "}
+        </span>
+        <span className="text-neutral-500 text-[80px] font-normal font-italiana leading-[38px]">
+          Atelier
+        </span>
+      </div>
       <div>
-        2regards Atelier is a space dedicated to the creation of advertising
-        content and visual arts, founded by Mathilde Cudeville and Paulo Bastos
-        in 2019.One of the areas of action for 2regards is advertising, through
-        the photography, video and graphic design. The Atelier has partnerships
-        with various international companies.Additionally, the Atelier consists
-        of an art gallery, where numerous national and international artists are
-        welcomed throughout the year. The artistic component of the gallery is
-        complemented by the analog photography laboratory, where training
-        sessions for analog capture and development are facilitated. Paulo
-        Bastos is a Portuguese video director based in Porto. After completing
-        his higher education at HEI Lille in France, he worked as a civil
-        engineering engineer. He expatriated to the USA, Central America, and
-        the Nordic countries. His extensive travels fueled his passion for
+        <p>
+          2regards Atelier is a space dedicated to creation and visual arts,
+          founded by Mathilde Cudeville and Paulo Bastos in 2019. One of their
+          areas of action is advertising, through photography, video and graphic
+          design. The Atelier has partnerships with various international
+          companies.
+        </p>
+        <p>
+          The Atelier is also an art gallery, where numerous national and
+          international artists are welcomed throughout the year. The artistic
+          component of the gallery is complemented by the analogue
+          photography laboratory, where training sessions for analogue capture
+          and development are facilitated.
+        </p>
+        <h1>Paulo Bastos</h1>
+        Paulo Bastos is a Portuguese video director based in Porto. After
+        completing his higher education at HEI Lille in France, he worked as a
+        civil engineering engineer. He expatriated to the USA, Central America,
+        and the Nordic countries. His extensive travels fueled his passion for
         visual storytelling. In 2017, he embarked on a career as a video
         director. Currently, he collaborates with various clients in
         advertising, communication, and documentary projects through the company
         2regards, which he co-founded with his partner Mathilde Cudeville.
+        <h1>Mathilde Cudeville</h1>
+        <p>
         Mathilde Cudeville absorbs the world around her and reflects it back
         with a highly personal poetic touch. She dissolves into the surroundings
         before revealing the most unusual elements, which are often the most
@@ -51,7 +70,7 @@ const About = () => {
         works oscillating between ambient photography and plastic photography.
         They are often exhibited in unexpected places, reflecting her daring
         nature. I invite poetry, intimacy, and uniqueness enthusiasts to meet
-        Mathildes gaze. MICHEL LE ROUX Poet and friend
+        Mathildes gaze. MICHEL LE ROUX Poet and friend</p>
       </div>
     </div>
   );
