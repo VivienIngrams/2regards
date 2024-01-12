@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import "react-horizontal-scrolling-menu/dist/styles.css";
@@ -12,12 +12,31 @@ type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
 function Home() {
   const { disableScroll, enableScroll } = usePreventBodyScroll();
-  const isMobileScreen = window.innerWidth <= 768;
+  const [isMobileScreen, setIsMobileScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const newIsMobileScreen = window.innerWidth <= 768;
+      setIsMobileScreen(newIsMobileScreen);
+      console.log("isMobileScreen", newIsMobileScreen);
+    };
+
+    // Set initial value
+    handleResize();
+
+    // Attach event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <>
         <div onMouseEnter={disableScroll} className="h-full">
-          <ScrollMenu onWheel={onWheel} transitionBehavior="smooth" transitionDuration={isMobileScreen ? 500 : 3000}>
+          <ScrollMenu onWheel={onWheel} transitionBehavior="smooth" transitionDuration={isMobileScreen ? 500 : 4000}>
            
                 {cards.map(({ img, title, id, width }) => (
                   <Card

@@ -1,5 +1,7 @@
 import React from "react";
 
+import Image from "next/image";
+
 const About = () => {
   return (
     <div className="mr-8 md:mr-12">
@@ -30,6 +32,13 @@ const About = () => {
           photography laboratory, where training sessions for analogue capture
           and development are facilitated.
         </p>
+        <div>
+          <Image 
+          src="/images/Paulo.jpeg"
+          width={400}
+          height={400}
+          alt="Paulo Bastos" />
+        </div>
         <h1>Paulo Bastos</h1>
         Paulo Bastos is a Portuguese video director based in Porto. After
         completing his higher education at HEI Lille in France, he worked as a
@@ -39,6 +48,14 @@ const About = () => {
         director. Currently, he collaborates with various clients in
         advertising, communication, and documentary projects through the company
         2regards, which he co-founded with his partner Mathilde Cudeville.
+        <div>
+          <Image
+            src="/images/Mathilde.jpeg"
+            width={400}
+            height={400}
+            alt="Mathilde Cudeville"
+          />
+        </div>
         <h1>Mathilde Cudeville</h1>
         <p>
         Mathilde Cudeville absorbs the world around her and reflects it back
