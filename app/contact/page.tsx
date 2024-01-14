@@ -1,6 +1,7 @@
 import React from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 import facebookIcon from "/public/Facebook.svg";
 import instagramIcon from "/public/Instagram.svg";
 import youtubeIcon from "/public/Youtube.svg";
@@ -32,7 +33,14 @@ const Contact = () => {
       {/* Gallery Information */}
       <div className="absolute left-28 top-24 w-1/3 ">
         <div className="right-0 top-2 absolute">
-          <Image priority src={googlemapsIcon} height={35} alt="Google Maps" />
+          <Link href="https://www.google.com/maps/place/2regards+atelier+photos+films/@41.1472147,-8.6012507,17z/data=!3m1!4b1!4m6!3m5!1s0xd2465a5d3873983:0xbfff3607a844ac77!8m2!3d41.1472147!4d-8.5986758!16s%2Fg%2F11p_1z0qdh?entry=ttu">
+            <Image
+              priority
+              src={googlemapsIcon}
+              height={35}
+              alt="Google Maps"
+            />
+          </Link>
         </div>
         <div className="text-black text-5xl font-normal font-italiana pb-4 border-black border-b-[1px]">
           gallery.
@@ -59,15 +67,22 @@ const Contact = () => {
       <div className="absolute right-32 bottom-28 w-1/3">
         <div className="flex -mb-10">
           <div className="pr-4">
-            <Image priority src={facebookIcon} alt="Facebook" />
+            <Link href="https://www.facebook.com/2regards.photosfilms">
+              <Image priority src={facebookIcon} alt="Facebook" />
+            </Link>
           </div>
           <div className="pr-5">
-            <Image priority src={youtubeIcon} alt="Youtube" />
+            <Link href="https://www.youtube.com/channel/UChl2gxRgunj929SvG_D8vyA">
+              <Image priority src={youtubeIcon} alt="Youtube" />
+            </Link>
           </div>
           <div className="">
-            <Image priority src={instagramIcon} alt="Instagram" />
+            <Link href="https://www.instagram.com/2regards.photosfilms/">
+              <Image priority src={instagramIcon} alt="Instagram" />
+            </Link>
           </div>
         </div>
+
         <div className="text-black text-5xl font-normal text-right font-italiana pb-4 border-black border-b-[1px]">
           contact.
         </div>
