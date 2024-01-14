@@ -23,14 +23,14 @@ const Contact = () => {
         />
         <button
           type="submit"
-          className="bg-neutral-500 text-white h-8 px-4 border border-black rounded "
+          className="bg-neutral-400 text-white h-8 px-4 border border-black rounded "
         >
           Subscribe to our newsletter
         </button>
       </div>
 
       {/* Gallery Information */}
-      <div className="absolute left-28 top-24 w-2/5">
+      <div className="absolute left-28 top-24 w-1/3 ">
         <div className="right-0 top-2 absolute">
           <Image priority src={googlemapsIcon} height={35} alt="Google Maps" />
         </div>
@@ -56,7 +56,7 @@ const Contact = () => {
       </div>
 
       {/* Contact Information */}
-      <div className="absolute right-32 bottom-28 w-2/5">
+      <div className="absolute right-32 bottom-28 w-1/3">
         <div className="flex -mb-10">
           <div className="pr-4">
             <Image priority src={facebookIcon} alt="Facebook" />

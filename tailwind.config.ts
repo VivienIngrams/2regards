@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         italiana: ["var(--font-italiana)"],
+        roboto: ["var(--font-roboto)"]
       },
     },
   },
