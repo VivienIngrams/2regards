@@ -30,7 +30,7 @@ const About = () => {
         <p>
           The Atelier is also an art gallery welcoming national and
           international artists throughout the year. The space features an
-          analogue photography laboratory, where training sessions for analogue
+          analog photography laboratory, where training sessions for analogue
           capture and development are facilitated.
         </p>
       </div>
