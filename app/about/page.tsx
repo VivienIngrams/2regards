@@ -6,7 +6,15 @@ const About = () => {
   return (
     <div className="md:p-16 mr-8 text-neutral-500 ">
       <div className=" grid md:grid-cols-2">
-      <div className="m-6 text-center text-neutral-400">
+        <div className="my-6 text-black">
+          <p>
+            Dedicated to creation and visual arts, 2 Regards Atelier was founded
+            by Mathilde Cudeville and Paulo Bastos in 2019. With a focus on
+            advertising through photography, video and graphic design, the
+            Atelier has partnerships with various international companies.
+          </p>
+        </div>
+        <div className="m-2 text-center text-neutral-400">
           <p className=" text-[80px] font-normal font-italiana uppercase leading-[38px] tracking-tighter">
             2 regards{" "}
           </p>
@@ -14,45 +22,34 @@ const About = () => {
             Atelier
           </p>
         </div>
-        <div className="mt-10">
-          <p>
-            2regards Atelier is a space dedicated to creation and visual arts,
-            founded by Mathilde Cudeville and Paulo Bastos in 2019. One of their
-            areas of action is advertising, through photography, video and
-            graphic design. The Atelier has partnerships with various
-            international companies.
-          </p>
-        </div>
-       
       </div>
-      <div className="my-8 mx-auto max-w-[60%] ">
+      <div className="my-12 mx-auto max-w-[50%] text-black ">
         <p>
-         The Atelier is also an art gallery, where numerous national and
-          international artists are welcomed throughout the year. The artistic
-          component of the gallery is complemented by the analogue
-          photography laboratory, where training sessions for analogue capture
-          and development are facilitated.
+          The Atelier is also an art gallery welcoming national and
+          international artists throughout the year. The space features an
+          analogue photography laboratory, where training sessions for analogue
+          capture and development are facilitated.
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2">
+      <div className="grid md:grid-cols-2  text-sm">
         <div className="">
-          <div className="flex">
+          <div className="flex border-b-2 border-black mr-14">
             <div className="flex">
               <Image
                 src="/images/Mathilde2.jpeg"
-                width={180}
+                width={140}
                 height={200}
                 alt="Mathilde Cudeville"
               />
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center ">
               <h1 className="p-6 max-w-[160px] font-italiana text-4xl text-black leading-1">
                 Mathilde Cudeville
               </h1>
             </div>
           </div>
-          <p className="mt-6 pb-2 pr-14">
+          <p className="mt-2 pb-2 pr-14">
             Mathilde Cudeville absorbs the world around her and reflects it back
             with a highly personal poetic touch. She dissolves into the
             surroundings before revealing the most unusual elements, which are
@@ -89,19 +86,18 @@ const About = () => {
             oscillating between ambient photography and plastic photography.
             They are often exhibited in unexpected places, reflecting her daring
             nature. I invite poetry, intimacy, and uniqueness enthusiasts to
-            meet Mathildes gaze. MICHEL LE ROUX Poet and friend
+            meet Mathildes gaze.</p>
+            <p> MICHEL LE ROUX, Poet and friend
           </p>
         </div>
 
-        
-          
-            <div className="pl-14">
-          <div className="flex">
+        <div className="pl-14">
+          <div className="flex  border-b-2 border-black">
             <div className="flex">
               <Image
                 className=""
                 src="/images/Paulo2.jpeg"
-                width={180}
+                width={140}
                 height={200}
                 alt="Paulo Bastos"
               />
@@ -112,7 +108,7 @@ const About = () => {
               </h1>
             </div>
           </div>
-          <p className="mt-6 pb-2">
+          <p className="mt-2 pb-2">
             Paulo Bastos is a Portuguese video director based in Porto. After
             completing his higher education at HEI Lille in France, he worked as
             a civil engineering engineer. He expatriated to the USA, Central
