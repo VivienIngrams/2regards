@@ -5,8 +5,11 @@ import Image from "next/image";
 const About = () => {
   return (
     <div className="md:p-16 mr-8 text-neutral-500 ">
+            <div className="w-4 md:w-6 z-50 fixed h-screen right-0 top-0">
+        <div className="right-0 top-4 md:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-100" />
+      </div>
       <div className=" grid md:grid-cols-2">
-        <div className="my-6 text-black">
+        <div className="my-6 tracking-tight">
           <p>
             Dedicated to creation and visual arts, 2 Regards Atelier was founded
             by Mathilde Cudeville and Paulo Bastos in 2019. With a focus on
@@ -14,7 +17,7 @@ const About = () => {
             Atelier has partnerships with various international companies.
           </p>
         </div>
-        <div className="m-2 text-center text-neutral-400">
+        <div className="m-2 text-center text-black">
           <p className=" text-[80px] font-normal font-italiana uppercase leading-[38px] tracking-tighter">
             2 regards{" "}
           </p>
@@ -23,7 +26,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="my-12 mx-auto max-w-[50%] text-black ">
+      <div className="my-12 mx-auto max-w-[50%] tracking-tight text-neutral-500 ">
         <p>
           The Atelier is also an art gallery welcoming national and
           international artists throughout the year. The space features an
@@ -32,9 +35,9 @@ const About = () => {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2  text-sm">
-        <div className="">
-          <div className="flex border-b-2 border-black mr-14">
+      <div className="mt-6 grid md:grid-cols-2 leading-normal text-sm">
+        <div className="mr-24">
+          <div className="flex border-b-2 border-black ">
             <div className="flex">
               <Image
                 src="/images/Mathilde2.jpeg"
@@ -49,7 +52,7 @@ const About = () => {
               </h1>
             </div>
           </div>
-          <p className="mt-2 pb-2 pr-14">
+          <p className="mt-2 pb-2">
             Mathilde Cudeville absorbs the world around her and reflects it back
             with a highly personal poetic touch. She dissolves into the
             surroundings before revealing the most unusual elements, which are
@@ -58,7 +61,7 @@ const About = () => {
             subtlest details. The same applies to her relationship with
             humanity.
           </p>
-          <p className="pb-2 pr-14">
+          <p className="pb-2 ">
             It was through initiating a dreamlike photopoetry collaboration that
             the extent of Mathilde's imagination became apparent to me,
             seemingly boundless. Our shared reverie gave rise to improbable
@@ -80,7 +83,7 @@ const About = () => {
             liberated dual approach, using otherness as a vehicle, without
             artifice or mask.{" "}
           </p>
-          <p className="pb-2 pr-14">
+          <p className="pb-2 ">
             Speaking of the form, Mathildes artistic practice revolves around
             the photographic medium and silver printing, with her works
             oscillating between ambient photography and plastic photography.
@@ -91,8 +94,8 @@ const About = () => {
           </p>
         </div>
 
-        <div className="pl-14">
-          <div className="flex  border-b-2 border-black">
+        <div className="ml-14 mr-10">
+          <div className="flex border-b-2 border-black ">
             <div className="flex">
               <Image
                 className=""
@@ -108,7 +111,7 @@ const About = () => {
               </h1>
             </div>
           </div>
-          <p className="mt-2 pb-2">
+          <p className="mt-2">
             Paulo Bastos is a Portuguese video director based in Porto. After
             completing his higher education at HEI Lille in France, he worked as
             a civil engineering engineer. He expatriated to the USA, Central
