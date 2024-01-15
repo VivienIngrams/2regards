@@ -42,7 +42,7 @@ const Studio = () => {
       </div>
 
      
-      <div className=" grid md:grid-cols-2 leading-normal text-sm">
+      <div className="grid md:grid-cols-2 leading-normal text-sm">
         <div className="ml-14 mr-10">
           <div className="flex border-b-2 border-black ">
             <div className="flex">
