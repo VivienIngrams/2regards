@@ -14,36 +14,7 @@ const Studio = () => {
             Studio
           </p>
         </div>
-        <div className="-mt-10 -ml-8 mr-10">
-          <div className="flex border-b-2 border-black ">
-            <div className="flex">
-              <Image
-                className=""
-                src="/images/Paulo2.jpeg"
-                width={100}
-                height={200}
-                alt="Paulo Bastos"
-              />
-            </div>
-            <div className="flex items-center">
-              <h1 className="p-6 max-w-[160px] font-italiana text-4xl text-black leading-1">
-                Analogic Studios
-              </h1>
-            </div>
-          </div>
-          <p className="mt-2">
-            Paulo Bastos is a Portuguese video director based in Porto. After
-            completing his higher education at HEI Lille in France, he worked as
-            a civil engineering engineer. His extensive travels fueled his
-            passion for visual storytelling. In 2017, he embarked on a career as
-            a video director.
-          </p>
-        </div>
-      </div>
-
-     
-      <div className="grid md:grid-cols-2 leading-normal text-sm">
-        <div className="ml-14 mr-10">
+        <div className=" -ml-4 mr-10">
           <div className="flex border-b-2 border-black ">
             <div className="flex">
               <Image
@@ -61,22 +32,13 @@ const Studio = () => {
             </div>
           </div>
           <p className="mt-2">
-            Paulo Bastos is a Portuguese video director based in Porto. After
-            completing his higher education at HEI Lille in France, he worked as
-            a civil engineering engineer. He expatriated to the USA, Central
-            America, and the Nordic countries. His extensive travels fueled his
-            passion for visual storytelling. In 2017, he embarked on a career as
-            a video director. Currently, he collaborates with various clients in
-            advertising, communication, and documentary projects through the
-            company 2regards, which he co-founded with his partner Mathilde
-            Cudeville.
+            Throughout the year, we organize workshops for participants to
+            explore or deepen their knowledge in analog photography.
           </p>
         </div>
-        <div className="ml-14 mr-10"></div>
       </div>
 
-      <div className="-mt-20 grid md:grid-cols-2 leading-normal text-sm">
-        <div className="ml-14 mr-10"></div>
+      <div className="mt-6 grid md:grid-cols-2 leading-normal text-sm">
         <div className="ml-14 mr-10">
           <div className="flex border-b-2 border-black ">
             <div className="flex">
@@ -90,18 +52,44 @@ const Studio = () => {
             </div>
             <div className="flex items-center">
               <h1 className="p-6 max-w-[160px] font-italiana text-4xl text-black leading-1">
-                Laboratory
+                Product Studios
               </h1>
             </div>
           </div>
           <p className="mt-2">
-          He expatriated to the USA, Central
-            America, and the Nordic countries. His extensive travels fueled his
-            passion for visual storytelling. In 2017, he embarked on a career as
-            a video director. Currently, he collaborates with various clients in
-            advertising, communication, and documentary projects through the
-            company 2regards, which he co-founded with his partner Mathilde
-            Cudeville.
+            2regards atelier offers professional quality photographic services
+            to meet all your needs. We capture your studio shots for e-commerce,
+            ranging from simple cutout packshots on a white background to
+            creatively staged ambient photos. Our team of professional
+            photographers welcomes you to their fully equipped studio in Porto.
+          </p>
+        </div>
+        <div className="ml-14 mr-10"></div>
+      </div>
+
+      <div className="-mt-16 grid md:grid-cols-2 leading-normal text-sm">
+        <div className="ml-16 mr-10"></div>
+        <div className="ml-14 mr-10">
+          <div className="flex border-b-2 border-black ">
+            <div className="flex">
+              <Image
+                className=""
+                src="/images/Paulo2.jpeg"
+                width={100}
+                height={200}
+                alt="Paulo Bastos"
+              />
+            </div>
+            <div className="flex items-center">
+              <h1 className="p-6 max-w-[160px] font-italiana text-4xl text-black leading-1">
+                Analog Laboratory
+              </h1>
+            </div>
+          </div>
+          <p className="mt-2">
+            Also 2regards atelier features an analog photography lab for
+            development and printing. It is also possible to rent this space by
+            the hour or day. Click here to discover our rates.
           </p>
         </div>
       </div>
