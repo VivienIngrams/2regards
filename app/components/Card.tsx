@@ -28,7 +28,7 @@ export default function Card({
     >
       <div className="relative h-1/3 w-auto shadow-md group hover:bg-gradient-to-r from-[black] to-neutral-600">
         <Image
-          className="object-fill group-hover:opacity-20"
+          className="object-fill group-hover:opacity-60"
           src={img}
           alt={title}
           height={500}
@@ -44,7 +44,7 @@ export default function Card({
       </div>
       <div className="relative h-1/3 w-auto shadow-md group hover:bg-gradient-to-r from-[black] to-neutral-600">
         <Image
-          className="object-fill group-hover:opacity-20"
+          className="object-fill group-hover:opacity-60"
           src={img}
           alt={title}
           height={500}
@@ -60,7 +60,7 @@ export default function Card({
       </div>
       <div className="relative h-1/3 w-auto shadow-md group hover:bg-gradient-to-r from-[black] to-neutral-600">
         <Image
-          className="object-fill group-hover:opacity-20"
+          className="object-fill group-hover:opacity-60"
           src={img}
           alt={title}
           height={500}
