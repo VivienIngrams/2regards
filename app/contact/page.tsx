@@ -9,6 +9,7 @@ import googlemapsIcon from "/public/Googlemaps.svg";
 const Contact = () => {
   return (
     <div className="relative h-full mr-8 md:mr-12 font-light text-sm md:text-base">
+      {/* Right border */}
       <div className="w-4 md:w-6 z-50 fixed h-screen right-0 top-0">
         <div className="right-0 top-4 md:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-100" />
       </div>
@@ -29,6 +30,7 @@ const Contact = () => {
           Subscribe to our newsletter
         </button>
       </div>
+
       <div className="flex flex-col justify-between md:grid grid-cols-2 h-full pb-20">
         {/* Gallery Information */}
         <div className="mx-2 my-10 lg:mx-14 w-[1/3vw]">

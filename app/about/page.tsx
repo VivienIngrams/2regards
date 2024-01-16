@@ -1,42 +1,71 @@
 import React from "react";
 
 import Image from "next/image";
+import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 
 const About = () => {
   return (
-    <div className="md:p-16 mr-8 text-neutral-500 ">
-            <div className="w-4 md:w-6 z-50 fixed h-screen right-0 top-0">
+    <div className="md:p-16 mr-8 h-full md:h-auto text-neutral-500 text-sm md:text-base">
+      <div className="w-4 md:w-6 z-50 fixed h-screen right-0 top-0">
         <div className="right-0 top-4 md:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-100" />
       </div>
-      <div className=" grid md:grid-cols-2">
-        <div className="my-6 tracking-tight">
-          <p>
-            Dedicated to creation and visual arts, 2 Regards Atelier was founded
-            by Mathilde Cudeville and Paulo Bastos in 2019. With a focus on
-            advertising through photography, video and graphic design, the
-            Atelier has partnerships with various international companies.
-          </p>
+      <div className="h-[95vh] md:h-auto flex flex-col justify-between">
+        <div className=" md:grid md:grid-cols-2">
+          <div className="my-8 ml-[45%] md:mx-auto tracking-tight text-right md:text-left">
+            <p>
+              Dedicated to creation and visual arts, 2 Regards Atelier was
+              founded by Mathilde Cudeville and Paulo Bastos in 2019. With a
+              focus on advertising through photography, video and graphic
+              design, the Atelier has partnerships with various international
+              companies.
+            </p>
+          </div>
+
+          {/* Title desktop */}
+          
+            <div className="hidden md:block m-4 text-center text-black">
+              <p className=" hidden md:block text-6xl md:text-[80px] font-normal font-italiana uppercase leading-[30px] md:leading-[38px] tracking-tighter">
+                2 regards{" "}
+              </p>
+              <p className="hidden md:block text-6xl md:text-[80px] font-normal font-italiana leading-[30px] md:leading-[38px] tracking-tighter">
+                Atelier
+              </p>
+            </div>
+          
+          {/* Title mobile */}
+        
         </div>
-        <div className="m-2 text-center text-black">
-          <p className=" text-[80px] font-normal font-italiana uppercase leading-[38px] tracking-tighter">
-            2 regards{" "}
-          </p>
-          <p className=" text-[80px] font-normal font-italiana leading-[38px] tracking-tighter">
-            Atelier
-          </p>
+          <div>
+            <div className="md:hidden m-4 text-center text-black">
+              <p className="md:hidden text-6xl md:text-[80px] font-normal font-italiana uppercase leading-[30px] md:leading-[38px] tracking-tighter">
+                2 regards{" "}
+              </p>
+              <p className="md:hidden text-6xl md:text-[80px] font-normal font-italiana leading-[30px] md:leading-[38px] tracking-tighter">
+                Atelier
+              </p>
+            </div>
+          </div>
+        <div>
+          <div className="my-8 mr-[45%] md:mx-auto md:max-w-[50%] tracking-tight text-left ">
+            <p>
+              The Atelier is also an art gallery welcoming national and
+              international artists throughout the year. The space features an
+              analog photography laboratory, where training sessions for
+              analogue capture and development are facilitated.
+            </p>
+          </div>
+          <div className="md:hidden flex justify-center pb-4">
+            <div className=" p-2 cursor-pointer  m-2">
+              <HiOutlineChevronDoubleDown />
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="my-12 mx-auto max-w-[50%] tracking-tight text-neutral-500 ">
-        <p>
-          The Atelier is also an art gallery welcoming national and
-          international artists throughout the year. The space features an
-          analog photography laboratory, where training sessions for analogue
-          capture and development are facilitated.
-        </p>
       </div>
 
-      <div className="mt-6 grid md:grid-cols-2 leading-normal text-sm">
-        <div className="mr-24">
+      {/* Mat and Paulo */}
+      <div className="md:grid md:grid-cols-2 leading-normal text-sm  text-justify md:text-left">
+        {/* Mathilde */}
+        <div className="md:mr-24">
           <div className="flex border-b-2 border-black ">
             <div className="flex">
               <Image
@@ -47,7 +76,7 @@ const About = () => {
               />
             </div>
             <div className="flex items-center ">
-              <h1 className="p-6 max-w-[160px] font-italiana text-4xl text-black leading-1">
+              <h1 className="p-6 max-w-[160px] font-italiana text-3xl lg:text-4xl text-black leading-1">
                 Mathilde Cudeville
               </h1>
             </div>
@@ -89,12 +118,12 @@ const About = () => {
             oscillating between ambient photography and plastic photography.
             They are often exhibited in unexpected places, reflecting her daring
             nature. I invite poetry, intimacy, and uniqueness enthusiasts to
-            meet Mathildes gaze.</p>
-            <p> MICHEL LE ROUX, Poet and friend
+            meet Mathildes gaze.
           </p>
+          <p> MICHEL LE ROUX, Poet and friend</p>
         </div>
-
-        <div className="ml-14 mr-10">
+        {/* Paulo */}
+        <div className="py-10 md:ml-14 md:mr-10">
           <div className="flex border-b-2 border-black ">
             <div className="flex">
               <Image
@@ -106,7 +135,7 @@ const About = () => {
               />
             </div>
             <div className="flex items-center">
-              <h1 className="p-6 max-w-[160px] font-italiana text-4xl text-black leading-1">
+              <h1 className="p-6 max-w-[160px] font-italiana text-3xl lg:text-4xl text-black leading-1">
                 Paulo Bastos
               </h1>
             </div>

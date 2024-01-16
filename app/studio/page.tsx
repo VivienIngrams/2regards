@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Studio = () => {
   return (
-    <div className="md:py-12 mr-16 text-neutral-500 text-sm ">
+    <div className="md:py-12 mr-16 text-neutral-500 text-sm text-justify md:text-left">
       <div className="w-4 md:w-6 z-50 fixed h-screen right-0 top-0">
         <div className="right-0 top-4 md:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-100" />
       </div>
