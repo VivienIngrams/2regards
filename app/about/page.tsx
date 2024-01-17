@@ -114,7 +114,7 @@ const About = () => {
             artifice or mask.{" "}
           </p>
           <p className="pb-2 ">
-            Speaking of the form, Mathildes artistic practice revolves around
+            With regards to form, Mathildes artistic practice revolves around
             the photographic medium and silver printing, with her works
             oscillating between ambient photography and plastic photography.
             They are often exhibited in unexpected places, reflecting her daring
