@@ -27,7 +27,7 @@ const Product = () => {
       <div className="absolute p-12 w-full flex items-center justify-center text-center text-neutral-400">
         <div className="max-w-[160px]">
           <p className=" text-[80px] font-normal font-italiana leading-[38px] tracking-tighter">
-            Title of product
+            Subtitle of project
           </p>
         </div>
       </div>
@@ -38,9 +38,9 @@ const Product = () => {
           <div className="z-1 pl-12 flex relative h-full ">
             <Image
               className="object-fill overflow-visible absolute"
-              src="/images/lights.png"
-              height={400}
-              width={400}
+              src="/images/waves.png"
+              height={200}
+              width={300}
               alt="Paulo Bastos"
             />
           </div>
@@ -56,7 +56,7 @@ const Product = () => {
           <div className="z-3 pl-28 flex justify-center h-full relative">
             <Image
               className=" absolute bottom-0"
-              src="/images/Paulo2.jpeg"
+              src="/images/lights.png"
               width={200}
               height={200}
               alt="Paulo Bastos"

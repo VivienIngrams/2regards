@@ -5,13 +5,13 @@ import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 
 const About = () => {
   return (
-    <div className="md:p-16 mr-8 h-full md:h-auto text-neutral-500 text-sm md:text-base">
+    <div className="sm:p-6 md:p-12 mr-8 h-full md:h-auto text-neutral-500 text-sm sm:text-base leading-tight md:leading-tight">
       <div className="w-4 md:w-6 z-50 fixed h-screen right-0 top-0">
         <div className="right-0 top-4 md:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-100" />
       </div>
-      <div className="h-[95vh] md:h-auto flex flex-col justify-between">
+      <div className="h-[95vh] max-h-screen md:h-auto flex flex-col grow justify-between">
         <div className=" md:grid md:grid-cols-2">
-          <div className="my-8 ml-[45%] md:mx-auto tracking-tight text-right md:text-left">
+          <div className="my-[5vh] ml-[25%] xs:ml-[45%] md:mx-auto text-right md:text-left">
             <p>
               Dedicated to creation and visual arts, 2 Regards Atelier was
               founded by Mathilde Cudeville and Paulo Bastos in 2019. With a
@@ -23,13 +23,14 @@ const About = () => {
 
           {/* Title desktop */}
           
-            <div className="hidden md:block m-4 text-center text-black">
-              <p className=" hidden md:block text-6xl md:text-[80px] font-normal font-italiana uppercase leading-[30px] md:leading-[38px] tracking-tighter">
+            <div className="hidden md:flex justify-center items-center m-4 text-center text-black">
+              <div>
+              <h1 className=" hidden md:block text-6xl lg:text-[80px] font-normal font-italiana uppercase leading-[30px] md:leading-[38px] tracking-tighter">
                 2 regards{" "}
-              </p>
-              <p className="hidden md:block text-6xl md:text-[80px] font-normal font-italiana leading-[30px] md:leading-[38px] tracking-tighter">
+              </h1>
+              <h1 className="hidden md:block text-6xl lg:text-[80px] font-normal font-italiana leading-[30px] md:leading-[38px] tracking-tighter">
                 Atelier
-              </p>
+              </h1></div>
             </div>
           
           {/* Title mobile */}
@@ -37,16 +38,16 @@ const About = () => {
         </div>
           <div>
             <div className="md:hidden m-4 text-center text-black">
-              <p className="md:hidden text-6xl md:text-[80px] font-normal font-italiana uppercase leading-[30px] md:leading-[38px] tracking-tighter">
+              <h1 className="md:hidden text-4xl xs:text-6xl  font-normal font-italiana uppercase leading-[20px] xs:leading-[30px] md:leading-[38px] tracking-tighter">
                 2 regards{" "}
-              </p>
-              <p className="md:hidden text-6xl md:text-[80px] font-normal font-italiana leading-[30px] md:leading-[38px] tracking-tighter">
+              </h1>
+              <h1 className="md:hidden text-5xl xs:text-6xl  font-normal font-italiana leading-[20px] xs:leading-[30px] md:leading-[38px] tracking-tighter">
                 Atelier
-              </p>
+              </h1>
             </div>
           </div>
-        <div>
-          <div className="my-8 mr-[45%] md:mx-auto md:max-w-[50%] tracking-tight text-left ">
+        <div className="flex-col">
+          <div className="mt-[5vh] mr-[25%] xs:mr-[45%] md:mx-auto md:max-w-[50%] text-left ">
             <p>
               The Atelier is also an art gallery welcoming national and
               international artists throughout the year. The space features an
@@ -63,11 +64,11 @@ const About = () => {
       </div>
 
       {/* Mat and Paulo */}
-      <div className="md:grid md:grid-cols-2 leading-normal text-sm  text-justify md:text-left">
+      <div className="mt-8 md:grid md:grid-cols-2 leading-normal text-sm  text-justify md:text-left">
         {/* Mathilde */}
-        <div className="md:mr-24">
+        <div className="sm:mr-8 md:mr-16 lg:mr-24">
           <div className="flex border-b-2 border-black ">
-            <div className="flex">
+            <div className="flex min-w-[85px]">
               <Image
                 src="/images/Mathilde2.jpeg"
                 width={140}
@@ -76,7 +77,7 @@ const About = () => {
               />
             </div>
             <div className="flex items-center ">
-              <h1 className="p-6 max-w-[160px] font-italiana text-3xl lg:text-4xl text-black leading-1">
+              <h1 className="p-3 md:p-6 max-w-[160px] font-italiana text-3xl lg:text-4xl text-black leading-1">
                 Mathilde Cudeville
               </h1>
             </div>
@@ -123,7 +124,7 @@ const About = () => {
           <p> MICHEL LE ROUX, Poet and friend</p>
         </div>
         {/* Paulo */}
-        <div className="py-10 md:ml-14 md:mr-10">
+        <div className="py-10 sm:mr-6 md:ml-12 md:mr-10">
           <div className="flex border-b-2 border-black ">
             <div className="flex">
               <Image
@@ -135,7 +136,7 @@ const About = () => {
               />
             </div>
             <div className="flex items-center">
-              <h1 className="p-6 max-w-[160px] font-italiana text-3xl lg:text-4xl text-black leading-1">
+              <h1 className="p-3 md:p-6 max-w-[160px] font-italiana text-3xl lg:text-4xl text-black leading-1">
                 Paulo Bastos
               </h1>
             </div>

@@ -31,12 +31,12 @@ const Contact = () => {
         </button>
       </div>
 
-      <div className="flex flex-col justify-between md:grid grid-cols-2 h-full pb-20">
+      <div className="flex flex-col justify-around md:grid grid-cols-2 h-full pb-20">
         {/* Gallery Information */}
-        <div className="mx-2 my-10 lg:mx-14 w-[1/3vw]">
+        <div className="mx-2 my-[8vh] lg:mx-14 md:w-[1/3vw]">
           <div>
             <div className="flex justify-between  border-black border-b-[1px]">
-              <div className="text-black text-3xl lg:text-5xl font-normal font-italiana pb-1 lg:pb-4">
+              <div className="text-black text-3xl  lg:text-5xl font-normal font-italiana pb-1 lg:pb-4">
                 gallery.
               </div>
               <div className="lg:mt-2">
@@ -75,7 +75,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Information */}
-        <div className="mx-2 my-10 lg:mr-16 md:mb-24 w-[1/3vw] flex items-end">
+        <div className="mx-2 my-[8vh] lg:mr-16 md:mb-24 md:w-[1/3vw] flex items-end">
           <div className="w-full">
             <div className="flex justify-between border-black border-b-[1px]">
               <div className="flex mt-1 lg:mt-4">
