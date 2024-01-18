@@ -9,9 +9,9 @@ const Product = () => {
   return (
     <div className="relative mr-8 lg:mr-16 text-neutral-500 text-base md:text-xl h-full">
       {/* Nav buttons */}
-      <div className="fixed top-6 left-6 md:left-10 md:top-10 w-10  cursor-pointer">
-        <Link href="/">
-          <div className="text-center text-black font-italiana">Back</div>
+      <div className="fixed z-100 top-6 left-6 md:left-10 md:top-10  cursor-pointer">
+        <Link  className="text-center m-2 text-black font-italiana" href="/">
+          Back
         </Link>
       </div>
       <div className=" fixed right-6 top-6 md:right-12 md:top-12">
@@ -54,7 +54,7 @@ const Product = () => {
       </div>
 
       {/* Title */}
-      <div className="hidden lg:flex lg:absolute py-2 lg:p-12 w-full  items-center justify-center  text-neutral-400">
+      <div className="hidden z-10 lg:flex lg:absolute py-2 lg:m-12 w-full  items-center justify-center  text-neutral-400">
         <div className="max-w-[160px]">
           <h1 className="lg:text-6xl xl:text-[80px] font-normal font-italiana text-center lg:leading-[26px] xl:leading-[38px] tracking-tighter">
             Title of product
