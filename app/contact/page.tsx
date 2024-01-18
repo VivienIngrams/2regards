@@ -31,7 +31,7 @@ const Contact = () => {
         </button>
       </div>
 
-      <div className="flex flex-col justify-around md:grid grid-cols-2 h-full pb-20">
+      <div className="flex flex-col justify-around md:grid grid-cols-2 h-[80vh] ">
         {/* Gallery Information */}
         <div className="mx-2 my-[8vh] lg:mx-14 md:w-[1/3vw]">
           <div>

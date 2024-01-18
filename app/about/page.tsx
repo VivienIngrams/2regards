@@ -6,10 +6,14 @@ import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 const About = () => {
   return (
     <div className="sm:p-6 md:p-12 mr-8 h-full md:h-auto text-neutral-500 text-sm sm:text-base leading-tight md:leading-tight">
+     
+      {/* Border right */}
       <div className="w-4 md:w-6 z-50 fixed h-screen right-0 top-0">
         <div className="right-0 top-4 md:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-100" />
       </div>
-      <div className="h-[95vh] max-h-screen md:h-auto flex flex-col grow justify-between">
+
+      {/* Main content */}
+      <div className="h-[95vh] max-h-screen md:h-auto 2xl:h-[30vh] flex flex-col grow justify-around">
         <div className=" md:grid md:grid-cols-2">
           <div className="my-[5vh] ml-[25%] xs:ml-[45%] md:mx-auto text-right md:text-left">
             <p>
@@ -22,32 +26,31 @@ const About = () => {
           </div>
 
           {/* Title desktop */}
-          
-            <div className="hidden md:flex justify-center items-center m-4 text-center text-black">
-              <div>
+          <div className="hidden md:flex justify-center items-center m-4 text-center text-black">
+            <div>
               <h1 className=" hidden md:block text-6xl lg:text-[80px] font-normal font-italiana uppercase leading-[30px] md:leading-[38px] tracking-tighter">
                 2 regards{" "}
               </h1>
               <h1 className="hidden md:block text-6xl lg:text-[80px] font-normal font-italiana leading-[30px] md:leading-[38px] tracking-tighter">
                 Atelier
-              </h1></div>
-            </div>
-          
-          {/* Title mobile */}
-        
-        </div>
-          <div>
-            <div className="md:hidden m-4 text-center text-black">
-              <h1 className="md:hidden text-4xl xs:text-6xl  font-normal font-italiana uppercase leading-[20px] xs:leading-[30px] md:leading-[38px] tracking-tighter">
-                2 regards{" "}
-              </h1>
-              <h1 className="md:hidden text-5xl xs:text-6xl  font-normal font-italiana leading-[20px] xs:leading-[30px] md:leading-[38px] tracking-tighter">
-                Atelier
               </h1>
             </div>
           </div>
-        <div className="flex-col">
-          <div className="mt-[5vh] mr-[25%] xs:mr-[45%] md:mx-auto md:max-w-[50%] text-left ">
+
+          {/* Title mobile */}
+        </div>
+        <div>
+          <div className="md:hidden m-4 text-center text-black">
+            <h1 className="md:hidden text-4xl xs:text-6xl  font-normal font-italiana uppercase leading-[20px] xs:leading-[30px] md:leading-[38px] tracking-tighter">
+              2 regards{" "}
+            </h1>
+            <h1 className="md:hidden text-5xl xs:text-6xl  font-normal font-italiana leading-[20px] xs:leading-[30px] md:leading-[38px] tracking-tighter">
+              Atelier
+            </h1>
+          </div>
+        </div>
+        <div className="flex flex-col justify-center items-center">
+          <div className="mt-[5vh] mr-[25%] xs:mr-[45%] md:m-auto md:max-w-[50%] text-left ">
             <p>
               The Atelier is also an art gallery welcoming national and
               international artists throughout the year. The space features an
