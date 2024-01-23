@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-
+import { motion } from "framer-motion";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import "react-horizontal-scrolling-menu/dist/styles.css";
 
@@ -35,22 +35,31 @@ function Home() {
 
   return (
     <>
-        <div onMouseEnter={disableScroll} className="h-full">
-          <ScrollMenu onWheel={onWheel} transitionBehavior="smooth" transitionDuration={isMobileScreen ? 500 : 4000}>
-           
-                {cards.map(({ img, title, id, width, url }) => (
-                  <Card
-                    img={img}
-                    title={title}
-                    id={id} // NOTE: itemId is required for track items
-                    key={id}
-                    width={width || 300}
-                    url={url}
-                  />
-                ))}
-             
-          </ScrollMenu>
-        </div>
+      <motion.div
+        initial={{ opacity: 0, x: 800 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -500 }}
+        transition={{duration: 1}}
+        onMouseEnter={disableScroll}
+        className="h-full"
+      >
+        <ScrollMenu
+          onWheel={onWheel}
+          transitionBehavior="smooth"
+          transitionDuration={isMobileScreen ? 500 : 4000}
+        >
+          {cards.map(({ img, title, id, width, url }) => (
+            <Card
+              img={img}
+              title={title}
+              id={id} // NOTE: itemId is required for track items
+              key={id}
+              width={width || 300}
+              url={url}
+            />
+          ))}
+        </ScrollMenu>
+      </motion.div>
     </>
   );
 }
@@ -76,7 +85,7 @@ type CardType = {
   title: string;
   id: string;
   width?: number;
-  url: string
+  url: string;
 };
 
 const cards: CardType[] = [
@@ -85,77 +94,68 @@ const cards: CardType[] = [
     title: "Title 1",
     id: "1",
     width: 300,
-    url: "/product"
+    url: "/product",
   },
   {
     img: "/images/lights.png",
     title: "Title 2",
     id: "2",
     width: 100,
-    url: "/product"
-
+    url: "/product",
   },
   {
     img: "/images/waves.png",
     title: "Title 3",
     id: "3",
     width: 200,
-    url: "/product"
-
+    url: "/product",
   },
   {
     img: "/images/2regards.png",
     title: "Title 1",
     id: "4",
     width: 500,
-    url: "/product"
-
+    url: "/product",
   },
   {
     img: "/images/bottles.png",
     title: "Title 2",
     id: "5",
     width: 500,
-    url: "/product"
-
+    url: "/product",
   },
   {
     img: "/images/2regards.png",
     title: "Title 3",
     id: "6",
     width: 800,
-    url: "/product"
-
+    url: "/product",
   },
   {
     img: "/images/waves.png",
     title: "Title 1",
     id: "7",
     width: 500,
-    url: "/product"
-
+    url: "/product",
   },
   {
     img: "/images/2regards.png",
     title: "Title 2",
     id: "8",
-    url: "/product"
-
+    url: "/product",
   },
   {
     img: "/images/waves.png",
     title: "Title 1",
     id: "7",
     width: 500,
-    url: "/product"
-
+    url: "/product",
   },
   {
     img: "/images/2regards.png",
     title: "Title 2",
     id: "8",
-    url: "/product"
-
+    url: "/product",
   },
 ];
 
@@ -165,76 +165,67 @@ const cards2: CardType[] = [
     title: "Title 1",
     id: "1",
     width: 300,
-    url: "/product"
+    url: "/product",
   },
   {
     img: "/images/lights.png",
     title: "Title 2",
     id: "2",
     width: 100,
-    url: "/product"
-
+    url: "/product",
   },
   {
     img: "/images/waves.png",
     title: "Title 3",
     id: "3",
     width: 200,
-    url: "/product"
-
+    url: "/product",
   },
   {
     img: "/images/2regards.png",
     title: "Title 1",
     id: "4",
     width: 500,
-    url: "/product"
-
+    url: "/product",
   },
   {
     img: "/images/bottles.png",
     title: "Title 2",
     id: "5",
     width: 500,
-    url: "/product"
-
+    url: "/product",
   },
   {
     img: "/images/2regards.png",
     title: "Title 3",
     id: "6",
     width: 800,
-    url: "/product"
-
+    url: "/product",
   },
   {
     img: "/images/waves.png",
     title: "Title 1",
     id: "7",
     width: 500,
-    url: "/product"
-
+    url: "/product",
   },
   {
     img: "/images/2regards.png",
     title: "Title 2",
     id: "8",
-    url: "/product"
-
+    url: "/product",
   },
   {
     img: "/images/waves.png",
     title: "Title 1",
     id: "7",
     width: 500,
-    url: "/product"
-
+    url: "/product",
   },
   {
     img: "/images/2regards.png",
     title: "Title 2",
     id: "8",
-    url: "/product"
-
+    url: "/product",
   },
 ];

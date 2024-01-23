@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-
+import { motion } from "framer-motion";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import "react-horizontal-scrolling-menu/dist/styles.css";
 
@@ -35,7 +35,14 @@ function Gallery() {
 
   return (
     <>
-        <div onMouseEnter={disableScroll} className="h-full">
+       <motion.div
+        initial={{ opacity: 0, x: 800 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -800 }}
+        transition={{duration: 1}}
+        onMouseEnter={disableScroll}
+        className="h-full"
+      >
           <ScrollMenu onWheel={onWheel} transitionBehavior="smooth" transitionDuration={isMobileScreen ? 500 : 4000}>
            
                 {cards.map(({ img, title, id, width, url }) => (
@@ -50,7 +57,7 @@ function Gallery() {
                 ))}
              
           </ScrollMenu>
-        </div>
+        </motion.div>
     </>
   );
 }

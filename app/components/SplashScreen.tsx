@@ -1,32 +1,38 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import React, { useEffect } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { TypingText } from "./TypingText";
 
-
 interface SplashScreenProps {
-    finishLoading: () => void;
-  }
+  finishLoading: () => void;
+}
 
-  const SplashScreen: React.FC<SplashScreenProps> = ({ finishLoading }) => {
-
+const SplashScreen: React.FC<SplashScreenProps> = ({ finishLoading }) => {
   useEffect(() => {
     const timeout = setTimeout(() => finishLoading(), 2500);
     return () => clearTimeout(timeout);
   }, [finishLoading]);
 
   return (
-    <div >
-      <motion.div
-     
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-        className="flex justify-center items-center h-screen w-screen bg-black"
-      >
-        <TypingText title="2 Regards Atelier" textStyles="text-center" />
-      </motion.div>
+    <div>
+      <AnimatePresence>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, x: 0 }}
+          // exit={{ opacity: 0, x: -500 }}
+          transition={{ duration: 0.5 }}
+          className="flex justify-center items-center h-screen w-screen bg-black"
+        >
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            transition={{ delay: 0.8 }}
+          >
+            <TypingText title="2 Regards Atelier" textStyles="text-center" />
+          </motion.div>
+        </motion.div>
+      </AnimatePresence>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -22,9 +22,16 @@ const Footer = () => {
         <div className="absolute bottom-[2px] mx-6 w-full bg-stone-100 h-[18px]" />
         <div className="absolute text-md md:text-xl ml-6 md:ml-10 z-20 leading-loose -bottom-3  font-italiana gap-2 md:gap-10 flex">
           {menuItems.map((item) => (
-            <Link key={item.text} href={item.href} className="bg-stone-100 px-1 relative">
+            <Link
+              key={item.text}
+              href={item.href}
+              className="bg-stone-100 px-1 relative"
+            >
               {item.href === pathname && (
-              <motion.span className="absolute left-[5px] top-full block h-[1px] w-[85%] bg-black"/>
+                <motion.span
+                  layoutId="underline"
+                  className="absolute left-[5px] top-full block h-[1px] w-[85%] bg-black"
+                />
               )}
               {item.text}
             </Link>
@@ -36,5 +43,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-

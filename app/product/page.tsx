@@ -95,7 +95,7 @@ const Product = () => {
         </div>
 
         {/* Right/bottom side of page */}
-        <div className="flex md:flex-col items-center justify-center md:h-[40vh] lg:h-[50vh] xl:h-[85vh] lg:mt-[20vh] lg:ml-[10vw] xl:ml-[15vw] xl:mr-[5vw]">
+        <div className="flex md:flex-col items-center justify-center md:h-[40vh] lg:h-[50vh] xl:h-[70vh] lg:mt-[20vh] lg:ml-[10vw] xl:ml-[15vw] xl:mr-[5vw]">
           <div className="mx-auto max-w-sm">
             <h1 className="font-italiana py-4 text-4xl text-black leading-1 tracking-tight">
               Subtitle of product
@@ -107,9 +107,7 @@ const Product = () => {
               Beaucoup de text sur le project de photographie pour un produit.
               Beaucoup de text sur le project de photographie pour un produit.
               Beaucoup de text sur le project de photographie pour un produit
-              nfez. Beaucoup de text sur le project de photographie pour un
-              produit.
-            </p>
+              nfez.             </p>
             <div className="py-4"></div>
             <Link
               href="https://www.youtube.com/watch?v=MVkguIje46k"

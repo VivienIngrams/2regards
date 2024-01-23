@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import facebookIcon from "/public/Facebook.svg";
@@ -8,7 +11,7 @@ import googlemapsIcon from "/public/Googlemaps.svg";
 
 const Contact = () => {
   return (
-    <div className="relative h-full mr-8 md:mr-12 font-light text-sm md:text-base">
+    <motion.div className="relative h-full mr-8 md:mr-12 font-light text-sm md:text-base">
       {/* Right border */}
       <div className="w-4 md:w-6 z-50 fixed h-screen right-0 top-0">
         <div className="right-0 top-4 md:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-100" />
@@ -33,7 +36,13 @@ const Contact = () => {
 
       <div className="flex flex-col justify-around md:grid grid-cols-2 h-[80vh] ">
         {/* Gallery Information */}
-        <div className="mx-2 my-[8vh] lg:mx-14 md:w-[1/3vw]">
+        <motion.div
+          initial={{ opacity: 0, x: 500 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -500 }}
+          transition={{ duration: 0.7 }}
+          className="mx-2 my-[8vh] lg:mx-14 md:w-[1/3vw]"
+        >
           <div>
             <div className="flex justify-between  border-black border-b-[1px]">
               <div className="text-black text-3xl  lg:text-5xl font-normal font-italiana pb-1 lg:pb-4">
@@ -72,10 +81,16 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Contact Information */}
-        <div className="mx-2 my-[8vh] lg:mr-16 md:mb-24 md:w-[1/3vw] flex items-end">
+        <motion.div
+          initial={{ opacity: 0, x: -500 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: 500 }}
+          transition={{ duration: 0.7 }}
+          className="mx-2 my-[8vh] lg:mr-16 md:mb-24 md:w-[1/3vw] flex items-end"
+        >
           <div className="w-full">
             <div className="flex justify-between border-black border-b-[1px]">
               <div className="flex mt-1 lg:mt-4">
@@ -85,7 +100,12 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Image priority src={facebookIcon} alt="Facebook" height={26}/>
+                    <Image
+                      priority
+                      src={facebookIcon}
+                      alt="Facebook"
+                      height={26}
+                    />
                   </Link>
                 </div>
                 <div className="pr-[9px] lg:pr-5">
@@ -94,7 +114,12 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Image priority src={youtubeIcon} alt="Youtube" height={26}/>
+                    <Image
+                      priority
+                      src={youtubeIcon}
+                      alt="Youtube"
+                      height={26}
+                    />
                   </Link>
                 </div>
                 <div className="pr-2 lg:pr-4">
@@ -103,7 +128,12 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Image priority src={instagramIcon} alt="Instagram" height={26}/>
+                    <Image
+                      priority
+                      src={instagramIcon}
+                      alt="Instagram"
+                      height={26}
+                    />
                   </Link>
                 </div>
               </div>
@@ -142,9 +172,9 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
