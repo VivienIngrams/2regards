@@ -12,7 +12,7 @@ interface SplashScreenProps {
   const SplashScreen: React.FC<SplashScreenProps> = ({ finishLoading }) => {
 
   useEffect(() => {
-    const timeout = setTimeout(() => finishLoading(), 2000);
+    const timeout = setTimeout(() => finishLoading(), 2500);
     return () => clearTimeout(timeout);
   }, [finishLoading]);
 
@@ -25,7 +25,7 @@ interface SplashScreenProps {
       viewport={{ once: false, amount: 0.25 }}
         className="flex justify-center items-center h-screen w-screen bg-black"
       >
-        <TypingText title="| Sobre Nós" textStyles="text-center" />
+        <TypingText title="2 Regards Atelier" textStyles="text-center" />
       </motion.div>
     </div>
   );
