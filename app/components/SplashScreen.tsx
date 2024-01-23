@@ -10,20 +10,20 @@ interface SplashScreenProps {
   }
 
   const SplashScreen: React.FC<SplashScreenProps> = ({ finishLoading }) => {
-    // const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    const timeout = setTimeout(() => finishLoading(),  3000);
-
+    const timeout = setTimeout(() => finishLoading(), 2000);
     return () => clearTimeout(timeout);
   }, [finishLoading]);
 
   return (
     <div >
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className=""
+     
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+        className="flex justify-center items-center h-screen w-screen bg-black"
       >
         <TypingText title="| Sobre Nós" textStyles="text-center" />
       </motion.div>

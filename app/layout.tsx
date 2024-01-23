@@ -21,7 +21,6 @@ const roboto = Roboto({
   subsets: ["latin"],
 });
 
-
 export default function RootLayout({
   children,
 }: {
@@ -36,22 +35,22 @@ export default function RootLayout({
       return;
     }
   }, [isLoading]);
-  
+
   return (
     <html lang="en">
       <body
         className={`${italiana.variable} ${roboto.variable} font-roboto bg-stone-100 h-screen`}
       >
         {isLoading && isHome ? (
-            <SplashScreen finishLoading={() => setIsLoading(false)} />
-                 ) : (
-          <div>
+          <SplashScreen finishLoading={() => setIsLoading(false)} />
+        ) : (
+          <>
             <Header />
             <div className="pl-8 md:pl-12 pb-4 md:pb-6 pt-2 md:pt-4 h-[95%]">
               {children}
             </div>
             <Footer />
-          </div>
+          </>
         )}
       </body>
     </html>
