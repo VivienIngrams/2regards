@@ -1,5 +1,7 @@
-import React from "react";
+"use client";
 
+import React from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const Studio = () => {
@@ -22,7 +24,12 @@ const Studio = () => {
           </div>
 
           {/* 1st, Top right section */}
-          <div className=" md:-ml-4 md:mr-10">
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className=" md:-ml-4 md:mr-10"
+          >
             <div className="flex border-b-2 border-black ">
               <div className="flex min-w-[70px]">
                 <Image
@@ -43,11 +50,16 @@ const Studio = () => {
               Throughout the year, we organize workshops for participants to
               explore or deepen their knowledge in analog photography.
             </p>
-          </div>
+          </motion.div>
         </div>
 
         {/*2nd, Left section */}
-        <div className="mt-6 md:grid md:grid-cols-2 leading-normal text-sm">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          className="mt-6 md:grid md:grid-cols-2 leading-normal text-sm"
+        >
           <div className="md:ml-14 md:mr-10">
             <div className="flex justify-end md:justify-start border-b-2 border-black ">
               <div className="flex md:hidden items-center">
@@ -80,10 +92,15 @@ const Studio = () => {
             </p>
           </div>
           <div className="ml-14 mr-10"></div>
-        </div>
+        </motion.div>
 
         {/*3rd, Bottom right section */}
-        <div className="mt-6 pb-10 md:-mt-16 md:grid md:grid-cols-2 leading-normal text-sm">
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          className="mt-6 pb-10 md:-mt-16 md:grid md:grid-cols-2 leading-normal text-sm"
+        >
           <div className="md:ml-16 md:mr-10"></div>
           <div className="md:ml-14 md:mr-10">
             <div className="flex border-b-2 border-black ">
@@ -108,7 +125,7 @@ const Studio = () => {
               by the hour or day. Click here to discover our rates.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

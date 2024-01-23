@@ -37,10 +37,9 @@ const Contact = () => {
       <div className="flex flex-col justify-around md:grid grid-cols-2 h-[80vh] ">
         {/* Gallery Information */}
         <motion.div
-          initial={{ opacity: 0, x: 500 }}
+          initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -500 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.5 }}
           className="mx-2 my-[8vh] lg:mx-14 md:w-[1/3vw]"
         >
           <div>
@@ -85,10 +84,9 @@ const Contact = () => {
 
         {/* Contact Information */}
         <motion.div
-          initial={{ opacity: 0, x: -500 }}
+          initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: 500 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.5 }}
           className="mx-2 my-[8vh] lg:mr-16 md:mb-24 md:w-[1/3vw] flex items-end"
         >
           <div className="w-full">

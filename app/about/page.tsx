@@ -1,5 +1,7 @@
-import React from "react";
+'use client'
 
+import React from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 
@@ -15,7 +17,10 @@ const About = () => {
       {/* Main content */}
       <div className="h-[95vh] max-h-screen md:h-auto 2xl:h-[30vh] flex flex-col grow justify-around">
         <div className=" md:grid md:grid-cols-2">
-          <div className="my-[5vh] ml-[25%] xs:ml-[45%] md:mx-auto text-right md:text-left">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }} className="my-[5vh] ml-[25%] xs:ml-[45%] md:mx-auto text-right md:text-left">
             <p>
               Dedicated to creation and visual arts, 2 Regards Atelier was
               founded by Mathilde Cudeville and Paulo Bastos in 2019. With a
@@ -23,7 +28,7 @@ const About = () => {
               design, the Atelier has partnerships with various international
               companies.
             </p>
-          </div>
+          </motion.div>
 
           {/* Title desktop */}
           <div className="hidden md:flex justify-center items-center m-4 text-center text-black">
@@ -50,14 +55,17 @@ const About = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <div className="mt-[5vh] mr-[25%] xs:mr-[45%] md:m-auto md:max-w-[50%] text-left ">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }} className="mt-[5vh] mr-[25%] xs:mr-[45%] md:m-auto md:max-w-[50%] text-left ">
             <p>
               The Atelier is also an art gallery welcoming national and
               international artists throughout the year. The space features an
               analog photography laboratory, where training sessions for
               analogue capture and development are facilitated.
             </p>
-          </div>
+          </motion.div>
           <div className="md:hidden flex justify-center pb-4">
             <div className=" p-2 cursor-pointer  m-2">
               <HiOutlineChevronDoubleDown />
@@ -67,7 +75,10 @@ const About = () => {
       </div>
 
       {/* Mat and Paulo */}
-      <div className="mt-8 md:grid md:grid-cols-2 leading-normal text-sm  text-justify md:text-left">
+      <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }} className="mt-8 md:grid md:grid-cols-2 leading-normal text-sm  text-justify md:text-left">
         {/* Mathilde */}
         <div className="sm:mr-8 md:mr-16 lg:mr-24">
           <div className="flex border-b-2 border-black ">
@@ -96,23 +107,23 @@ const About = () => {
           </p>
           <p className="pb-2 ">
             It was through initiating a dreamlike photopoetry collaboration that
-            the extent of Mathilde's imagination became apparent to me,
+            the extent of Mathilde&rsquo;s imagination became apparent to me,
             seemingly boundless. Our shared reverie gave rise to improbable
             shots with seemingly unrelated subjects, such as a lighthouse in
             Saint-Pierre-et-Miquelon, a naked man in a forest, or a Tuareg tent.
             Yet, the underlying thread, however faint, naturally unfolds before
-            the viewer's eye. It is in this unrestrained creation and recreation
-            that Mathilde's unique talent resides. The exploration of her
+            the viewer&rsquo;s eye. It is in this unrestrained creation and recreation
+            that Mathilde&rsquo;s unique talent resides. The exploration of her
             previous and ongoing works further solidified this impression.
             Initially delving into insularity and isolated territories, notably
             through a documentary on the Saint-Pierre-et-Miquelon archipelago
-            ("Les onze mille vierges"), she then engaged in a correspondence
+            (&quot;Les onze mille vierges&quot;), she then engaged in a correspondence
             book, playing the exquisite corpse game with a writer in Paris. This
             work is a fleeting photo/writing dialogue questioning the concept of
             solitude. Subsequently, she embarked on a series of self-portraits
-            ("Rêverie Odisseia"), baring herself both literally and
+            (&quot;Rêverie Odisseia&quot;), baring herself both literally and
             figuratively, driven by the desire to explore herself more and more,
-            body and soul intertwined. "En suspension (S)" follows a similarly
+            body and soul intertwined. &quot;En suspension (S)&quot; follows a similarly
             liberated dual approach, using otherness as a vehicle, without
             artifice or mask.{" "}
           </p>
@@ -156,7 +167,7 @@ const About = () => {
             Cudeville.
           </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
