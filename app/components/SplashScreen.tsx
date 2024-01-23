@@ -10,16 +10,16 @@ interface SplashScreenProps {
   }
 
   const SplashScreen: React.FC<SplashScreenProps> = ({ finishLoading }) => {
-    const [isMounted, setIsMounted] = useState(false);
+    // const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setIsMounted(true), 10);
+    const timeout = setTimeout(() => finishLoading(),  3000);
 
     return () => clearTimeout(timeout);
-  }, []);
+  }, [finishLoading]);
 
   return (
-    <div isMounted={isMounted}>
+    <div >
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
