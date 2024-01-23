@@ -5,6 +5,24 @@ import Link from "next/link";
 import ArrowBack from "/public/ArrowBack.svg";
 import ArrowForward from "/public/ArrowForward.svg";
 
+const productData = {
+  title: "Dynamic Product Title",
+  subtitle: "Dynamic Subtitle of Product",
+  description: [
+    "Dynamic text on the project of photography for a product.",
+    "More dynamic text about the project.",
+    "Even more dynamic text.",
+    "You can add as many paragraphs as needed."
+  ],
+  videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
+  images: {
+    image1: "/images/waves.png",
+    image2: "/images/Paulo.jpeg",
+    image3: "/images/lights.png"
+  }
+}
+const { title, subtitle, description, videoLink, images } = productData;
+
 const Product = () => {
   return (
     <div className="relative mr-8 lg:mr-16 text-neutral-500 text-base md:text-xl h-full">
@@ -15,12 +33,7 @@ const Product = () => {
         </Link>
       </div>
       <div className=" fixed right-6 top-6 md:right-12 md:top-12">
-        {/* <div className="hidden md:block pb-2">
-          <Link href="/">
-            <div className="text-center text-black text-xl  font-italiana">Back</div>
-          </Link>
-        </div> */}
-        <div className="flex justify-between">
+               <div className="flex justify-between">
           <div className="flex cursor-pointer">
             <Link href="/product" className="p-1">
               <Image
@@ -57,7 +70,7 @@ const Product = () => {
       <div className="hidden z-10 lg:flex lg:absolute py-2 lg:m-12 w-full  items-center justify-center  text-neutral-400">
         <div className="max-w-[160px]">
           <h1 className="lg:text-6xl xl:text-[80px] font-normal font-italiana text-center lg:leading-[26px] xl:leading-[38px] tracking-tighter">
-            Title of product
+            {title}
           </h1>
         </div>
       </div>
@@ -68,28 +81,28 @@ const Product = () => {
           <div className="z-1 mt-8 lg:pl-12 flex relative h-full ">
             <Image
               className="object-fill overflow-visible absolute"
-              src="/images/waves.png"
+              src={images.image1}
               height={100}
               width={200}
-              alt="Paulo Bastos"
+              alt={title}
             />
           </div>
           <div className="z-30 md:z-2 flex relative h-full justify-end">
             <Image
               className=" absolute"
-              src="/images/Paulo.jpeg"
+              src={images.image2}
               width={200}
               height={200}
-              alt="Paulo Bastos"
+              alt={title}
             />
           </div>
           <div className="z-1 md:z-3 md:pl-28 flex justify-center h-full relative">
             <Image
               className=" absolute bottom-0"
-              src="/images/lights.png"
+              src={images.image3}
               width={200}
               height={200}
-              alt="Paulo Bastos"
+              alt={title}
             />
           </div>
         </div>
@@ -98,19 +111,13 @@ const Product = () => {
         <div className="flex md:flex-col items-center justify-center md:h-[40vh] lg:h-[50vh] xl:h-[70vh] lg:mt-[20vh] lg:ml-[10vw] xl:ml-[15vw] xl:mr-[5vw]">
           <div className="mx-auto max-w-sm">
             <h1 className="font-italiana py-4 text-4xl text-black leading-1 tracking-tight">
-              Subtitle of product
+              {subtitle}
             </h1>
             <p className="text-justify lg:text-left text-sm xl:text-base mt-2 md:leading-tight">
-              Beaucoup de text sur le project de photographie pour un produit.
-              Beaucoup de text sur le project de photographie pour un produit.
-              Beaucoup de text sur le project de photographie pour un produit.
-              Beaucoup de text sur le project de photographie pour un produit.
-              Beaucoup de text sur le project de photographie pour un produit.
-              Beaucoup de text sur le project de photographie pour un produit
-              nfez.             </p>
+            {description}            </p>
             <div className="py-4"></div>
             <Link
-              href="https://www.youtube.com/watch?v=MVkguIje46k"
+              href={videoLink}
               target="_blank"
               rel="noopener noreferrer"
               className="p-1 bg-white font-italiana text-xl text-black h-8 px-4 border border-black rounded "
