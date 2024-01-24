@@ -91,14 +91,14 @@ const cards: CardType[] = [
     title: "Title 1",
     id: "1",
     width: 300,
-    url: "/product"
+    url: "/gallery/exhibition"
   },
   {
     img: "/images/lights.png",
     title: "Title 2",
     id: "2",
     width: 100,
-    url: "/product"
+    url: "/gallery/exhibition"
 
   },
   {
@@ -106,7 +106,7 @@ const cards: CardType[] = [
     title: "Title 3",
     id: "3",
     width: 200,
-    url: "/product"
+    url: "/gallery/exhibition"
 
   },
   {
@@ -114,7 +114,7 @@ const cards: CardType[] = [
     title: "Title 1",
     id: "4",
     width: 500,
-    url: "/product"
+    url: "/gallery/exhibition"
 
   },
   {
@@ -122,7 +122,7 @@ const cards: CardType[] = [
     title: "Title 2",
     id: "5",
     width: 500,
-    url: "/product"
+    url: "/gallery/exhibition"
 
   },
   {
@@ -130,7 +130,7 @@ const cards: CardType[] = [
     title: "Title 3",
     id: "6",
     width: 800,
-    url: "/product"
+    url: "/gallery/exhibition"
 
   },
   {
@@ -138,14 +138,14 @@ const cards: CardType[] = [
     title: "Title 1",
     id: "7",
     width: 500,
-    url: "/product"
+    url: "/gallery/exhibition"
 
   },
   {
     img: "/images/2regards.png",
     title: "Title 2",
     id: "8",
-    url: "/product"
+    url: "/gallery/exhibition"
 
   },
   {
@@ -153,94 +153,14 @@ const cards: CardType[] = [
     title: "Title 1",
     id: "7",
     width: 500,
-    url: "/product"
+    url: "/gallery/exhibition"
 
   },
   {
     img: "/images/2regards.png",
     title: "Title 2",
     id: "8",
-    url: "/product"
-
-  },
-];
-
-const cards2: CardType[] = [
-  {
-    img: "/images/2regards.png",
-    title: "Title 1",
-    id: "1",
-    width: 300,
-    url: "/product"
-  },
-  {
-    img: "/images/lights.png",
-    title: "Title 2",
-    id: "2",
-    width: 100,
-    url: "/product"
-
-  },
-  {
-    img: "/images/waves.png",
-    title: "Title 3",
-    id: "3",
-    width: 200,
-    url: "/product"
-
-  },
-  {
-    img: "/images/2regards.png",
-    title: "Title 1",
-    id: "4",
-    width: 500,
-    url: "/product"
-
-  },
-  {
-    img: "/images/bottles.png",
-    title: "Title 2",
-    id: "5",
-    width: 500,
-    url: "/product"
-
-  },
-  {
-    img: "/images/2regards.png",
-    title: "Title 3",
-    id: "6",
-    width: 800,
-    url: "/product"
-
-  },
-  {
-    img: "/images/waves.png",
-    title: "Title 1",
-    id: "7",
-    width: 500,
-    url: "/product"
-
-  },
-  {
-    img: "/images/2regards.png",
-    title: "Title 2",
-    id: "8",
-    url: "/product"
-
-  },
-  {
-    img: "/images/waves.png",
-    title: "Title 1",
-    id: "7",
-    width: 500,
-    url: "/product"
-
-  },
-  {
-    img: "/images/2regards.png",
-    title: "Title 2",
-    id: "8",
-    url: "/product"
+    url: "/gallery/exhibition"
 
   },
 ];

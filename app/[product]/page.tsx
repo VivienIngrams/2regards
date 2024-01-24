@@ -6,21 +6,21 @@ import ArrowBack from "/public/ArrowBack.svg";
 import ArrowForward from "/public/ArrowForward.svg";
 
 const productData = {
-  title: "Dynamic Product Title",
-  subtitle: "Dynamic Subtitle of Product",
+  title: "Dynamic product Title",
+  subtitle: "Dynamic Subtitle of product",
   description: [
-    "Dynamic text on the project of photography for a product.",
-    "More dynamic text about the project.",
+    "Dynamic text on the product of photography for a product.",
+    "More dynamic text about the product.",
     "Even more dynamic text.",
-    "You can add as many paragraphs as needed."
+    "You can add as many paragraphs as needed.",
   ],
   videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
   images: {
     image1: "/images/waves.png",
     image2: "/images/Paulo.jpeg",
-    image3: "/images/lights.png"
-  }
-}
+    image3: "/images/lights.png",
+  },
+};
 const { title, subtitle, description, videoLink, images } = productData;
 
 const Product = () => {
@@ -28,12 +28,12 @@ const Product = () => {
     <div className="relative mr-8 lg:mr-16 text-neutral-500 text-base md:text-xl h-full">
       {/* Nav buttons */}
       <div className="fixed z-100 top-6 left-6 md:left-10 md:top-10  cursor-pointer">
-        <Link  className="text-center m-2 text-black font-italiana" href="/">
+        <Link className="text-center m-2 text-black font-italiana" href="/">
           Back
         </Link>
       </div>
       <div className=" fixed right-6 top-6 md:right-12 md:top-12">
-               <div className="flex justify-between">
+        <div className="flex justify-between">
           <div className="flex cursor-pointer">
             <Link href="/product" className="p-1">
               <Image
@@ -114,7 +114,8 @@ const Product = () => {
               {subtitle}
             </h1>
             <p className="text-justify lg:text-left text-sm xl:text-base mt-2 md:leading-tight">
-            {description}            </p>
+              {description}{" "}
+            </p>
             <div className="py-4"></div>
             <Link
               href={videoLink}

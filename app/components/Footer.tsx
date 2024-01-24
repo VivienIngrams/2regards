@@ -30,7 +30,7 @@ const Footer = () => {
               {item.href === pathname && (
                 <motion.span
                   layoutId="underline"
-                  className="absolute left-[5px] top-full block h-[1px] w-[85%] bg-black"
+                  className="absolute left-[5px] bottom-[2px] block h-[0.8px] w-[85%] bg-black"
                 />
               )}
               {item.text}
