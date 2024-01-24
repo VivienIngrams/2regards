@@ -7,6 +7,7 @@ import "react-horizontal-scrolling-menu/dist/styles.css";
 
 import Card from "../components/Card";
 import usePreventBodyScroll from "../components/usePreventBodyScroll";
+import { exhibitionData } from "../data";
 
 type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
@@ -44,11 +45,11 @@ function Gallery() {
       >
           <ScrollMenu onWheel={onWheel} transitionBehavior="smooth" transitionDuration={isMobileScreen ? 500 : 4000}>
            
-                {cards.map(({ img, title, id, width, url }) => (
+                {exhibitionData.map(({ images, title, id, width, url }) => (
                   <Card
-                    img={img}
+                    img={images.image1}
                     title={title}
-                    id={id} // NOTE: itemId is required for track items
+                    id={id} 
                     key={id}
                     width={width || 300}
                     url={url}
@@ -76,91 +77,3 @@ function onWheel(apiObj: scrollVisibilityApiType, ev: React.WheelEvent): void {
     apiObj.scrollPrev();
   }
 }
-
-type CardType = {
-  img: string;
-  title: string;
-  id: string;
-  width?: number;
-  url: string
-};
-
-const cards: CardType[] = [
-  {
-    img: "/images/2regards.png",
-    title: "Title 1",
-    id: "1",
-    width: 300,
-    url: "/gallery/exhibition"
-  },
-  {
-    img: "/images/lights.png",
-    title: "Title 2",
-    id: "2",
-    width: 100,
-    url: "/gallery/exhibition"
-
-  },
-  {
-    img: "/images/waves.png",
-    title: "Title 3",
-    id: "3",
-    width: 200,
-    url: "/gallery/exhibition"
-
-  },
-  {
-    img: "/images/2regards.png",
-    title: "Title 1",
-    id: "4",
-    width: 500,
-    url: "/gallery/exhibition"
-
-  },
-  {
-    img: "/images/bottles.png",
-    title: "Title 2",
-    id: "5",
-    width: 500,
-    url: "/gallery/exhibition"
-
-  },
-  {
-    img: "/images/2regards.png",
-    title: "Title 3",
-    id: "6",
-    width: 800,
-    url: "/gallery/exhibition"
-
-  },
-  {
-    img: "/images/waves.png",
-    title: "Title 1",
-    id: "7",
-    width: 500,
-    url: "/gallery/exhibition"
-
-  },
-  {
-    img: "/images/2regards.png",
-    title: "Title 2",
-    id: "8",
-    url: "/gallery/exhibition"
-
-  },
-  {
-    img: "/images/waves.png",
-    title: "Title 1",
-    id: "7",
-    width: 500,
-    url: "/gallery/exhibition"
-
-  },
-  {
-    img: "/images/2regards.png",
-    title: "Title 2",
-    id: "8",
-    url: "/gallery/exhibition"
-
-  },
-];
