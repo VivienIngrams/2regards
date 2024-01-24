@@ -4,43 +4,47 @@ import Image from "next/image";
 import Link from "next/link";
 import ArrowBack from "/public/ArrowBack.svg";
 import ArrowForward from "/public/ArrowForward.svg";
+import exhibitionData from "../../data";
 
-const productData = {
-  title: "Dynamic product Title",
-  subtitle: "Dynamic Subtitle of product",
-  description: [
-    "Dynamic text on the product of photography for a product.",
-    "More dynamic text about the product.",
-    "Even more dynamic text.",
-    "You can add as many paragraphs as needed.",
-  ],
-  videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
-  images: {
-    image1: "/images/waves.png",
-    image2: "/images/Paulo.jpeg",
-    image3: "/images/lights.png",
-  },
-};
-const { title, subtitle, description, videoLink, images } = productData;
+const Exhibition = ({ params }: { params: { exhibitionId: string } }) => {
+  const currentIndex = exhibitionData.findIndex(
+    (exhibition) => exhibition.id === params.exhibitionId
+  );
 
-const Product = () => {
+  // If the exhibition is not found, you can handle it accordingly
+  if (currentIndex === -1) {
+    return <p>exhibition not found</p>;
+  }
+
+  const { title, subtitle, description, videoLink, images } =
+    exhibitionData[currentIndex];
+
+  // Calculate indices for previous and next exhibitions
+  const prevIndex =
+    currentIndex > 0 ? currentIndex - 1 : exhibitionData.length - 1;
+  const nextIndex =
+    currentIndex < exhibitionData.length - 1 ? currentIndex + 1 : 0;
+
   return (
     <div className="relative mr-8 lg:mr-16 text-neutral-500 text-base md:text-xl h-full">
       {/* Nav buttons */}
       <div className="fixed z-100 top-6 left-6 md:left-10 md:top-10  cursor-pointer">
-        <Link className="text-center m-2 text-black font-italiana" href="/">
+        <Link className="text-center m-2 text-black font-italiana" href="/gallery">
           Back
         </Link>
       </div>
       <div className=" fixed right-6 top-6 md:right-12 md:top-12">
         <div className="flex justify-between">
           <div className="flex cursor-pointer">
-            <Link href="/product" className="p-1">
+            <Link
+              href={`/gallery/${exhibitionData[prevIndex].id}`}
+              className="p-1"
+            >
               <Image
                 priority
                 src={ArrowBack}
                 height={20}
-                alt="Previous product"
+                alt="Previous exhibition"
               />
             </Link>
           </div>
@@ -49,12 +53,15 @@ const Product = () => {
             <div className="border-t-[1px] border-black h-1/2"></div>
           </div>
           <div className="flex items-end cursor-pointer">
-            <Link href="/product" className="p-1">
+            <Link
+              href={`/gallery/${exhibitionData[nextIndex].id}`}
+              className="p-1"
+            >
               <Image
                 priority
                 src={ArrowForward}
                 height={20}
-                alt="Next product"
+                alt="Next exhibition"
               />
             </Link>
           </div>
@@ -68,9 +75,10 @@ const Product = () => {
 
       {/* Title */}
       <div className="hidden z-10 lg:flex lg:absolute py-2 lg:m-12 w-full  items-center justify-center  text-neutral-400">
-        <div className="max-w-[160px]">
+        <div className="max-w-[200px]">
           <h1 className="lg:text-6xl xl:text-[80px] font-normal font-italiana text-center lg:leading-[26px] xl:leading-[38px] tracking-tighter">
-            {title}
+           Exhibition
+            {params.exhibitionId}
           </h1>
         </div>
       </div>
@@ -114,7 +122,7 @@ const Product = () => {
               {subtitle}
             </h1>
             <p className="text-justify lg:text-left text-sm xl:text-base mt-2 md:leading-tight">
-              {description}{" "}
+              {description}
             </p>
             <div className="py-4"></div>
             <Link
@@ -132,4 +140,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default Exhibition;

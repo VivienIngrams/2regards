@@ -4,57 +4,61 @@ import Image from "next/image";
 import Link from "next/link";
 import ArrowBack from "/public/ArrowBack.svg";
 import ArrowForward from "/public/ArrowForward.svg";
+import productData from "../../data";
 
-const exhibitionData = {
-  title: "Dynamic exhibition Title",
-  subtitle: "Dynamic Subtitle of exhibition",
-  description: [
-    "Dynamic text on the exhibition of photography for a exhibition.",
-    "More dynamic text about the exhibition.",
-    "Even more dynamic text.",
-    "You can add as many paragraphs as needed.",
-  ],
-  videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
-  images: {
-    image1: "/images/waves.png",
-    image2: "/images/Paulo.jpeg",
-    image3: "/images/lights.png",
-  },
-};
-const { title, subtitle, description, videoLink, images } = exhibitionData;
+const Product = ({ params }: { params: { productId: string } }) => {
+  const currentIndex = productData.findIndex(
+    (product) => product.id === params.productId
+  );
 
-const Exhibition = () => {
+  // If the product is not found, you can handle it accordingly
+  if (currentIndex === -1) {
+    return <p>Product not found</p>;
+  }
+
+  const { title, subtitle, description, videoLink, images } =
+    productData[currentIndex];
+
+  // Calculate indices for previous and next products
+  const prevIndex =
+    currentIndex > 0 ? currentIndex - 1 : productData.length - 1;
+  const nextIndex =
+    currentIndex < productData.length - 1 ? currentIndex + 1 : 0;
+
   return (
     <div className="relative mr-8 lg:mr-16 text-neutral-500 text-base md:text-xl h-full">
       {/* Nav buttons */}
       <div className="fixed z-100 top-6 left-6 md:left-10 md:top-10  cursor-pointer">
-        <Link className="text-center m-2 text-black font-italiana" href="/gallery">
+        <Link className="text-center m-2 text-black font-italiana" href="/">
           Back
         </Link>
       </div>
       <div className=" fixed right-6 top-6 md:right-12 md:top-12">
         <div className="flex justify-between">
           <div className="flex cursor-pointer">
-            <Link href="/exhibition" className="p-1">
-              <Image
-                priority
-                src={ArrowBack}
-                height={20}
-                alt="Previous exhibition"
-              />
-            </Link>
+            <Link href={`/product/${productData[prevIndex].id}`} className="p-1">
+                            <Image
+                  priority
+                  src={ArrowBack}
+                  height={20}
+                  alt="Previous product"
+                />
+                        </Link>
           </div>
           <div className="flex flex-col w-4 md:w-10 h-10">
             <div className=" h-1/2"> </div>
             <div className="border-t-[1px] border-black h-1/2"></div>
           </div>
           <div className="flex items-end cursor-pointer">
-            <Link href="/exhibition" className="p-1">
+            <Link
+              href={`/product/${productData[nextIndex].id}`}
+              className="p-1"
+            >
               <Image
                 priority
                 src={ArrowForward}
                 height={20}
-                alt="Next exhibition"
+                alt="Next product"
               />
             </Link>
           </div>
@@ -70,7 +74,8 @@ const Exhibition = () => {
       <div className="hidden z-10 lg:flex lg:absolute py-2 lg:m-12 w-full  items-center justify-center  text-neutral-400">
         <div className="max-w-[160px]">
           <h1 className="lg:text-6xl xl:text-[80px] font-normal font-italiana text-center lg:leading-[26px] xl:leading-[38px] tracking-tighter">
-            {title}
+            {/* {title} */}
+            {params.productId}
           </h1>
         </div>
       </div>
@@ -114,7 +119,7 @@ const Exhibition = () => {
               {subtitle}
             </h1>
             <p className="text-justify lg:text-left text-sm xl:text-base mt-2 md:leading-tight">
-              {description}{" "}
+              {description}
             </p>
             <div className="py-4"></div>
             <Link
@@ -132,4 +137,4 @@ const Exhibition = () => {
   );
 };
 
-export default Exhibition;
+export default Product;
