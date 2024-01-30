@@ -40,12 +40,12 @@ const Contact = () => {
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="mx-2 my-[8vh] lg:mx-14 md:w-[1/3vw]"
+          className="mx-2 mt-[10vh] lg:mx-28 lg:w-[30vw]"
         >
           <div>
             <div className="flex justify-between  border-black border-b-[1px]">
               <div className="text-black text-3xl  lg:text-5xl font-normal font-italiana pb-1 lg:pb-4">
-                gallery.
+                2regards atelier
               </div>
               <div className="lg:mt-2">
                 <Link
@@ -62,22 +62,21 @@ const Contact = () => {
                 </Link>
               </div>
             </div>
+            <div className="flex min-w-[70px] pt-4">
+                <Image
+                  className=""
+                  src="/images/gallery/MathildePaulo/sentiment_oceanique (4).jpg"
+                  width={200}
+                  height={200}
+                  alt="Paulo Bastos"
+                />
+              </div>
             <div className="mt-4 text-neutral-500 leading-tight">
               <div className="pb-4">
                 <p>Rua do Duque da Terceira 358</p>
                 <p>4300-096 Porto</p>
               </div>
-              <div className="pb-4">
-                <p>
-                  Wednesday to Saturday <span>2p.m - 7p.m.</span>
-                </p>
-              </div>
-              <div>
-                <p>
-                  <a href="mailto:atelier@2regards.com">atelier@2regards.com</a>
-                </p>
-                <p>+351 933 119 390</p>
-              </div>
+             
             </div>
           </div>
         </motion.div>
@@ -87,7 +86,7 @@ const Contact = () => {
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="mx-2 my-[8vh] lg:mr-16 md:mb-24 md:w-[1/3vw] flex items-end"
+          className="mx-2 mt-[8vh] lg:mr-28 lg:ml-auto md:mb-24 flex items-end  lg:w-[30vw]"
         >
           <div className="w-full">
             <div className="flex justify-between border-black border-b-[1px]">
@@ -137,7 +136,7 @@ const Contact = () => {
               </div>
 
               <div className="text-black text-3xl lg:text-5xl font-normal text-right font-italiana pb-1 lg:pb-4">
-                contact.
+                contact
               </div>
             </div>
             <div className="mt-4 text-right text-neutral-500 leading-tight">
@@ -156,6 +155,12 @@ const Contact = () => {
                   <a href="mailto:paulo@2regards.com">paulo@2regards.com</a>
                 </p>
                 <p>+33 7 87 38 36 32</p>
+              </div>
+              <div  className="pb-4">
+                <p>
+                  Info:<a href="mailto:atelier@2regards.com">atelier@2regards.com</a>
+                </p>
+                <p>+351 933 119 390</p>
               </div>
               <div>
                 <p>

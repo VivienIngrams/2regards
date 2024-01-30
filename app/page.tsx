@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import "react-horizontal-scrolling-menu/dist/styles.css";
 
-import Card from "./components/Card";
+import ProductCards from "./components/CardProducts";
 import usePreventBodyScroll from "./components/usePreventBodyScroll";
-import productData from "./data";
+import { productData } from "./data";
 
 type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
@@ -48,16 +48,26 @@ function Home() {
           transitionBehavior="smooth"
           transitionDuration={isMobileScreen ? 500 : 4000}
         >
-          {productData.map(({ title, id, width, url, images }) => (
-            <Card
-              img={images.image1}
-              title={title}
-              id={id} 
-              key={id}
-              width={width || 300}
-              url={url}
-            />
-          ))}
+          {productData.map(
+            ({
+              title,
+              id,
+              width,
+              url,
+              images,
+             
+            }) => (
+              <ProductCards
+                img={images.image1}
+                title={title}
+                id={id}
+                key={id}
+                width={width || 300}
+                url={url}
+                
+              />
+            )
+          )}
         </ScrollMenu>
       </motion.div>
     </>
@@ -79,5 +89,3 @@ function onWheel(apiObj: scrollVisibilityApiType, ev: React.WheelEvent): void {
     apiObj.scrollPrev();
   }
 }
-
-

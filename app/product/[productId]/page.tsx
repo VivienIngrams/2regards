@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ArrowBack from "/public/ArrowBack.svg";
 import ArrowForward from "/public/ArrowForward.svg";
-import productData from "../../data";
+import {productData} from "../../data";
 
 const Product = ({ params }: { params: { productId: string } }) => {
   const currentIndex = productData.findIndex(
@@ -16,7 +16,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
     return <p>Product not found</p>;
   }
 
-  const { title, subtitle, description, videoLink, images } =
+  const { title, subtitle,  videoLink, images } =
     productData[currentIndex];
 
   // Calculate indices for previous and next products
@@ -36,14 +36,17 @@ const Product = ({ params }: { params: { productId: string } }) => {
       <div className=" fixed right-6 top-6 md:right-12 md:top-12">
         <div className="flex justify-between">
           <div className="flex cursor-pointer">
-            <Link href={`/product/${productData[prevIndex].id}`} className="p-1">
-                            <Image
-                  priority
-                  src={ArrowBack}
-                  height={20}
-                  alt="Previous product"
-                />
-                        </Link>
+            <Link
+              href={`/product/${productData[prevIndex].id}`}
+              className="p-1"
+            >
+              <Image
+                priority
+                src={ArrowBack}
+                height={20}
+                alt="Previous product"
+              />
+            </Link>
           </div>
           <div className="flex flex-col w-4 md:w-10 h-10">
             <div className=" h-1/2"> </div>
@@ -118,10 +121,8 @@ const Product = ({ params }: { params: { productId: string } }) => {
             <h1 className="font-italiana py-4 text-4xl text-black leading-1 tracking-tight">
               {subtitle}
             </h1>
-            <p className="text-justify lg:text-left text-sm xl:text-base mt-2 md:leading-tight">
-              {description}
-            </p>
-            <div className="py-4"></div>
+                        <div className="py-4"></div>
+            {videoLink && (
             <Link
               href={videoLink}
               target="_blank"
@@ -130,6 +131,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
             >
               Watch video
             </Link>
+            )}
           </div>
         </div>
       </div>

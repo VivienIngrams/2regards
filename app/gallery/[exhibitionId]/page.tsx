@@ -4,9 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import ArrowBack from "/public/ArrowBack.svg";
 import ArrowForward from "/public/ArrowForward.svg";
-import exhibitionData from "../../data";
+import {exhibitionData} from "../../data";
 
 const Exhibition = ({ params }: { params: { exhibitionId: string } }) => {
+
   const currentIndex = exhibitionData.findIndex(
     (exhibition) => exhibition.id === params.exhibitionId
   );
@@ -75,10 +76,10 @@ const Exhibition = ({ params }: { params: { exhibitionId: string } }) => {
 
       {/* Title */}
       <div className="hidden z-10 lg:flex lg:absolute py-2 lg:m-12 w-full  items-center justify-center  text-neutral-400">
-        <div className="max-w-[200px]">
+        <div className="max-w-[300px] lg:max-w-[500px]">
           <h1 className="lg:text-6xl xl:text-[80px] font-normal font-italiana text-center lg:leading-[26px] xl:leading-[38px] tracking-tighter">
-           Exhibition
-            {params.exhibitionId}
+           
+            {title}
           </h1>
         </div>
       </div>
@@ -90,8 +91,8 @@ const Exhibition = ({ params }: { params: { exhibitionId: string } }) => {
             <Image
               className="object-fill overflow-visible absolute"
               src={images.image1}
-              height={100}
-              width={200}
+              height={300}
+              width={300}
               alt={title}
             />
           </div>
@@ -99,8 +100,8 @@ const Exhibition = ({ params }: { params: { exhibitionId: string } }) => {
             <Image
               className=" absolute"
               src={images.image2}
-              width={200}
-              height={200}
+              width={400}
+              height={300}
               alt={title}
             />
           </div>
@@ -108,8 +109,8 @@ const Exhibition = ({ params }: { params: { exhibitionId: string } }) => {
             <Image
               className=" absolute bottom-0"
               src={images.image3}
-              width={200}
-              height={200}
+              width={400}
+              height={300}
               alt={title}
             />
           </div>
@@ -125,6 +126,7 @@ const Exhibition = ({ params }: { params: { exhibitionId: string } }) => {
               {description}
             </p>
             <div className="py-4"></div>
+            {videoLink && (
             <Link
               href={videoLink}
               target="_blank"
@@ -133,6 +135,7 @@ const Exhibition = ({ params }: { params: { exhibitionId: string } }) => {
             >
               Watch video
             </Link>
+            )}
           </div>
         </div>
       </div>

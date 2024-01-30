@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import "react-horizontal-scrolling-menu/dist/styles.css";
 
-import Card from "../components/Card";
+import Card from "../components/CardGallery";
 import usePreventBodyScroll from "../components/usePreventBodyScroll";
 import { exhibitionData } from "../data";
 
