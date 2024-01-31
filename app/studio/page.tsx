@@ -6,12 +6,12 @@ import Image from "next/image";
 
 const Studio = () => {
   return (
-    <div className="mr-8 lg:mr-16 lg:max-h-[92vh]  text-neutral-500 text-sm text-justify lg:text-left">
+    <div className="mr-8 lg:mr-16 lg:max-h-[92vh]  text-neutral-500 text-sm leading-tight text-justify lg:text-left">
       {/* Border right */}
       <div className="w-4 lg:w-6 z-50 fixed h-screen right-0 top-0">
         <div className="right-0 top-4 lg:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-100" />
       </div>
-      <div className="min-h-[92vh] flex flex-col justify-around">
+      <div className="min-h-[92vh] flex flex-col justify-around lg:max-h-[90vh]">
         {/* Top section */}
         <div className=" lg:grid lg:grid-cols-2">
           {/* Title */}
@@ -28,7 +28,7 @@ const Studio = () => {
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="py-8 md:py-0 lg:-ml-4 lg:mr-10"
+            className="py-8 md:py-4 lg:-ml-4 lg:mr-10 lg:max-w-[30vw]"
           >
             <div className="flex border-b-2 border-black ">
               <div className="flex min-w-[70px] lg:min-w-[200px]">
@@ -41,7 +41,7 @@ const Studio = () => {
                 />
               </div>
               <div className="flex items-center">
-                <h1 className="p-6 max-w-[160px] font-italiana text-2xl sm:4xl text-black leading-1">
+                <h1 className="p-1 xs:p-6 max-w-[160px] font-italiana text-xl xs:text-2xl sm:text-3xl text-black leading-1">
                   Analog Laboratory
                 </h1>
               </div>
@@ -59,12 +59,12 @@ const Studio = () => {
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="py-8 md:py-0 lg:grid lg:grid-cols-2 leading-normal text-sm"
+          className="py-8 md:py-0 lg:grid lg:grid-cols-2"
         >
-          <div className="mt-6 lg:ml-14 lg:mr-10">
+          <div className="mt-6 lg:-mt-4 lg:ml-14 lg:mr-10 lg:max-w-[30vw]">
             <div className="flex justify-end lg:justify-start border-b-2 border-black ">
               <div className="flex lg:hidden items-center">
-                <h1 className="p-6 max-w-[160px] font-italiana text-right text-2xl sm:4xl text-black leading-1">
+                <h1 className="p-1 xs:p-6 max-w-[160px] font-italiana text-right text-xl xs:text-2xl sm:text-3xl text-black leading-1">
                   Product Studios
                 </h1>
               </div>
@@ -78,7 +78,7 @@ const Studio = () => {
                 />
               </div>
               <div className="hidden lg:flex items-center">
-                <h1 className="p-6 max-w-[160px] font-italiana text-2xl sm:4xl text-black leading-1">
+                <h1 className="p-1 xs:p-6 max-w-[160px] font-italiana text-xl xs:text-2xl sm:text-3xl text-black leading-1">
                   Product Studios
                 </h1>
               </div>
@@ -100,22 +100,22 @@ const Studio = () => {
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="py-8 md:-pt-8 lg:-mt-24 lg:grid lg:grid-cols-2 leading-normal text-sm"
+          className="pb-8 md:-pt-8 lg:-mt-24 lg:grid lg:grid-cols-2"
         >
           <div className="mt-6 lg:ml-16 lg:mr-10"></div>
-          <div className="lg:ml-14 lg:mr-10">
+          <div className="lg:ml-32 lg:-mt-6 lg:max-w-[30vw]">
             <div className="flex border-b-2 border-black ">
               <div className="flex min-w-[70px] lg:min-w-[200px]">
                 <Image
                   className=""
                   src="/images/studio/Workshops.jpg"
-                  width={250}
+                  width={230}
                   height={200}
                   alt="Paulo Bastos"
                 />
               </div>
               <div className="flex items-center">
-                <h1 className="p-6 max-w-[160px] font-italiana text-2xl sm:4xl text-black leading-1">
+                <h1 className="p-1 xs:p-6 max-w-[160px] font-italiana text-xl xs:text-2xl sm:text-3xl text-black leading-1">
                   Workshops
                 </h1>
               </div>

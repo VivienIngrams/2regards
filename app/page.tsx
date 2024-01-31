@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import "react-horizontal-scrolling-menu/dist/styles.css";
 
-import ProductCards from "./components/CardProducts";
+import ProductCards from "./components/ProductCards";
 import usePreventBodyScroll from "./components/usePreventBodyScroll";
 import { productData } from "./data";
 
@@ -53,9 +53,9 @@ function Home() {
               title,
               id,
               width,
+              position,
               url,
               images,
-             
             }) => (
               <ProductCards
                 img={images.image1}
@@ -63,8 +63,8 @@ function Home() {
                 id={id}
                 key={id}
                 width={width || 300}
+                position={position}
                 url={url}
-                
               />
             )
           )}

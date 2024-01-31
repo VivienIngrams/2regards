@@ -2,7 +2,8 @@ type ProductDataType = {
   title: string;
   id: string;
   width?: number;
-  url: string;
+  position?: string;
+   url: string;
   subtitle: string;
   description?: string;
   videoLink?: string;
@@ -16,11 +17,12 @@ type ProductDataType = {
     image7?: string;
   };
 };
-type ExpoDataType = {
+type GalleryDataType = {
   title: string;
   id: string;
   width?: number;
-  url: string;
+  position?: string;
+   url: string;
   subtitle: string;
   description: string;
   videoLink: string;
@@ -36,6 +38,7 @@ export const productData: ProductDataType[] = [
     title: "Aleanze Design",
     id: "1",
     width: 300,
+    position: "top-1/4 left-0",
     url: "/product/aleanze",
     subtitle: "Subtitle 1",
     videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
@@ -44,9 +47,7 @@ export const productData: ProductDataType[] = [
       image2: "/images/products/Paulo.jpg",
       image3: "/images/products/Portfolio.jpg",
       image4: "/images/products/Product.jpg",
-      image5: "/images/products/Becafire (8).png",
-      image6: "/images/products/Becafire (9).png",
-      image7: "/images/products/Becafire (10).png",
+   
     },
   },
   // Product 2
@@ -54,16 +55,15 @@ export const productData: ProductDataType[] = [
     title: "Compagnie du Veilleur",
     id: "2",
     width: 400,
+    position: "bottom-0 left-50",
     url: "/product/veilleur",
     subtitle: "Subtitle 2",
     images: {
-      image1: "/images/products/paperflow (3).png",
-      image2: "/images/products/paperflow (2).png",
-      image3: "/images/products/Becafire (6).png",
-      image4: "/images/products/Becafire (7).png",
-      image5: "/images/products/Becafire (8).png",
-      image6: "/images/products/Becafire (9).png",
-      image7: "/images/products/Becafire (10).png",
+      image1: "/images/products/Portfolio.jpg",
+      image3: "/images/studio/AnalogLab.jpg",
+      image2: "/images/products/Paulo.jpg",
+      image4: "/images/products/Product.jpg",
+      
     },
   },
   // Product 3
@@ -71,14 +71,15 @@ export const productData: ProductDataType[] = [
     title: "Hiima",
     id: "3",
     width: 350,
+
     url: "/product/hiima",
     subtitle: "Subtitle 3",
     videoLink: "https://www.youtube.com/watch?v=--CHqr5M0o4",
     images: {
-      image1: "/images/products/Becafire (7).png",
-      image2: "/images/products/Becafire (8).png",
-      image3: "/images/products/paperflow (2).png",
-      image4: "/images/products/paperflow (3).png",
+      image1: "/images/products/Product.jpg",
+      image4: "/images/studio/AnalogLab.jpg",
+      image2: "/images/products/Paulo.jpg",
+      image3: "/images/products/Portfolio.jpg",
       image5: "/images/products/Becafire (6).png",
       image6: "/images/products/Becafire (9).png",
       image7: "/images/products/Becafire (10).png",
@@ -89,16 +90,17 @@ export const productData: ProductDataType[] = [
     title: "Paperflow",
     id: "4",
     width: 500,
+ 
     url: "/product/paperflow",
     subtitle: "Subtitle 4",
     description:
       "Description for Product 4. More text about the product. Even more text. You can add as many paragraphs as needed.",
     videoLink: "https://www.youtube.com/watch?v=572uLi_rnn4",
     images: {
-      image1: "/images/products/Becafire (9).png",
-      image2: "/images/products/Becafire (10).png",
-      image3: "/images/products/Becafire (6).png",
-      image4: "/images/products/paperflow (2).png",
+      image1: "/images/studio/AnalogLab.jpg",
+      image2: "/images/products/Paulo.jpg",
+      image3: "/images/products/Portfolio.jpg",
+      image4: "/images/products/Product.jpg",
       image5: "/images/products/paperflow (3).png",
       image6: "/images/products/Becafire (7).png",
       image7: "/images/products/Becafire (8).png",
@@ -109,6 +111,7 @@ export const productData: ProductDataType[] = [
     title: "Packshot",
     id: "5",
     width: 320,
+
     url: "/product/packshot",
     subtitle: "Subtitle 5",
     description:
@@ -128,6 +131,7 @@ export const productData: ProductDataType[] = [
     title: "Products",
     id: "6",
     width: 450,
+ 
     url: "/product/products",
     subtitle: "Subtitle 6",
     description:
@@ -147,6 +151,7 @@ export const productData: ProductDataType[] = [
     title: "TAKANAP",
     id: "7",
     width: 380,
+
     url: "/product/7",
     subtitle: "Subtitle 7",
     description:
@@ -186,6 +191,7 @@ export const productData: ProductDataType[] = [
     title: "Ensemble",
     id: "9",
     width: 400,
+    position: "bottom-0 -left-100",
     url: "/product/ensemble",
     subtitle: "Subtitle 9",
     images: {
@@ -337,7 +343,7 @@ export const productData: ProductDataType[] = [
 
 
 
-export const exhibitionData: ExpoDataType[] = [
+export const galleryData: GalleryDataType[] = [
   {
     title: "Desert",
     id: "desert",

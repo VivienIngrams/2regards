@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import "react-horizontal-scrolling-menu/dist/styles.css";
 
-import Card from "../components/CardGallery";
+import GalleryCards from "../components/GalleryCards";
 import usePreventBodyScroll from "../components/usePreventBodyScroll";
-import { exhibitionData } from "../data";
+import { galleryData } from "../data";
 
 type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
@@ -45,8 +45,8 @@ function Gallery() {
       >
           <ScrollMenu onWheel={onWheel} transitionBehavior="smooth" transitionDuration={isMobileScreen ? 500 : 4000}>
            
-                {exhibitionData.map(({ images, title, id, width, url }) => (
-                  <Card
+                {galleryData.map(({ images, title, id, width, url }) => (
+                  <GalleryCards
                     img={images.image1}
                     title={title}
                     id={id} 

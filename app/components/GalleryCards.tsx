@@ -1,9 +1,8 @@
 import React from "react";
-// import { VisibilityContext } from "react-horizontal-scrolling-menu";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function CardGallery({
+export default function GalleryCards({
   img,
   title,
   id,
@@ -16,10 +15,6 @@ export default function CardGallery({
   width?: number;
   url: string;
 }) {
-  // const visibility = React.useContext(VisibilityContext);
-
-  // const visible = visibility.isItemVisible(id);:
-
   return (
     <div
       key={id}
@@ -32,7 +27,7 @@ export default function CardGallery({
           className="object-fill group-hover:opacity-60"
           src={img}
           alt={title}
-          layout="fill"
+          fill
           sizes="90vw md:70vw lg:40vw xl:35vw 2xl:30vw"
         />
         </Link>
