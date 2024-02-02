@@ -4,27 +4,27 @@ import Image from "next/image";
 import Link from "next/link";
 import ArrowBack from "/public/ArrowBack.svg";
 import ArrowForward from "/public/ArrowForward.svg";
-import {exhibitionData} from "../../data";
+import {galleryData} from "../../data";
 
-const Exhibition = ({ params }: { params: { exhibitionId: string } }) => {
+const Gallery = ({ params }: { params: { galleryId: string } }) => {
 
-  const currentIndex = exhibitionData.findIndex(
-    (exhibition) => exhibition.id === params.exhibitionId
+  const currentIndex = galleryData.findIndex(
+    (gallery) => gallery.id === params.galleryId
   );
 
-  // If the exhibition is not found, you can handle it accordingly
+  // If the gallery is not found, you can handle it accordingly
   if (currentIndex === -1) {
-    return <p>exhibition not found</p>;
+    return <p>Gallery exhibition not found</p>;
   }
 
   const { title, subtitle, description, videoLink, images } =
-    exhibitionData[currentIndex];
+    galleryData[currentIndex];
 
-  // Calculate indices for previous and next exhibitions
+  // Calculate indices for previous and next gallerys
   const prevIndex =
-    currentIndex > 0 ? currentIndex - 1 : exhibitionData.length - 1;
+    currentIndex > 0 ? currentIndex - 1 : galleryData.length - 1;
   const nextIndex =
-    currentIndex < exhibitionData.length - 1 ? currentIndex + 1 : 0;
+    currentIndex < galleryData.length - 1 ? currentIndex + 1 : 0;
 
   return (
     <div className="relative mr-8 lg:mr-16 text-neutral-500 text-base md:text-xl h-full">
@@ -38,14 +38,14 @@ const Exhibition = ({ params }: { params: { exhibitionId: string } }) => {
         <div className="flex justify-between">
           <div className="flex cursor-pointer">
             <Link
-              href={`/gallery/${exhibitionData[prevIndex].id}`}
+              href={`/gallery/${galleryData[prevIndex].id}`}
               className="p-1"
             >
               <Image
                 priority
                 src={ArrowBack}
                 height={20}
-                alt="Previous exhibition"
+                alt="Previous gallery"
               />
             </Link>
           </div>
@@ -55,14 +55,14 @@ const Exhibition = ({ params }: { params: { exhibitionId: string } }) => {
           </div>
           <div className="flex items-end cursor-pointer">
             <Link
-              href={`/gallery/${exhibitionData[nextIndex].id}`}
+              href={`/gallery/${galleryData[nextIndex].id}`}
               className="p-1"
             >
               <Image
                 priority
                 src={ArrowForward}
                 height={20}
-                alt="Next exhibition"
+                alt="Next gallery"
               />
             </Link>
           </div>
@@ -84,13 +84,13 @@ const Exhibition = ({ params }: { params: { exhibitionId: string } }) => {
         </div>
       </div>
 
-      <div className="lg:grid lg:grid-cols-2 min-h-full md:max-h-[86vh]">
+      <div className="lg:grid lg:grid-cols-5 min-h-full md:max-h-[86vh]">
         {/* Left/top side of page */}
-        <div className="grid grid-rows-3 w-full h-[65vh] md:h-[50vh] lg:h-[90vh]">
+        <div className="grid grid-rows-3 col-span-3 w-full h-[65vh] md:h-[50vh] lg:h-[90vh]">
           <div className="z-1 mt-8 lg:pl-12 flex relative h-full ">
             <Image
-              className="object-fill overflow-visible absolute"
-              src={images.image1}
+              className="object-fill overflow-visible absolute  shadow-md shadow-gray-500"
+              src={images.image2}
               height={300}
               width={300}
               alt={title}
@@ -98,27 +98,27 @@ const Exhibition = ({ params }: { params: { exhibitionId: string } }) => {
           </div>
           <div className="z-30 md:z-2 flex relative h-full justify-end">
             <Image
-              className=" absolute"
-              src={images.image2}
-              width={400}
-              height={300}
-              alt={title}
-            />
-          </div>
-          <div className="z-1 md:z-3 md:pl-28 flex justify-center h-full relative">
-            <Image
-              className=" absolute bottom-0"
+              className=" absolute shadow-md shadow-gray-500"
               src={images.image3}
               width={400}
               height={300}
               alt={title}
             />
           </div>
+          {images.image4 && <div className="z-1 md:z-3 md:pl-28 flex justify-center h-full relative">
+            <Image
+              className=" absolute bottom-0  shadow-md shadow-gray-500"
+              src={images.image4 ?? ''}
+              width={400}
+              height={300}
+              alt={title}
+            />
+          </div>}
         </div>
 
         {/* Right/bottom side of page */}
-        <div className="flex md:flex-col items-center justify-center md:h-[40vh] lg:h-[50vh] xl:h-[70vh] lg:mt-[20vh] lg:ml-[10vw] xl:ml-[15vw] xl:mr-[5vw]">
-          <div className="mx-auto max-w-sm">
+        <div className="col-span-2 flex md:flex-col items-center justify-center md:h-[40vh] lg:h-[50vh] xl:h-[70vh] lg:mt-[20vh] lg:ml-[vw] xl:ml-[15vw] xl:mr-[5vw]">
+          <div className="">
             <h1 className="font-italiana py-4 text-4xl text-black leading-1 tracking-tight">
               {subtitle}
             </h1>
@@ -143,4 +143,4 @@ const Exhibition = ({ params }: { params: { exhibitionId: string } }) => {
   );
 };
 
-export default Exhibition;
+export default Gallery;

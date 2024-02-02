@@ -3,8 +3,7 @@ type ProductDataType = {
   id: string;
   width?: number;
   position?: string;
-   url: string;
-  subtitle: string;
+  url: string;
   description?: string;
   videoLink?: string;
   images: {
@@ -22,7 +21,7 @@ type GalleryDataType = {
   id: string;
   width?: number;
   position?: string;
-   url: string;
+  url: string;
   subtitle: string;
   description: string;
   videoLink: string;
@@ -30,6 +29,8 @@ type GalleryDataType = {
     image1: string;
     image2: string;
     image3: string;
+    image4?: string;
+    image5?: string;
   };
 };
 export const productData: ProductDataType[] = [
@@ -40,14 +41,12 @@ export const productData: ProductDataType[] = [
     width: 300,
     position: "top-1/4 left-0",
     url: "/product/aleanze",
-    subtitle: "Subtitle 1",
     videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
     images: {
-      image1: "/images/studio/AnalogLab.jpg",
-      image2: "/images/products/Paulo.jpg",
-      image3: "/images/products/Portfolio.jpg",
-      image4: "/images/products/Product.jpg",
-   
+      image1: "/images/products/Aleanze/aleanze (1).jpg",
+      image2: "/images/products/Aleanze/aleanze (2).jpg",
+      image3: "/images/products/Aleanze/aleanze (3).jpg",
+      image4: "/images/products/Aleanze/aleanze (4).jpg",
     },
   },
   // Product 2
@@ -57,13 +56,12 @@ export const productData: ProductDataType[] = [
     width: 400,
     position: "bottom-0 left-50",
     url: "/product/veilleur",
-    subtitle: "Subtitle 2",
+    videoLink: "",
     images: {
-      image1: "/images/products/Portfolio.jpg",
-      image3: "/images/studio/AnalogLab.jpg",
-      image2: "/images/products/Paulo.jpg",
-      image4: "/images/products/Product.jpg",
-      
+      image1: "/images/products/Veilleur/veilleur (1).jpg",
+      image2: "/images/products/Veilleur/veilleur (2).jpg",
+      image3: "/images/products/Veilleur/veilleur (3).jpg",
+      image4: "/images/products/Veilleur/veilleur (4).jpg",
     },
   },
   // Product 3
@@ -71,121 +69,114 @@ export const productData: ProductDataType[] = [
     title: "Hiima",
     id: "3",
     width: 350,
-
     url: "/product/hiima",
-    subtitle: "Subtitle 3",
     videoLink: "https://www.youtube.com/watch?v=--CHqr5M0o4",
     images: {
-      image1: "/images/products/Product.jpg",
-      image4: "/images/studio/AnalogLab.jpg",
-      image2: "/images/products/Paulo.jpg",
-      image3: "/images/products/Portfolio.jpg",
-      image5: "/images/products/Becafire (6).png",
-      image6: "/images/products/Becafire (9).png",
-      image7: "/images/products/Becafire (10).png",
+      image1: "/images/products/Hiima/hiima (1).jpg",
+      image2: "/images/products/Hiima/hiima (2).jpg",
+      image3: "/images/products/Hiima/hiima (3).jpg",
+      image4: "/images/products/Hiima/hiima (4).jpg",
+      image5: "/images/products/Hiima/hiima (5).jpg",
+      image6: "/images/products/Hiima/hiima (6).jpg",
+      image7: "/images/products/Hiima/hiima (7).jpg",
     },
   },
+
   // Product 4
   {
     title: "Paperflow",
     id: "4",
     width: 500,
- 
     url: "/product/paperflow",
-    subtitle: "Subtitle 4",
-    description:
-      "Description for Product 4. More text about the product. Even more text. You can add as many paragraphs as needed.",
     videoLink: "https://www.youtube.com/watch?v=572uLi_rnn4",
     images: {
-      image1: "/images/studio/AnalogLab.jpg",
-      image2: "/images/products/Paulo.jpg",
-      image3: "/images/products/Portfolio.jpg",
-      image4: "/images/products/Product.jpg",
-      image5: "/images/products/paperflow (3).png",
-      image6: "/images/products/Becafire (7).png",
-      image7: "/images/products/Becafire (8).png",
+      image1: "/images/products/Paperflow/paperflow (1).jpg",
+      image2: "/images/products/Paperflow/paperflow (2).jpg",
+      image3: "/images/products/Paperflow/paperflow (3).jpg",
+      image4: "/images/products/Paperflow/paperflow (4).jpg",
+      image5: "/images/products/Paperflow/paperflow (5).jpg",
+      image6: "/images/products/Paperflow/paperflow (6).jpg",
+      image7: "/images/products/Paperflow/paperflow (7).jpg",
     },
   },
+
   // Product 5
   {
     title: "Packshot",
     id: "5",
     width: 320,
-
     url: "/product/packshot",
-    subtitle: "Subtitle 5",
     description:
       "Description for Product 5. More text about the product. Even more text. You can add as many paragraphs as needed.",
     images: {
-      image1: "/images/products/Becafire (8).png",
-      image2: "/images/products/Becafire (9).png",
-      image3: "/images/products/Becafire (10).png",
-      image4: "/images/products/paperflow (2).png",
-      image5: "/images/products/paperflow (3).png",
-      image6: "/images/products/Becafire (6).png",
-      image7: "/images/products/Becafire (7).png",
+      image1: "/images/products/Packshot/packshot (1).jpg",
+      image2: "/images/products/Packshot/packshot (2).jpg",
+      image3: "/images/products/Packshot/packshot (3).jpg",
+      image4: "/images/products/Packshot/packshot (4).jpg",
+      image5: "/images/products/Packshot/packshot (5).jpg",
+      image6: "/images/products/Packshot/packshot (6).jpg",
+      image7: "/images/products/Packshot/packshot (7).jpg",
     },
   },
+
   // Product 6
   {
     title: "Products",
     id: "6",
     width: 450,
- 
     url: "/product/products",
-    subtitle: "Subtitle 6",
     description:
       "Description for Product 6. More text about the product. Even more text. You can add as many paragraphs as needed.",
     images: {
-      image1: "/images/products/Becafire (6).png",
-      image2: "/images/products/Becafire (7).png",
-      image3: "/images/products/Becafire (8).png",
-      image4: "/images/products/Becafire (9).png",
-      image5: "/images/products/Becafire (10).png",
-      image6: "/images/products/paperflow (2).png",
-      image7: "/images/products/paperflow (3).png",
+      image1: "/images/products/Products/products (1).jpg",
+      image2: "/images/products/Products/products (2).jpg",
+      image3: "/images/products/Products/products (3).jpg",
+      image4: "/images/products/Products/products (4).jpg",
+      image5: "/images/products/Products/products (5).jpg",
+      image6: "/images/products/Products/products (6).jpg",
+      image7: "/images/products/Products/products (7).jpg",
     },
   },
+
   // Product 7
   {
     title: "TAKANAP",
     id: "7",
     width: 380,
-
     url: "/product/7",
-    subtitle: "Subtitle 7",
     description:
       "Description for Product 7. More text about the product. Even more text. You can add as many paragraphs as needed.",
     videoLink: "https://www.youtube.com/watch?v=roFW8j9nju8",
     images: {
-      image1: "/images/products/Becafire (9).png",
-      image2: "/images/products/Becafire (10).png",
-      image3: "/images/products/Becafire (6).png",
-      image4: "/images/products/paperflow (2).png",
-      image5: "/images/products/paperflow (3).png",
-      image6: "/images/products/Becafire (7).png",
-      image7: "/images/products/Becafire (8).png",
+      image1: "/images/products/TAKANAP/takanap (1).jpg",
+      image2: "/images/products/TAKANAP/takanap (2).jpg",
+      image3: "/images/products/TAKANAP/takanap (3).jpg",
+      image4: "/images/products/TAKANAP/takanap (4).jpg",
+      image5: "/images/products/TAKANAP/takanap (5).jpg",
+      image6: "/images/products/TAKANAP/takanap (6).jpg",
+      image7: "/images/products/TAKANAP/takanap (7).jpg",
     },
   },
+
   // Product 8
   {
     title: "Vawo",
     id: "8",
     width: 420,
     url: "/product/vawo",
-    subtitle: "Subtitle 8",
     description:
       "Description for Product 8. More text about the product. Even more text. You can add as many paragraphs as needed.",
     images: {
-      image1: "/images/products/Becafire (6).png",
-      image2: "/images/products/Becafire (7).png",
-      image3: "/images/products/Becafire (8).png",
-      image4: "/images/products/Becafire (9).png",
-      image5: "/images/products/Becafire (10).png",
-      image6: "/images/products/paperflow (2).png",
-      image7: "/images/products/paperflow (3).png",
+      image1: "/images/products/Vawo/vawo (1).jpg",
+      image2: "/images/products/Vawo/vawo (2).jpg",
+      image3: "/images/products/Vawo/vawo (3).jpg",
+      image4: "/images/products/Vawo/vawo (4).jpg",
+      image5: "/images/products/Vawo/vawo (5).jpg",
+      image6: "/images/products/Vawo/vawo (6).jpg",
+      image7: "/images/products/Vawo/vawo (7).jpg",
     },
   },
+
   // Product 9
   {
     title: "Ensemble",
@@ -193,155 +184,151 @@ export const productData: ProductDataType[] = [
     width: 400,
     position: "bottom-0 -left-100",
     url: "/product/ensemble",
-    subtitle: "Subtitle 9",
     images: {
-      image1: "/images/products/Becafire (8).png",
-      image2: "/images/products/Becafire (9).png",
-      image3: "/images/products/Becafire (10).png",
-      image4: "/images/products/paperflow (2).png",
-      image5: "/images/products/paperflow (3).png",
-      image6: "/images/products/Becafire (6).png",
-      image7: "/images/products/Becafire (7).png",
+      image1: "/images/products/Ensemble/ensemble (1).jpg",
+      image2: "/images/products/Ensemble/ensemble (2).jpg",
+      image3: "/images/products/Ensemble/ensemble (3).jpg",
+      image4: "/images/products/Ensemble/ensemble (4).jpg",
+      image5: "/images/products/Ensemble/ensemble (5).jpg",
+      image6: "/images/products/Ensemble/ensemble (6).jpg",
+      image7: "/images/products/Ensemble/ensemble (7).jpg",
     },
   },
+
   // Product 10
   {
     title: "Meet",
     id: "10",
     width: 350,
     url: "/product/meet",
-    subtitle: "Subtitle 10",
     videoLink: "https://www.youtube.com/watch?v=--CHqr5M0o4",
     images: {
-      image1: "/images/products/Becafire (9).png",
-      image2: "/images/products/Becafire (10).png",
-      image3: "/images/products/paperflow (2).png",
-      image4: "/images/products/paperflow (3).png",
-      image5: "/images/products/Becafire (6).png",
-      image6: "/images/products/Becafire (7).png",
-      image7: "/images/products/Becafire (8).png",
+      image1: "/images/products/Meet/meet (1).jpg",
+      image2: "/images/products/Meet/meet (2).jpg",
+      image3: "/images/products/Meet/meet (3).jpg",
+      image4: "/images/products/Meet/meet (4).jpg",
+      image5: "/images/products/Meet/meet (5).jpg",
+      image6: "/images/products/Meet/meet (6).jpg",
+      image7: "/images/products/Meet/meet (7).jpg",
     },
   },
+
   // Product 11
   {
     title: "Miquelon",
     id: "11",
     width: 500,
     url: "/product/miquelon",
-    subtitle: "Subtitle 11",
     description:
       "Description for Product 11. More text about the product. Even more text. You can add as many paragraphs as needed.",
     videoLink: "https://www.youtube.com/watch?v=572uLi_rnn4",
     images: {
-      image1: "/images/products/Becafire (9).png",
-      image2: "/images/products/Becafire (10).png",
-      image3: "/images/products/Becafire (6).png",
-      image4: "/images/products/paperflow (2).png",
-      image5: "/images/products/paperflow (3).png",
-      image6: "/images/products/Becafire (7).png",
-      image7: "/images/products/Becafire (8).png",
+      image1: "/images/products/Miquelon/miquelon (1).jpg",
+      image2: "/images/products/Miquelon/miquelon (2).jpg",
+      image3: "/images/products/Miquelon/miquelon (3).jpg",
+      image4: "/images/products/Miquelon/miquelon (4).jpg",
+      image5: "/images/products/Miquelon/miquelon (5).jpg",
+      image6: "/images/products/Miquelon/miquelon (6).jpg",
+      image7: "/images/products/Miquelon/miquelon (7).jpg",
     },
   },
+
   // Product 12
   {
     title: "Plaid",
     id: "12",
     width: 320,
     url: "/product/plaid",
-    subtitle: "Subtitle 12",
     description:
       "Description for Product 12. More text about the product. Even more text. You can add as many paragraphs as needed.",
     images: {
-      image1: "/images/products/Becafire (8).png",
-      image2: "/images/products/Becafire (9).png",
-      image3: "/images/products/Becafire (10).png",
-      image4: "/images/products/paperflow (2).png",
-      image5: "/images/products/paperflow (3).png",
-      image6: "/images/products/Becafire (6).png",
-      image7: "/images/products/Becafire (7).png",
+      image1: "/images/products/Plaid/plaid (1).jpg",
+      image2: "/images/products/Plaid/plaid (2).jpg",
+      image3: "/images/products/Plaid/plaid (3).jpg",
+      image4: "/images/products/Plaid/plaid (4).jpg",
+      image5: "/images/products/Plaid/plaid (5).jpg",
+      image6: "/images/products/Plaid/plaid (6).jpg",
+      image7: "/images/products/Plaid/plaid (7).jpg",
     },
   },
+
   // Product 13
   {
     title: "Product",
     id: "13",
     width: 450,
     url: "/product/product",
-    subtitle: "Subtitle 13",
     description:
       "Description for Product 13. More text about the product. Even more text. You can add as many paragraphs as needed.",
     images: {
-      image1: "/images/products/Becafire (6).png",
-      image2: "/images/products/Becafire (7).png",
-      image3: "/images/products/Becafire (8).png",
-      image4: "/images/products/Becafire (9).png",
-      image5: "/images/products/Becafire (10).png",
-      image6: "/images/products/paperflow (2).png",
-      image7: "/images/products/paperflow (3).png",
+      image1: "/images/products/Product/product (1).jpg",
+      image2: "/images/products/Product/product (2).jpg",
+      image3: "/images/products/Product/product (3).jpg",
+      image4: "/images/products/Product/product (4).jpg",
+      image5: "/images/products/Product/product (5).jpg",
+      image6: "/images/products/Product/product (6).jpg",
+      image7: "/images/products/Product/product (7).jpg",
     },
   },
+
   // Product 14
   {
     title: "CIF",
     id: "cif",
     width: 380,
     url: "/product/cif",
-    subtitle: "Subtitle 14",
     description:
       "Description for Product 14. More text about the product. Even more text. You can add as many paragraphs as needed.",
     videoLink: "https://www.youtube.com/watch?v=roFW8j9nju8",
     images: {
-      image1: "/images/products/Becafire (9).png",
-      image2: "/images/products/Becafire (10).png",
-      image3: "/images/products/Becafire (6).png",
-      image4: "/images/products/paperflow (2).png",
-      image5: "/images/products/paperflow (3).png",
-      image6: "/images/products/Becafire (7).png",
-      image7: "/images/products/Becafire (8).png",
+      image1: "/images/products/CIF/cif (1).jpg",
+      image2: "/images/products/CIF/cif (2).jpg",
+      image3: "/images/products/CIF/cif (3).jpg",
+      image4: "/images/products/CIF/cif (4).jpg",
+      image5: "/images/products/CIF/cif (5).jpg",
+      image6: "/images/products/CIF/cif (6).jpg",
+      image7: "/images/products/CIF/cif (7).jpg",
     },
   },
+
   // Product 15
   {
     title: "Zoo Gaia",
     id: "15",
     width: 420,
     url: "/product/zoo",
-    subtitle: "Subtitle 15",
     description:
       "Description for Product 15. More text about the product. Even more text. You can add as many paragraphs as needed.",
     images: {
-      image1: "/images/products/Becafire (9).png",
-      image2: "/images/products/Becafire (10).png",
-      image3: "/images/products/Becafire (6).png",
-      image4: "/images/products/paperflow (2).png",
-      image5: "/images/products/paperflow (3).png",
-      image6: "/images/products/Becafire (7).png",
-      image7: "/images/products/Becafire (8).png",
+      image1: "/images/products/Zoo/Zoo (1).jpg",
+      image2: "/images/products/Zoo/Zoo (2).jpg",
+      image3: "/images/products/Zoo/Zoo (3).jpg",
+      image4: "/images/products/Zoo/Zoo (4).jpg",
+      image5: "/images/products/Zoo/Zoo (5).jpg",
+      image6: "/images/products/Zoo/Zoo (6).jpg",
+      image7: "/images/products/Zoo/Zoo (7).jpg",
     },
   },
+
   // Product 16
   {
     title: "Subtitle 16",
     id: "16",
     width: 480,
     url: "/product/16",
-    subtitle: "Subtitle 16",
     description:
       "Description for Product 16. More text about the product. Even more text. You can add as many paragraphs as needed.",
-    videoLink: "https://www.youtube.com/watch?v=xyz123",
     images: {
-      image1: "/images/products/Becafire (9).png",
-      image2: "/images/products/Becafire (10).png",
-      image3: "/images/products/Becafire (6).png",
-      image4: "/images/products/paperflow (2).png",
-      image5: "/images/products/paperflow (3).png",
-      image6: "/images/products/Becafire (7).png",
-      image7: "/images/products/Becafire (8).png",
+      image1: "/images/products/16/16 (1).jpg",
+      image2: "/images/products/16/16 (2).jpg",
+      image3: "/images/products/16/16 (3).jpg",
+      image4: "/images/products/16/16 (4).jpg",
+      image5: "/images/products/16/16 (5).jpg",
+      image6: "/images/products/16/16 (6).jpg",
+      image7: "/images/products/16/16 (7).jpg",
     },
   },
 ];
-
-
 
 export const galleryData: GalleryDataType[] = [
   {
@@ -351,14 +338,13 @@ export const galleryData: GalleryDataType[] = [
     url: "/gallery/desert",
     subtitle: "Ayala Braidman",
     description:
-      "The exhibition 'Desert' unveils the culmination of Ayala Braidman's year-long journey from her homeland to Portugal...",
+      "The exhibition Desert unveils the culmination of Ayala Braidman's year-long journey from her homeland to Portugal. Crafted during this transformative period, the artworks draw inspiration from the desert landscapes of her childhood, distinct from Porto's environment. The textures and color palette mirror the dry terrain, capturing its essence. For Braidman, the desert signifies a fusion of personal experiences and a universal theme—a space inviting inner exploration and spiritual enlightenment. This exhibition marks Braidman’s debut solo show in Portugal. Ayala Braidman (b. 1992, Israel) is a designer and artist, currently residing and working in Porto.",
     videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
     images: {
       image1: "/images/gallery/AyalaBraidman/desert (1).jpg",
       image2: "/images/gallery/AyalaBraidman/desert (2).jpg",
       image3: "/images/gallery/AyalaBraidman/desert (3).jpg",
       image4: "/images/gallery/AyalaBraidman/desert (4).jpg",
-     
     },
   },
   {
@@ -368,14 +354,14 @@ export const galleryData: GalleryDataType[] = [
     url: "/gallery/sentiment_oceanique",
     subtitle: "Mathilde Cudeville & Paulo Bastos",
     description:
-      "Today in 2022, in an ecological context whose challenges still elude our perception and surpass our human scale of space and time...",
+      "Homme libre toujours tu chériras la mer, Baudelaire. In an ecological context whose challenges still elude our perception and surpass our human scale of space and time. The transformation of the oceans in the face of climate change and the collapse of biodiversity poses a real challenge, both for taking action and for becoming aware of a sometimes elusive process. Therefore, we wanted to photograph and film these oceans with restraint. This series aims to question the future of the oceans while introspectively reflecting on oneself. As we contemplate the sea, ever-ambiguous with its passages, uncertainties, reliefs, rumblings, aims, and transformations, a unique and challenging-to-describe feeling overwhelms me. According to Romain Rolland, a French writer, it could be described as an 'oceanic feeling.' An emotion close to ecstasy that allows one to identify with the system in its vastness in order to feel the whole. By photographing and filming the ocean, we seek to engage the viewer, prompting them to question until they pay new and special attention to nature as a whole.",
     videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
     images: {
-      image1: "/images/gallery/MathildePaulo/sentiment_oceanique (1).jpg",
-      image3: "/images/gallery/MathildePaulo/sentiment_oceanique (3).jpg",
-      image4: "/images/gallery/MathildePaulo/sentiment_oceanique (4).jpg",
-      image2: "/images/gallery/MathildePaulo/sentiment_oceanique (2).jpg",
-      image5: "/images/gallery/MathildePaulo/sentiment_oceanique (5).jpg",
+      image1: "/images/gallery/MathildePaulo/sentiment_oceanique (6).jpg",
+      image2: "/images/gallery/MathildePaulo/sentiment_oceanique (3).jpg",
+      image3: "/images/gallery/MathildePaulo/sentiment_oceanique (4).jpg",
+      image4: "/images/gallery/MathildePaulo/sentiment_oceanique (5).jpg",
+      image5: "/images/gallery/MathildePaulo/sentiment_oceanique (1).jpg",
     },
   },
   {
@@ -385,13 +371,13 @@ export const galleryData: GalleryDataType[] = [
     url: "/gallery/marcia_lucas",
     subtitle: "Marcia Luças",
     description:
-      "Excerpt from 'If I see that tree as everyone else sees it, I have nothing to say about that tree.'...",
+      "Inspired by this citation “Se eu vir aquela árvore como toda a gente vê, Não tenho nada a dizer sobre aquela árvore” If I see that tree as everyone else sees it, I have nothing to say about that tree. Excerpt from If I see that tree as everyone else sees it, I have nothing to say about that tree. I did not see that tree. It is when the tree triggers in me a connected series of emotions that I see it differently and justly. And to the extent that these ideas and emotions are acceptable to everyone, not just individual, the tree will be THE Tree.",
     videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
     images: {
-      image1: "/images/gallery/MarciaLuças/marcia_lucas (1).jpg",
-      image2: "/images/gallery/MarciaLuças/marcia_lucas (2).jpg",
-      image3: "/images/gallery/MarciaLuças/marcia_lucas (3).jpg",
-     
+      image1: "/images/gallery/MarciaLucas/marcia_lucas (1).jpg",
+      image2: "/images/gallery/MarciaLucas/marcia_lucas (2).jpg",
+      image3: "/images/gallery/MarciaLucas/marcia_lucas (3).jpg",
+      //  image4: "/images/gallery/MarciaLucas/marcia_lucas (1).jpg",
     },
   },
   {
@@ -401,7 +387,7 @@ export const galleryData: GalleryDataType[] = [
     url: "/gallery/pedome",
     subtitle: "Mariana Baldaia",
     description:
-      "Pedome is an exhibition featuring works that Mariana Baldaia created during the times of the pandemic, intertwined with motherhood...",
+      "Pedome is an exhibition featuring works that Mariana Baldaia created during the times of the pandemic, intertwined with motherhood.",
     videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
     images: {
       image1: "/images/gallery/MarianaBaldaia/pedome (1).jpg",
@@ -418,7 +404,7 @@ export const galleryData: GalleryDataType[] = [
     url: "/gallery/diversidade",
     subtitle: "Inês Sousa Cardoso",
     description:
-      "In this exhibition, some of her masks will be presented in different mediums and forms such as wood, paper, canvas, ceramics, earrings, lamps...",
+      "All the personal work of @ines.sousacardoso.peres has always embraced diversity, the culture of ancestral peoples, and their symbolism. A constantly evolving line where the geometric and the organic merge. In this exhibition, some of her masks will be presented in different mediums and forms such as wood, paper, canvas, ceramics, earrings, lamps... a glimpse into her inner world and what she loves to do the most.",
     videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
     images: {
       image1: "/images/gallery/InêsSousaCardoso/diversidade (1).jpg",
@@ -435,7 +421,7 @@ export const galleryData: GalleryDataType[] = [
     url: "/gallery/me_andering",
     subtitle: "Nettie Burnett",
     description:
-      "Meandering like a river-through Life. Picking up random ideas and objects to create visual artifice...",
+      "The exhibition « me: ander(ing) is a retrospective of Nettie Burnett’s artwork, Meandering, Like a river- through Life. Picking up random ideas and objects to create visual artifice.",
     videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
     images: {
       image1: "/images/gallery/NettieBurnett/me_ander (1).jpg",
@@ -452,7 +438,7 @@ export const galleryData: GalleryDataType[] = [
     url: "/gallery/pizzicato",
     subtitle: "Pierre Linz",
     description:
-      "In the captivating world of contemporary art, it is rare to encounter an artist whose vitality and passion seem boundless...",
+      "In the captivating world of contemporary art, it is rare to encounter an artist whose vitality and passion seem boundless. We embark to discover Pierre Linz, a truly unique plastic artist who, at the age of 80, still overflows with energy. Through his remarkable journey and boundless creativity, he offers us a living testimony of the paper/cardboard expression that transcends time. The encounter with Pierre Linz proves to us that art knows no age and that life can be a canvas in constant evolution.",
     videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
     images: {
       image1: "/images/gallery/PierreLinz/pizzicato (1).jpg",
@@ -469,15 +455,14 @@ export const galleryData: GalleryDataType[] = [
     url: "/gallery/la_passagere",
     subtitle: "Mathilde Cudeville & Pauline Letang",
     description:
-      "It was on May 28th of 2022, Saturday morning, in a Parisian café, Place Saint Ferdinand… A meeting between two women, Mathilde and Pauline...",
+      " It was on May 28th of 2022, saturday morning, in a Parisian café, Place Saint Ferdinand… A meeting between two women, Mathilde and Pauline.vA meeting between photography and poetry, between Porto and Paris. A meeting of two familiar souls, with sensibilities and mixed arts. Then, from this moment of grace, out of time, between dream and reality, was born the desire to realize a common work: « La Passagère ». At 50 yold, I feel like I'm on the threshold, I have no choice but to be myself. I feel a need, a crazy urgency to free myself from pretense and shackles, to awaken sleeping parts of my being, to seize this vertiginous freedom of Being fully, to re-discover my soul. « La Passagère » is the artistic, photographic and poetic expression of this journey towards the soul, this primordial Breath, this initial Desire, this intimate feeling of an authentic uniqueness and a possible unity. Pauline",
     videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
     images: {
-      image1: "/images/gallery/MathildePauline/la_passagere (1).jpg",
-      image2: "/images/gallery/MathildePauline/la_passagere (2).jpg",
-      image3: "/images/gallery/MathildePauline/la_passagere (3).jpg",
-      image4: "/images/gallery/MathildePauline/la_passagere (4).jpg",
-      image5: "/images/gallery/MathildePauline/la_passagere (5).jpg",
+      image1: "/images/gallery/MathildePauline/la_passagère (1).jpg",
+      image2: "/images/gallery/MathildePauline/la_passagère (2).jpg",
+      image3: "/images/gallery/MathildePauline/la_passagère (3).jpg",
+      image4: "/images/gallery/MathildePauline/la_passagère (4).jpg",
+      image5: "/images/gallery/MathildePauline/la_passagère (5).jpg",
     },
   },
-  
 ];
