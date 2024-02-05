@@ -91,7 +91,7 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
             <Image
               className="object-fill overflow-visible absolute  shadow-md shadow-gray-500"
               src={images.image2}
-              height={300}
+              height={200}
               width={300}
               alt={title}
             />
@@ -101,7 +101,7 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
               className=" absolute shadow-md shadow-gray-500"
               src={images.image3}
               width={400}
-              height={300}
+              height={500}
               alt={title}
             />
           </div>
@@ -117,7 +117,7 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
         </div>
 
         {/* Right/bottom side of page */}
-        <div className="col-span-2 flex md:flex-col items-center justify-center md:h-[40vh] lg:h-[50vh] xl:h-[70vh] lg:mt-[20vh] lg:ml-[vw] xl:ml-[15vw] xl:mr-[5vw]">
+        <div className="col-span-2 flex md:flex-col items-center justify-center md:h-[40vh] lg:h-[50vh] xl:h-[70vh] lg:mt-[20vh] lg:ml-[5vw] xl:ml-[10vw] xl:mr-[5vw]">
           <div className="">
             <h1 className="font-italiana py-4 text-4xl text-black leading-1 tracking-tight">
               {subtitle}

@@ -45,13 +45,12 @@ function Gallery() {
       >
           <ScrollMenu onWheel={onWheel} transitionBehavior="smooth" transitionDuration={isMobileScreen ? 500 : 4000}>
            
-                {galleryData.map(({ images, title, id, width, url }) => (
+                {galleryData.map(({ images, title, id, url }) => (
                   <GalleryCards
                     img={images.image1}
                     title={title}
                     id={id} 
                     key={id}
-                    width={width || 300}
                     url={url}
                   />
                 ))}

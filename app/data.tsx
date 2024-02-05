@@ -24,7 +24,7 @@ type GalleryDataType = {
   url: string;
   subtitle: string;
   description: string;
-  videoLink: string;
+  videoLink?: string;
   images: {
     image1: string;
     image2: string;
@@ -354,7 +354,7 @@ export const galleryData: GalleryDataType[] = [
     url: "/gallery/sentiment_oceanique",
     subtitle: "Mathilde Cudeville & Paulo Bastos",
     description:
-      "Homme libre toujours tu chériras la mer, Baudelaire. In an ecological context whose challenges still elude our perception and surpass our human scale of space and time. The transformation of the oceans in the face of climate change and the collapse of biodiversity poses a real challenge, both for taking action and for becoming aware of a sometimes elusive process. Therefore, we wanted to photograph and film these oceans with restraint. This series aims to question the future of the oceans while introspectively reflecting on oneself. As we contemplate the sea, ever-ambiguous with its passages, uncertainties, reliefs, rumblings, aims, and transformations, a unique and challenging-to-describe feeling overwhelms me. According to Romain Rolland, a French writer, it could be described as an 'oceanic feeling.' An emotion close to ecstasy that allows one to identify with the system in its vastness in order to feel the whole. By photographing and filming the ocean, we seek to engage the viewer, prompting them to question until they pay new and special attention to nature as a whole.",
+      "The transformation of the oceans in the face of climate change and the collapse of biodiversity poses a real challenge, both for taking action and for becoming aware of a sometimes elusive process. This series aims to question the future of the oceans while introspectively reflecting on oneself. As we contemplate the sea, ever-ambiguous with its passages, uncertainties, reliefs, rumblings, aims, and transformations, a unique and challenging-to-describe feeling overwhelms me. According to Romain Rolland, a French writer, it could be described as an 'oceanic feeling.' An emotion close to ecstasy that allows one to identify with the system in its vastness in order to feel the whole.",
     videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
     images: {
       image1: "/images/gallery/MathildePaulo/sentiment_oceanique (6).jpg",
@@ -455,8 +455,7 @@ export const galleryData: GalleryDataType[] = [
     url: "/gallery/la_passagere",
     subtitle: "Mathilde Cudeville & Pauline Letang",
     description:
-      " It was on May 28th of 2022, saturday morning, in a Parisian café, Place Saint Ferdinand… A meeting between two women, Mathilde and Pauline.vA meeting between photography and poetry, between Porto and Paris. A meeting of two familiar souls, with sensibilities and mixed arts. Then, from this moment of grace, out of time, between dream and reality, was born the desire to realize a common work: « La Passagère ». At 50 yold, I feel like I'm on the threshold, I have no choice but to be myself. I feel a need, a crazy urgency to free myself from pretense and shackles, to awaken sleeping parts of my being, to seize this vertiginous freedom of Being fully, to re-discover my soul. « La Passagère » is the artistic, photographic and poetic expression of this journey towards the soul, this primordial Breath, this initial Desire, this intimate feeling of an authentic uniqueness and a possible unity. Pauline",
-    videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
+      " It was on May 28th of 2022 in a Parisian café… A meeting between two women. A meeting between photography and poetry, between Porto and Paris. Then, from this moment of grace, out of time, between dream and reality, was born the desire to realize a common work. I feel a need, a crazy urgency to free myself from pretense and shackles, to awaken sleeping parts of my being, to seize this vertiginous freedom of Being fully, to re-discover my soul. « La Passagère » is the artistic, photographic and poetic expression of this journey towards the soul, this primordial Breath, this initial Desire, this intimate feeling of an authentic uniqueness and a possible unity.",
     images: {
       image1: "/images/gallery/MathildePauline/la_passagère (1).jpg",
       image2: "/images/gallery/MathildePauline/la_passagère (2).jpg",

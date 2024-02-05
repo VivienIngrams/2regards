@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ArrowBack from "/public/ArrowBack.svg";
 import ArrowForward from "/public/ArrowForward.svg";
-import {productData} from "../../data";
+import { productData } from "../../data";
 
 const Product = ({ params }: { params: { productId: string } }) => {
   const currentIndex = productData.findIndex(
@@ -16,8 +16,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
     return <p>Product not found</p>;
   }
 
-  const { title, subtitle,  videoLink, images } =
-    productData[currentIndex];
+  const { title, videoLink, images } = productData[currentIndex];
 
   // Calculate indices for previous and next products
   const prevIndex =
@@ -118,19 +117,16 @@ const Product = ({ params }: { params: { productId: string } }) => {
         {/* Right/bottom side of page */}
         <div className="flex md:flex-col items-center justify-center md:h-[40vh] lg:h-[50vh] xl:h-[70vh] lg:mt-[20vh] lg:ml-[10vw] xl:ml-[15vw] xl:mr-[5vw]">
           <div className="mx-auto max-w-sm">
-            <h1 className="font-italiana py-4 text-4xl text-black leading-1 tracking-tight">
-              {subtitle}
-            </h1>
-                        <div className="py-4"></div>
+            <div className="py-4"></div>
             {videoLink && (
-            <Link
-              href={videoLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-1 bg-white font-italiana text-xl text-black h-8 px-4 border border-black rounded "
-            >
-              Watch video
-            </Link>
+              <Link
+                href={videoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-1 bg-white font-italiana text-xl text-black h-8 px-4 border border-black rounded "
+              >
+                Watch video
+              </Link>
             )}
           </div>
         </div>

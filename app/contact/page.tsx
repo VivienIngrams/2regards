@@ -65,7 +65,7 @@ const Contact = () => {
             <div className="flex min-w-[70px] pt-4">
                 <Image
                   className=""
-                  src="/images/gallery/MathildePaulo/sentiment_oceanique (4).jpg"
+                  src="/images/gallery/MathildePaulo/sentiment_oceanique (3).jpg"
                   width={200}
                   height={200}
                   alt="Paulo Bastos"
