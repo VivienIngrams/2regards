@@ -64,11 +64,11 @@ const Contact = () => {
             </div>
             <div className="flex min-w-[70px] pt-4">
                 <Image
-                  className=""
+                  className="border-[1px] border-black shadow-md"
                   src="/images/gallery/MathildePaulo/sentiment_oceanique (3).jpg"
                   width={200}
                   height={200}
-                  alt="Paulo Bastos"
+                  alt="Gallery in Bomfin, Porto, Portugal"
                 />
               </div>
             <div className="mt-4 text-neutral-500 leading-tight">

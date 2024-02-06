@@ -87,29 +87,29 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
       <div className="lg:grid lg:grid-cols-5 min-h-full md:max-h-[86vh]">
         {/* Left/top side of page */}
         <div className="grid grid-rows-3 col-span-3 w-full h-[65vh] md:h-[50vh] lg:h-[90vh]">
-          <div className="z-1 mt-8 lg:pl-12 flex relative h-full ">
+          <div className={`mt-8 lg:pl-12 flex relative h-full ${images.image2.position}`}>
             <Image
-              className="object-fill overflow-visible absolute  shadow-md shadow-gray-500"
-              src={images.image2}
+              className="object-fill overflow-visible absolute  shadow-md shadow-gray-500 "
+              src={images.image2.url}
               height={200}
-              width={300}
+              width={images.image2.width ?? 200}
               alt={title}
             />
           </div>
-          <div className="z-30 md:z-2 flex relative h-full justify-end">
+          <div className={`flex relative h-full justify-end  ${images.image3.position}`}>
             <Image
-              className=" absolute shadow-md shadow-gray-500"
-              src={images.image3}
-              width={400}
+              className="absolute shadow-md shadow-gray-500"
+              src={images.image3.url}
+              width={images.image3.width ?? 500}
               height={500}
               alt={title}
             />
           </div>
-          {images.image4 && <div className="z-1 md:z-3 md:pl-28 flex justify-center h-full relative">
+          {images.image4 && <div className={`md:pl-28 flex justify-center h-full relative ${images.image4.position}`}>
             <Image
-              className=" absolute bottom-0  shadow-md shadow-gray-500"
-              src={images.image4 ?? ''}
-              width={400}
+              className="absolute bottom-0  shadow-md shadow-gray-500"
+              src={images.image4.url ?? ''}
+              width={images.image4.width ?? 300}
               height={300}
               alt={title}
             />
