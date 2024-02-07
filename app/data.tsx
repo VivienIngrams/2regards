@@ -122,10 +122,6 @@ export const productData: ProductDataType[] = [
       image1: { url: "/images/products/TAKANAP/takanap (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image2: { url: "/images/products/TAKANAP/takanap (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image3: { url: "/images/products/TAKANAP/takanap (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image4: { url: "/images/products/TAKANAP/takanap (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image5: { url: "/images/products/TAKANAP/takanap (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image6: { url: "/images/products/TAKANAP/takanap (6).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image7: { url: "/images/products/TAKANAP/takanap (7).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
   // Product 8
@@ -206,13 +202,10 @@ export const productData: ProductDataType[] = [
     id: "product",
     url: "/product/product",
     images: {
-      image1: { url: "/images/products/Product/product (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image2: { url: "/images/products/Product/product (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image3: { url: "/images/products/Product/product (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image4: { url: "/images/products/Product/product (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image5: { url: "/images/products/Product/product (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image6: { url: "/images/products/Product/product (6).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image7: { url: "/images/products/Product/product (7).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image1: { url: "/images/products/Product/products (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image2: { url: "/images/products/Product/products (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/Product/products (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image4: { url: "/images/products/Product/products (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
   // Product 14
