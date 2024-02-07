@@ -82,10 +82,6 @@ export const productData: ProductDataType[] = [
       image1: { url: "/images/products/Paperflow/paperflow (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image2: { url: "/images/products/Paperflow/paperflow (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image3: { url: "/images/products/Paperflow/paperflow (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image4: { url: "/images/products/Paperflow/paperflow (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image5: { url: "/images/products/Paperflow/paperflow (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image6: { url: "/images/products/Paperflow/paperflow (6).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image7: { url: "/images/products/Paperflow/paperflow (7).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
   // Product 5
@@ -201,10 +197,7 @@ export const productData: ProductDataType[] = [
       image1: { url: "/images/products/Plaid/plaid (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image2: { url: "/images/products/Plaid/plaid (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image3: { url: "/images/products/Plaid/plaid (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image4: { url: "/images/products/Plaid/plaid (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image5: { url: "/images/products/Plaid/plaid (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image6: { url: "/images/products/Plaid/plaid (6).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image7: { url: "/images/products/Plaid/plaid (7).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image4: { url: "/images/products/Plaid/plaid (4).jpg", position: "top-0 left-0 h-[400px] w-[400px]" },
     },
   },
   // Product 13
