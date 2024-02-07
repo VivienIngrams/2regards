@@ -83,37 +83,21 @@ const Product = ({ params }: { params: { productId: string } }) => {
       </div>
 
       <div className="min-h-full md:max-h-[86vh]">
-        <div className={`md:grid md:grid-cols-3 h-[65vh] lg:h-[90vh]`}>
-          <div className="h-full relative">
-            <div className="h-[500px] w-[300px] relative  ">
-              <Image
-                className="object-fill overflow-visible absolute"
-                src={images.image1.url}
-                fill
-                alt={title}
-              />
+        <div className={`grid grid-cols-${Object.keys(images).length} h-[65vh] lg:h-[90vh]`}>
+          {Object.values(images).map((image, index) => (
+            <div key={index} className="h-full relative col-span-1">
+              <div  className={`${image.position} relative`}>
+                <Image
+                  className="object-fill overflow-visible absolute"
+                  src={image.url}
+                  fill
+                  sizes="30vw"
+                  alt={title}
+                  layout="fill"
+                />
+              </div>
             </div>
-          </div>
-          <div className="h-full relative">
-            <div className="h-[500px] w-[300px] relative ">
-              <Image
-                className="object-fill absolute overflow-visible"
-                src={images.image2.url}
-                fill
-                alt={title}
-              />
-            </div>
-          </div>
-          <div className="h-full relative">
-            <div className="top-12 h-[500px] w-[300px]  relative">
-              <Image
-                className="object-fill absolute overflow-visible"
-                src={images.image3.url}
-                fill
-                alt={title}
-              />
-            </div>
-          </div>
+          ))}
         </div>
         {videoLink && (
           <div className="fixed bottom-10 right-10 flex flex-col items-end justify-center m-2">
