@@ -88,7 +88,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
           <div className="z-1 mt-8 lg:pl-12 flex relative h-full ">
             <Image
               className="object-fill overflow-visible absolute"
-              src={images.image1}
+              src={images.image1.url}
               height={100}
               width={200}
               alt={title}
@@ -97,7 +97,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
           <div className="z-30 md:z-2 flex relative h-full justify-end">
             <Image
               className=" absolute"
-              src={images.image2}
+              src={images.image2.url}
               width={200}
               height={200}
               alt={title}
@@ -106,7 +106,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
           <div className="z-1 md:z-3 md:pl-28 flex justify-center h-full relative">
             <Image
               className=" absolute bottom-0"
-              src={images.image3}
+              src={images.image3.url}
               width={200}
               height={200}
               alt={title}

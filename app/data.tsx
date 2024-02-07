@@ -53,8 +53,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: { url: "/images/products/Veilleur/veilleur (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image2: { url: "/images/products/Veilleur/veilleur (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image3: { url: "/images/products/Veilleur/veilleur (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image4: { url: "/images/products/Veilleur/veilleur (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/Veilleur/veilleur (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
   // Product 3
@@ -134,24 +133,20 @@ export const productData: ProductDataType[] = [
       image2: { url: "/images/products/Vawo/vawo (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image3: { url: "/images/products/Vawo/vawo (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image4: { url: "/images/products/Vawo/vawo (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image5: { url: "/images/products/Vawo/vawo (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image6: { url: "/images/products/Vawo/vawo (6).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image7: { url: "/images/products/Vawo/vawo (7).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
   // Product 9
   {
-    title: "Ensemble",
-    id: "ensemble",
-    url: "/product/ensemble",
+    title: "White",
+    id: "white",
+    url: "/product/white",
     images: {
-      image1: { url: "/images/products/Ensemble/ensemble (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image2: { url: "/images/products/Ensemble/ensemble (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image3: { url: "/images/products/Ensemble/ensemble (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image4: { url: "/images/products/Ensemble/ensemble (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image5: { url: "/images/products/Ensemble/ensemble (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image6: { url: "/images/products/Ensemble/ensemble (6).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image7: { url: "/images/products/Ensemble/ensemble (7).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image1: { url: "/images/products/White/white (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image2: { url: "/images/products/White/white (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/White/white (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image4: { url: "/images/products/White/white (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image5: { url: "/images/products/White/white (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image6: { url: "/images/products/White/white (6).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
   // Product 10
