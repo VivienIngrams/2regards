@@ -1,21 +1,19 @@
 type ProductDataType = {
   title: string;
   id: string;
-  width?: number;
-  position?: string;
   url: string;
-  description?: string;
   videoLink?: string;
   images: {
-    image1: string;
-    image2: string;
-    image3: string;
-    image4?: string;
-    image5?: string;
-    image6?: string;
-    image7?: string;
+    image1: { url: string; position: string };
+    image2: { url: string; position: string };
+    image3: { url: string; position: string };
+    image4?: { url: string; position: string };
+    image5?: { url: string; position: string };
+    image6?: { url: string; position: string };
+    image7?: { url: string; position: string };
   };
 };
+
 type GalleryDataType = {
   title: string;
   id: string;
@@ -38,284 +36,230 @@ export const productData: ProductDataType[] = [
   {
     title: "Aleanze Design",
     id: "aleanze",
-    width: 300,
-    position: "top-1/4 left-0",
     url: "/product/aleanze",
     videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
     images: {
-      image1: "/images/products/Aleanze/aleanze (1).jpg",
-      image2: "/images/products/Aleanze/aleanze (2).jpg",
-      image3: "/images/products/Aleanze/aleanze (3).jpg",
-      image4: "/images/products/Aleanze/aleanze (4).jpg",
+      image1: { url: "/images/products/Aleanze/aleanze (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image2: { url: "/images/products/Aleanze/aleanze (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/Aleanze/aleanze (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image4: { url: "/images/products/Aleanze/aleanze (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
   // Product 2
   {
     title: "Compagnie du Veilleur",
     id: "veilleur",
-    width: 400,
-    position: "bottom-0 left-50",
     url: "/product/veilleur",
-    videoLink: "",
     images: {
-      image1: "/images/products/Veilleur/veilleur (1).jpg",
-      image2: "/images/products/Veilleur/veilleur (2).jpg",
-      image3: "/images/products/Veilleur/veilleur (3).jpg",
-      image4: "/images/products/Veilleur/veilleur (4).jpg",
+      image1: { url: "/images/products/Veilleur/veilleur (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image2: { url: "/images/products/Veilleur/veilleur (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/Veilleur/veilleur (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image4: { url: "/images/products/Veilleur/veilleur (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
   // Product 3
   {
     title: "Hiima",
     id: "hiima",
-    width: 350,
     url: "/product/hiima",
     videoLink: "https://www.youtube.com/watch?v=--CHqr5M0o4",
     images: {
-      image1: "/images/products/Hiima/hiima (1).jpg",
-      image2: "/images/products/Hiima/hiima (2).jpg",
-      image3: "/images/products/Hiima/hiima (3).jpg",
-      image4: "/images/products/Hiima/hiima (4).jpg",
-      image5: "/images/products/Hiima/hiima (5).jpg",
-      image6: "/images/products/Hiima/hiima (6).jpg",
+      image1: { url: "/images/products/Hiima/hiima (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image2: { url: "/images/products/Hiima/hiima (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/Hiima/hiima (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image4: { url: "/images/products/Hiima/hiima (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image5: { url: "/images/products/Hiima/hiima (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image6: { url: "/images/products/Hiima/hiima (6).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
-
   // Product 4
   {
     title: "Paperflow",
     id: "paperflow",
-    width: 500,
     url: "/product/paperflow",
     videoLink: "https://www.youtube.com/watch?v=572uLi_rnn4",
     images: {
-      image1: "/images/products/Paperflow/paperflow (1).jpg",
-      image2: "/images/products/Paperflow/paperflow (2).jpg",
-      image3: "/images/products/Paperflow/paperflow (3).jpg",
-      image4: "/images/products/Paperflow/paperflow (4).jpg",
-      image5: "/images/products/Paperflow/paperflow (5).jpg",
-      image6: "/images/products/Paperflow/paperflow (6).jpg",
-      image7: "/images/products/Paperflow/paperflow (7).jpg",
+      image1: { url: "/images/products/Paperflow/paperflow (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image2: { url: "/images/products/Paperflow/paperflow (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/Paperflow/paperflow (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image4: { url: "/images/products/Paperflow/paperflow (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image5: { url: "/images/products/Paperflow/paperflow (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image6: { url: "/images/products/Paperflow/paperflow (6).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image7: { url: "/images/products/Paperflow/paperflow (7).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
-
   // Product 5
   {
     title: "Packshot",
     id: "packshot",
-    width: 320,
     url: "/product/packshot",
-    description:
-      "Description for Product 5. More text about the product. Even more text. You can add as many paragraphs as needed.",
     images: {
-      image1: "/images/products/Packshot/packshot (1).png",
-      image2: "/images/products/Packshot/packshot (2).jpg",
-      image3: "/images/products/Packshot/packshot (3).jpg",
-      image4: "/images/products/Packshot/packshot (4).jpg",
-      image5: "/images/products/Packshot/packshot (5).jpg",
-      image6: "/images/products/Packshot/packshot (6).jpg",
-      image7: "/images/products/Packshot/packshot (7).png",
+      image1: { url: "/images/products/Packshot/packshot (1).png", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image2: { url: "/images/products/Packshot/packshot (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/Packshot/packshot (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image4: { url: "/images/products/Packshot/packshot (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image5: { url: "/images/products/Packshot/packshot (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image6: { url: "/images/products/Packshot/packshot (6).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image7: { url: "/images/products/Packshot/packshot (7).png", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
-
   // Product 6
   {
     title: "becafire",
     id: "becafire",
-    width: 450,
     url: "/product/becafire",
-    description:
-      "Description for Product 6. More text about the product. Even more text. You can add as many paragraphs as needed.",
     images: {
-      image1: "/images/products/Becafire/becafire (1).jpg",
-      image2: "/images/products/Becafire/becafire (2).jpg",
-      image3: "/images/products/Becafire/becafire (3).jpg",
-      image4: "/images/products/Becafire/becafire (4).jpg",
-      image5: "/images/products/Becafire/becafire (5).jpg",
+      image1: { url: "/images/products/Becafire/becafire (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image2: { url: "/images/products/Becafire/becafire (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/Becafire/becafire (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image4: { url: "/images/products/Becafire/becafire (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image5: { url: "/images/products/Becafire/becafire (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
-
   // Product 7
   {
     title: "TAKANAP",
     id: "takanap",
-    width: 380,
     url: "/product/takanap",
-    description:
-      "Description for Product 7. More text about the product. Even more text. You can add as many paragraphs as needed.",
     videoLink: "https://www.youtube.com/watch?v=roFW8j9nju8",
     images: {
-      image1: "/images/products/TAKANAP/takanap (1).jpg",
-      image2: "/images/products/TAKANAP/takanap (2).jpg",
-      image3: "/images/products/TAKANAP/takanap (3).jpg",
-      image4: "/images/products/TAKANAP/takanap (4).jpg",
-      image5: "/images/products/TAKANAP/takanap (5).jpg",
-      image6: "/images/products/TAKANAP/takanap (6).jpg",
-      image7: "/images/products/TAKANAP/takanap (7).jpg",
+      image1: { url: "/images/products/TAKANAP/takanap (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image2: { url: "/images/products/TAKANAP/takanap (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/TAKANAP/takanap (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image4: { url: "/images/products/TAKANAP/takanap (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image5: { url: "/images/products/TAKANAP/takanap (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image6: { url: "/images/products/TAKANAP/takanap (6).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image7: { url: "/images/products/TAKANAP/takanap (7).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
-
   // Product 8
   {
     title: "Vawo",
     id: "vawo",
-    width: 420,
     url: "/product/vawo",
-    description:
-      "Description for Product 8. More text about the product. Even more text. You can add as many paragraphs as needed.",
     images: {
-      image1: "/images/products/Vawo/vawo (1).jpg",
-      image2: "/images/products/Vawo/vawo (2).jpg",
-      image3: "/images/products/Vawo/vawo (3).jpg",
-      image4: "/images/products/Vawo/vawo (4).jpg",
-      image5: "/images/products/Vawo/vawo (5).jpg",
-      image6: "/images/products/Vawo/vawo (6).jpg",
-      image7: "/images/products/Vawo/vawo (7).jpg",
+      image1: { url: "/images/products/Vawo/vawo (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image2: { url: "/images/products/Vawo/vawo (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/Vawo/vawo (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image4: { url: "/images/products/Vawo/vawo (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image5: { url: "/images/products/Vawo/vawo (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image6: { url: "/images/products/Vawo/vawo (6).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image7: { url: "/images/products/Vawo/vawo (7).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
-
   // Product 9
   {
     title: "Ensemble",
     id: "ensemble",
-    width: 400,
-    position: "bottom-0 -left-100",
     url: "/product/ensemble",
     images: {
-      image1: "/images/products/Ensemble/ensemble (1).jpg",
-      image2: "/images/products/Ensemble/ensemble (2).jpg",
-      image3: "/images/products/Ensemble/ensemble (3).jpg",
-      image4: "/images/products/Ensemble/ensemble (4).jpg",
-      image5: "/images/products/Ensemble/ensemble (5).jpg",
-      image6: "/images/products/Ensemble/ensemble (6).jpg",
-      image7: "/images/products/Ensemble/ensemble (7).jpg",
+      image1: { url: "/images/products/Ensemble/ensemble (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image2: { url: "/images/products/Ensemble/ensemble (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/Ensemble/ensemble (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image4: { url: "/images/products/Ensemble/ensemble (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image5: { url: "/images/products/Ensemble/ensemble (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image6: { url: "/images/products/Ensemble/ensemble (6).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image7: { url: "/images/products/Ensemble/ensemble (7).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
-
   // Product 10
   {
     title: "Meet",
     id: "meet",
-    width: 350,
     url: "/product/meet",
     videoLink: "https://www.youtube.com/watch?v=--CHqr5M0o4",
     images: {
-      image1: "/images/products/Meet/meet (1).jpg",
-      image2: "/images/products/Meet/meet (2).jpg",
-      image3: "/images/products/Meet/meet (3).jpg",
-      image4: "/images/products/Meet/meet (4).jpg",
-      image5: "/images/products/Meet/meet (5).jpg",
+      image1: { url: "/images/products/Meet/meet (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image2: { url: "/images/products/Meet/meet (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/Meet/meet (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image4: { url: "/images/products/Meet/meet (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image5: { url: "/images/products/Meet/meet (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
-
   // Product 11
   {
     title: "Miquelon",
     id: "miquelon",
-    width: 500,
     url: "/product/miquelon",
-    description:
-      "Description for Product 11. More text about the product. Even more text. You can add as many paragraphs as needed.",
     videoLink: "https://www.youtube.com/watch?v=572uLi_rnn4",
     images: {
-      image1: "/images/products/Miquelon/miquelon (1).jpg",
-      image2: "/images/products/Miquelon/miquelon (2).jpg",
-      image3: "/images/products/Miquelon/miquelon (3).jpg",
-      image4: "/images/products/Miquelon/miquelon (4).jpg",
-      image5: "/images/products/Miquelon/miquelon (5).jpg",
-      image6: "/images/products/Miquelon/miquelon (6).jpg",
-      image7: "/images/products/Miquelon/miquelon (7).jpg",
+      image1: { url: "/images/products/Miquelon/miquelon (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image2: { url: "/images/products/Miquelon/miquelon (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/Miquelon/miquelon (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image4: { url: "/images/products/Miquelon/miquelon (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image5: { url: "/images/products/Miquelon/miquelon (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image6: { url: "/images/products/Miquelon/miquelon (6).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image7: { url: "/images/products/Miquelon/miquelon (7).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
-
   // Product 12
   {
     title: "Plaid",
     id: "plaid",
-    width: 320,
     url: "/product/plaid",
-    description:
-      "Description for Product 12. More text about the product. Even more text. You can add as many paragraphs as needed.",
     images: {
-      image1: "/images/products/Plaid/plaid (1).jpg",
-      image2: "/images/products/Plaid/plaid (2).jpg",
-      image3: "/images/products/Plaid/plaid (3).jpg",
-      image4: "/images/products/Plaid/plaid (4).jpg",
-      image5: "/images/products/Plaid/plaid (5).jpg",
-      image6: "/images/products/Plaid/plaid (6).jpg",
-      image7: "/images/products/Plaid/plaid (7).jpg",
+      image1: { url: "/images/products/Plaid/plaid (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image2: { url: "/images/products/Plaid/plaid (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/Plaid/plaid (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image4: { url: "/images/products/Plaid/plaid (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image5: { url: "/images/products/Plaid/plaid (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image6: { url: "/images/products/Plaid/plaid (6).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image7: { url: "/images/products/Plaid/plaid (7).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
-
   // Product 13
   {
     title: "Product",
     id: "product",
-    width: 450,
     url: "/product/product",
-    description:
-      "Description for Product 13. More text about the product. Even more text. You can add as many paragraphs as needed.",
     images: {
-      image1: "/images/products/Product/product (1).jpg",
-      image2: "/images/products/Product/product (2).jpg",
-      image3: "/images/products/Product/product (3).jpg",
-      image4: "/images/products/Product/product (4).jpg",
-      image5: "/images/products/Product/product (5).jpg",
-      image6: "/images/products/Product/product (6).jpg",
-      image7: "/images/products/Product/product (7).jpg",
+      image1: { url: "/images/products/Product/product (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image2: { url: "/images/products/Product/product (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/Product/product (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image4: { url: "/images/products/Product/product (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image5: { url: "/images/products/Product/product (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image6: { url: "/images/products/Product/product (6).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image7: { url: "/images/products/Product/product (7).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
-
   // Product 14
   {
     title: "CIF",
     id: "cif",
-    width: 380,
     url: "/product/cif",
-    description:
-      "Description for Product 14. More text about the product. Even more text. You can add as many paragraphs as needed.",
-    videoLink: "https://www.youtube.com/watch?v=roFW8j9nju8",
     images: {
-      image1: "/images/products/CIF/cif (1).jpg",
-      image2: "/images/products/CIF/cif (2).jpg",
-      image3: "/images/products/CIF/cif (3).jpg",
-      image4: "/images/products/CIF/cif (4).jpg",
-      image5: "/images/products/CIF/cif (5).jpg",
-      image6: "/images/products/CIF/cif (6).jpg",
+      image1: { url: "/images/products/CIF/cif (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image2: { url: "/images/products/CIF/cif (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/CIF/cif (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image4: { url: "/images/products/CIF/cif (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image5: { url: "/images/products/CIF/cif (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image6: { url: "/images/products/CIF/cif (6).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image7: { url: "/images/products/CIF/cif (7).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
-
   // Product 15
   {
-    title: "Zoo Gaia",
+    title: "zoo",
     id: "zoo",
-    width: 420,
     url: "/product/zoo",
-    description:
-      "Description for Product 15. More text about the product. Even more text. You can add as many paragraphs as needed.",
     images: {
-      image1: "/images/products/Zoo/Zoo (1).jpg",
-      image2: "/images/products/Zoo/Zoo (2).jpg",
-      image3: "/images/products/Zoo/Zoo (3).jpg",
-
+      image1: { url: "/images/products/zoo/zoo (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image2: { url: "/images/products/zoo/zoo (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/zoo/zoo (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
-
-  // Product 16
   {
     title: "Design",
     id: "design",
-    width: 480,
     url: "/product/design",
-    description:
-      "Description for Product 16. More text about the product. Even more text. You can add as many paragraphs as needed.",
     images: {
-      image1: "/images/products/Design/design (1).png",
-      image2: "/images/products/Design/design (2).png",
-      image3: "/images/products/Design/design (3).png",
-      image4: "/images/products/Design/design (4).png",
-      image5: "/images/products/Design/design (5).png",
-      image6: "/images/products/Design/design (6).png",
+      image1: { url: "/images/products/Design/design (1).png", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image2: { url: "/images/products/Design/design (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/Design/design (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image4: { url: "/images/products/Design/design (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image5: { url: "/images/products/Design/design (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image6: { url: "/images/products/Design/design (6).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image7: { url: "/images/products/Design/design (7).png", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
 ];

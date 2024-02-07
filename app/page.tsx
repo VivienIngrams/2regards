@@ -52,18 +52,15 @@ function Home() {
             ({
               title,
               id,
-              width,
-              position,
               url,
               images,
             }) => (
               <ProductCards
-                img={images.image1}
+                img={images.image1.url}
                 title={title}
                 id={id}
                 key={id}
-                width={width || 300}
-                position={position}
+                position={images.image1.position}
                 url={url}
               />
             )
