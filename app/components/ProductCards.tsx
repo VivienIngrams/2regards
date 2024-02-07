@@ -23,7 +23,7 @@ export default function ProductCards({
   // const visible = visibility.isItemVisible(id);
 
   return (
-    <div className="w[25%] h-full select-none" tabIndex={0}>
+    <div className="relative h-full select-none" tabIndex={0}>
       <div
         key={id}
         className={`relative ${position}  group hover:bg-gradient-to-r from-[black] to-neutral-600`}
@@ -33,9 +33,7 @@ export default function ProductCards({
           src={img}
           alt={title}
           fill
-        // height={500}
-        //   width={width}
-          sizes="50vw"
+               sizes="50vw"
         />
         <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
           <Link href={url}>

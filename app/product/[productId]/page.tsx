@@ -82,54 +82,51 @@ const Product = ({ params }: { params: { productId: string } }) => {
         </div>
       </div>
 
-      <div className="lg:grid lg:grid-cols-2 min-h-full md:max-h-[86vh]">
-        {/* Left/top side of page */}
-        <div className="grid grid-rows-3 w-full h-[65vh] md:h-[50vh] lg:h-[90vh]">
-          <div className="z-1 mt-8 lg:pl-12 flex relative h-full ">
-            <Image
-              className="object-fill overflow-visible absolute"
-              src={images.image1.url}
-              height={100}
-              width={200}
-              alt={title}
-            />
+      <div className="min-h-full md:max-h-[86vh]">
+        <div className={`md:grid md:grid-cols-3 h-[65vh] lg:h-[90vh]`}>
+          <div className="h-full relative">
+            <div className="h-[500px] w-[300px] relative  ">
+              <Image
+                className="object-fill overflow-visible absolute"
+                src={images.image1.url}
+                fill
+                alt={title}
+              />
+            </div>
           </div>
-          <div className="z-30 md:z-2 flex relative h-full justify-end">
-            <Image
-              className=" absolute"
-              src={images.image2.url}
-              width={200}
-              height={200}
-              alt={title}
-            />
+          <div className="h-full relative">
+            <div className="h-[500px] w-[300px] relative ">
+              <Image
+                className="object-fill absolute overflow-visible"
+                src={images.image2.url}
+                fill
+                alt={title}
+              />
+            </div>
           </div>
-          <div className="z-1 md:z-3 md:pl-28 flex justify-center h-full relative">
-            <Image
-              className=" absolute bottom-0"
-              src={images.image3.url}
-              width={200}
-              height={200}
-              alt={title}
-            />
-          </div>
-        </div>
-
-        {/* Right/bottom side of page */}
-        <div className="flex md:flex-col items-center justify-center md:h-[40vh] lg:h-[50vh] xl:h-[70vh] lg:mt-[20vh] lg:ml-[10vw] xl:ml-[15vw] xl:mr-[5vw]">
-          <div className="mx-auto max-w-sm">
-            <div className="py-4"></div>
-            {videoLink && (
-              <Link
-                href={videoLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-1 bg-white font-italiana text-xl text-black h-8 px-4 border border-black rounded "
-              >
-                Watch video
-              </Link>
-            )}
+          <div className="h-full relative">
+            <div className="top-12 h-[500px] w-[300px]  relative">
+              <Image
+                className="object-fill absolute overflow-visible"
+                src={images.image3.url}
+                fill
+                alt={title}
+              />
+            </div>
           </div>
         </div>
+        {videoLink && (
+          <div className="fixed bottom-10 right-10 flex flex-col items-end justify-center m-2">
+            <Link
+              href={videoLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1 bg-white font-italiana text-xl text-black h-8 px-4 border border-black rounded "
+            >
+              Watch video
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );

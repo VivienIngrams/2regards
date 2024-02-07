@@ -39,7 +39,7 @@ export const productData: ProductDataType[] = [
     url: "/product/aleanze",
     videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
     images: {
-      image1: { url: "/images/products/Aleanze/aleanze (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image1: { url: "/images/products/Aleanze/aleanze (1).jpg", position: "-left-32 h-[400px] w-[500px]" },
       image2: { url: "/images/products/Aleanze/aleanze (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image3: { url: "/images/products/Aleanze/aleanze (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image4: { url: "/images/products/Aleanze/aleanze (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
@@ -51,7 +51,7 @@ export const productData: ProductDataType[] = [
     id: "veilleur",
     url: "/product/veilleur",
     images: {
-      image1: { url: "/images/products/Veilleur/veilleur (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image1: { url: "/images/products/Veilleur/veilleur (1).jpg", position: "bottom-0 left-0 h-[200px] w-[300px]" },
       image2: { url: "/images/products/Veilleur/veilleur (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image3: { url: "/images/products/Veilleur/veilleur (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
@@ -63,7 +63,7 @@ export const productData: ProductDataType[] = [
     url: "/product/hiima",
     videoLink: "https://www.youtube.com/watch?v=--CHqr5M0o4",
     images: {
-      image1: { url: "/images/products/Hiima/hiima (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image1: { url: "/images/products/Hiima/hiima (1).jpg", position: "bottom-0 h-[400px] w-[200px]" },
       image2: { url: "/images/products/Hiima/hiima (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image3: { url: "/images/products/Hiima/hiima (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image4: { url: "/images/products/Hiima/hiima (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
@@ -118,9 +118,9 @@ export const productData: ProductDataType[] = [
     url: "/product/takanap",
     videoLink: "https://www.youtube.com/watch?v=roFW8j9nju8",
     images: {
-      image1: { url: "/images/products/TAKANAP/takanap (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image2: { url: "/images/products/TAKANAP/takanap (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image3: { url: "/images/products/TAKANAP/takanap (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image1: { url: "/images/products/Takanap/takanap (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image2: { url: "/images/products/Takanap/takanap (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/Takanap/takanap (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
   // Product 8
@@ -235,11 +235,11 @@ export const productData: ProductDataType[] = [
     url: "/product/design",
     images: {
       image1: { url: "/images/products/Design/design (1).png", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image2: { url: "/images/products/Design/design (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image3: { url: "/images/products/Design/design (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image4: { url: "/images/products/Design/design (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image5: { url: "/images/products/Design/design (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image6: { url: "/images/products/Design/design (6).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image2: { url: "/images/products/Design/design (2).png", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/Design/design (3).png", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image4: { url: "/images/products/Design/design (4).png", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image5: { url: "/images/products/Design/design (5).png", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image6: { url: "/images/products/Design/design (6).png", position: "top-0 left-0 h-[400px] w-[300px]" },
       image7: { url: "/images/products/Design/design (7).png", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
