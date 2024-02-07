@@ -46,7 +46,7 @@ function Home() {
         <ScrollMenu
           onWheel={onWheel}
           transitionBehavior="smooth"
-          transitionDuration={isMobileScreen ? 500 : 4000}
+          transitionDuration={isMobileScreen ? 500 : 5000}
         >
           {productData.map(
             ({
