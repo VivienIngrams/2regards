@@ -108,13 +108,13 @@ export const productData: ProductDataType[] = [
     description:
       "Description for Product 5. More text about the product. Even more text. You can add as many paragraphs as needed.",
     images: {
-      image1: "/images/products/Packshot/packshot (1).jpg",
+      image1: "/images/products/Packshot/packshot (1).png",
       image2: "/images/products/Packshot/packshot (2).jpg",
       image3: "/images/products/Packshot/packshot (3).jpg",
       image4: "/images/products/Packshot/packshot (4).jpg",
       image5: "/images/products/Packshot/packshot (5).jpg",
       image6: "/images/products/Packshot/packshot (6).jpg",
-      image7: "/images/products/Packshot/packshot (7).jpg",
+      image7: "/images/products/Packshot/packshot (7).png",
     },
   },
 
@@ -205,8 +205,6 @@ export const productData: ProductDataType[] = [
       image3: "/images/products/Meet/meet (3).jpg",
       image4: "/images/products/Meet/meet (4).jpg",
       image5: "/images/products/Meet/meet (5).jpg",
-      image6: "/images/products/Meet/meet (6).jpg",
-      image7: "/images/products/Meet/meet (7).jpg",
     },
   },
 
@@ -299,10 +297,7 @@ export const productData: ProductDataType[] = [
       image1: "/images/products/Zoo/Zoo (1).jpg",
       image2: "/images/products/Zoo/Zoo (2).jpg",
       image3: "/images/products/Zoo/Zoo (3).jpg",
-      image4: "/images/products/Zoo/Zoo (4).jpg",
-      image5: "/images/products/Zoo/Zoo (5).jpg",
-      image6: "/images/products/Zoo/Zoo (6).jpg",
-      image7: "/images/products/Zoo/Zoo (7).jpg",
+
     },
   },
 
