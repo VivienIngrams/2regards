@@ -78,7 +78,6 @@ export const productData: ProductDataType[] = [
       image4: "/images/products/Hiima/hiima (4).jpg",
       image5: "/images/products/Hiima/hiima (5).jpg",
       image6: "/images/products/Hiima/hiima (6).jpg",
-      image7: "/images/products/Hiima/hiima (7).jpg",
     },
   },
 
@@ -133,8 +132,6 @@ export const productData: ProductDataType[] = [
       image3: "/images/products/Becafire/becafire (3).jpg",
       image4: "/images/products/Becafire/becafire (4).jpg",
       image5: "/images/products/Becafire/becafire (5).jpg",
-      image6: "/images/products/Becafire/becafire (6).jpg",
-      image7: "/images/products/Becafire/becafire (7).jpg",
     },
   },
 
@@ -287,7 +284,6 @@ export const productData: ProductDataType[] = [
       image4: "/images/products/CIF/cif (4).jpg",
       image5: "/images/products/CIF/cif (5).jpg",
       image6: "/images/products/CIF/cif (6).jpg",
-      image7: "/images/products/CIF/cif (7).jpg",
     },
   },
 
@@ -312,20 +308,19 @@ export const productData: ProductDataType[] = [
 
   // Product 16
   {
-    title: "Subtitle 16",
-    id: "16",
+    title: "Design",
+    id: "design",
     width: 480,
-    url: "/product/16",
+    url: "/product/design",
     description:
       "Description for Product 16. More text about the product. Even more text. You can add as many paragraphs as needed.",
     images: {
-      image1: "/images/products/16/16 (1).jpg",
-      image2: "/images/products/16/16 (2).jpg",
-      image3: "/images/products/16/16 (3).jpg",
-      image4: "/images/products/16/16 (4).jpg",
-      image5: "/images/products/16/16 (5).jpg",
-      image6: "/images/products/16/16 (6).jpg",
-      image7: "/images/products/16/16 (7).jpg",
+      image1: "/images/products/Design/design (1).png",
+      image2: "/images/products/Design/design (2).png",
+      image3: "/images/products/Design/design (3).png",
+      image4: "/images/products/Design/design (4).png",
+      image5: "/images/products/Design/design (5).png",
+      image6: "/images/products/Design/design (6).png",
     },
   },
 ];

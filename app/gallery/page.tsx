@@ -47,7 +47,7 @@ function Gallery() {
            
                 {galleryData.map(({ images, title, id, url }) => (
                   <GalleryCards
-                    img={images.image1}
+                    img={images.image1.url}
                     title={title}
                     id={id} 
                     key={id}
