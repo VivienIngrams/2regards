@@ -121,20 +121,20 @@ export const productData: ProductDataType[] = [
 
   // Product 6
   {
-    title: "Products",
-    id: "products",
+    title: "becafire",
+    id: "becafire",
     width: 450,
-    url: "/product/products",
+    url: "/product/becafire",
     description:
       "Description for Product 6. More text about the product. Even more text. You can add as many paragraphs as needed.",
     images: {
-      image1: "/images/products/Products/products (1).jpg",
-      image2: "/images/products/Products/products (2).jpg",
-      image3: "/images/products/Products/products (3).jpg",
-      image4: "/images/products/Products/products (4).jpg",
-      image5: "/images/products/Products/products (5).jpg",
-      image6: "/images/products/Products/products (6).jpg",
-      image7: "/images/products/Products/products (7).jpg",
+      image1: "/images/products/Becafire/becafire (1).jpg",
+      image2: "/images/products/Becafire/becafire (2).jpg",
+      image3: "/images/products/Becafire/becafire (3).jpg",
+      image4: "/images/products/Becafire/becafire (4).jpg",
+      image5: "/images/products/Becafire/becafire (5).jpg",
+      image6: "/images/products/Becafire/becafire (6).jpg",
+      image7: "/images/products/Becafire/becafire (7).jpg",
     },
   },
 
