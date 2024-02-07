@@ -37,19 +37,29 @@ export const productData: ProductDataType[] = [
     id: "product",
     url: "/product/product",
     images: {
-      image1: { url: "/images/products/Product/products (3).jpg", position: "top-[20vh] left-0 h-[300px] w-[380px]" },
+      image1: { url: "/images/products/Product/products (3).jpg", position: "top-[20vh] left-0 w-[300px] h-[300px] md:w-[380px]" },
       image2: { url: "/images/products/Product/products (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image3: { url: "/images/products/Product/products (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image4: { url: "/images/products/Product/products (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
- 
+  {
+    title: "Aleanze Design",
+    id: "aleanze",
+    url: "/product/aleanze",
+    videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
+    images: {
+      image1: { url: "/images/products/Aleanze/aleanze (2).jpg", position: "md:-left-[10vw] top-[40vh] h-[300px] w-[400px] " },
+      image2: { url: "/images/products/Aleanze/aleanze (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/Aleanze/aleanze (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+    },
+  },
   {
     title: "CIF",
     id: "cif",
     url: "/product/cif",
     images: {
-      image1: { url: "/images/products/CIF/cif (5).jpg", position: " top-0 -left-[5vw] h-[350px] w-[500px]" },
+      image1: { url: "/images/products/CIF/cif (5).jpg", position: " top-0 left-[5vw] md:-left-[4vw] h-[270px] w-[350px] md:w-[500px]" },
       image2: { url: "/images/products/CIF/cif (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image3: { url: "/images/products/CIF/cif (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image4: { url: "/images/products/CIF/cif (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
@@ -64,7 +74,7 @@ export const productData: ProductDataType[] = [
     id: "packshot",
     url: "/product/packshot",
     images: {
-      image1: { url: "/images/products/Packshot/packshot (5).jpg", position: "top-[43vh] left-0 h-[350px] w-[250px]" },
+      image1: { url: "/images/products/Packshot/packshot (5).jpg", position: "top-[35vh] md:top-[43vh] left-0 h-[350px] w-[280px]" },
       image2: { url: "/images/products/Packshot/packshot (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image3: { url: "/images/products/Packshot/packshot (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image4: { url: "/images/products/Packshot/packshot (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
@@ -72,15 +82,19 @@ export const productData: ProductDataType[] = [
       image6: { url: "/images/products/Packshot/packshot (6).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
+ 
+    
   {
-    title: "Aleanze Design",
-    id: "aleanze",
-    url: "/product/aleanze",
-    videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
+    title: "Meet",
+    id: "meet",
+    url: "/product/meet",
+    videoLink: "https://www.youtube.com/watch?v=--CHqr5M0o4",
     images: {
-      image1: { url: "/images/products/Aleanze/aleanze (2).jpg", position: "-left-[15vw] top-0 h-[300px] w-[400px] " },
-      image2: { url: "/images/products/Aleanze/aleanze (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image3: { url: "/images/products/Aleanze/aleanze (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image1: { url: "/images/products/Meet/meet (1).jpg", position: "top-[2vh] md:-left-[10vw] h-[550px] w-[330px] md:h-[640px] md:w-[400px]" },
+      image2: { url: "/images/products/Meet/meet (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image3: { url: "/images/products/Meet/meet (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image4: { url: "/images/products/Meet/meet (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
+      image5: { url: "/images/products/Meet/meet (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
   {
@@ -89,7 +103,7 @@ export const productData: ProductDataType[] = [
     url: "/product/paperflow",
     videoLink: "https://www.youtube.com/watch?v=572uLi_rnn4",
     images: {
-      image1: { url: "/images/products/Paperflow/paperflow (1).jpg", position: "top-[33vh] -left-[10vw] h-[300px] w-[500px]" },
+      image1: { url: "/images/products/Paperflow/paperflow (1).jpg", position: "top-[30vh] md:-left-[10vw] h-[280px] w-[400px] md:h-[340px] md:w-[580px]" },
       image2: { url: "/images/products/Paperflow/paperflow (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image3: { url: "/images/products/Paperflow/paperflow (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
@@ -99,32 +113,18 @@ export const productData: ProductDataType[] = [
     id: "zoo",
     url: "/product/zoo",
     images: {
-      image1: { url: "/images/products/zoo/zoo (1).jpg", position: "top-0 left-0 h-[510px] w-[330px]" },
+      image1: { url: "/images/products/zoo/zoo (1).jpg", position: "top-0 left-0 h-[400px] w-[260px] md:h-[500px] md:w-[320px]" },
       image2: { url: "/images/products/zoo/zoo (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image3: { url: "/images/products/zoo/zoo (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
  
-  
-  {
-    title: "Meet",
-    id: "meet",
-    url: "/product/meet",
-    videoLink: "https://www.youtube.com/watch?v=--CHqr5M0o4",
-    images: {
-      image1: { url: "/images/products/Meet/meet (1).jpg", position: "top-0 left-0 h-[700px] w-[400px]" },
-      image2: { url: "/images/products/Meet/meet (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image3: { url: "/images/products/Meet/meet (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image4: { url: "/images/products/Meet/meet (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-      image5: { url: "/images/products/Meet/meet (5).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
-    },
-  },
   {
     title: "Design",
     id: "design",
     url: "/product/design",
     images: {
-      image1: { url: "/images/products/Design/design (1).png", position: "top-0 left-0 h-[300px] w-[500px]" },
+      image1: { url: "/images/products/Design/design (1).png", position: "top-[42vh] -left-[6vw] h-[250px] w-[420px] md:h-[340px] md:w-[550px]" },
       image2: { url: "/images/products/Design/design (2).png", position: "top-0 left-0 h-[400px] w-[300px]" },
       image3: { url: "/images/products/Design/design (3).png", position: "top-0 left-0 h-[400px] w-[300px]" },
       image4: { url: "/images/products/Design/design (4).png", position: "top-0 left-0 h-[400px] w-[300px]" },
@@ -138,7 +138,7 @@ export const productData: ProductDataType[] = [
     id: "veilleur",
     url: "/product/veilleur",
     images: {
-      image1: { url: "/images/products/Veilleur/veilleur (1).jpg", position: "top-[20vh] left-0 h-[510px] w-[340px]" },
+      image1: { url: "/images/products/Veilleur/veilleur (1).jpg", position: "top-[10vh] left-[8vw] md:left-0 h-[400px] w-[250px] md:h-[510px] md:w-[340px]" },
       image2: { url: "/images/products/Veilleur/veilleur (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
   },
