@@ -86,17 +86,23 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
 
       <div className="lg:grid lg:grid-cols-5 min-h-full md:max-h-[86vh]">
         {/* Left/top side of page */}
-        <div className="grid grid-rows-3 col-span-3 w-full h-[65vh] md:h-[50vh] lg:h-[90vh]">
-          <div className={`mt-8 lg:pl-12 flex relative h-full ${images.image2.position}`}>
+        <div className=" col-span-3 w-full h-[65vh] md:h-[90vh]">
+          <div className={`grid grid-cols-${Object.keys(images).length} h-full relative`}>
+          {Object.values(images).map((image, index) => (
+
+          <div key={index} className="col-span-1 flex relative h-full">
+            <div className={`col-span-1 flex relative h-full ${image.position}`}>
             <Image
-              className="object-fill overflow-visible absolute  shadow-md shadow-gray-500 "
-              src={images.image2.url}
-              height={200}
-              width={images.image2.width ?? 200}
+              className=" absolute shadow-md shadow-gray-500 "
+              src={image.url}
+              // height={200}
+              // width={image.width ?? 200}
+              fill
               alt={title}
-            />
+            /></div>
           </div>
-          <div className={`flex relative h-full justify-end  ${images.image3.position}`}>
+            ))}
+          {/* <div className={`flex relative h-full  ${images.image3.position}`}>
             <Image
               className="absolute shadow-md shadow-gray-500"
               src={images.image3.url}
@@ -105,15 +111,16 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
               alt={title}
             />
           </div>
-          {images.image4 && <div className={`md:pl-28 flex justify-center h-full relative ${images.image4.position}`}>
+          {images.image4 && <div className={`flex relative h-full  ${images.image4.position}`}>
             <Image
-              className="absolute bottom-0  shadow-md shadow-gray-500"
+              className="absolute shadow-md shadow-gray-500"
               src={images.image4.url ?? ''}
               width={images.image4.width ?? 300}
               height={300}
               alt={title}
             />
-          </div>}
+          </div>} */}
+          </div>
         </div>
 
         {/* Right/bottom side of page */}
