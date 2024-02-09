@@ -8,6 +8,7 @@ import "react-horizontal-scrolling-menu/dist/styles.css";
 import ProductCards from "./components/ProductCards";
 import usePreventBodyScroll from "./components/usePreventBodyScroll";
 import { productData } from "./data";
+import { RightArrow } from "./components/Arrows";
 
 type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
@@ -45,6 +46,8 @@ function Home() {
       >
         <ScrollMenu
           onWheel={onWheel}
+         
+          RightArrow={RightArrow}
           transitionBehavior="smooth"
           transitionDuration={isMobileScreen ? 500 : 5000}
         >

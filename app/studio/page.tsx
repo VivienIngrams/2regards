@@ -9,7 +9,7 @@ const Studio = () => {
     <div className="mr-8 lg:mr-16 lg:max-h-[92vh]  text-neutral-500 text-sm leading-tight text-justify lg:text-left">
       {/* Border right */}
       <div className="w-4 lg:w-6 z-50 fixed h-screen right-0 top-0">
-        <div className="right-0 top-4 lg:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-100" />
+        <div className="right-0 top-4 lg:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-200" />
       </div>
       <div className="min-h-[92vh] flex flex-col justify-around lg:max-h-[90vh]">
         {/* Top section */}
@@ -33,7 +33,7 @@ const Studio = () => {
             <div className="flex border-b-2 border-black ">
               <div className="flex min-w-[70px] lg:min-w-[200px]">
                 <Image
-                  className=""
+                  className="border-[1px] border-black"
                   src="/images/studio/AnalogLab.jpg"
                   width={250}
                   height={220}
@@ -70,7 +70,7 @@ const Studio = () => {
               </div>
               <div className="flex min-w-[70px] lg:min-w-[200px]">
                 <Image
-                  className=""
+                  className="border-[1px] border-black"
                   src="/images/studio/ProductStudio.jpg"
                   width={250}
                   height={200}
@@ -107,7 +107,7 @@ const Studio = () => {
             <div className="flex border-b-2 border-black ">
               <div className="flex min-w-[70px] lg:min-w-[200px]">
                 <Image
-                  className=""
+                  className="border-[1px] border-black"
                   src="/images/studio/Workshops.jpg"
                   width={230}
                   height={200}

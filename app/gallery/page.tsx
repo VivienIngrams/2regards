@@ -8,6 +8,7 @@ import "react-horizontal-scrolling-menu/dist/styles.css";
 import GalleryCards from "../components/GalleryCards";
 import usePreventBodyScroll from "../components/usePreventBodyScroll";
 import { galleryData } from "../data";
+import { RightArrow } from "../components/Arrows";
 
 type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
@@ -43,7 +44,7 @@ function Gallery() {
         onMouseEnter={disableScroll}
         className="h-full"
       >
-          <ScrollMenu onWheel={onWheel} transitionBehavior="smooth" transitionDuration={isMobileScreen ? 500 : 4000}>
+          <ScrollMenu onWheel={onWheel}    RightArrow={RightArrow} transitionBehavior="smooth" transitionDuration={isMobileScreen ? 500 : 4000}>
            
                 {galleryData.map(({ images, title, id, url }) => (
                   <GalleryCards

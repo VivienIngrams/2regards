@@ -71,7 +71,7 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
 
       {/* Right border */}
       <div className="w-4 md:w-6 z-50 fixed h-screen right-0 top-0">
-        <div className="right-0 top-4 md:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-100" />
+        <div className="right-0 top-4 md:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-200" />
       </div>
 
       {/* Title */}

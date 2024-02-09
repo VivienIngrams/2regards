@@ -37,7 +37,7 @@ export const productData: ProductDataType[] = [
     id: "product",
     url: "/product/product",
     images: {
-      image1: { url: "/images/products/Product/products (3).jpg", position: "top-[20vh] left-0 w-[300px] h-[300px] md:w-[380px]" },
+      image1: { url: "/images/products/Product/products (3).jpg", position: "top-[20vh] left-0 w-[320px] h-[300px] md:w-[380px]" },
       image2: { url: "/images/products/Product/products (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image3: { url: "/images/products/Product/products (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image4: { url: "/images/products/Product/products (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
@@ -49,7 +49,7 @@ export const productData: ProductDataType[] = [
     url: "/product/aleanze",
     videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
     images: {
-      image1: { url: "/images/products/Aleanze/aleanze (2).jpg", position: "md:-left-[10vw] top-[40vh] h-[300px] w-[400px] " },
+      image1: { url: "/images/products/Aleanze/aleanze (2).jpg", position: "md:-left-[2vw] top-[40vh] h-[350px] w-[450px] " },
       image2: { url: "/images/products/Aleanze/aleanze (1).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image3: { url: "/images/products/Aleanze/aleanze (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
     },
@@ -59,7 +59,7 @@ export const productData: ProductDataType[] = [
     id: "cif",
     url: "/product/cif",
     images: {
-      image1: { url: "/images/products/CIF/cif (5).jpg", position: " top-0 left-[5vw] md:-left-[4vw] h-[270px] w-[350px] md:w-[500px]" },
+      image1: { url: "/images/products/CIF/cif (5).jpg", position: " top-0 left-[5vw] md:-left-[4vw] h-[300px] w-[370px] md:w-[530px]" },
       image2: { url: "/images/products/CIF/cif (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image3: { url: "/images/products/CIF/cif (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image4: { url: "/images/products/CIF/cif (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
@@ -90,7 +90,7 @@ export const productData: ProductDataType[] = [
     url: "/product/meet",
     videoLink: "https://www.youtube.com/watch?v=--CHqr5M0o4",
     images: {
-      image1: { url: "/images/products/Meet/meet (1).jpg", position: "top-[2vh] md:-left-[10vw] h-[550px] w-[330px] md:h-[640px] md:w-[400px]" },
+      image1: { url: "/images/products/Meet/meet (1).jpg", position: "top-[6vh] md:-left-[10vw] h-[570px] w-[340px] md:h-[640px] md:w-[400px]" },
       image2: { url: "/images/products/Meet/meet (2).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image3: { url: "/images/products/Meet/meet (3).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },
       image4: { url: "/images/products/Meet/meet (4).jpg", position: "top-0 left-0 h-[400px] w-[300px]" },

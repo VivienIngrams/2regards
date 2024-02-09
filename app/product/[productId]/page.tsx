@@ -69,7 +69,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
 
       {/* Right border */}
       <div className="w-4 md:w-6 z-50 fixed h-screen right-0 top-0">
-        <div className="right-0 top-4 md:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-100" />
+        <div className="right-0 top-4 md:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-200" />
       </div>
 
       {/* Title */}
@@ -83,12 +83,12 @@ const Product = ({ params }: { params: { productId: string } }) => {
       </div>
 
       <div className="min-h-full md:max-h-[86vh]">
-        <div className={`grid grid-cols-${Object.keys(images).length} h-[65vh] lg:h-[90vh]`}>
+        <div className={`flex flex-col md:grid md:grid-cols-${Object.keys(images).length} h-[65vh] lg:h-[90vh]`}>
           {Object.values(images).map((image, index) => (
             <div key={index} className="h-full relative col-span-1">
               <div  className={`${image.position} relative`}>
                 <Image
-                  className="object-fill overflow-visible absolute"
+                  className="object-contain overflow-hidden md:overflow-visible absolute"
                   src={image.url}
                   fill
                   sizes="30vw"

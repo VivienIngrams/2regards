@@ -24,7 +24,7 @@ export default function GalleryCards({
       <div className="relative shadow-md group w-[360px] h-[500px] md:w-[450px] md:h-[560px] hover:bg-gradient-to-r from-[black] to-neutral-600">
       <Link href={url}>
       <Image
-          className="object-fill group-hover:opacity-60"
+          className="object-fill group-hover:opacity-60 border-[1px] border-black"
           src={img}
           alt={title}
           fill

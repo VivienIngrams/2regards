@@ -10,7 +10,7 @@ const About = () => {
     <div className="sm:p-6 lg:p-12 mr-8 h-full lg:h-auto text-neutral-500 text-sm sm:text-base lg:text-lg leading-tight lg:leading-[22px] 2xl:leading-tight">
       {/* Border right */}
       <div className="w-4 lg:w-6 z-50 fixed h-screen right-0 top-0">
-        <div className="right-0 top-4 lg:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-100" />
+        <div className="right-0 top-4 lg:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-200" />
       </div>
 
       {/* Main content */}
@@ -95,6 +95,7 @@ const About = () => {
           <div className="flex border-b-2 border-black ">
             <div className="flex min-w-[85px]">
               <Image
+              className="border-[1px] border-black"
                 src="/images/Mathilde.jpeg"
                 width={140}
                 height={200}
@@ -110,29 +111,21 @@ const About = () => {
           <p className="mt-2 pb-2 ">
             Mathilde Cudeville&rsquo;s artistic practice revolves around the
             photographic medium and silver printing, with her works oscillating
-            between ambient photography and plastic photography. They are often
-            exhibited in unexpected places, reflecting her daring nature.
+            between ambient photography and plastic photography. 
           </p>
-          {/* <p className="pb-2">
+          <p className="pb-2">
             Mathilde absorbs the world around her and reflects it back with a
             highly personal poetic touch. She dissolves into the surroundings
             before revealing the most unusual elements, which are often the most
-            expressive. Her connection to nature is profound, defending it by
-            unveiling its absolute grandeur captured in the subtlest details.
-            The same applies to her relationship with humanity.
-          </p> */}
+            expressive.           </p>
           <p className="pb-2 ">
-            It is in unrestrained creation and recreation that Mathilde&rsquo;s
-            unique talent resides. Initially delving into insularity and
+            Initially delving into insularity and
             isolated territories, notably through a documentary on the
             Saint-Pierre-et-Miquelon archipelago (&quot;Les onze mille
             vierges&quot;), she then engaged in a correspondence book, playing
-            the exquisite corpse game with a writer in Paris. This work is a
-            fleeting photo/writing dialogue questioning the concept of solitude.
-            Subsequently, she embarked on a series of self-portraits
+            the exquisite corpse game with a writer in Paris.             Subsequently, she embarked on a series of self-portraits
             (&quot;Rêverie Odisseia&quot;), baring herself both literally and
-            figuratively, driven by the desire to explore herself more and more,
-            body and soul intertwined. &quot;En suspension (S)&quot; follows a
+            figuratively. &quot;En suspension (S)&quot; follows a
             similarly liberated dual approach, using otherness as a vehicle,
             without artifice or mask.{" "}
           </p>
@@ -143,7 +136,7 @@ const About = () => {
           <div className="flex border-b-2 border-black ">
             <div className="flex">
               <Image
-                className=""
+                className="border-[1px] border-black  "
                 src="/images/Paulo.jpeg"
                 width={140}
                 height={200}
