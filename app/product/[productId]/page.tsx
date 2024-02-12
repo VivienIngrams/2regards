@@ -24,6 +24,9 @@ const Product = ({ params }: { params: { productId: string } }) => {
   const nextIndex =
     currentIndex < productData.length - 1 ? currentIndex + 1 : 0;
 
+    const length = Object.keys(images).length.toString();
+    console.log(length);
+
   return (
     <div className="relative mr-8 lg:mr-16 text-neutral-500 text-base md:text-xl h-full">
       {/* Nav buttons */}
@@ -81,31 +84,26 @@ const Product = ({ params }: { params: { productId: string } }) => {
           </h1>
         </div>
       </div>
-
-      <div className="min-h-full md:min-h-[80vh] md:max-h-[85vh]">
-        <div className={`flex flex-col md:grid md:grid-cols-${Object.keys(images).length} h-[65vh] lg:h-[90vh]`}>
-         
-         <div className="col-span-1"></div>
-         <div className="col-span-1"></div>
-         <div className="col-span-1"></div>
-         <div className="col-span-1"></div>
-         <div className="col-span-1"></div>
-         <div className="col-span-1"></div>
-         <div className="col-span-1"></div>
-          {/* {Object.values(images).map((image, index) => (
-            <div key={index} className="h-full relative ">
-              <div  className={`${image.position} relative`}>
+<div className={`md:grid md:grid-cols-${
+           length
+          } w-full min-h-full md:min-h-[80vh] md:max-h-[80vh] mt-[5vh]`}>
+    
+          {Object.values(images).map((image, index) => (
+            <div
+              key={index}
+              className={` col-span-1  ${image.position} h-full`}
+            >
+              <div className="relative shadow-md m-2 shadow-neutral-500 h-[90%] border-[1px] border-black group hover:bg-gradient-to-r from-[black] to-neutral-600">
                 <Image
-                  className="object-contain overflow-hidden md:overflow-visible absolute"
+                  className="object-cover overflow-hidden shadow-md group-hover:opacity-30"
                   src={image.url}
-                  fill
-                  sizes="30vw"
                   alt={title}
-                  layout="fill"
+                  fill
+                  sizes="50vw lg:25vw"
                 />
               </div>
             </div>
-          ))} */}
+          ))}
         </div>
         {videoLink && (
           <div className="fixed bottom-10 right-10 flex flex-col items-end justify-center m-2">
@@ -119,7 +117,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
             </Link>
           </div>
         )}
-      </div>
+      
     </div>
   );
 };

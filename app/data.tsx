@@ -277,25 +277,25 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Miquelon/miquelon (3).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px",
+        position: "top-0 left-0 h-[400px] w-[200px]",
 
         width: "w-[80vw] sm:[60vw] md:w-[40vw]",
       },
       image2: {
         url: "/images/products/Miquelon/miquelon (2).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "top-0 left-0 h-[400px] w-[200px]",
       },
       image3: {
         url: "/images/products/Miquelon/miquelon (1).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "top-0 left-0 h-[400px] w-[100px]",
       },
       image4: {
         url: "/images/products/Miquelon/miquelon (4).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "top-0 left-0 h-[400px] w-[200px]",
       },
       image5: {
         url: "/images/products/Miquelon/miquelon (5).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "top-0 left-0 h-[400px] w-[100px]",
       },
       image6: {
         url: "/images/products/Miquelon/miquelon (6).jpg",
@@ -315,21 +315,21 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Vawo/vawo (2).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px",
+        position: "top-0  h-[200px] w-[100px]",
 
         width: "w-[80vw] sm:[60vw] md:w-[15vw]",
       },
       image2: {
         url: "/images/products/Vawo/vawo (1).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "top-0 h-[200px] w-[200px]",
       },
       image3: {
         url: "/images/products/Vawo/vawo (3).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "top-0  h-[200px] w-[100px]",
       },
       image4: {
         url: "/images/products/Vawo/vawo (4).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "top-0  h-[200px] w-[200px]",
       },
     },
   },
