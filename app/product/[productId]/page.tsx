@@ -82,10 +82,18 @@ const Product = ({ params }: { params: { productId: string } }) => {
         </div>
       </div>
 
-      <div className="min-h-full md:max-h-[86vh]">
+      <div className="min-h-full md:min-h-[80vh] md:max-h-[85vh]">
         <div className={`flex flex-col md:grid md:grid-cols-${Object.keys(images).length} h-[65vh] lg:h-[90vh]`}>
-          {Object.values(images).map((image, index) => (
-            <div key={index} className="h-full relative col-span-1">
+         
+         <div className="col-span-1"></div>
+         <div className="col-span-1"></div>
+         <div className="col-span-1"></div>
+         <div className="col-span-1"></div>
+         <div className="col-span-1"></div>
+         <div className="col-span-1"></div>
+         <div className="col-span-1"></div>
+          {/* {Object.values(images).map((image, index) => (
+            <div key={index} className="h-full relative ">
               <div  className={`${image.position} relative`}>
                 <Image
                   className="object-contain overflow-hidden md:overflow-visible absolute"
@@ -97,7 +105,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
                 />
               </div>
             </div>
-          ))}
+          ))} */}
         </div>
         {videoLink && (
           <div className="fixed bottom-10 right-10 flex flex-col items-end justify-center m-2">

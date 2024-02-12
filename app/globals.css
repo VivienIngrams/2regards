@@ -5,13 +5,19 @@
 * {
   box-sizing: border-box;
 }
-
-.react-horizontal-scrolling-menu--wrapper {
+.products-container .react-horizontal-scrolling-menu--wrapper {
   height: 50%;
   /* display: flex;
     flex-direction: column;
     overflow: hidden; */
 }
+.gallery-container .react-horizontal-scrolling-menu--wrapper {
+  height: 100%;
+  /* display: flex;
+    flex-direction: column;
+    overflow: hidden; */
+}
+
 .react-horizontal-scrolling-menu--inner-wrapper {
   height: 100%;
   
