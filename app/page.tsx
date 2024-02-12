@@ -35,6 +35,12 @@ function Home() {
     };
   }, []);
 
+  
+  // Split the productData array into two halves
+  const halfLength = Math.ceil(productData.length / 2);
+  const firstHalf = productData.slice(0, halfLength);
+  const secondHalf = productData.slice(halfLength);
+
   return (
     <>
       <motion.div
@@ -45,13 +51,40 @@ function Home() {
         className="h-full"
       >
         <ScrollMenu
+        
           onWheel={onWheel}
-         
+        
           RightArrow={RightArrow}
           transitionBehavior="smooth"
           transitionDuration={isMobileScreen ? 500 : 5000}
         >
-          {productData.map(
+          {firstHalf.map(
+            ({
+              title,
+              id,
+              url,
+              images,
+            }) => (
+              <ProductCards
+                img={images.image1.url}
+                title={title}
+                id={id}
+                key={id}
+                position={images.image1.position}
+                url={url}
+              />
+            )
+          )}
+        </ScrollMenu>
+        <ScrollMenu
+        
+          onWheel={onWheel}
+        
+          RightArrow={RightArrow}
+          transitionBehavior="smooth"
+          transitionDuration={isMobileScreen ? 500 : 5000}
+        >
+          {secondHalf.map(
             ({
               title,
               id,
@@ -74,6 +107,60 @@ function Home() {
   );
 }
 export default Home;
+
+
+//   return (
+//     <>
+//       <motion.div
+//         initial={{ opacity: 0, x: 200 }}
+//         animate={{ opacity: 1, x: 0 }}
+//         transition={{ duration: 1 }}
+//         onMouseEnter={disableScroll}
+//         className="h-full"
+//       >
+//         <ScrollMenu
+//           onWheel={onWheel}
+//           RightArrow={RightArrow}
+//           transitionBehavior="smooth"
+//           transitionDuration={isMobileScreen ? 500 : 5000}
+//         >
+//           <div className="">
+//             {/* Map over the first half of productData */}
+//             {firstHalf.map(
+//               ({ title, id, url, images }) => (
+//                 <ProductCards
+//                   img={images.image1.url}
+//                   title={title}
+//                   id={id}
+//                   key={id}
+//                   position={images.image1.position}
+//                   url={url}
+//                 />
+//               )
+//             )}
+//           </div>
+//           <div className="flex">
+//             {/* Map over the second half of productData */}
+//             {secondHalf.map(
+//               ({ title, id, url, images }) => (
+//                 <ProductCards
+//                   img={images.image1.url}
+//                   title={title}
+//                   id={id}
+//                   key={id}
+//                   position={images.image1.position}
+//                   url={url}
+//                 />
+//               )
+//             )}
+//           </div>
+//         </ScrollMenu>
+//       </motion.div>
+//     </>
+//   );
+// }
+
+// export default Home;
 
 function onWheel(apiObj: scrollVisibilityApiType, ev: React.WheelEvent): void {
   const isThouchpad = Math.abs(ev.deltaX) !== 0 || Math.abs(ev.deltaY) < 15;

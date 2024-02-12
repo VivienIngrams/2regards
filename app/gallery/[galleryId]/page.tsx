@@ -4,10 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import ArrowBack from "/public/ArrowBack.svg";
 import ArrowForward from "/public/ArrowForward.svg";
-import {galleryData} from "../../data";
+import { galleryData } from "../../data";
 
 const Gallery = ({ params }: { params: { galleryId: string } }) => {
-
   const currentIndex = galleryData.findIndex(
     (gallery) => gallery.id === params.galleryId
   );
@@ -30,7 +29,10 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
     <div className="relative mr-8 lg:mr-16 text-neutral-500 text-base md:text-xl h-full">
       {/* Nav buttons */}
       <div className="fixed z-100 top-6 left-6 md:left-10 md:top-10  cursor-pointer">
-        <Link className="text-center m-2 text-black font-italiana" href="/gallery">
+        <Link
+          className="text-center m-2 text-black font-italiana"
+          href="/gallery"
+        >
           Back
         </Link>
       </div>
@@ -78,7 +80,6 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
       <div className="hidden z-10 lg:flex lg:absolute py-2 lg:m-12 w-full  items-center justify-center  text-neutral-400">
         <div className="max-w-[300px] lg:max-w-[500px]">
           <h1 className="lg:text-6xl xl:text-[80px] font-normal font-italiana text-center lg:leading-[26px] xl:leading-[38px] tracking-tighter">
-           
             {title}
           </h1>
         </div>
@@ -86,42 +87,30 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
 
       <div className="lg:grid lg:grid-cols-5 min-h-full md:max-h-[86vh]">
         {/* Left/top side of page */}
-        <div className=" col-span-3 w-full h-[65vh] md:h-[90vh]">
-          <div className={`grid grid-cols-${Object.keys(images).length} h-full relative`}>
-          {Object.values(images).map((image, index) => (
-
-          <div key={index} className="col-span-1 flex relative h-full">
-            <div className={`col-span-1 flex relative h-full ${image.position}`}>
-            <Image
-              className=" absolute shadow-md shadow-gray-500 "
-              src={image.url}
-              // height={200}
-              // width={image.width ?? 200}
-              fill
-              alt={title}
-            /></div>
-          </div>
+        {/* <div className=" col-span-3 w-full h-[65vh] md:h-[90vh]"> */}
+          <div
+            className={` col-span-3 w-full h-[65vh] md:h-[90vh] grid grid-rows-${
+              Object.keys(images).length
+            } relative`}
+          >
+            {Object.values(images).map((image, index) => (
+              <div key={index} className={`col-span-1 flex relative h-full w-1/${
+                Object.keys(images).length
+              }`}>
+                <div
+                  className={` flex relative ${image.position}`}
+                >
+                  <Image
+                    className=" absolute shadow-md shadow-gray-500 "
+                    src={image.url}
+                    fill
+                    alt={title}
+                  />
+                </div>
+              </div>
             ))}
-          {/* <div className={`flex relative h-full  ${images.image3.position}`}>
-            <Image
-              className="absolute shadow-md shadow-gray-500"
-              src={images.image3.url}
-              width={images.image3.width ?? 500}
-              height={500}
-              alt={title}
-            />
           </div>
-          {images.image4 && <div className={`flex relative h-full  ${images.image4.position}`}>
-            <Image
-              className="absolute shadow-md shadow-gray-500"
-              src={images.image4.url ?? ''}
-              width={images.image4.width ?? 300}
-              height={300}
-              alt={title}
-            />
-          </div>} */}
-          </div>
-        </div>
+        {/* </div> */}
 
         {/* Right/bottom side of page */}
         <div className="col-span-2 flex md:flex-col items-center justify-center md:h-[40vh] lg:h-[50vh] xl:h-[70vh] lg:mt-[20vh] lg:ml-[5vw] xl:ml-[10vw] xl:mr-[5vw]">
@@ -129,19 +118,19 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
             <h1 className="font-italiana py-4 text-4xl text-black leading-1 tracking-tight">
               {subtitle}
             </h1>
-            <p className="text-justify lg:text-left text-sm xl:text-base mt-2 md:leading-tight">
+            <p className="text-justify lg:text-left text-sm mt-2 md:leading-tight">
               {description}
             </p>
             <div className="py-4"></div>
             {videoLink && (
-            <Link
-              href={videoLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-1 bg-white font-italiana text-xl text-black h-8 px-4 border border-black rounded "
-            >
-              Watch video
-            </Link>
+              <Link
+                href={videoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-1 bg-white font-italiana text-xl text-black h-8 px-4 border border-black rounded "
+              >
+                Watch video
+              </Link>
             )}
           </div>
         </div>

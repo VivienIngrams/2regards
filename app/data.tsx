@@ -24,10 +24,10 @@ type GalleryDataType = {
   videoLink?: string;
   poster: string;
   images: {
-    image1: { url: string; position?: string;};
-    image2?: { url: string; position?: string;};
-    image3?: { url: string; position?: string;};
-    image4?: { url: string; position?: string;};
+    image1: { url: string; position?: string };
+    image2?: { url: string; position?: string };
+    image3?: { url: string; position?: string };
+    image4?: { url: string; position?: string };
   };
 };
 
@@ -39,7 +39,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Product/products (3).jpg",
-        position: "top-[20vh] left-0 w-[320px] h-[300px] md:w-[380px]",
+        position: "w-[80vw] sm:[60vw] md:w-[25vw]",
       },
       image2: {
         url: "/images/products/Product/products (2).jpg",
@@ -63,7 +63,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Aleanze/aleanze (2).jpg",
-        position: "md:-left-[2vw] top-[40vh] h-[350px] w-[450px] ",
+        position: "w-[80vw] sm:[60vw] md:w-[32vw]",
       },
       image2: {
         url: "/images/products/Aleanze/aleanze (1).jpg",
@@ -82,8 +82,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/CIF/cif (5).jpg",
-        position:
-          " top-0 left-[5vw] md:-left-[4vw] h-[300px] w-[370px] md:w-[530px]",
+        position: "w-[80vw] sm:[60vw] md:w-[35vw]",
       },
       image2: {
         url: "/images/products/CIF/cif (2).jpg",
@@ -115,7 +114,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Packshot/packshot (5).jpg",
-        position: "top-[35vh] md:top-[43vh] left-0 h-[350px] w-[280px]",
+        position: "w-[80vw] sm:[60vw] md:w-[18vw]"
       },
       image2: {
         url: "/images/products/Packshot/packshot (2).jpg",
@@ -148,8 +147,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Meet/meet (1).jpg",
-        position:
-          "top-[6vh] md:-left-[10vw] h-[570px] w-[340px] md:h-[640px] md:w-[400px]",
+        position: "w-[80vw] sm:[60vw] md:w-[16vw]"
       },
       image2: {
         url: "/images/products/Meet/meet (2).jpg",
@@ -177,8 +175,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Paperflow/paperflow (1).jpg",
-        position:
-          "top-[30vh] md:-left-[10vw] h-[280px] w-[400px] md:h-[340px] md:w-[580px]",
+        position: "w-[80vw] sm:[60vw] md:w-[35vw]"
       },
       image2: {
         url: "/images/products/Paperflow/paperflow (2).jpg",
@@ -191,20 +188,20 @@ export const productData: ProductDataType[] = [
     },
   },
   {
-    title: "zoo",
+    title: "Zoo",
     id: "zoo",
     url: "/product/zoo",
     images: {
       image1: {
-        url: "/images/products/zoo/zoo (1).jpg",
-        position: "top-0 left-0 h-[400px] w-[260px] md:h-[500px] md:w-[320px]",
+        url: "/images/products/Zoo/zoo (1).jpg",
+        position: "w-[80vw] sm:[60vw] md:w-[15vw]"
       },
       image2: {
-        url: "/images/products/zoo/zoo (2).jpg",
+        url: "/images/products/Zoo/zoo (2).jpg",
         position: "top-0 left-0 h-[400px] w-[300px]",
       },
       image3: {
-        url: "/images/products/zoo/zoo (3).jpg",
+        url: "/images/products/Zoo/zoo (3).jpg",
         position: "top-0 left-0 h-[400px] w-[300px]",
       },
     },
@@ -217,8 +214,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Design/design (1).png",
-        position:
-          "top-[42vh] -left-[6vw] h-[250px] w-[420px] md:h-[340px] md:w-[550px]",
+        position: "w-[80vw] sm:[60vw] md:w-[30vw]"
       },
       image2: {
         url: "/images/products/Design/design (2).png",
@@ -253,8 +249,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Veilleur/veilleur (1).jpg",
-        position:
-          "top-[10vh] left-[8vw] md:left-0 h-[400px] w-[250px] md:h-[510px] md:w-[340px]",
+        position: "w-[80vw] sm:[60vw] md:w-[15vw]"
       },
       image2: {
         url: "/images/products/Veilleur/veilleur (2).jpg",
@@ -264,14 +259,13 @@ export const productData: ProductDataType[] = [
   },
 
   {
-    title: "becafire",
+    title: "Becafire",
     id: "becafire",
     url: "/product/becafire",
     images: {
       image1: {
         url: "/images/products/Becafire/becafire (3).jpg",
-        position: "top-0 left-0 h-[500px] w-[450px]",
-      },
+        position: "w-[80vw] sm:[60vw] md:w-[20vw]"      },
       image2: {
         url: "/images/products/Becafire/becafire (2).jpg",
         position: "top-0 left-0 h-[400px] w-[300px]",
@@ -299,7 +293,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Takanap/takanap (1).jpg",
-        position: "top-0 left-0 h-[400px] w-[400px]",
+        position: "w-[80vw] sm:[60vw] md:w-[25vw]"
       },
       image2: {
         url: "/images/products/Takanap/takanap (2).jpg",
@@ -318,8 +312,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Vawo/vawo (2).jpg",
-        position: "top-0 left-0 h-[510px] w-[340px]",
-      },
+        position: "w-[80vw] sm:[60vw] md:w-[15vw]"      },
       image2: {
         url: "/images/products/Vawo/vawo (1).jpg",
         position: "top-0 left-0 h-[400px] w-[300px]",
@@ -343,8 +336,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Hiima/hiima (2).jpg",
-        position: "bottom-0 h-[500px] w-[340px]",
-      },
+        position: "w-[80vw] sm:[60vw] md:w-[15vw]"      },
       image2: {
         url: "/images/products/Hiima/hiima (1).jpg",
         position: "top-0 left-0 h-[400px] w-[300px]",
@@ -374,8 +366,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/White/white (6).jpg",
-        position: "top-0 left-0 h-[360px] w-[510px]",
-      },
+        position: "w-[80vw] sm:[60vw] md:w-[35vw]"      },
       image2: {
         url: "/images/products/White/white (2).jpg",
         position: "top-0 left-0 h-[400px] w-[300px]",
@@ -405,15 +396,14 @@ export const productData: ProductDataType[] = [
     videoLink: "https://www.youtube.com/watch?v=572uLi_rnn4",
     images: {
       image1: {
-        url: "/images/products/Miquelon/miquelon (1).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
-      },
+        url: "/images/products/Miquelon/miquelon (3).jpg",
+        position: "w-[80vw] sm:[60vw] md:w-[40vw]"      },
       image2: {
         url: "/images/products/Miquelon/miquelon (2).jpg",
         position: "top-0 left-0 h-[400px] w-[300px]",
       },
       image3: {
-        url: "/images/products/Miquelon/miquelon (3).jpg",
+        url: "/images/products/Miquelon/miquelon (1).jpg",
         position: "top-0 left-0 h-[400px] w-[300px]",
       },
       image4: {
@@ -441,8 +431,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Plaid/plaid (1).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
-      },
+        position: "w-[80vw] sm:[60vw] md:w-[18vw]"      },
       image2: {
         url: "/images/products/Plaid/plaid (2).jpg",
         position: "top-0 left-0 h-[400px] w-[300px]",
@@ -473,17 +462,14 @@ export const galleryData: GalleryDataType[] = [
       image1: {
         url: "/images/gallery/AyalaBraidman/desert (3).jpg",
         position: "",
-        
       },
       image2: {
         url: "/images/gallery/AyalaBraidman/desert (2).jpg",
         position: "",
-        
       },
       image3: {
         url: "/images/gallery/AyalaBraidman/desert (4).jpg",
         position: "-left-[2vw]",
-        
       },
     },
   },
@@ -500,24 +486,19 @@ export const galleryData: GalleryDataType[] = [
       image1: {
         url: "/images/gallery/MathildePaulo/sentiment_oceanique (4).jpg",
         position: "",
-        
       },
       image2: {
         url: "/images/gallery/MathildePaulo/sentiment_oceanique (3).jpg",
         position: "",
-        
       },
       image3: {
         url: "/images/gallery/MathildePaulo/sentiment_oceanique (2).jpg",
         position: "left-[6vw]",
-        
       },
       image4: {
         url: "/images/gallery/MathildePaulo/sentiment_oceanique (5).jpg",
         position: "-left-[10vw]",
-        
       },
-  
     },
   },
   {
@@ -533,14 +514,11 @@ export const galleryData: GalleryDataType[] = [
       image1: {
         url: "/images/gallery/MarciaLucas/marcia_lucas (3).jpg",
         position: "top-10 h-[300px] w-[400px]",
-       
       },
       image2: {
         url: "/images/gallery/MarciaLucas/marcia_lucas (2).jpg",
         position: "top-10 h-[300px] w-[400px]",
-        
       },
-
     },
   },
   {
@@ -555,20 +533,16 @@ export const galleryData: GalleryDataType[] = [
     images: {
       image1: {
         url: "/images/gallery/MarianaBaldaia/pedome (4).jpg",
-        position: "top-10 h-[300px] w-[400px]",
-       
+        position: "top-10 h-[300px] w-[200px]",
       },
       image2: {
         url: "/images/gallery/MarianaBaldaia/pedome (3).jpg",
-        position: "top-10 h-[300px] w-[400px]",
-      
+        position: "top-10 h-[300px] w-[200px]",
       },
       image3: {
         url: "/images/gallery/MarianaBaldaia/pedome (5).jpg",
-        position: "top-10 h-[300px] w-[400px]",
-       
+        position: "top-10 h-[300px] w-[200px]",
       },
-
     },
   },
   {
@@ -584,24 +558,19 @@ export const galleryData: GalleryDataType[] = [
       image1: {
         url: "/images/gallery/InêsSousaCardoso/diversidade (5).jpg",
         position: "top-10 h-[300px] w-[200px]",
-       
       },
       image2: {
         url: "/images/gallery/InêsSousaCardoso/diversidade (2).jpg",
         position: "top-10 h-[300px] w-[200px]",
-       
       },
       image3: {
         url: "/images/gallery/InêsSousaCardoso/diversidade (3).jpg",
         position: "",
-       
       },
       image4: {
         url: "/images/gallery/InêsSousaCardoso/diversidade (4).jpg",
         position: "",
-       
       },
-  
     },
   },
   {
@@ -615,26 +584,17 @@ export const galleryData: GalleryDataType[] = [
     poster: "/images/gallery/NettieBurnett/me_ander (1).jpg",
     images: {
       image1: {
-        url: "/images/gallery/NettieBurnett/me_ander (5).jpg",
+        url: "/images/gallery/NettieBurnett/me_ander (4).jpg",
         position: "",
-       
       },
       image2: {
         url: "/images/gallery/NettieBurnett/me_ander (2).jpg",
         position: "",
-       
       },
       image3: {
         url: "/images/gallery/NettieBurnett/me_ander (3).jpg",
         position: "",
-       
       },
-      image4: {
-        url: "/images/gallery/NettieBurnett/me_ander (4).jpg",
-        position: "",
-       
-      },
-  
     },
   },
   {
@@ -650,10 +610,7 @@ export const galleryData: GalleryDataType[] = [
       image1: {
         url: "/images/gallery/PierreLinz/pizzicato (3).jpg",
         position: "",
-       
       },
- 
-  
     },
   },
   {
@@ -663,20 +620,16 @@ export const galleryData: GalleryDataType[] = [
     subtitle: "Mathilde Cudeville & Pauline Letang",
     description:
       " It was on May 28th of 2022 in a Parisian café… A meeting between two women. A meeting between photography and poetry, between Porto and Paris. Then, from this moment of grace, out of time, between dream and reality, was born the desire to realize a common work. I feel a need, a crazy urgency to free myself from pretense and shackles, to awaken sleeping parts of my being, to seize this vertiginous freedom of Being fully, to re-discover my soul. « La Passagère » is the artistic, photographic and poetic expression of this journey towards the soul, this primordial Breath, this initial Desire, this intimate feeling of an authentic uniqueness and a possible unity.",
-   poster: "/images/gallery/MathildePauline/la_passagère (1).jpg",
-      images: {
+    poster: "/images/gallery/MathildePauline/la_passagère (1).jpg",
+    images: {
       image1: {
         url: "/images/gallery/MathildePauline/la_passagère (3).jpg",
         position: "",
-       
       },
       image2: {
         url: "/images/gallery/MathildePauline/la_passagère (4).jpg",
         position: "",
-       
       },
-
-
     },
   },
 ];
