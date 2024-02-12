@@ -10,7 +10,6 @@ type ProductDataType = {
     image4?: { url: string; position: string };
     image5?: { url: string; position: string };
     image6?: { url: string; position: string };
-    image7?: { url: string; position: string };
   };
 };
 
@@ -40,19 +39,19 @@ export const productData: ProductDataType[] = [
       image1: {
         url: "/images/products/Product/products (3).jpg",
         width: "w-[80vw] sm:[60vw] md:w-[25vw]",
-        position: "top-0 left-0 h-[400px] w-[300px",
+        position: "2",
       },
       image2: {
         url: "/images/products/Product/products (2).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
       image3: {
         url: "/images/products/Product/products (1).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
       image4: {
         url: "/images/products/Product/products (4).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
     },
   },
@@ -66,23 +65,23 @@ export const productData: ProductDataType[] = [
       image1: {
         url: "/images/products/Meet/meet (1).jpg",
         width: "w-[80vw] sm:[60vw] md:w-[16vw]",
-        position: "top-0 left-0 h-[400px] w-[300px",
+        position: "1",
       },
       image2: {
         url: "/images/products/Meet/meet (2).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "1",
       },
       image3: {
         url: "/images/products/Meet/meet (3).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "1",
       },
       image4: {
         url: "/images/products/Meet/meet (4).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "1",
       },
       image5: {
         url: "/images/products/Meet/meet (5).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "1",
       },
     },
   },
@@ -95,15 +94,15 @@ export const productData: ProductDataType[] = [
       image1: {
         url: "/images/products/Aleanze/aleanze (2).jpg",
         width: "w-[80vw] sm:[60vw] md:w-[32vw]",
-        position: "top-0 left-0 h-[400px] w-[300px",
+        position: "1",
       },
       image2: {
         url: "/images/products/Aleanze/aleanze (1).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "1",
       },
       image3: {
         url: "/images/products/Aleanze/aleanze (3).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
     },
   },
@@ -115,15 +114,15 @@ export const productData: ProductDataType[] = [
       image1: {
         url: "/images/products/Zoo/zoo (1).jpg",
         width: "w-[80vw] sm:[60vw] md:w-[15vw]",
-        position: "top-0 left-0 h-[400px] w-[300px",
+        position: "2",
       },
       image2: {
         url: "/images/products/Zoo/zoo (2).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
       image3: {
         url: "/images/products/Zoo/zoo (3).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
     },
   },
@@ -135,27 +134,27 @@ export const productData: ProductDataType[] = [
       image1: {
         url: "/images/products/CIF/cif (5).jpg",
         width: "w-[80vw] sm:[60vw] md:w-[35vw]",
-        position: "top-0 left-0 h-[400px] w-[300px",
+        position: "1",
       },
       image2: {
         url: "/images/products/CIF/cif (2).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "1",
       },
       image3: {
         url: "/images/products/CIF/cif (3).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "1",
       },
       image4: {
         url: "/images/products/CIF/cif (4).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "1",
       },
       image5: {
         url: "/images/products/CIF/cif (1).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "1",
       },
       image6: {
         url: "/images/products/CIF/cif (6).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "1",
       },
     },
   },
@@ -167,29 +166,29 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Packshot/packshot (5).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px",
+        position: "1",
 
         width: "w-[80vw] sm:[60vw] md:w-[18vw]",
       },
       image2: {
         url: "/images/products/Packshot/packshot (2).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
       image3: {
         url: "/images/products/Packshot/packshot (3).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
       image4: {
         url: "/images/products/Packshot/packshot (4).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
       image5: {
         url: "/images/products/Packshot/packshot (1).png",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
       image6: {
         url: "/images/products/Packshot/packshot (6).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
     },
   },
@@ -203,15 +202,15 @@ export const productData: ProductDataType[] = [
       image1: {
         url: "/images/products/Paperflow/paperflow (1).jpg",
         width: "w-[80vw] sm:[60vw] md:w-[35vw]",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
       image2: {
         url: "/images/products/Paperflow/paperflow (2).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "5",
       },
       image3: {
         url: "/images/products/Paperflow/paperflow (3).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "3",
       },
     },
   },
@@ -224,33 +223,26 @@ export const productData: ProductDataType[] = [
       image1: {
         url: "/images/products/Design/design (1).png",
         width: "w-[80vw] sm:[60vw] md:w-[30vw]",
-        position: "top-0 left-0 h-[400px] w-[300px",
+        position: "1",
       },
       image2: {
         url: "/images/products/Design/design (2).png",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
       image3: {
         url: "/images/products/Design/design (3).png",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
       image4: {
-        url: "/images/products/Design/design (4).png",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        url: "/images/products/Design/design (6).png",
+        position: "2",
       },
       image5: {
         url: "/images/products/Design/design (5).png",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
-      image6: {
-        url: "/images/products/Design/design (6).png",
-        position: "top-0 left-0 h-[400px] w-[300px]",
-      },
-      image7: {
-        url: "/images/products/Design/design (7).png",
-        position: "top-0 left-0 h-[400px] w-[300px]",
-      },
-    },
+ 
+         },
   },
   {
     title: "Compagnie du Veilleur",
@@ -259,13 +251,13 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Veilleur/veilleur (1).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px",
+        position: "2",
 
         width: "w-[80vw] sm:[60vw] md:w-[15vw]",
       },
       image2: {
         url: "/images/products/Veilleur/veilleur (2).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "3",
       },
     },
   },
@@ -277,34 +269,28 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Miquelon/miquelon (3).jpg",
-        position: "top-0 left-0 h-[400px] w-[200px]",
+        position: "2",
 
         width: "w-[80vw] sm:[60vw] md:w-[40vw]",
       },
       image2: {
         url: "/images/products/Miquelon/miquelon (2).jpg",
-        position: "top-0 left-0 h-[400px] w-[200px]",
+        position: "3",
       },
       image3: {
         url: "/images/products/Miquelon/miquelon (1).jpg",
-        position: "top-0 left-0 h-[400px] w-[100px]",
+        position: "1",
       },
       image4: {
         url: "/images/products/Miquelon/miquelon (4).jpg",
-        position: "top-0 left-0 h-[400px] w-[200px]",
+        position: "3",
       },
       image5: {
         url: "/images/products/Miquelon/miquelon (5).jpg",
-        position: "top-0 left-0 h-[400px] w-[100px]",
+        position: "1",
       },
-      image6: {
-        url: "/images/products/Miquelon/miquelon (6).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
-      },
-      image7: {
-        url: "/images/products/Miquelon/miquelon (7).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
-      },
+    
+   
     },
   },
 
@@ -315,21 +301,21 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Vawo/vawo (2).jpg",
-        position: "top-0  h-[200px] w-[100px]",
+        position: "1",
 
         width: "w-[80vw] sm:[60vw] md:w-[15vw]",
       },
       image2: {
         url: "/images/products/Vawo/vawo (1).jpg",
-        position: "top-0 h-[200px] w-[200px]",
+        position: "1",
       },
       image3: {
         url: "/images/products/Vawo/vawo (3).jpg",
-        position: "top-0  h-[200px] w-[100px]",
+        position: "1",
       },
       image4: {
         url: "/images/products/Vawo/vawo (4).jpg",
-        position: "top-0  h-[200px] w-[200px]",
+        position: "1",
       },
     },
   },
@@ -342,30 +328,27 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Hiima/hiima (2).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px",
+        position: "1",
 
         width: "w-[80vw] sm:[60vw] md:w-[15vw]",
       },
       image2: {
         url: "/images/products/Hiima/hiima (1).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
       image3: {
         url: "/images/products/Hiima/hiima (3).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
       image4: {
         url: "/images/products/Hiima/hiima (4).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
       image5: {
-        url: "/images/products/Hiima/hiima (5).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
-      },
-      image6: {
         url: "/images/products/Hiima/hiima (6).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
+   
     },
   },
   {
@@ -374,31 +357,28 @@ export const productData: ProductDataType[] = [
     url: "/product/white",
     images: {
       image1: {
-        url: "/images/products/White/white (6).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px",
+        url: "/images/products/White/white (5).jpg",
+        position: "1",
 
         width: "w-[80vw] sm:[60vw] md:w-[35vw]",
       },
       image2: {
         url: "/images/products/White/white (2).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
       image3: {
         url: "/images/products/White/white (3).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
       image4: {
         url: "/images/products/White/white (4).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
       image5: {
-        url: "/images/products/White/white (5).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
-      },
-      image6: {
         url: "/images/products/White/white (1).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
+     
     },
   },
   {
@@ -408,25 +388,25 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Becafire/becafire (3).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px",
+        position: "1",
 
         width: "w-[80vw] sm:[60vw] md:w-[20vw]",
       },
       image2: {
         url: "/images/products/Becafire/becafire (2).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
       image3: {
         url: "/images/products/Becafire/becafire (1).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
       image4: {
         url: "/images/products/Becafire/becafire (4).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
       image5: {
         url: "/images/products/Becafire/becafire (5).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
     },
   },
@@ -439,17 +419,17 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Takanap/takanap (1).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px",
+        position: "2",
 
         width: "w-[80vw] sm:[60vw] md:w-[25vw]",
       },
       image2: {
         url: "/images/products/Takanap/takanap (2).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
       image3: {
         url: "/images/products/Takanap/takanap (3).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "3",
       },
     },
   },
@@ -460,17 +440,17 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Plaid/plaid (1).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px",
+        position: "2",
 
         width: "w-[80vw] sm:[60vw] md:w-[18vw]",
       },
       image2: {
         url: "/images/products/Plaid/plaid (2).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
       image3: {
         url: "/images/products/Plaid/plaid (3).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
+        position: "2",
       },
       image4: {
         url: "/images/products/Plaid/plaid (4).jpg",

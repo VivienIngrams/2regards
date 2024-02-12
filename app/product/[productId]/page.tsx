@@ -24,10 +24,10 @@ const Product = ({ params }: { params: { productId: string } }) => {
   const nextIndex =
     currentIndex < productData.length - 1 ? currentIndex + 1 : 0;
 
-    const length = Object.keys(images).length.toString();
-    console.log(length);
-
-  return (
+    const arrayLength = Object.keys(images).length.toString();
+    const columns = `md:grid md:grid-cols-${arrayLength} w-full min-h-full md:min-h-[80vh] md:max-h-[80vh] mt-[5vh]`;
+  
+    return (
     <div className="relative mr-8 lg:mr-16 text-neutral-500 text-base md:text-xl h-full">
       {/* Nav buttons */}
       <div className="fixed z-100 top-6 left-6 md:left-10 md:top-10  cursor-pointer">
@@ -76,31 +76,32 @@ const Product = ({ params }: { params: { productId: string } }) => {
       </div>
 
       {/* Title */}
-      <div className="hidden z-10 lg:flex lg:absolute py-2 lg:m-12 w-full  items-center justify-center  text-neutral-400">
+      <div className="z-10 flex absolute -top-12 lg:m-12 w-full  items-center justify-center  text-neutral-400">
         <div className="max-w-[160px]">
-          <h1 className="lg:text-6xl xl:text-[80px] font-normal font-italiana text-center lg:leading-[26px] xl:leading-[38px] tracking-tighter">
+          <h1 className="text-3xl lg:text-6xl xl:text-[80px] font-normal font-italiana text-center lg:leading-[26px] xl:leading-[38px] tracking-tighter">
             {/* {title} */}
             {params.productId}
           </h1>
         </div>
       </div>
-<div className={`md:grid md:grid-cols-${
-           length
-          } w-full min-h-full md:min-h-[80vh] md:max-h-[80vh] mt-[5vh]`}>
+<div className={`md:grid md:grid-cols-6 md:grid-rows-3 w-full min-h-full md:min-h-[80vh] md:max-h-[80vh] mt-[10vh]`}>
     
           {Object.values(images).map((image, index) => (
             <div
               key={index}
-              className={` col-span-1  ${image.position} h-full`}
+              className={` col-span-${image.position} h-full`}
             >
-              <div className="relative shadow-md m-2 shadow-neutral-500 h-[90%] border-[1px] border-black group hover:bg-gradient-to-r from-[black] to-neutral-600">
+              <div className="m-2 h-[90%] flex items-center">
+              <div className="relative   group hover:bg-gradient-to-r from-[black] to-neutral-600">
                 <Image
-                  className="object-cover overflow-hidden shadow-md group-hover:opacity-30"
+                  className="object-contain overflow-hidden shadow-md group-hover:opacity-30 border-[1px] border-black"
                   src={image.url}
                   alt={title}
-                  fill
+                  height={400}
+                  width={500}
                   sizes="50vw lg:25vw"
                 />
+              </div>
               </div>
             </div>
           ))}
