@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { VisibilityContext } from "react-horizontal-scrolling-menu";
 
 export default function ProductCards({
   img,
@@ -16,6 +17,9 @@ export default function ProductCards({
   position?: string;
   url: string;
 }) {
+  const visibility = React.useContext(VisibilityContext);
+
+  const visible = visibility.isItemVisible(id);
 
   return (
     <div className={`relative grid grid-cols-1  ${position} h-full select-none`} tabIndex={0}>

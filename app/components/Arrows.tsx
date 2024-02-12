@@ -33,32 +33,32 @@ function Arrow({
   );
 }
 
-export function LeftArrow() {
-  const { isFirstItemVisible, scrollPrev, visibleElements, initComplete } =
-    React.useContext(VisibilityContext);
+// export function LeftArrow() {
+//   const { isFirstItemVisible, scrollPrev, visibleElements, initComplete } =
+//     React.useContext(VisibilityContext);
 
-  const [disabled, setDisabled] = React.useState(
-    !initComplete || (initComplete && isFirstItemVisible)
-  );
-  React.useEffect(() => {
-    // NOTE: detect if whole component visible
-    if (visibleElements.length) {
-      setDisabled(isFirstItemVisible);
-    }
-  }, [isFirstItemVisible, visibleElements]);
+//   const [disabled, setDisabled] = React.useState(
+//     !initComplete || (initComplete && isFirstItemVisible)
+//   );
+//   React.useEffect(() => {
+//     // NOTE: detect if whole component visible
+//     if (visibleElements.length) {
+//       setDisabled(isFirstItemVisible);
+//     }
+//   }, [isFirstItemVisible, visibleElements]);
 
-  return (
-    <Arrow disabled={disabled} onClick={() => scrollPrev()}>
-      <Image className="mx-2" priority src={ArrowBack} height={16} alt="Back" />
-    </Arrow>
-  );
-}
+//   return (
+//     <Arrow disabled={disabled} onClick={() => scrollPrev()}>
+//       <Image className="mx-2" priority src={ArrowBack} height={16} alt="Back" />
+//     </Arrow>
+//   );
+// }
 
 export function RightArrow() {
   const { isLastItemVisible, scrollNext, visibleElements } =
     React.useContext(VisibilityContext);
 
-  // console.log({ isLastItemVisible });
+  console.log({ isLastItemVisible });
   const [disabled, setDisabled] = React.useState(
     !visibleElements.length && isLastItemVisible
   );
@@ -67,10 +67,33 @@ export function RightArrow() {
       setDisabled(isLastItemVisible);
     }
   }, [isLastItemVisible, visibleElements]);
+  // export function RightArrow() {
+  //   const {
+  //     isLastItemVisible,
+  //     scrollNext,
+  //     items,
+  //     scrollToItem,
+  //     getItemElementById,
+  //   } = React.useContext(VisibilityContext);
 
+  //   return (
+  //     <Arrow disabled={false}    onClick={() => {
+  //       if (isLastItemVisible) {
+  //         scrollToItem(getItemElementById(items.toArr()?.[0]?.[0]));
+  //       } else {
+  //         scrollNext();
+  //       }
+  //     }}
+  //   >
   return (
     <Arrow disabled={disabled} onClick={() => scrollNext()}>
-      <Image className="mx-2 " priority src={ArrowForward} height={16} alt="Forward" />
+      <Image
+        className="mx-2 "
+        priority
+        src={ArrowForward}
+        height={16}
+        alt="Forward"
+      />
     </Arrow>
   );
 }

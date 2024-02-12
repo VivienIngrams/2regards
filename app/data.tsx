@@ -55,6 +55,35 @@ export const productData: ProductDataType[] = [
       },
     },
   },
+  
+  {
+    title: "Meet",
+    id: "meet",
+    url: "/product/meet",
+    videoLink: "https://www.youtube.com/watch?v=--CHqr5M0o4",
+    images: {
+      image1: {
+        url: "/images/products/Meet/meet (1).jpg",
+        position: "w-[80vw] sm:[60vw] md:w-[16vw]"
+      },
+      image2: {
+        url: "/images/products/Meet/meet (2).jpg",
+        position: "top-0 left-0 h-[400px] w-[300px]",
+      },
+      image3: {
+        url: "/images/products/Meet/meet (3).jpg",
+        position: "top-0 left-0 h-[400px] w-[300px]",
+      },
+      image4: {
+        url: "/images/products/Meet/meet (4).jpg",
+        position: "top-0 left-0 h-[400px] w-[300px]",
+      },
+      image5: {
+        url: "/images/products/Meet/meet (5).jpg",
+        position: "top-0 left-0 h-[400px] w-[300px]",
+      },
+    },
+  },
   {
     title: "Aleanze Design",
     id: "aleanze",
@@ -71,6 +100,25 @@ export const productData: ProductDataType[] = [
       },
       image3: {
         url: "/images/products/Aleanze/aleanze (3).jpg",
+        position: "top-0 left-0 h-[400px] w-[300px]",
+      },
+    },
+  },
+  {
+    title: "Zoo",
+    id: "zoo",
+    url: "/product/zoo",
+    images: {
+      image1: {
+        url: "/images/products/Zoo/zoo (1).jpg",
+        position: "w-[80vw] sm:[60vw] md:w-[15vw]"
+      },
+      image2: {
+        url: "/images/products/Zoo/zoo (2).jpg",
+        position: "top-0 left-0 h-[400px] w-[300px]",
+      },
+      image3: {
+        url: "/images/products/Zoo/zoo (3).jpg",
         position: "top-0 left-0 h-[400px] w-[300px]",
       },
     },
@@ -140,34 +188,6 @@ export const productData: ProductDataType[] = [
   },
 
   {
-    title: "Meet",
-    id: "meet",
-    url: "/product/meet",
-    videoLink: "https://www.youtube.com/watch?v=--CHqr5M0o4",
-    images: {
-      image1: {
-        url: "/images/products/Meet/meet (1).jpg",
-        position: "w-[80vw] sm:[60vw] md:w-[16vw]"
-      },
-      image2: {
-        url: "/images/products/Meet/meet (2).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
-      },
-      image3: {
-        url: "/images/products/Meet/meet (3).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
-      },
-      image4: {
-        url: "/images/products/Meet/meet (4).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
-      },
-      image5: {
-        url: "/images/products/Meet/meet (5).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
-      },
-    },
-  },
-  {
     title: "Paperflow",
     id: "paperflow",
     url: "/product/paperflow",
@@ -187,25 +207,7 @@ export const productData: ProductDataType[] = [
       },
     },
   },
-  {
-    title: "Zoo",
-    id: "zoo",
-    url: "/product/zoo",
-    images: {
-      image1: {
-        url: "/images/products/Zoo/zoo (1).jpg",
-        position: "w-[80vw] sm:[60vw] md:w-[15vw]"
-      },
-      image2: {
-        url: "/images/products/Zoo/zoo (2).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
-      },
-      image3: {
-        url: "/images/products/Zoo/zoo (3).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
-      },
-    },
-  },
+
 
   {
     title: "Design",
@@ -257,54 +259,42 @@ export const productData: ProductDataType[] = [
       },
     },
   },
-
   {
-    title: "Becafire",
-    id: "becafire",
-    url: "/product/becafire",
+    title: "Miquelon",
+    id: "miquelon",
+    url: "/product/miquelon",
+    videoLink: "https://www.youtube.com/watch?v=572uLi_rnn4",
     images: {
       image1: {
-        url: "/images/products/Becafire/becafire (3).jpg",
-        position: "w-[80vw] sm:[60vw] md:w-[20vw]"      },
+        url: "/images/products/Miquelon/miquelon (3).jpg",
+        position: "w-[80vw] sm:[60vw] md:w-[40vw]"      },
       image2: {
-        url: "/images/products/Becafire/becafire (2).jpg",
+        url: "/images/products/Miquelon/miquelon (2).jpg",
         position: "top-0 left-0 h-[400px] w-[300px]",
       },
       image3: {
-        url: "/images/products/Becafire/becafire (1).jpg",
+        url: "/images/products/Miquelon/miquelon (1).jpg",
         position: "top-0 left-0 h-[400px] w-[300px]",
       },
       image4: {
-        url: "/images/products/Becafire/becafire (4).jpg",
+        url: "/images/products/Miquelon/miquelon (4).jpg",
         position: "top-0 left-0 h-[400px] w-[300px]",
       },
       image5: {
-        url: "/images/products/Becafire/becafire (5).jpg",
+        url: "/images/products/Miquelon/miquelon (5).jpg",
+        position: "top-0 left-0 h-[400px] w-[300px]",
+      },
+      image6: {
+        url: "/images/products/Miquelon/miquelon (6).jpg",
+        position: "top-0 left-0 h-[400px] w-[300px]",
+      },
+      image7: {
+        url: "/images/products/Miquelon/miquelon (7).jpg",
         position: "top-0 left-0 h-[400px] w-[300px]",
       },
     },
   },
-  // Product 7
-  {
-    title: "TAKANAP",
-    id: "takanap",
-    url: "/product/takanap",
-    videoLink: "https://www.youtube.com/watch?v=roFW8j9nju8",
-    images: {
-      image1: {
-        url: "/images/products/Takanap/takanap (1).jpg",
-        position: "w-[80vw] sm:[60vw] md:w-[25vw]"
-      },
-      image2: {
-        url: "/images/products/Takanap/takanap (2).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
-      },
-      image3: {
-        url: "/images/products/Takanap/takanap (3).jpg",
-        position: "top-0 left-0 h-[400px] w-[300px]",
-      },
-    },
-  },
+  
   {
     title: "Vawo",
     id: "vawo",
@@ -390,36 +380,48 @@ export const productData: ProductDataType[] = [
     },
   },
   {
-    title: "Miquelon",
-    id: "miquelon",
-    url: "/product/miquelon",
-    videoLink: "https://www.youtube.com/watch?v=572uLi_rnn4",
+    title: "Becafire",
+    id: "becafire",
+    url: "/product/becafire",
     images: {
       image1: {
-        url: "/images/products/Miquelon/miquelon (3).jpg",
-        position: "w-[80vw] sm:[60vw] md:w-[40vw]"      },
+        url: "/images/products/Becafire/becafire (3).jpg",
+        position: "w-[80vw] sm:[60vw] md:w-[20vw]"      },
       image2: {
-        url: "/images/products/Miquelon/miquelon (2).jpg",
+        url: "/images/products/Becafire/becafire (2).jpg",
         position: "top-0 left-0 h-[400px] w-[300px]",
       },
       image3: {
-        url: "/images/products/Miquelon/miquelon (1).jpg",
+        url: "/images/products/Becafire/becafire (1).jpg",
         position: "top-0 left-0 h-[400px] w-[300px]",
       },
       image4: {
-        url: "/images/products/Miquelon/miquelon (4).jpg",
+        url: "/images/products/Becafire/becafire (4).jpg",
         position: "top-0 left-0 h-[400px] w-[300px]",
       },
       image5: {
-        url: "/images/products/Miquelon/miquelon (5).jpg",
+        url: "/images/products/Becafire/becafire (5).jpg",
         position: "top-0 left-0 h-[400px] w-[300px]",
       },
-      image6: {
-        url: "/images/products/Miquelon/miquelon (6).jpg",
+    },
+  },
+ 
+  {
+    title: "TAKANAP",
+    id: "takanap",
+    url: "/product/takanap",
+    videoLink: "https://www.youtube.com/watch?v=roFW8j9nju8",
+    images: {
+      image1: {
+        url: "/images/products/Takanap/takanap (1).jpg",
+        position: "w-[80vw] sm:[60vw] md:w-[25vw]"
+      },
+      image2: {
+        url: "/images/products/Takanap/takanap (2).jpg",
         position: "top-0 left-0 h-[400px] w-[300px]",
       },
-      image7: {
-        url: "/images/products/Miquelon/miquelon (7).jpg",
+      image3: {
+        url: "/images/products/Takanap/takanap (3).jpg",
         position: "top-0 left-0 h-[400px] w-[300px]",
       },
     },
