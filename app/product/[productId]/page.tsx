@@ -84,17 +84,17 @@ const Product = ({ params }: { params: { productId: string } }) => {
           </h1>
         </div>
       </div>
-<div className={`md:grid md:grid-cols-6 md:grid-rows-3 w-full min-h-full md:min-h-[80vh] md:max-h-[80vh] mt-[10vh]`}>
+<div className={`md:grid md:grid-cols-5 w-full min-h-full md:min-h-[80vh] md:max-h-[80vh] mt-[10vh]`}>
     
           {Object.values(images).map((image, index) => (
             <div
               key={index}
               className={` col-span-${image.position} h-full`}
             >
-              <div className="m-2 h-[90%] flex items-center">
-              <div className="relative   group hover:bg-gradient-to-r from-[black] to-neutral-600">
+              <div className="m-2 h-[90%] flex items-center justify-center">
+              <div className="relative">
                 <Image
-                  className="object-contain overflow-hidden shadow-md group-hover:opacity-30 border-[1px] border-black"
+                  className="object-contain overflow-hidden shadow-md border-[1px] border-black"
                   src={image.url}
                   alt={title}
                   height={400}

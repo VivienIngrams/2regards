@@ -77,18 +77,18 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
       </div>
 
       {/* Title */}
-      <div className="hidden z-10 lg:flex lg:absolute py-2 lg:m-12 w-full  items-center justify-center  text-neutral-400">
+      <div className="z-10 flex absolute py-2 lg:m-12 w-full  items-center justify-center ">
         <div className="max-w-[300px] lg:max-w-[500px]">
-          <h1 className="lg:text-6xl xl:text-[80px] font-normal font-italiana text-center lg:leading-[26px] xl:leading-[38px] tracking-tighter">
+          <h1 className="text-2xl lg:text-6xl xl:text-[80px] font-normal font-italiana text-center lg:leading-[26px] xl:leading-[38px] tracking-tighter">
             {title}
           </h1>
         </div>
       </div>
 
-      <div className="lg:grid lg:grid-cols-5 min-h-full md:max-h-[86vh]">
+      <div className="md:grid md:grid-cols-5 min-h-full md:max-h-[86vh]">
         {/* Left/top side of page */}
-        {/* <div className=" col-span-3 w-full h-[65vh] md:h-[90vh]"> */}
-          <div
+
+          {/* <div
             className={` col-span-3 w-full h-[65vh] md:h-[90vh] grid grid-rows-${
               Object.keys(images).length
             } relative`}
@@ -98,22 +98,38 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
                 Object.keys(images).length
               }`}>
                 <div
-                  className={` flex relative ${image.position}`}
+                  className={`h-full w-full flex relative ${image.position}`}
                 >
                   <Image
-                    className=" absolute shadow-md shadow-gray-500 "
+                    className="object-contain absolute shadow-md shadow-gray-500 "
                     src={image.url}
-                    fill
+                    height={400}
+                    width={400}
                     alt={title}
                   />
                 </div>
               </div>
-            ))}
-          </div>
+            ))} */}
+                    <div className=" col-span-3 h-[65vh] md:h-[90vh] md:mt-[6vh]">
+                <div
+                  className={`flex justify-center items-center h-full  ${images.image1.position}`}
+                >
+                  <div className="relative m-12">
+                  <Image
+                    className="object-contain overflow-hidden border-[1px] border-black shadow-md shadow-gray-500 "
+                    src={images.image1.url}
+                    height={600}
+                    width={700}
+                    alt={title}
+                    sizes="90vw md:60vw"
+                  /></div>
+                </div>
+              </div>
+          {/* </div> */}
         {/* </div> */}
 
         {/* Right/bottom side of page */}
-        <div className="col-span-2 flex md:flex-col items-center justify-center md:h-[40vh] lg:h-[50vh] xl:h-[70vh] lg:mt-[20vh] lg:ml-[5vw] xl:ml-[10vw] xl:mr-[5vw]">
+        <div className="col-span-2 flex flex-col items-center justify-center md:h-[40vh] lg:h-[50vh] xl:h-[70vh] md:mt-[20vh] md:ml-[5vw] xl:ml-[10vw] xl:mr-[5vw]">
           <div className="">
             <h1 className="font-italiana py-4 text-4xl text-black leading-1 tracking-tight">
               {subtitle}

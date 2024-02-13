@@ -39,7 +39,7 @@ export const productData: ProductDataType[] = [
       image1: {
         url: "/images/products/Product/products (3).jpg",
         width: "w-[80vw] sm:[60vw] md:w-[25vw]",
-        position: "1",
+        position: "2",
       },
       image2: {
         url: "/images/products/Product/products (2).jpg",
@@ -47,7 +47,7 @@ export const productData: ProductDataType[] = [
       },
       image3: {
         url: "/images/products/Product/products (1).jpg",
-        position: "1",
+        position: "2",
       },
    
     },
@@ -91,11 +91,11 @@ export const productData: ProductDataType[] = [
       image1: {
         url: "/images/products/Aleanze/aleanze (2).jpg",
         width: "w-[80vw] sm:[60vw] md:w-[32vw]",
-        position: "1",
+        position: "2",
       },
       image2: {
         url: "/images/products/Aleanze/aleanze (1).jpg",
-        position: "1",
+        position: "2",
       },
       image3: {
         url: "/images/products/Aleanze/aleanze (3).jpg",
@@ -115,7 +115,7 @@ export const productData: ProductDataType[] = [
       },
       image2: {
         url: "/images/products/Zoo/zoo (2).jpg",
-        position: "2",
+        position: "1",
       },
       image3: {
         url: "/images/products/Zoo/zoo (3).jpg",
@@ -176,7 +176,11 @@ export const productData: ProductDataType[] = [
         url: "/images/products/Packshot/packshot (4).jpg",
         position: "1",
       },
-     
+      image5: {
+        url: "/images/products/Packshot/packshot (5).jpg",
+        position: "1",
+      },
+  
     },
   },
 
@@ -187,12 +191,12 @@ export const productData: ProductDataType[] = [
     videoLink: "https://www.youtube.com/watch?v=572uLi_rnn4",
     images: {
       image1: {
-        url: "/images/products/Paperflow/paperflow (1).jpg",
+        url: "/images/products/Paperflow/paperflow (2).jpg",
         width: "w-[80vw] sm:[60vw] md:w-[30vw]",
         position: "1",
       },
       image2: {
-        url: "/images/products/Paperflow/paperflow (2).jpg",
+        url: "/images/products/Paperflow/paperflow (1).jpg",
         position: "2",
       },
       image3: {
@@ -207,7 +211,7 @@ export const productData: ProductDataType[] = [
     url: "/product/white",
     images: {
       image1: {
-        url: "/images/products/White/white (5).jpg",
+        url: "/images/products/White/white (1).jpg",
         position: "1",
 
         width: "w-[80vw] sm:[60vw] md:w-[33vw]",
@@ -225,7 +229,7 @@ export const productData: ProductDataType[] = [
         position: "1",
       },
       image5: {
-        url: "/images/products/White/white (1).jpg",
+        url: "/images/products/White/white (5).jpg",
         position: "1",
       },
      
@@ -245,7 +249,7 @@ export const productData: ProductDataType[] = [
       },
       image2: {
         url: "/images/products/Veilleur/veilleur (2).jpg",
-        position: "2",
+        position: "3",
       },
     },
   },
@@ -295,7 +299,7 @@ export const productData: ProductDataType[] = [
       },
       image2: {
         url: "/images/products/Vawo/vawo (1).jpg",
-        position: "1",
+        position: "2",
       },
       image3: {
         url: "/images/products/Vawo/vawo (3).jpg",
@@ -375,7 +379,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Takanap/takanap (1).jpg",
-        position: "1",
+        position: "2",
 
         width: "w-[80vw] sm:[60vw] md:w-[20vw]",
       },
@@ -385,7 +389,7 @@ export const productData: ProductDataType[] = [
       },
       image3: {
         url: "/images/products/Takanap/takanap (3).jpg",
-        position: "1",
+        position: "2",
       },
     },
   },
@@ -414,7 +418,7 @@ export const productData: ProductDataType[] = [
       },
       image5: {
         url: "/images/products/Becafire/becafire (5).jpg",
-        position: "2",
+        position: "1",
       },
     },
   },
@@ -427,22 +431,19 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Plaid/plaid (1).jpg",
-        position: "1",
+        position: "2",
 
         width: "w-[80vw] sm:[60vw] md:w-[16vw]",
       },
       image2: {
         url: "/images/products/Plaid/plaid (2).jpg",
-        position: "1",
+        position: "2",
       },
       image3: {
         url: "/images/products/Plaid/plaid (3).jpg",
         position: "1",
       },
-      image4: {
-        url: "/images/products/Plaid/plaid (4).jpg",
-        position: "1",
-      },
+      
     },
   },
 ];
@@ -459,7 +460,7 @@ export const galleryData: GalleryDataType[] = [
     poster: "/images/gallery/AyalaBraidman/desert (1).jpg",
     images: {
       image1: {
-        url: "/images/gallery/AyalaBraidman/desert (3).jpg",
+        url: "/images/gallery/AyalaBraidman/desert (4).jpg",
         position: "",
       },
       image2: {
@@ -467,7 +468,7 @@ export const galleryData: GalleryDataType[] = [
         position: "",
       },
       image3: {
-        url: "/images/gallery/AyalaBraidman/desert (4).jpg",
+        url: "/images/gallery/AyalaBraidman/desert (3).jpg",
         position: "-left-[2vw]",
       },
     },
@@ -512,7 +513,7 @@ export const galleryData: GalleryDataType[] = [
     images: {
       image1: {
         url: "/images/gallery/MarciaLucas/marcia_lucas (3).jpg",
-        position: "top-10 h-[300px] w-[400px]",
+        position: "",
       },
       image2: {
         url: "/images/gallery/MarciaLucas/marcia_lucas (2).jpg",
@@ -531,15 +532,15 @@ export const galleryData: GalleryDataType[] = [
     poster: "/images/gallery/MarianaBaldaia/pedome (1).jpg",
     images: {
       image1: {
-        url: "/images/gallery/MarianaBaldaia/pedome (4).jpg",
-        position: "top-10 h-[300px] w-[200px]",
+        url: "/images/gallery/MarianaBaldaia/pedome (5).jpg",
+        position: "",
       },
       image2: {
         url: "/images/gallery/MarianaBaldaia/pedome (3).jpg",
         position: "top-10 h-[300px] w-[200px]",
       },
       image3: {
-        url: "/images/gallery/MarianaBaldaia/pedome (5).jpg",
+        url: "/images/gallery/MarianaBaldaia/pedome (4).jpg",
         position: "top-10 h-[300px] w-[200px]",
       },
     },
@@ -555,15 +556,15 @@ export const galleryData: GalleryDataType[] = [
     poster: "/images/gallery/InêsSousaCardoso/diversidade (1).jpg",
     images: {
       image1: {
-        url: "/images/gallery/InêsSousaCardoso/diversidade (5).jpg",
-        position: "top-10 h-[300px] w-[200px]",
+        url: "/images/gallery/InêsSousaCardoso/diversidade (3).jpg",
+        position: "",
       },
       image2: {
         url: "/images/gallery/InêsSousaCardoso/diversidade (2).jpg",
         position: "top-10 h-[300px] w-[200px]",
       },
       image3: {
-        url: "/images/gallery/InêsSousaCardoso/diversidade (3).jpg",
+        url: "/images/gallery/InêsSousaCardoso/diversidade (5).jpg",
         position: "",
       },
       image4: {
