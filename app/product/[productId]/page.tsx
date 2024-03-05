@@ -30,7 +30,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
     return (
     <div className="relative top-2 mr-8 lg:mr-16 text-neutral-500 text-base md:text-xl h-full">
       {/* Nav buttons */}
-      <div className="fixed h-12 w-full top-4 left-4 z-50 bg-stone-200"/>
+      <div className="fixed md:hidden h-12 w-full top-4 left-4 z-50 bg-stone-200"/>
       <div className="fixed z-50 top-6 left-6 md:left-10 md:top-10  cursor-pointer">
         <Link className="text-center m-2 text-black font-italiana" href="/">
           Back
@@ -77,7 +77,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
       </div>
 
       {/* Title */}
-      <div className="z-25 flex absolute -top-6 w-full  items-center justify-center  text-neutral-400">
+      <div className="z-25 flex absolute -top-6 md:top-2 w-full  items-center justify-center  text-neutral-400">
         <div className="max-w-[160px]">
           <h1 className="text-3xl lg:text-6xl xl:text-[80px] font-normal font-italiana text-center lg:leading-[26px] xl:leading-[38px] tracking-tighter">
             {/* {title} */}
@@ -85,7 +85,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
           </h1>
         </div>
       </div>
-<div className={`md:grid md:grid-cols-5 z-500 pl-2 w-full min-h-full md:h-[85vh] mt-[15vh] md:mt-[2vh] `}>
+<div className={`md:grid md:grid-cols-5 z-500 pl-1 w-full min-h-full md:h-[75vh] mt-[15vh] md:mt-[2vh] `}>
     
           {Object.values(images).map((image, index) => (
             <div
@@ -93,7 +93,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
               className={`flex flex-row ${image.position} -mt-[3vh] md:mt-0 `}
               style={{ zIndex: 10 - index }}
             >
-              <div className={`relative ${image.size} sm:max-w-[80vw] max-w-[75vw]`}>
+              <div className={`relative ${image.size} w-[70vw] xs:w-[75vw] `}>
                 <Image
                   className="absolute object-cover overflow-hidden shadow-md border-[1px] border-black"
                   src={image.url}

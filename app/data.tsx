@@ -45,12 +45,12 @@ export const productData: ProductDataType[] = [
       image2: {
         url: "/images/products/Product/products (2).jpg",
         position: "z-100 col-span-1 justify-end md:items-end md:pl-[2vw]",
-        size: "w-[150px] h-[250px] xs:w-[270px] xs:h-[320px] 2xl:w-[320px] 2xl:h-[350px] -mr-[2vw]"
+        size: "w-[150px] h-[250px] xs:w-[270px] xs:h-[320px] 2xl:w-[320px] 2xl:h-[350px] md:-mr-[2vw]"
       },
       image3: {
         url: "/images/products/Product/products (3).jpg",
         position: "z-1 col-span-2 justify-start md:justify-end",
-        size: "w-[300px] h-[250px] xs:w-[400px] xs:h-[350px] md:w-[500px] md:h-[400px] 2xl:w-[700px] 2xl:h-[500px] -ml-[2vw] "
+        size: "w-[300px] h-[250px] xs:w-[400px] xs:h-[350px] md:w-[500px] md:h-[400px] 2xl:w-[700px] 2xl:h-[500px] md:-ml-[2vw] "
       },
     },
   },
@@ -64,28 +64,28 @@ export const productData: ProductDataType[] = [
       image1: {
         url: "/images/products/Meet/meet (1).jpg",
         width: "w-[80vw] sm:[60vw] md:w-[16vw]",
-        position: " justify-start md:items-end ",
-        size: "mt-[5vh] w-[250px] h-[300px] xs:w-[300px] xs:h-[400px] 2xl:w-[440px] 2xl:h-[500px]",
+        position: " justify-start md:items-center ",
+        size: "mt-[5vh] w-[70vw] h-[75vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]",
       },
       image2: {
         url: "/images/products/Meet/meet (2).jpg",
-        position: "justify-end md:items-end md:pl-[2vw]",
-        size: "w-[150px] h-[250px] xs:w-[270px] xs:h-[320px] 2xl:w-[320px] 2xl:h-[350px] -mr-[2vw]"
+        position: "justify-end md:items-start md:mr-[4vw]" ,
+        size: "w-[70vw] h-[60vh] xs:h-[65vh] md:w-[15vw] md:h-[40vh] 2xl:w-[15vw]  md:-ml-[2vw]"
       },
       image3: {
         url: "/images/products/Meet/meet (3).jpg",
-        position: " justify-start md:justify-end",
-        size: "w-[300px] h-[250px] xs:w-[400px] xs:h-[350px] sm:w-[500px] sm:h-[400px] 2xl:w-[700px] 2xl:h-[500px] -ml-[2vw] "
+        position: " justify-start md:items-end",
+        size: "w-[70vw] h-[60vh] xs:h-[65vh] md:w-[15vw] md:h-[40vh] 2xl:w-[15vw] md:-ml-[8vw] md:mr-[8vw] md:mb-2"
       },
       image4: {
         url: "/images/products/Meet/meet (5).jpg",
-        position: "justify-end md:justify-end ",
-        size: "w-[150px] h-[250px] xs:w-[270px] xs:h-[320px] 2xl:w-[320px] 2xl:h-[350px] -mr-[2vw]"
+        position: "justify-end md:items-center ",
+        size: "w-[80vw] h-[25vh] xs:w-[80vw] xs:h-[30vh] md:w-[70vw] md:h-[45vh] 2xl:w-[40vw] 2xl:h-[50vh] md:-ml-[15vw] md:-mr-[3vw]"
       },
       image5: {
         url: "/images/products/Meet/meet (4).jpg",
-        position: "justify-start md:items-end ",
-        size: "w-[300px] h-[250px] xs:w-[400px] xs:h-[350px] md:w-[500px] md:h-[400px] 2xl:w-[700px] 2xl:h-[500px] -ml-[2vw]"
+        position: "md:mt-10 justify-start md:items-start ",
+        size: "w-[80vw] h-[60vh] xs:h-[65vh] md:w-[18vw] md:h-[40vh] 2xl:w-[20vw] "
       },
     },
   },
