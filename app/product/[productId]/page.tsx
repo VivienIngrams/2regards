@@ -85,28 +85,28 @@ const Product = ({ params }: { params: { productId: string } }) => {
           </h1>
         </div>
       </div>
-<div className={`md:grid md:grid-cols-5 z-500 w-full min-h-full lg:h-[85vh] mt-[15vh] md:mt-[2vh] `}>
+<div className={`md:grid md:grid-cols-5 z-500 pl-2 w-full min-h-full md:h-[85vh] mt-[15vh] md:mt-[2vh] `}>
     
           {Object.values(images).map((image, index) => (
             <div
               key={index}
-              className={`relative flex ${image.position} -mt-[3vh] lg:mt-0 `}
+              className={`flex flex-row ${image.position} -mt-[3vh] md:mt-0 `}
               style={{ zIndex: 10 - index }}
             >
-              <div className={`relative ${image.size} max-w-[80vw]`}>
+              <div className={`relative ${image.size} sm:max-w-[80vw] max-w-[75vw]`}>
                 <Image
                   className="absolute object-cover overflow-hidden shadow-md border-[1px] border-black"
                   src={image.url}
                   alt={title}
                   fill
-                  sizes="90vw lg:30vw"
+                  sizes="90vw sm:60vw md:30vw"
                 />
               </div>
             </div>
           ))}
         </div>
         {videoLink && (
-          <div className="fixed bottom-10 right-10 flex flex-col items-end justify-center m-2">
+          <div className="md:fixed md:bottom-10 md:right-10 relative pb-10 flex flex-col items-end justify-center m-2">
             <Link
               href={videoLink}
               target="_blank"
