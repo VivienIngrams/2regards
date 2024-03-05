@@ -4,7 +4,7 @@ type ProductDataType = {
   url: string;
   videoLink?: string;
   images: {
-    image1: { url: string; width: string; position: string; size: string; };
+    image1: { url: string; width: string; position: string; size: string };
     image2: { url: string; position: string; size: string };
     image3?: { url: string; position: string; size: string };
     image4?: { url: string; position: string; size: string };
@@ -45,12 +45,12 @@ export const productData: ProductDataType[] = [
       image2: {
         url: "/images/products/Product/products (2).jpg",
         position: "z-100 col-span-1 justify-end md:items-end md:pl-[2vw]",
-        size: "w-[150px] h-[250px] xs:w-[270px] xs:h-[320px] 2xl:w-[320px] 2xl:h-[350px] md:-mr-[2vw]"
+        size: "w-[150px] h-[250px] xs:w-[270px] xs:h-[320px] 2xl:w-[320px] 2xl:h-[350px] md:-mr-[2vw]",
       },
       image3: {
         url: "/images/products/Product/products (3).jpg",
         position: "z-1 col-span-2 justify-start md:justify-end",
-        size: "w-[300px] h-[250px] xs:w-[400px] xs:h-[350px] md:w-[500px] md:h-[400px] 2xl:w-[700px] 2xl:h-[500px] md:-ml-[2vw] "
+        size: "w-[300px] h-[250px] xs:w-[400px] xs:h-[350px] md:w-[500px] md:h-[400px] 2xl:w-[700px] 2xl:h-[500px] md:-ml-[2vw] ",
       },
     },
   },
@@ -69,23 +69,23 @@ export const productData: ProductDataType[] = [
       },
       image2: {
         url: "/images/products/Meet/meet (2).jpg",
-        position: "justify-end md:items-start md:mr-[4vw]" ,
-        size: "max-w-[50vw] h-[30vh] xs:h-[50vh] sm:h-[50vh] md:w-[15vw] md:h-[40vh] 2xl:w-[15vw]  md:-ml-[2vw]"
+        position: "justify-end md:items-start md:mr-[4vw]",
+        size: "max-w-[50vw] h-[30vh] xs:h-[50vh] sm:h-[50vh] md:w-[15vw] md:h-[40vh] 2xl:w-[15vw]  md:-ml-[2vw]",
       },
       image3: {
         url: "/images/products/Meet/meet (3).jpg",
         position: " justify-start md:items-end",
-        size: "max-w-[50vw] h-[30vh] xs:h-[40vh]  md:w-[15vw] md:h-[40vh] 2xl:w-[15vw] md:-ml-[8vw] md:mr-[8vw] md:mb-2"
+        size: "max-w-[50vw] h-[30vh] xs:h-[40vh]  md:w-[15vw] md:h-[40vh] 2xl:w-[15vw] md:-ml-[8vw] md:mr-[8vw] md:mb-2",
       },
       image4: {
         url: "/images/products/Meet/meet (5).jpg",
         position: "justify-end md:items-center ",
-        size: "h-[25vh] xs:w-[80vw] xs:h-[30vh] md:w-[70vw] md:h-[45vh] 2xl:w-[40vw] 2xl:h-[50vh] md:-ml-[15vw] md:-mr-[3vw]"
+        size: "h-[25vh] xs:w-[80vw] xs:h-[30vh] md:w-[70vw] md:h-[45vh] 2xl:w-[40vw] 2xl:h-[50vh] md:-ml-[15vw] md:-mr-[2vw] xl:-mr-[5vw]",
       },
       image5: {
         url: "/images/products/Meet/meet (4).jpg",
-        position: "md:mt-10 justify-start md:items-start ",
-        size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[40vh] 2xl:w-[20vw] "
+        position: "md:mt-10 justify-start md:items-start md:justify-end ",
+        size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[40vh] xl:w-[15vw] ",
       },
     },
   },
@@ -136,29 +136,34 @@ export const productData: ProductDataType[] = [
     url: "/product/cif",
     images: {
       image1: {
-        url: "/images/products/CIF/cif (5).jpg",
+        url: "/images/products/CIF/cif (1).jpg",
         width: "w-[80vw] sm:[60vw] md:w-[35vw]",
-        position: "1",
+        position: " justify-start md:items-center ",
+        size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]",
       },
       image2: {
         url: "/images/products/CIF/cif (2).jpg",
-        position: "1",
+        position: "justify-end md:items-start md:mr-[4vw]",
+        size: "max-w-[50vw] h-[30vh] xs:h-[50vh] sm:h-[60vh] md:w-[15vw] md:h-[40vh] 2xl:w-[15vw]  md:-ml-[2vw]",
       },
       image3: {
         url: "/images/products/CIF/cif (3).jpg",
-        position: "1",
+        position: " justify-start md:items-end",
+        size: "max-w-[50vw] h-[30vh] xs:h-[40vh] sm:h-[70vh] md:w-[12vw] md:h-[35vh] 2xl:w-[15vw] md:-ml-[8vw] md:mr-[8vw] md:mb-2",
       },
+
       image4: {
         url: "/images/products/CIF/cif (4).jpg",
-        position: "1",
+        position: "justify-end md:items-center",
+        size: "h-[45vh] xs:w-[80vw] xs:h-[50vh] sm:h-[60vh] sm:w-[70vw]  md:h-[65vh] xl:w-[40vw] xl:h-[55vh] md:-ml-[15vw] md:-mr-[1vw] xl:-mr-[2vw]",
       },
       image5: {
-        url: "/images/products/CIF/cif (1).jpg",
-        position: "1",
+        url: "/images/products/CIF/cif (5).jpg",
+        position: "md:mt-10 justify-start md:items-start md:justify-end ",
+        size: "h-[25vh] xs:h-[35vh] md:w-[28vw] md:h-[30vh] xl:w-[25vw]  mb-12 ",
       },
     },
   },
-
   {
     title: "Packshot",
     id: "packshot",
@@ -166,9 +171,9 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Packshot/packshot (1).jpg",
-        position: "1",
-
         width: "w-[80vw] sm:[60vw] md:w-[15vw]",
+        position: " justify-start md:items-center ",
+        size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]",
       },
       image2: {
         url: "/images/products/Packshot/packshot (2).jpg",
@@ -217,9 +222,9 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/White/white (1).jpg",
-        position: "1",
-
         width: "w-[80vw] sm:[60vw] md:w-[33vw]",
+        position: " justify-start md:items-center ",
+        size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]",
       },
       image2: {
         url: "/images/products/White/white (2).jpg",
@@ -265,9 +270,9 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Miquelon/miquelon (3).jpg",
-        position: "1",
-
         width: "w-[80vw] sm:[60vw] md:w-[37vw]",
+        position: " justify-start md:items-center ",
+        size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]",
       },
       image2: {
         url: "/images/products/Miquelon/miquelon (2).jpg",
@@ -400,9 +405,9 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Becafire/becafire (3).jpg",
-        position: "1",
-
         width: "w-[80vw] sm:[60vw] md:w-[18vw]",
+        position: " justify-start md:items-center ",
+        size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]",
       },
       image2: {
         url: "/images/products/Becafire/becafire (2).jpg",

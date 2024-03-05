@@ -17,7 +17,10 @@ const config: Config = {
     screens: {
       'xs': '300px',
       'sm': '520px',
-      
+      'md': '768px',
+      'lg': '976px',
+      'xl': '1240px',
+      '2xl': '1436px',
     },
   },
   plugins: [],
