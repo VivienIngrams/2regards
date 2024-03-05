@@ -46,7 +46,7 @@ export default function RootLayout({
         ) : (
           <>
             <Header />
-            <div className="pl-8 md:pl-12 pb-4 md:pb-6 pt-2 md:pt-4 h-[95%]">
+            <div className="pl-8 md:pl-12 pb-4 md:pb-6 pt-6 md:pt-6 h-[95%]">
               {children}
             </div>
             <Footer />
