@@ -4,12 +4,12 @@ type ProductDataType = {
   url: string;
   videoLink?: string;
   images: {
-    image1: { url: string; width: string; position: string };
-    image2: { url: string; position: string };
-    image3?: { url: string; position: string };
-    image4?: { url: string; position: string };
-    image5?: { url: string; position: string };
-    image6?: { url: string; position: string };
+    image1: { url: string; width: string; position: string; size: string; };
+    image2: { url: string; position: string; size: string };
+    image3?: { url: string; position: string; size: string };
+    image4?: { url: string; position: string; size: string };
+    image5?: { url: string; position: string; size: string };
+    image6?: { url: string; position: string; size: string };
   };
 };
 
@@ -37,19 +37,21 @@ export const productData: ProductDataType[] = [
     url: "/product/product",
     images: {
       image1: {
-        url: "/images/products/Product/products (3).jpg",
-        width: "w-[80vw] sm:[60vw] md:w-[25vw]",
-        position: "2",
+        url: "/images/products/Product/products (1).jpg",
+        width: "w-[80vw] sm:[60vw] lg:w-[25vw]",
+        position: "col-span-2 justify-start lg:items-center ",
+        size: "mt-[5vh] w-[250px] h-[300px] xs:w-[300px] xs:h-[400px] 2xl:w-[440px] 2xl:h-[500px]",
       },
       image2: {
         url: "/images/products/Product/products (2).jpg",
-        position: "1",
+        position: "z-100 col-span-1 justify-end lg:items-end lg:pl-[2vw]",
+        size: "w-[150px] h-[250px] xs:w-[270px] xs:h-[320px] 2xl:w-[320px] 2xl:h-[350px] -mr-[2vw]"
       },
       image3: {
-        url: "/images/products/Product/products (1).jpg",
-        position: "2",
+        url: "/images/products/Product/products (3).jpg",
+        position: "z-1 col-span-2 justify-start lg:justify-end",
+        size: "w-[300px] h-[250px] xs:w-[400px] xs:h-[350px] md:w-[500px] md:h-[400px] 2xl:w-[700px] 2xl:h-[500px] -ml-[2vw] "
       },
-   
     },
   },
 
@@ -111,15 +113,15 @@ export const productData: ProductDataType[] = [
       image1: {
         url: "/images/products/Zoo/zoo (1).jpg",
         width: "w-[80vw] sm:[60vw] md:w-[14vw]",
-        position: "2",
+        position: "col-span-2 items-center pr-[4vw]",
       },
       image2: {
-        url: "/images/products/Zoo/zoo (2).jpg",
-        position: "1",
+        url: "/images/products/Zoo/zoo (3).jpg",
+        position: "col-span-1 -mr-[2vw] items-end",
       },
       image3: {
-        url: "/images/products/Zoo/zoo (3).jpg",
-        position: "2",
+        url: "/images/products/Zoo/zoo (2).jpg",
+        position: "md:mt-6 col-span-2 justify-end",
       },
     },
   },
@@ -149,7 +151,6 @@ export const productData: ProductDataType[] = [
         url: "/images/products/CIF/cif (1).jpg",
         position: "1",
       },
-    
     },
   },
 
@@ -180,7 +181,6 @@ export const productData: ProductDataType[] = [
         url: "/images/products/Packshot/packshot (5).jpg",
         position: "1",
       },
-  
     },
   },
 
@@ -192,7 +192,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Paperflow/paperflow (2).jpg",
-        width: "w-[80vw] sm:[60vw] md:w-[30vw]",
+        width: "w-[80vw] sm:w-[60vw] md:w-[30vw]",
         position: "1",
       },
       image2: {
@@ -232,10 +232,9 @@ export const productData: ProductDataType[] = [
         url: "/images/products/White/white (5).jpg",
         position: "1",
       },
-     
     },
   },
-  
+
   {
     title: "Compagnie du Veilleur",
     id: "veilleur",
@@ -281,8 +280,6 @@ export const productData: ProductDataType[] = [
         url: "/images/products/Miquelon/miquelon (5).jpg",
         position: "1",
       },
-    
-   
     },
   },
 
@@ -337,8 +334,7 @@ export const productData: ProductDataType[] = [
         url: "/images/products/Design/design (5).png",
         position: "1",
       },
- 
-         },
+    },
   },
   {
     title: "Hiima",
@@ -368,7 +364,6 @@ export const productData: ProductDataType[] = [
         url: "/images/products/Hiima/hiima (6).jpg",
         position: "1",
       },
-   
     },
   },
   {
@@ -423,7 +418,6 @@ export const productData: ProductDataType[] = [
     },
   },
 
-
   {
     title: "Plaid",
     id: "plaid",
@@ -443,7 +437,6 @@ export const productData: ProductDataType[] = [
         url: "/images/products/Plaid/plaid (3).jpg",
         position: "1",
       },
-      
     },
   },
 ];
