@@ -122,14 +122,15 @@ export const productData: ProductDataType[] = [
         url: "/images/products/Zoo/zoo (1).jpg",
         width: "w-[80vw] sm:[60vw] md:w-[14vw]",
         position: "col-span-2 items-center pr-[4vw]",
+        size: "",
       },
       image2: {
         url: "/images/products/Zoo/zoo (3).jpg",
-        position: "col-span-1 -mr-[2vw] items-end",
+        position: "col-span-1 -mr-[2vw] items-end",size: "",
       },
       image3: {
         url: "/images/products/Zoo/zoo (2).jpg",
-        position: "md:mt-6 col-span-2 justify-end",
+        position: "md:mt-6 col-span-2 justify-end",size: "",
       },
     },
   },
@@ -211,15 +212,15 @@ export const productData: ProductDataType[] = [
       image1: {
         url: "/images/products/Paperflow/paperflow (2).jpg",
         width: "w-[80vw] sm:w-[60vw] md:w-[30vw]",
-        position: "1",
+        position: "1",size: "",
       },
       image2: {
         url: "/images/products/Paperflow/paperflow (1).jpg",
-        position: "2",
+        position: "2",size: "",
       },
       image3: {
         url: "/images/products/Paperflow/paperflow (3).jpg",
-        position: "2",
+        position: "2",size: "",
       },
     },
   },
@@ -264,13 +265,13 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Veilleur/veilleur (1).jpg",
-        position: "2",
+        position: "2",size: "",
 
         width: "w-[80vw] sm:[60vw] md:w-[14vw]",
       },
       image2: {
         url: "/images/products/Veilleur/veilleur (2).jpg",
-        position: "3",
+        position: "3",size: "",
       },
     },
   },
@@ -317,21 +318,21 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Vawo/vawo (2).jpg",
-        position: "1",
+        position: "1",size: "",
 
         width: "w-[80vw] sm:[60vw] md:w-[16vw]",
       },
       image2: {
         url: "/images/products/Vawo/vawo (1).jpg",
-        position: "2",
+        position: "2",size: "",
       },
       image3: {
         url: "/images/products/Vawo/vawo (3).jpg",
-        position: "1",
+        position: "1",size: "",
       },
       image4: {
         url: "/images/products/Vawo/vawo (4).jpg",
-        position: "1",
+        position: "1",size: "",
       },
     },
   },
@@ -410,17 +411,17 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Takanap/takanap (1).jpg",
-        position: "2",
+        position: "2",size: "",
 
         width: "w-[80vw] sm:[60vw] md:w-[20vw]",
       },
       image2: {
         url: "/images/products/Takanap/takanap (2).jpg",
-        position: "1",
+        position: "1",size: "",
       },
       image3: {
         url: "/images/products/Takanap/takanap (3).jpg",
-        position: "2",
+        position: "2",size: "",
       },
     },
   },
@@ -465,17 +466,17 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Plaid/plaid (1).jpg",
-        position: "2",
+        position: "2",size: "",
 
         width: "w-[80vw] sm:[60vw] md:w-[16vw]",
       },
       image2: {
         url: "/images/products/Plaid/plaid (2).jpg",
-        position: "2",
+        position: "2",size: "",
       },
       image3: {
         url: "/images/products/Plaid/plaid (3).jpg",
-        position: "1",
+        position: "1",size: "",
       },
     },
   },
