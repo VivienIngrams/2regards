@@ -39,18 +39,18 @@ export const productData: ProductDataType[] = [
       image1: {
         url: "/images/products/Product/products (1).jpg",
         width: "w-[80vw] sm:[60vw] md:w-[25vw]",
-        position: "col-span-2 justify-start md:justify-center ",
-        size: " w-[250px] h-[300px] xs:w-[300px] xs:h-[400px] 2xl:w-[440px] 2xl:h-[500px]",
+        position: "col-span-2 justify-start md:items-center ",
+        size: " h-[48vh] xs:w-[75vw] xs:h-[67vh] 2xl:w-[28vw] 2xl:h-[72vh]",
       },
       image2: {
         url: "/images/products/Product/products (2).jpg",
         position: "z-100 col-span-1 justify-end md:items-end md:pl-[2vw]",
-        size: "w-[150px] h-[250px] xs:w-[270px] xs:h-[320px] 2xl:w-[320px] 2xl:h-[350px] md:-mr-[2vw]",
+        size: "w-[60vw] h-[27vh] xs:w-[48vw] 2xl:w-[320px] 2xl:h-[350px] md:-mr-[2vw]  md:mb-2",
       },
       image3: {
         url: "/images/products/Product/products (3).jpg",
         position: "z-1 col-span-2 justify-start md:justify-end",
-        size: "w-[300px] h-[250px] xs:w-[400px] xs:h-[350px] md:w-[500px] md:h-[400px] 2xl:w-[700px] 2xl:h-[500px] md:-ml-[2vw] ",
+        size: " h-[35vh] xs:h-[42vh] md:w-[500px] md:h-[60vh] 2xl:w-[37vw]  md:-ml-[2vw] md:mt-[5vh]",
       },
     },
   },
@@ -80,7 +80,7 @@ export const productData: ProductDataType[] = [
       image4: {
         url: "/images/products/Meet/meet (5).jpg",
         position: "justify-end md:items-center ",
-        size: "h-[25vh] xs:w-[80vw] xs:h-[30vh] md:w-[70vw] md:h-[45vh] 2xl:w-[40vw] 2xl:h-[50vh] md:-ml-[15vw] md:-mr-[2vw] xl:-mr-[5vw]",
+        size: "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[70vw] md:h-[45vh] 2xl:w-[40vw] 2xl:h-[50vh] md:-ml-[15vw] md:-mr-[2vw] xl:-mr-[5vw]",
       },
       image5: {
         url: "/images/products/Meet/meet (4).jpg",
@@ -98,15 +98,18 @@ export const productData: ProductDataType[] = [
       image1: {
         url: "/images/products/Aleanze/aleanze (2).jpg",
         width: "w-[80vw] sm:[60vw] md:w-[32vw]",
-        position: "2",
+        position: "col-span-3 justify-start md:items-center ",
+        size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] xl:w-[35vw] xl:h-[75vh]"
       },
       image2: {
         url: "/images/products/Aleanze/aleanze (1).jpg",
-        position: "2",
+        position: "justify-start md:items-end",
+        size: "max-w-[50vw] h-[30vh] xs:h-[40vh]  md:w-[15vw] md:h-[40vh] xl:w-[15vw] md:-mr-[8vw] md:mb-2",
       },
       image3: {
         url: "/images/products/Aleanze/aleanze (3).jpg",
-        position: "1",
+        position: "md:mt-10 justify-start md:items-start md:justify-end ",
+        size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[50vh] xl:w-[25vw]"
       },
     },
   },
@@ -155,12 +158,12 @@ export const productData: ProductDataType[] = [
       image4: {
         url: "/images/products/CIF/cif (4).jpg",
         position: "justify-end md:items-center",
-        size: "h-[45vh] xs:w-[80vw] xs:h-[50vh] sm:h-[60vh] sm:w-[70vw]  md:h-[65vh] xl:w-[40vw] xl:h-[55vh] md:-ml-[15vw] md:-mr-[1vw] xl:-mr-[2vw]",
+        size: "h-[45vh] xs:w-[75vw] xs:h-[45vh] sm:h-[60vh] sm:w-[70vw]  md:h-[65vh] xl:w-[40vw] xl:h-[55vh] md:-ml-[15vw] md:-mr-[1vw] xl:-mr-[2vw]",
       },
       image5: {
         url: "/images/products/CIF/cif (5).jpg",
         position: "md:mt-10 justify-start md:items-start md:justify-end ",
-        size: "h-[25vh] xs:h-[35vh] md:w-[28vw] md:h-[30vh] xl:w-[25vw]  mb-12 ",
+        size: "h-[25vh] xs:h-[32vh] md:w-[28vw] md:h-[30vh] xl:w-[25vw]  mb-12 ",
       },
     },
   },
@@ -178,22 +181,22 @@ export const productData: ProductDataType[] = [
       image2: {
         url: "/images/products/Packshot/packshot (2).jpg",
         position: "justify-end md:items-start md:mr-[4vw]",
-        size: "max-w-[50vw] h-[30vh] xs:h-[50vh] sm:h-[50vh] md:w-[15vw] md:h-[40vh] 2xl:w-[15vw]  md:-ml-[2vw]"
+        size: "max-w-[50vw] h-[30vh] xs:h-[45vh] sm:h-[50vh] md:w-[15vw] md:h-[40vh] 2xl:w-[15vw]  md:-ml-[2vw]"
       },
       image3: {
-        url: "/images/products/Packshot/packshot (3).jpg",
+        url: "/images/products/Packshot/packshot (5).jpg",
         position: " justify-start md:items-end",
-        size: "max-w-[50vw] h-[30vh] xs:h-[40vh]  md:w-[15vw] md:h-[40vh] 2xl:w-[15vw] md:-ml-[8vw] md:mr-[8vw] md:mb-2"
+        size: "max-w-[50vw] h-[30vh] xs:h-[40vh]  md:w-[15vw] md:h-[33vh] 2xl:w-[18vw] md:-ml-[8vw] md:mr-[8vw] md:mb-2"
       },
       image4: {
-        url: "/images/products/Packshot/packshot (4).jpg",
+        url: "/images/products/Packshot/packshot (3).jpg",
         position: "justify-end md:items-center ",
-        size: "h-[25vh] xs:w-[80vw] xs:h-[30vh] md:w-[70vw] md:h-[45vh] 2xl:w-[40vw] 2xl:h-[50vh] md:-ml-[15vw] md:-mr-[2vw] xl:-mr-[5vw]"
+        size: "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[70vw] md:h-[50vh] 2xl:w-[37vw] 2xl:h-[60vh] md:-ml-[15vw] md:-mr-[2vw] xl:-mr-[5vw]"
       },
       image5: {
-        url: "/images/products/Packshot/packshot (5).jpg",
+        url: "/images/products/Packshot/packshot (4).jpg",
         position: "md:mt-10 justify-start md:items-start md:justify-end ",
-        size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[40vh] xl:w-[15vw]"
+        size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[42vh] xl:w-[15vw]"
       },
     },
   },
@@ -229,12 +232,12 @@ export const productData: ProductDataType[] = [
         url: "/images/products/White/white (1).jpg",
         width: "w-[80vw] sm:[60vw] md:w-[33vw]",
         position: " justify-start md:items-center ",
-        size: "mt-[5vh] h-[40vh] xs:h-[50vh] sm:h-[60vh] md:w-[30vw] md:h-[37vh] 2xl:w-[25vw] 2xl:h-[40vh] md:-mr-[6vw]"
+        size: "mt-[5vh] h-[40vh] xs:h-[40vh] sm:h-[60vh] md:w-[30vw] md:h-[37vh] 2xl:w-[25vw] 2xl:h-[40vh] md:-mr-[6vw]"
       },
       image2: {
         url: "/images/products/White/white (2).jpg",
         position: "justify-end md:items-start md:mr-[4vw]",
-        size: "max-w-[50vw] h-[30vh] xs:h-[50vh] sm:h-[50vh] md:w-[15vw] md:h-[40vh] 2xl:w-[15vw]  md:-ml-[2vw]"
+        size: "max-w-[50vw] h-[30vh] xs:h-[45vh] sm:h-[50vh] md:w-[15vw] md:h-[40vh] 2xl:w-[15vw]  md:-ml-[2vw]"
       },
       image3: {
         url: "/images/products/White/white (3).jpg",
@@ -244,12 +247,12 @@ export const productData: ProductDataType[] = [
       image4: {
         url: "/images/products/White/white (4).jpg",
         position: "justify-end md:items-center ",
-        size: "h-[30vh] xs:w-[80vw] xs:h-[40vh] md:w-[60vw] md:h-[50vh] 2xl:w-[35vw] 2xl:h-[55vh] md:-ml-[15vw] md:-mr-[2vw] xl:-mr-[2vw]"
+        size: "h-[30vh] xs:w-[75vw] xs:h-[40vh] md:w-[60vw] md:h-[50vh] 2xl:w-[35vw] 2xl:h-[55vh] md:-ml-[15vw] md:-mr-[2vw] xl:-mr-[2vw]"
       },
       image5: {
         url: "/images/products/White/white (5).jpg",
         position: "md:mt-10 justify-start md:items-start md:justify-end ",
-        size: "h-[25vh] xs:h-[35vh] md:w-[28vw] md:h-[30vh] xl:w-[25vw]  mb-12 "
+        size: "h-[25vh] xs:h-[30vh] md:w-[28vw] md:h-[30vh] xl:w-[25vw]  mb-12 "
       },
     },
   },  
@@ -272,35 +275,40 @@ export const productData: ProductDataType[] = [
     },
   },
   {
-    title: "Miquelon",
-    id: "miquelon",
-    url: "/product/miquelon",
-    videoLink: "https://www.youtube.com/watch?v=572uLi_rnn4",
-    images: {
-      image1: {
-        url: "/images/products/Miquelon/miquelon (3).jpg",
-        width: "w-[80vw] sm:[60vw] md:w-[37vw]",
-        position: " justify-start md:items-center ",
-        size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]",
+    "title": "Miquelon",
+    "id": "miquelon",
+    "url": "/product/miquelon",
+    "videoLink": "https://www.youtube.com/watch?v=572uLi_rnn4",
+    "images": {
+      "image1": {
+        "url": "/images/products/Miquelon/miquelon (2).jpg",
+        "width": "w-[80vw] sm:[60vw] md:w-[37vw]",
+        "position": "justify-start md:items-center",
+        "size": "mt-[2vh] mt-[5vh] h-[25vh] xs:h-[28vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] xl:w-[22vw] xl:h-[30vh] md:-mr-[6vw]"
       },
-      image2: {
-        url: "/images/products/Miquelon/miquelon (2).jpg",
-        position: "2",
+      "image2": {
+        "url": "/images/products/Miquelon/miquelon (3).jpg",
+        "position": "justify-end md:items-start md:mr-[4vw]",
+        "size": "mt-[5vh] h-[25vh] xs:h-[28vh] sm:h-[50vh] md:w-[15vw] md:h-[30vh] xl:w-[35vw] md:-ml-[6vw] md:-mr-[5vw]"
       },
-      image3: {
-        url: "/images/products/Miquelon/miquelon (1).jpg",
-        position: "1",
+      "image3": {
+        "url": "/images/products/Miquelon/miquelon (1).jpg",
+        "position": "justify-start md:items-end",
+        "size": "mt-[2vh] h-[25vh] xs:h-[28vh] md:w-[28vw] md:h-[25vh] xl:w-[23vw] md:-ml-[15vw] md:mr-[8vw] md:mb-2"
       },
-      image4: {
-        url: "/images/products/Miquelon/miquelon (4).jpg",
-        position: "2",
+      "image4": {
+        "url": "/images/products/Miquelon/miquelon (5).jpg",
+        "position": "justify-end md:items-center",
+        "size": "mt-[5vh] h-[25vh] xs:h-[28vh] md:w-[65vw] md:h-[42vh] xl:w-[40vw] xl:h-[45vh] md:-ml-[15vw] md:-mr-[5vw] xl:-mr-[8vw]"
       },
-      image5: {
-        url: "/images/products/Miquelon/miquelon (5).jpg",
-        position: "1",
-      },
-    },
+      "image5": {
+        "url": "/images/products/Miquelon/miquelon (4).jpg",
+        "position": "md:mt-10 justify-start md:items-start md:justify-end",
+        "size": "mt-[2vh] h-[25vh] xs:h-[28vh] md:w-[28vw] md:h-[25vh] xl:w-[25vw]  md:-ml-[8vw] mb-12"
+      }
+    }
   },
+  
 
   {
     title: "Vawo",
@@ -336,27 +344,27 @@ export const productData: ProductDataType[] = [
         url: "/images/products/Design/design (3).png",
         width: "w-[80vw] sm:[60vw] md:w-[30vw]",
         position: " justify-start md:items-center ",
-        size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]"
+        size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[45vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]"
       },
       image2: {
         url: "/images/products/Design/design (2).png",
         position: "justify-end md:items-start md:mr-[4vw]",
-        size: "max-w-[50vw] h-[30vh] xs:h-[50vh] sm:h-[50vh] md:w-[15vw] md:h-[40vh] 2xl:w-[15vw]  md:-ml-[2vw]"
+        size: "max-w-[50vw] h-[30vh] xs:h-[40vh] sm:h-[50vh] md:w-[15vw] md:h-[45h] 2xl:w-[15vw]  md:-ml-[2vw]"
       },
       image3: {
         url: "/images/products/Design/design (1).png",
         position: " justify-start md:items-end",
-        size: "h-[25vh] xs:h-[35vh] md:w-[28vw] md:h-[30vh] xl:w-[25vw] md:-ml-[10vw] md:mr-[8vw] md:mb-2"
+        size: "h-[25vh] xs:h-[30vh] md:w-[28vw] md:h-[30vh] xl:w-[25vw] md:-ml-[10vw] md:mr-[8vw] md:mb-2"
       },
       image4: {
         url: "/images/products/Design/design (6).png",
         position: "justify-end md:items-center ",
-        size: "h-[25vh] xs:w-[80vw] xs:h-[30vh] md:w-[70vw] md:h-[45vh] 2xl:w-[40vw] 2xl:h-[50vh] md:-ml-[15vw] md:-mr-[2vw] xl:-mr-[5vw]"
+        size: "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[65vw] md:h-[45vh] 2xl:w-[35vw] 2xl:h-[50vh] md:-ml-[15vw] md:-mr-[2vw] xl:-mr-[5vw]"
       },
       image5: {
         url: "/images/products/Design/design (5).png",
         position: "md:mt-10 justify-start md:items-start md:justify-end ",
-        size: "h-[25vh] xs:h-[35vh] md:w-[28vw] md:h-[30vh] md:-ml-[6vw] xl:w-[25vw] "
+        size: "h-[25vh] xs:h-[35vh] md:w-[25vw] md:h-[32vh] md:-ml-[6vw] xl:w-[25vw] mb-12 "
       },
     },
   },  
@@ -370,22 +378,22 @@ export const productData: ProductDataType[] = [
         url: "/images/products/Hiima/hiima (2).jpg",
         position: " justify-start md:items-center ",
         width: "w-[80vw] sm:[60vw] md:w-[14vw]",
-        size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]"
+        size: "mt-[5vh] h-[48vh] xs:h-[58vh] sm:h-[65vh] md:w-[20vw] md:h-[45vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]"
       },
       image2: {
         url: "/images/products/Hiima/hiima (1).jpg",
         position: "justify-end md:items-start md:mr-[4vw]",
-        size: "max-w-[50vw] h-[30vh] xs:h-[50vh] sm:h-[50vh] md:w-[15vw] md:h-[40vh] 2xl:w-[15vw]  md:-ml-[2vw]"
+        size: "max-w-[50vw] h-[30vh] xs:h-[40vh] sm:h-[40vh] md:w-[15vw] md:h-[30vh] 2xl:w-[15vw]  md:-ml-[2vw]"
       },
       image3: {
         url: "/images/products/Hiima/hiima (3).jpg",
         position: " justify-start md:items-end",
-        size: "max-w-[50vw] h-[30vh] xs:h-[40vh]  md:w-[15vw] md:h-[40vh] 2xl:w-[15vw] md:-ml-[8vw] md:mr-[8vw] md:mb-2"
+        size: "max-w-[50vw] h-[30vh] xs:h-[40vh]  md:w-[15vw] md:h-[40vh] 2xl:w-[15vw] md:-ml-[8vw] md:mr-[8vw] md:mb-4"
       },
       image4: {
         url: "/images/products/Hiima/hiima (4).jpg",
         position: "justify-end md:items-center ",
-        size: "h-[25vh] xs:w-[80vw] xs:h-[30vh] md:w-[70vw] md:h-[45vh] 2xl:w-[40vw] 2xl:h-[50vh] md:-ml-[15vw] md:-mr-[2vw] xl:-mr-[5vw]"
+        size: "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[70vw] md:h-[45vh] 2xl:w-[40vw] 2xl:h-[50vh] md:-ml-[15vw] md:-mr-[2vw] xl:-mr-[5vw]"
       },
       image5: {
         url: "/images/products/Hiima/hiima (6).jpg",
@@ -440,7 +448,7 @@ export const productData: ProductDataType[] = [
       image4: {
         url: "/images/products/Becafire/becafire (4).jpg",
         position: "justify-end md:items-center ",
-        size: "h-[25vh] xs:w-[80vw] xs:h-[30vh] md:w-[70vw] md:h-[45vh] 2xl:w-[40vw] 2xl:h-[50vh] md:-ml-[15vw] md:-mr-[2vw] xl:-mr-[5vw]"
+        size: "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[70vw] md:h-[45vh] 2xl:w-[40vw] 2xl:h-[50vh] md:-ml-[15vw] md:-mr-[2vw] xl:-mr-[5vw]"
       },
       image5: {
         url: "/images/products/Becafire/becafire (5).jpg",
