@@ -23,10 +23,10 @@ type GalleryDataType = {
   videoLink?: string;
   poster: string;
   images: {
-    image1: { url: string; position?: string };
-    image2?: { url: string; position?: string };
-    image3?: { url: string; position?: string };
-    image4?: { url: string; position?: string };
+    image1: { url: string; position: string; size: string};
+    image2: { url: string; position: string; size: string};
+    image3: { url: string; position: string; size: string};
+    
   };
 };
 
@@ -133,41 +133,6 @@ export const productData: ProductDataType[] = [
       }
     }
   },     
-    
-    {
-      "title": "Zoo",
-      "id": "zoo",
-      "url": "/product/zoo",
-      "images": {
-        "image1": {
-          "url": "/images/products/Zoo/zoo (1).jpg",
-          "width": "w-[80vw] sm:w-[60vw] md:w-[16vw]",
-          "position": " justify-start md:items-start md:-mr-[6vw]",
-          "size": "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] xl:w-[353w] xl:h-[60vh]"
-        },
-        "image2": {
-          "url": "/images/products/Zoo/zoo (3).jpg",
-          "position": "justify-end md:items-end md:mb-2 md:-ml-[2vw]",
-          "size": "max-w-[50vw] h-[30vh] xs:h-[50vh] sm:h-[50vh] md:w-[15vw] md:h-[40vh] 2xl:w-[15vw]"
-        },
-        "image3": {
-          "url": "/images/products/Zoo/zoo (2).jpg",
-          "position": " justify-start md:items-center md:-ml-[4vw] md:-mr-[8vw] md:-mt-[5vh]",
-          "size": "max-w-[50vw] h-[30vh] xs:h-[40vh]  md:w-[35vw] md:h-[50vh] 2xl:w-[35vw]"
-        },
-        "image4": {
-          "url": "/images/products/Zoo/zoo (2).jpg",
-          "position": "justify-end md:items-end md:-ml-[6vw] md:mb-2 md:-mr-[2vw] xl:-mr-[8vw]",
-          "size": "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[30vw] md:h-[35vh] 2xl:w-[20vw] 2xl:h-[30vh]"
-        },
-        "image5": {
-          "url": "/images/products/Zoo/zoo (2).jpg",
-          "position": "md:mt-10 justify-start md:items-start md:justify-end",
-          "size": "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[40vh] xl:w-[35vw]"
-        }
-      }
-    },
-    
   {
     title: "CIF",
     id: "cif",
@@ -202,6 +167,41 @@ export const productData: ProductDataType[] = [
       },
     },
   },
+    {
+      "title": "Zoo",
+      "id": "zoo",
+      "url": "/product/zoo",
+      "images": {
+        "image1": {
+          "url": "/images/products/Zoo/zoo (1).jpg",
+          "width": "w-[80vw] sm:w-[60vw] md:w-[16vw]",
+          "position": " justify-start md:items-start md:-mr-[6vw]",
+          "size": "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] xl:w-[353w] xl:h-[60vh]"
+        },
+        "image2": {
+          "url": "/images/products/Zoo/zoo (3).jpg",
+          "position": "justify-end md:items-end md:mb-2 md:-ml-[2vw]",
+          "size": "max-w-[50vw] h-[30vh] xs:h-[50vh] sm:h-[50vh] md:w-[15vw] md:h-[40vh] 2xl:w-[15vw]"
+        },
+        "image3": {
+          "url": "/images/products/Zoo/zoo (2).jpg",
+          "position": " justify-start md:items-center md:-ml-[4vw] md:-mr-[8vw] md:-mt-[5vh]",
+          "size": "max-w-[50vw] h-[30vh] xs:h-[40vh]  md:w-[35vw] md:h-[50vh] 2xl:w-[35vw]"
+        },
+        "image4": {
+          "url": "/images/products/Zoo/zoo (2).jpg",
+          "position": "justify-end md:items-end md:-ml-[6vw] md:mb-2 md:-mr-[2vw] xl:-mr-[8vw]",
+          "size": "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[30vw] md:h-[35vh] 2xl:w-[20vw] 2xl:h-[30vh]"
+        },
+        "image5": {
+          "url": "/images/products/Zoo/zoo (2).jpg",
+          "position": "md:mt-10 justify-start md:items-start md:justify-end",
+          "size": "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[40vh] xl:w-[35vw]"
+        }
+      }
+    },
+    
+  
   {
     title: "Packshot",
     id: "packshot",
@@ -577,188 +577,216 @@ export const productData: ProductDataType[] = [
   
 ];
 
-export const galleryData: GalleryDataType[] = [
+export const galleryData: GalleryDataType[] = 
+[
   {
-    title: "Desert",
-    id: "desert",
-    url: "/gallery/desert",
-    subtitle: "Ayala Braidman",
-    description:
-      "The exhibition Desert unveils the culmination of Ayala Braidman's year-long journey from her homeland to Portugal. Crafted during this transformative period, the artworks draw inspiration from the desert landscapes of her childhood, distinct from Porto's environment. The textures and color palette mirror the dry terrain, capturing its essence. For Braidman, the desert signifies a fusion of personal experiences and a universal theme—a space inviting inner exploration and spiritual enlightenment. This exhibition marks Braidman’s debut solo show in Portugal. Ayala Braidman (b. 1992, Israel) is a designer and artist, currently residing and working in Porto.",
-    videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
-    poster: "/images/gallery/AyalaBraidman/desert (1).jpg",
-    images: {
-      image1: {
-        url: "/images/gallery/AyalaBraidman/desert (4).jpg",
-        position: "",
+    "title": "Desert",
+    "id": "desert",
+    "url": "/gallery/desert",
+    "subtitle": "Ayala Braidman",
+    "description": "The exhibition Desert unveils the culmination of Ayala Braidman's year-long journey from her homeland to Portugal. Crafted during this transformative period, the artworks draw inspiration from the desert landscapes of her childhood, distinct from Porto's environment. The textures and color palette mirror the dry terrain, capturing its essence. For Braidman, the desert signifies a fusion of personal experiences and a universal theme—a space inviting inner exploration and spiritual enlightenment. This exhibition marks Braidman’s debut solo show in Portugal. Ayala Braidman (b. 1992, Israel) is a designer and artist, currently residing and working in Porto.",
+    "videoLink": "https://www.youtube.com/watch?v=MVkguIje46k",
+    "poster": "/images/gallery/AyalaBraidman/desert (1).jpg",
+    "images": {
+      "image1": {
+        "url": "/images/gallery/AyalaBraidman/desert (4).jpg",
+        "position": "justify-start",
+        "size": "mt-[10vh] lg:mt-[2vh] h-[25vh] xs:h-[35vh] md:h-[30vh] lg:w-[30vw] xl:h-[45vh]"
       },
-      image2: {
-        url: "/images/gallery/AyalaBraidman/desert (2).jpg",
-        position: "",
+      "image2": {
+        "url": "/images/gallery/AyalaBraidman/desert (2).jpg",
+        "position": "justify-end lg:items-center lg:justify-end ",
+        "size": "h-[45vh] xs:h-[55vh] md:w-[50vw] md:h-[48vh] lg:w-[25vw] lg:h-[50vh] xl:w-[20vw] xl:h-[60vh] "
       },
-      image3: {
-        url: "/images/gallery/AyalaBraidman/desert (3).jpg",
-        position: "-left-[2vw]",
-      },
-    },
+      "image3": {
+        "url": "/images/gallery/AyalaBraidman/desert (3).jpg",
+        "position": "lg:items-end lg:justify-center md:-mt-4 lg:mb-16",
+        "size": "h-[22vh] xs:h-[30vh] xl:w-[20vw] xl:h-[30vh]"
+      }
+    }
   },
   {
-    title: "Sentiment océanique",
-    id: "sentiment_oceanique",
-    url: "/gallery/sentiment_oceanique",
-    subtitle: "Mathilde Cudeville & Paulo Bastos",
-    description:
-      "The transformation of the oceans in the face of climate change and the collapse of biodiversity poses a real challenge, both for taking action and for becoming aware of a sometimes elusive process. This series aims to question the future of the oceans while introspectively reflecting on oneself. As we contemplate the sea, ever-ambiguous with its passages, uncertainties, reliefs, rumblings, aims, and transformations, a unique and challenging-to-describe feeling overwhelms me. According to Romain Rolland, a French writer, it could be described as an 'oceanic feeling.' An emotion close to ecstasy that allows one to identify with the system in its vastness in order to feel the whole.",
-    videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
-    poster: "/images/gallery/MathildePaulo/sentiment_oceanique (6).jpg",
-    images: {
-      image1: {
-        url: "/images/gallery/MathildePaulo/sentiment_oceanique (4).jpg",
-        position: "",
+    "title": "Sentiment océanique",
+    "id": "sentiment_oceanique",
+    "url": "/gallery/sentiment_oceanique",
+    "subtitle": "Mathilde Cudeville & Paulo Bastos",
+    "description": "The transformation of the oceans in the face of climate change and the collapse of biodiversity poses a real challenge, both for taking action and for becoming aware of a sometimes elusive process. This series aims to question the future of the oceans while introspectively reflecting on oneself. As we contemplate the sea, ever-ambiguous with its passages, uncertainties, reliefs, rumblings, aims, and transformations, a unique and challenging-to-describe feeling overwhelms me. According to Romain Rolland, a French writer, it could be described as an 'oceanic feeling.' An emotion close to ecstasy that allows one to identify with the system in its vastness in order to feel the whole.",
+    "videoLink": "https://www.youtube.com/watch?v=MVkguIje46k",
+    "poster": "/images/gallery/MathildePaulo/sentiment_oceanique (6).jpg",
+    "images": {
+      "image1": {
+        "url": "/images/gallery/MathildePaulo/sentiment_oceanique (4).jpg",
+        "position": "justify-start",
+        "size": "mt-[10vh] lg:mt-[2vh] h-[25vh] xs:h-[35vh] md:h-[30vh] lg:w-[30vw] xl:h-[45vh]"
       },
-      image2: {
-        url: "/images/gallery/MathildePaulo/sentiment_oceanique (3).jpg",
-        position: "",
+      "image2": {
+        "url": "/images/gallery/MathildePaulo/sentiment_oceanique (3).jpg",
+        "position": "justify-end lg:items-center lg:justify-end ",
+        "size": "h-[45vh] xs:h-[55vh] md:w-[50vw] md:h-[48vh] lg:w-[25vw] lg:h-[50vh] xl:w-[20vw] xl:h-[60vh] "
       },
-      image3: {
-        url: "/images/gallery/MathildePaulo/sentiment_oceanique (2).jpg",
-        position: "left-[6vw]",
+      "image3": {
+        "url": "/images/gallery/MathildePaulo/sentiment_oceanique (2).jpg",
+        "position": "lg:items-end lg:justify-center md:-mt-4 lg:mb-16",
+        "size": "h-[22vh] xs:h-[30vh] xl:w-[20vw] xl:h-[30vh]"
       },
-      image4: {
-        url: "/images/gallery/MathildePaulo/sentiment_oceanique (5).jpg",
-        position: "-left-[10vw]",
-      },
-    },
+    
+    }
   },
   {
-    title: "Marcia Luças",
-    id: "marcia_lucas",
-    url: "/gallery/marcia_lucas",
-    subtitle: "Marcia Luças",
-    description:
-      "Inspired by this citation “Se eu vir aquela árvore como toda a gente vê, Não tenho nada a dizer sobre aquela árvore” If I see that tree as everyone else sees it, I have nothing to say about that tree. Excerpt from If I see that tree as everyone else sees it, I have nothing to say about that tree. I did not see that tree. It is when the tree triggers in me a connected series of emotions that I see it differently and justly. And to the extent that these ideas and emotions are acceptable to everyone, not just individual, the tree will be THE Tree.",
-    videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
-    poster: "/images/gallery/MarciaLucas/marcia_lucas (1).jpg",
-    images: {
-      image1: {
-        url: "/images/gallery/MarciaLucas/marcia_lucas (3).jpg",
-        position: "",
+    "title": "Marcia Luças",
+    "id": "marcia_lucas",
+    "url": "/gallery/marcia_lucas",
+    "subtitle": "Marcia Luças",
+    "description": "Inspired by this citation “Se eu vir aquela árvore como toda a gente vê, Não tenho nada a dizer sobre aquela árvore” If I see that tree as everyone else sees it, I have nothing to say about that tree. Excerpt from If I see that tree as everyone else sees it, I have nothing to say about that tree. I did not see that tree. It is when the tree triggers in me a connected series of emotions that I see it differently and justly. And to the extent that these ideas and emotions are acceptable to everyone, not just individual, the tree will be THE Tree.",
+    "videoLink": "https://www.youtube.com/watch?v=MVkguIje46k",
+    "poster": "/images/gallery/MarciaLucas/marcia_lucas (1).jpg",
+    "images": {
+      "image1": {
+        "url": "/images/gallery/MarciaLucas/marcia_lucas (3).jpg",
+        "position": "justify-start",
+        "size": "mt-[10vh] lg:mt-[2vh] h-[25vh] xs:h-[35vh] md:h-[30vh] lg:w-[30vw] xl:h-[45vh]"
       },
-      image2: {
-        url: "/images/gallery/MarciaLucas/marcia_lucas (2).jpg",
-        position: "top-10 h-[300px] w-[400px]",
+      "image2": {
+        "url": "/images/gallery/MarciaLucas/marcia_lucas (2).jpg",
+        "position": "justify-end lg:items-center lg:justify-end ",
+        "size": "h-[45vh] xs:h-[55vh] md:w-[50vw] md:h-[48vh] lg:w-[25vw] lg:h-[50vh] xl:w-[20vw] xl:h-[60vh] "
       },
-    },
+      "image3": {
+        "url": "/images/gallery/MarciaLucas/marcia_lucas (2).jpg",
+        "position": "lg:items-end lg:justify-center md:-mt-4 lg:mb-16",
+        "size": "h-[22vh] xs:h-[30vh] xl:w-[20vw] xl:h-[30vh]"
+      }
+    }
   },
   {
-    title: "Pedome",
-    id: "pedome",
-    url: "/gallery/pedome",
-    subtitle: "Mariana Baldaia",
-    description:
-      "Pedome is an exhibition featuring works that Mariana Baldaia created during the times of the pandemic, intertwined with motherhood.",
-    videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
-    poster: "/images/gallery/MarianaBaldaia/pedome (1).jpg",
-    images: {
-      image1: {
-        url: "/images/gallery/MarianaBaldaia/pedome (5).jpg",
-        position: "",
+    "title": "Pedome",
+    "id": "pedome",
+    "url": "/gallery/pedome",
+    "subtitle": "Mariana Baldaia",
+    "description": "Pedome is an exhibition featuring works that Mariana Baldaia created during the times of the pandemic, intertwined with motherhood.",
+    "videoLink": "https://www.youtube.com/watch?v=MVkguIje46k",
+    "poster": "/images/gallery/MarianaBaldaia/pedome (1).jpg",
+    "images": {
+      "image1": {
+        "url": "/images/gallery/MarianaBaldaia/pedome (5).jpg",
+        "position": "justify-start",
+        "size": "mt-[10vh] lg:mt-[2vh] h-[25vh] xs:h-[35vh] md:h-[30vh] lg:w-[30vw] xl:h-[45vh]"
       },
-      image2: {
-        url: "/images/gallery/MarianaBaldaia/pedome (3).jpg",
-        position: "top-10 h-[300px] w-[200px]",
+      "image2": {
+        "url": "/images/gallery/MarianaBaldaia/pedome (3).jpg",
+        "position": "justify-end lg:items-center lg:justify-end ",
+        "size": "h-[45vh] xs:h-[55vh] md:w-[50vw] md:h-[48vh] lg:w-[25vw] lg:h-[50vh] xl:w-[20vw] xl:h-[60vh] "
       },
-      image3: {
-        url: "/images/gallery/MarianaBaldaia/pedome (4).jpg",
-        position: "top-10 h-[300px] w-[200px]",
-      },
-    },
+      "image3": {
+        "url": "/images/gallery/MarianaBaldaia/pedome (4).jpg",
+        "position": "lg:items-end lg:justify-center md:-mt-4 lg:mb-16",
+        "size": "h-[22vh] xs:h-[30vh] xl:w-[15vw] xl:h-[40vh]"
+      }
+    }
   },
   {
-    title: "Diversidade",
-    id: "diversidade",
-    url: "/gallery/diversidade",
-    subtitle: "Inês Sousa Cardoso",
-    description:
-      "All the personal work of @ines.sousacardoso.peres has always embraced diversity, the culture of ancestral peoples, and their symbolism. A constantly evolving line where the geometric and the organic merge. In this exhibition, some of her masks will be presented in different mediums and forms such as wood, paper, canvas, ceramics, earrings, lamps... a glimpse into her inner world and what she loves to do the most.",
-    videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
-    poster: "/images/gallery/InêsSousaCardoso/diversidade (1).jpg",
-    images: {
-      image1: {
-        url: "/images/gallery/InêsSousaCardoso/diversidade (3).jpg",
-        position: "",
+    "title": "Diversidade",
+    "id": "diversidade",
+    "url": "/gallery/diversidade",
+    "subtitle": "Inês Sousa Cardoso",
+    "description": "All the personal work of @ines.sousacardoso.peres has always embraced diversity, the culture of ancestral peoples, and their symbolism. A constantly evolving line where the geometric and the organic merge. In this exhibition, some of her masks will be presented in different mediums and forms such as wood, paper, canvas, ceramics, earrings, lamps... a glimpse into her inner world and what she loves to do the most.",
+    "videoLink": "https://www.youtube.com/watch?v=MVkguIje46k",
+    "poster": "/images/gallery/InêsSousaCardoso/diversidade (1).jpg",
+    "images": {
+      "image1": {
+        "url": "/images/gallery/InêsSousaCardoso/diversidade (3).jpg",
+        "position": "justify-start",
+        "size": "mt-[10vh] lg:mt-[2vh] h-[25vh] xs:h-[35vh] md:h-[30vh] lg:w-[30vw] xl:h-[45vh]"
       },
-      image2: {
-        url: "/images/gallery/InêsSousaCardoso/diversidade (2).jpg",
-        position: "top-10 h-[300px] w-[200px]",
+      "image2": {
+        "url": "/images/gallery/InêsSousaCardoso/diversidade (2).jpg",
+        "position": "justify-end lg:items-center lg:justify-end ",
+        "size": "h-[45vh] xs:h-[55vh] md:w-[50vw] md:h-[48vh] lg:w-[25vw] lg:h-[50vh] xl:w-[20vw] xl:h-[60vh] "
       },
-      image3: {
-        url: "/images/gallery/InêsSousaCardoso/diversidade (5).jpg",
-        position: "",
-      },
-      image4: {
-        url: "/images/gallery/InêsSousaCardoso/diversidade (4).jpg",
-        position: "",
-      },
-    },
+      "image3": {
+        "url": "/images/gallery/InêsSousaCardoso/diversidade (5).jpg",
+        "position": "lg:items-end lg:justify-center lg:-mr-8 lg:mb-16",
+        "size": "h-[22vh] xs:h-[30vh] xl:w-[15vw] xl:h-[40vh]"
+      }
+    }
   },
   {
-    title: "Me: ander(ing)",
-    id: "me_andering",
-    url: "/gallery/me_andering",
-    subtitle: "Nettie Burnett",
-    description:
-      "The exhibition « me: ander(ing) is a retrospective of Nettie Burnett’s artwork, Meandering, Like a river- through Life. Picking up random ideas and objects to create visual artifice.",
-    videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
-    poster: "/images/gallery/NettieBurnett/me_ander (1).jpg",
-    images: {
-      image1: {
-        url: "/images/gallery/NettieBurnett/me_ander (4).jpg",
-        position: "",
+    "title": "Me: ander(ing)",
+    "id": "me_andering",
+    "url": "/gallery/me_andering",
+    "subtitle": "Nettie Burnett",
+    "description": "The exhibition « me: ander(ing) is a retrospective of Nettie Burnett’s artwork, Meandering, Like a river- through Life. Picking up random ideas and objects to create visual artifice.",
+    "videoLink": "https://www.youtube.com/watch?v=MVkguIje46k",
+    "poster": "/images/gallery/NettieBurnett/me_ander (1).jpg",
+    "images": {
+      "image1": {
+        "url": "/images/gallery/NettieBurnett/me_ander (4).jpg",
+        "position": "justify-start",
+        "size": "mt-[10vh] lg:mt-[2vh] h-[25vh] xs:h-[35vh] md:h-[30vh] lg:w-[30vw] xl:h-[45vh]"
       },
-      image2: {
-        url: "/images/gallery/NettieBurnett/me_ander (2).jpg",
-        position: "",
+      "image2": {
+        "url": "/images/gallery/NettieBurnett/me_ander (2).jpg",
+        "position": "justify-end lg:items-center lg:justify-end ",
+        "size": "h-[45vh] xs:h-[55vh] md:w-[50vw] md:h-[48vh] lg:w-[25vw] lg:h-[50vh] xl:w-[20vw] xl:h-[60vh] "
       },
-      image3: {
-        url: "/images/gallery/NettieBurnett/me_ander (3).jpg",
-        position: "",
-      },
-    },
+      "image3": {
+        "url": "/images/gallery/NettieBurnett/me_ander (3).jpg",
+        "position": "lg:items-end lg:justify-center md:-mt-4 lg:mb-16",
+        "size": "h-[22vh] xs:h-[30vh] xl:w-[20vw] xl:h-[30vh]"
+      }
+    }
   },
   {
-    title: "Pizzicato",
-    id: "pizzicato",
-    url: "/gallery/pizzicato",
-    subtitle: "Pierre Linz",
-    description:
-      "In the captivating world of contemporary art, it is rare to encounter an artist whose vitality and passion seem boundless. We embark to discover Pierre Linz, a truly unique plastic artist who, at the age of 80, still overflows with energy. Through his remarkable journey and boundless creativity, he offers us a living testimony of the paper/cardboard expression that transcends time. The encounter with Pierre Linz proves to us that art knows no age and that life can be a canvas in constant evolution.",
-    videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
-    poster: "/images/gallery/PierreLinz/pizzicato (1).jpg",
-    images: {
-      image1: {
-        url: "/images/gallery/PierreLinz/pizzicato (3).jpg",
-        position: "",
+    "title": "Pizzicato",
+    "id": "pizzicato",
+    "url": "/gallery/pizzicato",
+    "subtitle": "Pierre Linz",
+    "description": "In the captivating world of contemporary art, it is rare to encounter an artist whose vitality and passion seem boundless. We embark to discover Pierre Linz, a truly unique plastic artist who, at the age of 80, still overflows with energy. Through his remarkable journey and boundless creativity, he offers us a living testimony of the paper/cardboard expression that transcends time. The encounter with Pierre Linz proves to us that art knows no age and that life can be a canvas in constant evolution.",
+    "videoLink": "https://www.youtube.com/watch?v=MVkguIje46k",
+    "poster": "/images/gallery/PierreLinz/pizzicato (1).jpg",
+    "images": {
+      "image1": {
+        "url": "/images/gallery/PierreLinz/pizzicato (3).jpg",
+        "position": "justify-start",
+        "size": "mt-[10vh] lg:mt-[2vh] h-[25vh] xs:h-[35vh] md:h-[30vh] lg:w-[30vw] xl:h-[45vh]"
       },
-    },
+      "image2": {
+        "url": "/images/gallery/PierreLinz/pizzicato (3).jpg",
+        "position": "justify-end lg:items-center lg:justify-end ",
+        "size": "h-[45vh] xs:h-[55vh] md:w-[50vw] md:h-[48vh] lg:w-[25vw] lg:h-[50vh] xl:w-[20vw] xl:h-[60vh] "
+      },
+      "image3": {
+        "url": "/images/gallery/PierreLinz/pizzicato (3).jpg",
+        "position": "lg:items-end lg:justify-center md:-mt-4 lg:mb-16",
+        "size": "h-[22vh] xs:h-[30vh] xl:w-[20vw] xl:h-[30vh]"
+      }
+    }
   },
   {
-    title: "La Passagère",
-    id: "la_passagere",
-    url: "/gallery/la_passagere",
-    subtitle: "Mathilde Cudeville & Pauline Letang",
-    description:
-      " It was on May 28th of 2022 in a Parisian café… A meeting between two women. A meeting between photography and poetry, between Porto and Paris. Then, from this moment of grace, out of time, between dream and reality, was born the desire to realize a common work. I feel a need, a crazy urgency to free myself from pretense and shackles, to awaken sleeping parts of my being, to seize this vertiginous freedom of Being fully, to re-discover my soul. « La Passagère » is the artistic, photographic and poetic expression of this journey towards the soul, this primordial Breath, this initial Desire, this intimate feeling of an authentic uniqueness and a possible unity.",
-    poster: "/images/gallery/MathildePauline/la_passagère (1).jpg",
-    images: {
-      image1: {
-        url: "/images/gallery/MathildePauline/la_passagère (3).jpg",
-        position: "",
+    "title": "La Passagère",
+    "id": "la_passagere",
+    "url": "/gallery/la_passagere",
+    "subtitle": "Mathilde Cudeville & Pauline Letang",
+    "description": " It was on May 28th of 2022 in a Parisian café… A meeting between two women. A meeting between photography and poetry, between Porto and Paris. Then, from this moment of grace, out of time, between dream and reality, was born the desire to realize a common work. I feel a need, a crazy urgency to free myself from pretense and shackles, to awaken sleeping parts of my being, to seize this vertiginous freedom of Being fully, to re-discover my soul. « La Passagère » is the artistic, photographic and poetic expression of this journey towards the soul, this primordial Breath, this initial Desire, this intimate feeling of an authentic uniqueness and a possible unity.",
+    "poster": "/images/gallery/MathildePauline/la_passagère (1).jpg",
+    "images": {
+      "image1": {
+        "url": "/images/gallery/MathildePauline/la_passagère (3).jpg",
+        "position": "justify-start",
+        "size": "mt-[10vh] lg:mt-[2vh] h-[25vh] xs:h-[35vh] md:h-[30vh] lg:w-[30vw] xl:h-[45vh]"
       },
-      image2: {
-        url: "/images/gallery/MathildePauline/la_passagère (4).jpg",
-        position: "",
+      "image2": {
+        "url": "/images/gallery/MathildePauline/la_passagère (2).jpg",
+        "position": "justify-end lg:items-center lg:justify-end ",
+        "size": "h-[45vh] xs:h-[55vh] md:w-[50vw] md:h-[48vh] lg:w-[25vw] lg:h-[50vh] xl:w-[20vw] xl:h-[60vh] "
       },
-    },
-  },
-];
+      "image3": {
+        "url": "/images/gallery/MathildePauline/la_passagère (4).jpg",
+        "position": "lg:items-end lg:justify-center md:-mt-4 lg:mb-12",
+        "size": "h-[22vh] xs:h-[30vh] xl:w-[20vw] xl:h-[30vh]"
+      }
+    }
+  }
+]
+
+  
