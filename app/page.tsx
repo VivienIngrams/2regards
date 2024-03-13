@@ -20,7 +20,7 @@ function Home() {
     const handleResize = () => {
       const newIsMobileScreen = window.innerWidth <= 768;
       setIsMobileScreen(newIsMobileScreen);
-      console.log("isMobileScreen", newIsMobileScreen);
+      // console.log("isMobileScreen", newIsMobileScreen);
     };
 
     // Set initial value
@@ -74,7 +74,7 @@ function Home() {
         >
           {secondHalf.map(({ title, id, url, images }) => (
             <ProductCards
-              img={images.image1.url}
+              img={images.image3.url}
               title={title}
               id={id}
               key={id}

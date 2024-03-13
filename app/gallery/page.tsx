@@ -20,7 +20,7 @@ function Gallery() {
     const handleResize = () => {
       const newIsMobileScreen = window.innerWidth <= 768;
       setIsMobileScreen(newIsMobileScreen);
-      console.log("isMobileScreen", newIsMobileScreen);
+      // console.log("isMobileScreen", newIsMobileScreen);
     };
 
     // Set initial value
