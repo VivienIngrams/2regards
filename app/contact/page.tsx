@@ -4,10 +4,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+
 import facebookIcon from "/public/Facebook.svg";
 import instagramIcon from "/public/Instagram.svg";
 import youtubeIcon from "/public/Youtube.svg";
 import googlemapsIcon from "/public/Googlemaps.svg";
+import NewsLetterSignUpForm from "../components/NewsletterSignUpForm";
 
 const Contact = () => {
   return (
@@ -16,24 +18,7 @@ const Contact = () => {
       <div className="w-4 md:w-6 z-50 fixed h-screen right-0 top-0">
         <div className="right-0 top-4 md:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-200" />
       </div>
-
-      {/* Newsletter Subscription Form */}
-      <div className="relative flex flex-col items-end">
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Your email here"
-          className="w-full sm:w-[400px] h-8 p-2 border border-black rounded my-2"
-        />
-        <button
-          type="submit"
-          className="bg-neutral-400 text-white h-8 px-4 border border-black rounded "
-        >
-          Subscribe to our newsletter
-        </button>
-      </div>
-
+      <NewsLetterSignUpForm />
       <div className="flex flex-col justify-around md:grid grid-cols-2 h-[80vh] ">
         {/* Gallery Information */}
         <motion.div
@@ -63,20 +48,19 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex min-w-[70px] pt-4">
-                <Image
-                  className="border-[1px] border-black shadow-md"
-                  src="/images/gallery/MathildePaulo/sentiment_oceanique (3).jpg"
-                  width={200}
-                  height={200}
-                  alt="Gallery in Bomfin, Porto, Portugal"
-                />
-              </div>
+              <Image
+                className="border-[1px] border-black shadow-md"
+                src="/images/gallery/MathildePaulo/sentiment_oceanique (3).jpg"
+                width={200}
+                height={200}
+                alt="Gallery in Bomfin, Porto, Portugal"
+              />
+            </div>
             <div className="mt-4 text-neutral-500 leading-tight">
               <div className="pb-4">
                 <p>Rua do Duque da Terceira 358</p>
                 <p>4300-096 Porto</p>
               </div>
-             
             </div>
           </div>
         </motion.div>
@@ -156,9 +140,10 @@ const Contact = () => {
                 </p>
                 <p>+33 7 87 38 36 32</p>
               </div>
-              <div  className="pb-4">
+              <div className="pb-4">
                 <p>
-                  Info:<a href="mailto:atelier@2regards.com">atelier@2regards.com</a>
+                  Info:
+                  <a href="mailto:atelier@2regards.com">atelier@2regards.com</a>
                 </p>
                 <p>+351 933 119 390</p>
               </div>
