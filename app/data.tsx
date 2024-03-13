@@ -138,29 +138,29 @@ export const productData: ProductDataType[] = [
     url: "/product/cif",
     images: {
       image1: {
-        url: "/images/CIF/cif (1).jpg",
+        url: "/images/products/CIF/cif (1).jpg",
         width: "w-[80vw] sm:[60vw] md:w-[35vw]",
         position: " justify-start md:items-center ",
         size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]",
       },
       image2: {
-        url: "/images/CIF/cif (2).jpg",
+        url: "/images/products/CIF/cif (2).jpg",
         position: "justify-end md:items-start md:mr-[4vw]",
         size: "max-w-[50vw] h-[30vh] xs:h-[50vh] sm:h-[60vh] md:w-[15vw] md:h-[40vh] 2xl:w-[15vw]  md:-ml-[2vw]",
       },
       image3: {
-        url: "/images/CIF/cif (3).jpg",
+        url: "/images/products/CIF/cif (3).jpg",
         position: " justify-start md:items-end",
         size: "max-w-[50vw] h-[30vh] xs:h-[40vh] sm:h-[70vh] md:w-[12vw] md:h-[35vh] 2xl:w-[15vw] md:-ml-[8vw] md:mr-[8vw] md:mb-2",
       },
 
       image4: {
-        url: "/images/CIF/cif (4).jpg",
+        url: "/images/products/CIF/cif (4).jpg",
         position: "justify-end md:items-center",
         size: "h-[45vh] xs:w-[75vw] xs:h-[45vh] sm:h-[60vh] sm:w-[70vw]  md:h-[65vh] xl:w-[40vw] xl:h-[55vh] md:-ml-[15vw] md:-mr-[1vw] xl:-mr-[2vw]",
       },
       image5: {
-        url: "/images/CIF/cif (5).jpg",
+        url: "/images/products/CIF/cif (5).jpg",
         position: "md:mt-10 justify-start md:items-start md:justify-end ",
         size: "h-[25vh] xs:h-[32vh] md:w-[28vw] md:h-[30vh] xl:w-[25vw]  mb-12 ",
       },
