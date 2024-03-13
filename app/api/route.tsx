@@ -19,11 +19,7 @@ export async function POST(request: NextRequest) {
         `https://${DATACENTER}.api.mailchimp.com/3.0/lists/${AUDIENCE_ID}/members`,
         {
             body: JSON.stringify(data),
-            // headers: {
-            //     Authorization: `apikey ${API_KEY}`,
-            //     'Content-Type': 'application/json',
-            // },
-            headers: {
+                        headers: {
                 Accept: "application/json",
                 'Content-Type': "application/json",
                 Authorization: `Basic ${API_KEY}`

@@ -30,7 +30,7 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
       {/* Nav buttons */}
       <div className="fixed md:hidden h-12 w-full top-4 left-4 z-50 bg-stone-200" />
       <div className="fixed z-50 top-6 left-6 md:left-10 md:top-10  cursor-pointer">
-        <Link className="text-center m-2 text-black font-italiana" href="/">
+        <Link className="text-center m-2 text-black font-italiana" href="/gallery">
           Back
         </Link>
       </div>
