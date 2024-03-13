@@ -17,6 +17,7 @@ export default function NewsLetterSignUpForm(): JSX.Element {
       const responseData = await response.json();
      
       alert("You have successfully subscribed to our newsletter!");
+      console.log(responseData);
     } catch (err) {
       console.error(err);
       alert("Error, please try resubmitting your email.");
