@@ -7,7 +7,7 @@ import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 
 const About = () => {
   return (
-    <div className="sm:p-6 lg:p-12 mr-8 h-full lg:h-auto text-neutral-500 text-sm sm:text-base lg:text-lg leading-tight lg:leading-[22px] 2xl:leading-tight">
+    <div className="sm:p-6 lg:p-12 mr-8 h-full lg:h-auto text-neutral-500 text-sm sm:text-base lg:text-md xl:text-lg leading-tight lg:leading-[22px] 2xl:leading-tight">
       {/* Border right */}
       <div className="w-4 lg:w-6 z-50 fixed h-screen right-0 top-0">
         <div className="right-0 top-4 lg:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-200" />

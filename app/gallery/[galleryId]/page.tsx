@@ -30,7 +30,10 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
       {/* Nav buttons */}
       <div className="fixed md:hidden h-12 w-full top-4 left-4 z-50 bg-stone-200" />
       <div className="fixed z-50 top-6 left-6 md:left-10 md:top-10  cursor-pointer">
-        <Link className="text-center m-2 text-black font-italiana" href="/gallery">
+        <Link
+          className="text-center m-2 text-black font-italiana"
+          href="/gallery"
+        >
           Back
         </Link>
       </div>
@@ -76,7 +79,7 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
 
       {/* Title */}
       <div className="z-10 flex absolute py-4 mb-2 lg:m-12 w-full  items-center justify-center ">
-        <div className="max-w-[300px] lg:max-w-[500px]">
+        <div className="max-w-[300px] lg:max-w-[400px]">
           <h1 className="text-black  text-4xl lg:text-6xl xl:text-[80px] font-normal font-italiana text-center lg:leading-[26px] xl:leading-[38px] tracking-tighter">
             {title}
           </h1>
