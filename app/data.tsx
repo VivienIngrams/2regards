@@ -608,10 +608,10 @@ export const galleryData: GalleryDataType[] = [
       image2: {
         url: "/images/gallery/AyalaBraidman/desert (2).jpg",
         position: "justify-end lg:items-center lg:justify-end ",
-        size: "h-[45vh] xs:h-[55vh] md:w-[50vw] md:h-[48vh] lg:w-[25vw] lg:h-[50vh] xl:w-[20vw] xl:h-[60vh] ",
+        size: "h-[45vh] xs:h-[55vh] md:w-[50vw] md:h-[48vh] lg:w-[28vw] lg:h-[50vh] xl:w-[20vw] xl:h-[60vh] ",
       },
       image3: {
-        url: "/images/gallery/AyalaBraidman/desert (3).jpg",
+        url: "/images/gallery/AyalaBraidman/desert (6).jpg",
         position: "lg:items-end lg:justify-center md:-mt-4 lg:mb-16",
         size: "h-[22vh] xs:h-[30vh] md:w-[20vw] xl:h-[30vh]",
       },
@@ -763,10 +763,10 @@ export const galleryData: GalleryDataType[] = [
     description:
       "'If I see that tree as everyone else sees it, I have nothing to say about that tree. I did not see that tree. It is when the tree triggers in me a connected series of emotions that I see it differently and justly. And to the extent that these ideas and emotions are acceptable to everyone, not just individual, the tree will be THE Tree.' - Álvaro de Campos ",
     videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
-    poster: "/images/gallery/MarciaLucas/marcia_lucas (1).jpg",
+    poster: "/images/gallery/MarciaLucas/arvore (4).jpg",
     images: {
       image1: {
-        url: "/images/gallery/MarciaLucas/marcia_lucas (3).jpg",
+        url: "/images/gallery/MarciaLucas/arvore (5).jpg",
         position: "justify-start",
         size: "mt-[10vh] lg:mt-[2vh] h-[25vh] xs:h-[35vh] md:h-[30vh] lg:w-[30vw] xl:h-[45vh]",
       },
@@ -776,7 +776,7 @@ export const galleryData: GalleryDataType[] = [
         size: "h-[45vh] xs:h-[55vh] md:w-[50vw] md:h-[48vh] lg:w-[25vw] lg:h-[50vh] xl:w-[20vw] xl:h-[60vh] ",
       },
       image3: {
-        url: "/images/gallery/MarciaLucas/marcia_lucas (2).jpg",
+        url: "/images/gallery/MarciaLucas/arvore (3).jpg",
         position: "lg:items-end lg:justify-center md:-mt-4 lg:mb-16",
         size: "h-[22vh] xs:h-[30vh] md:w-[20vw] xl:h-[30vh]",
       },
