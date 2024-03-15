@@ -81,7 +81,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
         <div className="max-w-[160px]">
           <h1 className="text-3xl lg:text-6xl xl:text-[80px] font-normal font-italiana text-center lg:leading-[26px] xl:leading-[38px] tracking-tighter">
             {/* {title} */}
-            {params.productId}
+            {productData[currentIndex].title}
           </h1>
         </div>
       </div>
@@ -106,7 +106,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
           ))}
         </div>
         {videoLink && (
-          <div className="md:fixed md:bottom-10 md:right-10 relative pb-10 flex flex-col items-end justify-center m-2">
+          <div className="md:fixed z-900 md:bottom-10 md:right-10 relative pb-10 flex flex-col items-end justify-center m-2">
             <Link
               href={videoLink}
               target="_blank"

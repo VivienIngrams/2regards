@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const Studio = () => {
   return (
@@ -51,6 +52,15 @@ const Studio = () => {
               development and printing. It is also possible to rent this space
               by the hour or day. Click here to discover our rates.
             </p>
+            <Link
+              href="https://www.youtube.com/shorts/U5_XJuAa-tk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1 bg-white font-italiana text-xl text-black h-8 px-4 border border-black rounded "
+            >
+              Watch video
+            </Link>
+            
           </motion.div>
         </div>
 

@@ -69,7 +69,7 @@ export const productData: ProductDataType[] = [
     title: "Meet",
     id: "meet",
     url: "/product/meet",
-    videoLink: "https://www.youtube.com/watch?v=--CHqr5M0o4",
+    videoLink: "https://www.youtube.com/watch?v=572uLi_rnn4&t=18s",
     images: {
       image1: {
         url: "/images/products/Meet/meet (1).jpg",
@@ -243,7 +243,7 @@ export const productData: ProductDataType[] = [
     title: "Paperflow",
     id: "paperflow",
     url: "/product/paperflow",
-    videoLink: "https://www.youtube.com/watch?v=572uLi_rnn4",
+    // videoLink: " https://www.youtube.com/watch?v=572uLi_rnn4&t=18s", to be replaced!!
     images: {
       image1: {
         url: "/images/products/Paperflow/paperflow (2).jpg",
@@ -385,6 +385,7 @@ export const productData: ProductDataType[] = [
     title: "Vawo",
     id: "vawo",
     url: "/product/vawo",
+    videoLink: "https://www.youtube.com/watch?v=-lue-ELmY2U",
     images: {
       image1: {
         url: "/images/products/Vawo/vawo (2).jpg",
@@ -453,7 +454,6 @@ export const productData: ProductDataType[] = [
     title: "Hiima",
     id: "hiima",
     url: "/product/hiima",
-    videoLink: "https://www.youtube.com/watch?v=--CHqr5M0o4",
     images: {
       image1: {
         url: "/images/products/Hiima/hiima (2).jpg",
@@ -487,7 +487,7 @@ export const productData: ProductDataType[] = [
     title: "TAKANAP",
     id: "takanap",
     url: "/product/takanap",
-    videoLink: "https://www.youtube.com/watch?v=roFW8j9nju8",
+    videoLink: "https://www.youtube.com/watch?v=0PmrKAZbKc4&t=102s",
     images: {
       image1: {
         url: "/images/products/Takanap/takanap (1).jpg",
@@ -523,6 +523,7 @@ export const productData: ProductDataType[] = [
     title: "Becafire",
     id: "becafire",
     url: "/product/becafire",
+    videoLink: " https://www.youtube.com/watch?v=3qe4XdC--hM",
     images: {
       image1: {
         url: "/images/products/Becafire/becafire (3).jpg",
@@ -597,7 +598,7 @@ export const galleryData: GalleryDataType[] = [
     subtitle: "Ayala Braidman",
     description:
       "The exhibition Desert unveils the culmination of Ayala Braidman's year-long journey from her homeland to Portugal. Crafted during this transformative period, the artworks draw inspiration from the desert landscapes of her childhood, distinct from Porto's environment. The textures and color palette mirror the dry terrain, capturing its essence. For Braidman, the desert signifies a fusion of personal experiences and a universal theme—a space inviting inner exploration and spiritual enlightenment. This exhibition marks Braidman’s debut solo show in Portugal. Ayala Braidman (b. 1992, Israel) is a designer and artist, currently residing and working in Porto.",
-    videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
+    videoLink: "https://youtube.com/shorts/mletfKluUvQ?feature=share",
     poster: "/images/gallery/AyalaBraidman/desert (1).jpg",
     images: {
       image1: {
@@ -652,7 +653,7 @@ export const galleryData: GalleryDataType[] = [
     subtitle: "Pierre Linz",
     description:
       "In the captivating world of contemporary art, it is rare to encounter an artist whose vitality and passion seem boundless. We embark to discover Pierre Linz, a truly unique plastic artist who, at the age of 80, still overflows with energy. Through his remarkable journey and boundless creativity, he offers us a living testimony of the paper/cardboard expression that transcends time. The encounter with Pierre Linz proves to us that art knows no age and that life can be a canvas in constant evolution.",
-    videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
+    videoLink: "https://www.youtube.com/watch?v=W5W1V_2oIX8",
     poster: "/images/gallery/PierreLinz/pizzicato (1).jpg",
     images: {
       image1: {
@@ -680,7 +681,7 @@ export const galleryData: GalleryDataType[] = [
     subtitle: "Nettie Burnett",
     description:
       "The exhibition « me: ander(ing) is a retrospective of Nettie Burnett’s artwork, Meandering, Like a river- through Life. Picking up random ideas and objects to create visual artifice.",
-    videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
+    videoLink: "https://www.youtube.com/watch?v=Mp1Fw5wQMRc",
     poster: "/images/gallery/NettieBurnett/me_ander (1).jpg",
     images: {
       image1: {
@@ -707,7 +708,6 @@ export const galleryData: GalleryDataType[] = [
     subtitle: "Inês Sousa Cardoso",
     description:
       "All the personal work of @ines.sousacardoso.peres has always embraced diversity, the culture of ancestral peoples, and their symbolism. A constantly evolving line where the geometric and the organic merge. In this exhibition, some of her masks will be presented in different mediums and forms such as wood, paper, canvas, ceramics, earrings, lamps... a glimpse into her inner world and what she loves to do the most.",
-    videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
     poster: "/images/gallery/InêsSousaCardoso/diversidade (1).jpg",
     images: {
       image1: {
@@ -734,7 +734,7 @@ export const galleryData: GalleryDataType[] = [
     subtitle: "Mariana Baldaia",
     description:
       "Pedome is an exhibition featuring works that Mariana Baldaia created during the times of the pandemic, intertwined with motherhood.",
-    videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
+    videoLink: "https://www.youtube.com/watch?v=nXCLrUdsEk4",
     poster: "/images/gallery/MarianaBaldaia/pedome (1).jpg",
     images: {
       image1: {
@@ -762,7 +762,6 @@ export const galleryData: GalleryDataType[] = [
     subtitle: "Marcia Luças",
     description:
       "'If I see that tree as everyone else sees it, I have nothing to say about that tree. I did not see that tree. It is when the tree triggers in me a connected series of emotions that I see it differently and justly. And to the extent that these ideas and emotions are acceptable to everyone, not just individual, the tree will be THE Tree.' - Álvaro de Campos ",
-    videoLink: "https://www.youtube.com/watch?v=MVkguIje46k",
     poster: "/images/gallery/MarciaLucas/arvore (4).jpg",
     images: {
       image1: {
