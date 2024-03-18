@@ -1,43 +1,36 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+
 import facebookIcon from "/public/Facebook.svg";
 import instagramIcon from "/public/Instagram.svg";
 import youtubeIcon from "/public/Youtube.svg";
 import googlemapsIcon from "/public/Googlemaps.svg";
+import NewsLetterSignUpForm from "../components/NewsletterSignUpForm";
 
 const Contact = () => {
   return (
-    <div className="relative h-full mr-8 md:mr-12 font-light text-sm md:text-base">
+    <motion.div className="relative h-full mr-8 md:mr-12 font-light text-sm md:text-base">
       {/* Right border */}
       <div className="w-4 md:w-6 z-50 fixed h-screen right-0 top-0">
-        <div className="right-0 top-4 md:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-100" />
+        <div className="right-0 top-4 md:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-200" />
       </div>
-
-      {/* Newsletter Subscription Form */}
-      <div className="relative flex flex-col items-end">
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Your email here"
-          className="w-full sm:w-[400px] h-8 p-2 border border-black rounded my-2"
-        />
-        <button
-          type="submit"
-          className="bg-neutral-400 text-white h-8 px-4 border border-black rounded "
-        >
-          Subscribe to our newsletter
-        </button>
-      </div>
-
-      <div className="flex flex-col justify-between md:grid grid-cols-2 h-full pb-20">
+      <NewsLetterSignUpForm />
+      <div className="flex flex-col justify-around md:grid grid-cols-2 h-[80vh] ">
         {/* Gallery Information */}
-        <div className="mx-2 my-10 lg:mx-14 w-[1/3vw]">
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          className="mx-2 mt-[10vh] lg:mx-28 lg:w-[30vw]"
+        >
           <div>
             <div className="flex justify-between  border-black border-b-[1px]">
-              <div className="text-black text-3xl lg:text-5xl font-normal font-italiana pb-1 lg:pb-4">
-                gallery.
+              <div className="text-black text-3xl  lg:text-5xl font-normal font-italiana pb-1 lg:pb-4">
+                2regards atelier
               </div>
               <div className="lg:mt-2">
                 <Link
@@ -54,28 +47,31 @@ const Contact = () => {
                 </Link>
               </div>
             </div>
+            <div className="flex min-w-[70px] pt-4">
+              <Image
+                className="border-[1px] border-black shadow-md"
+                src="/images/gallery/MathildePaulo/sentiment_oceanique (3).jpg"
+                width={200}
+                height={200}
+                alt="Gallery in Bomfin, Porto, Portugal"
+              />
+            </div>
             <div className="mt-4 text-neutral-500 leading-tight">
               <div className="pb-4">
                 <p>Rua do Duque da Terceira 358</p>
                 <p>4300-096 Porto</p>
               </div>
-              <div className="pb-4">
-                <p>
-                  Wednesday to Saturday <span>2p.m - 7p.m.</span>
-                </p>
-              </div>
-              <div>
-                <p>
-                  <a href="mailto:atelier@2regards.com">atelier@2regards.com</a>
-                </p>
-                <p>+351 933 119 390</p>
-              </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Contact Information */}
-        <div className="mx-2 my-10 lg:mr-16 md:mb-24 w-[1/3vw] flex items-end">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          className="mx-2 mt-[8vh] lg:mr-28 lg:ml-auto md:mb-24 flex items-end  lg:w-[30vw]"
+        >
           <div className="w-full">
             <div className="flex justify-between border-black border-b-[1px]">
               <div className="flex mt-1 lg:mt-4">
@@ -85,7 +81,12 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Image priority src={facebookIcon} alt="Facebook" height={26}/>
+                    <Image
+                      priority
+                      src={facebookIcon}
+                      alt="Facebook"
+                      height={26}
+                    />
                   </Link>
                 </div>
                 <div className="pr-[9px] lg:pr-5">
@@ -94,7 +95,12 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Image priority src={youtubeIcon} alt="Youtube" height={26}/>
+                    <Image
+                      priority
+                      src={youtubeIcon}
+                      alt="Youtube"
+                      height={26}
+                    />
                   </Link>
                 </div>
                 <div className="pr-2 lg:pr-4">
@@ -103,13 +109,18 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Image priority src={instagramIcon} alt="Instagram" height={26}/>
+                    <Image
+                      priority
+                      src={instagramIcon}
+                      alt="Instagram"
+                      height={26}
+                    />
                   </Link>
                 </div>
               </div>
 
               <div className="text-black text-3xl lg:text-5xl font-normal text-right font-italiana pb-1 lg:pb-4">
-                contact.
+                contact
               </div>
             </div>
             <div className="mt-4 text-right text-neutral-500 leading-tight">
@@ -129,6 +140,13 @@ const Contact = () => {
                 </p>
                 <p>+33 7 87 38 36 32</p>
               </div>
+              <div className="pb-4">
+                <p>
+                  Info:
+                  <a href="mailto:atelier@2regards.com">atelier@2regards.com</a>
+                </p>
+                <p>+351 933 119 390</p>
+              </div>
               <div>
                 <p>
                   <a
@@ -142,9 +160,9 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

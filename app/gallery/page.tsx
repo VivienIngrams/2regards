@@ -1,12 +1,14 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-
+import { motion } from "framer-motion";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import "react-horizontal-scrolling-menu/dist/styles.css";
 
-import Card from "../components/Card";
+import GalleryCards from "../components/GalleryCards";
 import usePreventBodyScroll from "../components/usePreventBodyScroll";
+import { galleryData } from "../data";
+import { RightArrow } from "../components/Arrows";
 
 type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
@@ -18,7 +20,7 @@ function Gallery() {
     const handleResize = () => {
       const newIsMobileScreen = window.innerWidth <= 768;
       setIsMobileScreen(newIsMobileScreen);
-      console.log("isMobileScreen", newIsMobileScreen);
+      // console.log("isMobileScreen", newIsMobileScreen);
     };
 
     // Set initial value
@@ -35,22 +37,28 @@ function Gallery() {
 
   return (
     <>
-        <div onMouseEnter={disableScroll} className="h-full">
-          <ScrollMenu onWheel={onWheel} transitionBehavior="smooth" transitionDuration={isMobileScreen ? 500 : 4000}>
+       <motion.div
+        initial={{ opacity: 0, x: 200 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{duration: 1}}
+        onMouseEnter={disableScroll}
+        className="h-full gallery-container"
+        
+      >
+          <ScrollMenu onWheel={onWheel}    RightArrow={RightArrow} transitionBehavior="smooth" transitionDuration={isMobileScreen ? 500 : 4000}>
            
-                {cards.map(({ img, title, id, width, url }) => (
-                  <Card
-                    img={img}
+                {galleryData.map(({ poster, title, id, url }) => (
+                  <GalleryCards
+                    img={poster}
                     title={title}
-                    id={id} // NOTE: itemId is required for track items
+                    id={id} 
                     key={id}
-                    width={width || 300}
                     url={url}
                   />
                 ))}
              
           </ScrollMenu>
-        </div>
+        </motion.div>
     </>
   );
 }
@@ -70,171 +78,3 @@ function onWheel(apiObj: scrollVisibilityApiType, ev: React.WheelEvent): void {
     apiObj.scrollPrev();
   }
 }
-
-type CardType = {
-  img: string;
-  title: string;
-  id: string;
-  width?: number;
-  url: string
-};
-
-const cards: CardType[] = [
-  {
-    img: "/images/2regards.png",
-    title: "Title 1",
-    id: "1",
-    width: 300,
-    url: "/product"
-  },
-  {
-    img: "/images/lights.png",
-    title: "Title 2",
-    id: "2",
-    width: 100,
-    url: "/product"
-
-  },
-  {
-    img: "/images/waves.png",
-    title: "Title 3",
-    id: "3",
-    width: 200,
-    url: "/product"
-
-  },
-  {
-    img: "/images/2regards.png",
-    title: "Title 1",
-    id: "4",
-    width: 500,
-    url: "/product"
-
-  },
-  {
-    img: "/images/bottles.png",
-    title: "Title 2",
-    id: "5",
-    width: 500,
-    url: "/product"
-
-  },
-  {
-    img: "/images/2regards.png",
-    title: "Title 3",
-    id: "6",
-    width: 800,
-    url: "/product"
-
-  },
-  {
-    img: "/images/waves.png",
-    title: "Title 1",
-    id: "7",
-    width: 500,
-    url: "/product"
-
-  },
-  {
-    img: "/images/2regards.png",
-    title: "Title 2",
-    id: "8",
-    url: "/product"
-
-  },
-  {
-    img: "/images/waves.png",
-    title: "Title 1",
-    id: "7",
-    width: 500,
-    url: "/product"
-
-  },
-  {
-    img: "/images/2regards.png",
-    title: "Title 2",
-    id: "8",
-    url: "/product"
-
-  },
-];
-
-const cards2: CardType[] = [
-  {
-    img: "/images/2regards.png",
-    title: "Title 1",
-    id: "1",
-    width: 300,
-    url: "/product"
-  },
-  {
-    img: "/images/lights.png",
-    title: "Title 2",
-    id: "2",
-    width: 100,
-    url: "/product"
-
-  },
-  {
-    img: "/images/waves.png",
-    title: "Title 3",
-    id: "3",
-    width: 200,
-    url: "/product"
-
-  },
-  {
-    img: "/images/2regards.png",
-    title: "Title 1",
-    id: "4",
-    width: 500,
-    url: "/product"
-
-  },
-  {
-    img: "/images/bottles.png",
-    title: "Title 2",
-    id: "5",
-    width: 500,
-    url: "/product"
-
-  },
-  {
-    img: "/images/2regards.png",
-    title: "Title 3",
-    id: "6",
-    width: 800,
-    url: "/product"
-
-  },
-  {
-    img: "/images/waves.png",
-    title: "Title 1",
-    id: "7",
-    width: 500,
-    url: "/product"
-
-  },
-  {
-    img: "/images/2regards.png",
-    title: "Title 2",
-    id: "8",
-    url: "/product"
-
-  },
-  {
-    img: "/images/waves.png",
-    title: "Title 1",
-    id: "7",
-    width: 500,
-    url: "/product"
-
-  },
-  {
-    img: "/images/2regards.png",
-    title: "Title 2",
-    id: "8",
-    url: "/product"
-
-  },
-];
