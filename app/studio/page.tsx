@@ -14,9 +14,9 @@ const Studio = () => {
       </div>
       <div className="min-h-[92vh] flex flex-col justify-around md:max-h-[85vh] lg:grid lg:grid-rows-3 min-w-full">
         {/* Top section */}
-        <div className=" lg:grid lg:grid-cols-2 lg:max-h-[33vh]">
+        <div className=" lg:grid lg:grid-cols-2 lg:max-h-[33vh] 2xl:pt-4">
           {/* Title */}
-          <div className="m-16 text-center flex justify-center items-center text-black lg:w-1/2">
+          <div className="m-16 text-center flex justify-center items-center text-black lg:w-[45vw] lg:mb-32">
             <div className="">
               <h1 className="text-5xl sm:text-[80px] font-normal font-italiana leading-[38px] tracking-tighter">
                 Studio
@@ -32,38 +32,44 @@ const Studio = () => {
             className=" "
           >
             <div className=" relative flex border-b-2 border-black lg:max-w-[35vw]">
-              <div className="flex min-w-[60px] lg:min-w-[150px]">
+                <Link
+                  href="https://www.youtube.com/shorts/U5_XJuAa-tk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hidden sm:block absolute bottom-0 right-0 p-1 m-1 bg-white font-italiana text-md text-black h-6 px-2 border border-black rounded "
+                >
+                  Teaser
+                </Link>
+                <div className="relative flex w-[175px] h-[100px] xs:w-[200px] xs:h-[130px] md:w-[260px] md:h-[170px] lg:w-[270px]  xl:w-[320px] xl:h-[200px] 2xl:w-[350px] 2xl:h-[220px] 3xl:w-[380px] 3xl:h-[250px]">
                 <Image
                   className="border-[1px] border-black"
                   src="/images/studio/AnalogLab.jpg"
-                  width={220}
-                  height={200}
+                  fill
                   alt="Paulo Bastos"
                 />
               </div>
               <div className="flex items-center">
                 <h1 className="p-1 xs:p-6 max-w-[160px] font-italiana text-xl xs:text-2xl sm:text-3xl text-black leading-1">
                   Analog Laboratory
-                </h1> <Link
-              href="https://www.youtube.com/shorts/U5_XJuAa-tk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute bottom-0 right-0 p-1 m-1 bg-white font-italiana text-md text-black h-6 px-2 border border-black rounded "
-            >
-              Teaser
-            </Link>
-            
+                </h1>{" "}
               </div>
             </div>
-          <div className="min-w-[50vw]">
-            <p className="my-2 lg:max-w-[30vw]">
-              Also 2regards atelier features an analog photography lab for
-              development and printing. It is also possible to rent this space
-              by the hour or day. Click here to discover our rates.
-            </p>
+            <div className="min-w-[50vw]">
+              <p className="my-2 lg:max-w-[30vw]">
+                Also 2regards atelier features an analog photography lab for
+                development and printing. It is also possible to rent this space
+                by the hour or day. Click here to discover our rates.
+              </p>
             </div>
-           
           </motion.div>
+          <Link
+            href="https://www.youtube.com/shorts/U5_XJuAa-tk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="sm:hidden bottom-0 right-0 p-1 m-1 bg-white font-italiana text-md text-black h-6 px-2 border border-black rounded "
+          >
+            Teaser
+          </Link>
         </div>
 
         {/*2nd, Left section */}
@@ -71,7 +77,7 @@ const Studio = () => {
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="py-12 md:pt-0 lg:grid lg:grid-cols-2 lg:max-h-[33vh]"
+          className="py-12 lg:pt-0 lg:grid lg:grid-cols-2 lg:max-h-[33vh]"
         >
           <div className=" lg:mx-4 lg:max-w-[35vw]">
             <div className="flex justify-end lg:justify-start border-b-2 border-black ">
@@ -80,12 +86,11 @@ const Studio = () => {
                   Product Studios
                 </h1>
               </div>
-              <div className="flex min-w-[70px] lg:min-w-[160px]">
+              <div className="relative flex w-[175px] h-[100px] xs:w-[200px] xs:h-[130px] md:w-[260px] md:h-[170px] lg:w-[270px]  xl:w-[320px] xl:h-[200px] 2xl:w-[350px] 2xl:h-[220px] 3xl:w-[380px] 3xl:h-[250px]">
                 <Image
                   className="border-[1px] border-black"
                   src="/images/studio/ProductStudio.jpg"
-                  width={220}
-                  height={200}
+                  fill
                   alt="Paulo Bastos"
                 />
               </div>
@@ -112,17 +117,16 @@ const Studio = () => {
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="pb-12  lg:grid lg:grid-cols-2 lg:max-h-[33vh]"
+          className="pb-12 lg:mb-12 lg:grid lg:grid-cols-2 lg:max-h-[33vh]"
         >
           <div className=""></div>
-          <div className="lg:ml-16 lg:-mt-8 lg:max-w-[35vw]">
+          <div className="lg:ml-16 lg:-mt-16  lg:max-w-[35vw]">
             <div className="flex border-b-2 border-black ">
-              <div className="flex min-w-[70px] lg:min-w-[160px]">
+            <div className="relative flex w-[175px] h-[100px] xs:w-[200px] xs:h-[130px] md:w-[260px] md:h-[170px] lg:w-[270px]  xl:w-[320px] xl:h-[200px] 2xl:w-[350px] 2xl:h-[220px] 3xl:w-[380px] 3xl:h-[250px]">
                 <Image
                   className="border-[1px] border-black"
                   src="/images/studio/Workshops.jpg"
-                  width={230}
-                  height={160}
+                  fill
                   alt="Paulo Bastos"
                 />
               </div>

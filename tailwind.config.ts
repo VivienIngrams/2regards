@@ -21,6 +21,7 @@ const config: Config = {
       'lg': '976px',
       'xl': '1240px',
       '2xl': '1436px',
+      '3xl': '1920px',
     },
   },
   plugins: [],
