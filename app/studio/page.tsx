@@ -7,16 +7,16 @@ import Link from "next/link";
 
 const Studio = () => {
   return (
-    <div className="mr-8 lg:mr-16 lg:max-h-[92vh]  text-neutral-500 text-sm leading-tight text-justify lg:text-left">
+    <div className="mr-8 lg:mr-12 lg:max-h-[92vh]  text-neutral-500 text-sm leading-tight text-justify lg:text-left">
       {/* Border right */}
       <div className="w-4 lg:w-6 z-50 fixed h-screen right-0 top-0">
         <div className="right-0 top-4 lg:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-200" />
       </div>
-      <div className="min-h-[92vh] flex flex-col justify-around md:max-h-[85vh]">
+      <div className="min-h-[92vh] flex flex-col justify-around md:max-h-[85vh] lg:grid lg:grid-rows-3 min-w-full">
         {/* Top section */}
-        <div className=" lg:grid lg:grid-cols-2">
+        <div className=" lg:grid lg:grid-cols-2 lg:max-h-[33vh]">
           {/* Title */}
-          <div className="m-16 lg:m-2 text-center flex justify-center items-center text-black">
+          <div className="m-16 text-center flex justify-center items-center text-black lg:w-1/2">
             <div className="">
               <h1 className="text-5xl sm:text-[80px] font-normal font-italiana leading-[38px] tracking-tighter">
                 Studio
@@ -29,38 +29,40 @@ const Studio = () => {
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="py-8 md:py-8 md:mt-6 lg:-ml-4 lg:mr-10 lg:max-w-[30vw]"
+            className=" "
           >
-            <div className="flex border-b-2 border-black ">
-              <div className="flex min-w-[70px] lg:min-w-[200px]">
+            <div className=" relative flex border-b-2 border-black lg:max-w-[35vw]">
+              <div className="flex min-w-[60px] lg:min-w-[150px]">
                 <Image
                   className="border-[1px] border-black"
                   src="/images/studio/AnalogLab.jpg"
-                  width={250}
-                  height={220}
+                  width={220}
+                  height={200}
                   alt="Paulo Bastos"
                 />
               </div>
               <div className="flex items-center">
                 <h1 className="p-1 xs:p-6 max-w-[160px] font-italiana text-xl xs:text-2xl sm:text-3xl text-black leading-1">
                   Analog Laboratory
-                </h1>
+                </h1> <Link
+              href="https://www.youtube.com/shorts/U5_XJuAa-tk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute bottom-0 right-0 p-1 m-1 bg-white font-italiana text-md text-black h-6 px-2 border border-black rounded "
+            >
+              Teaser
+            </Link>
+            
               </div>
             </div>
-            <p className="mt-2">
+          <div className="min-w-[50vw]">
+            <p className="my-2 lg:max-w-[30vw]">
               Also 2regards atelier features an analog photography lab for
               development and printing. It is also possible to rent this space
               by the hour or day. Click here to discover our rates.
             </p>
-            <Link
-              href="https://www.youtube.com/shorts/U5_XJuAa-tk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-1 bg-white font-italiana text-xl text-black h-8 px-4 border border-black rounded "
-            >
-              Watch video
-            </Link>
-            
+            </div>
+           
           </motion.div>
         </div>
 
@@ -69,20 +71,20 @@ const Studio = () => {
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="py-8 md:py-0 lg:grid lg:grid-cols-2"
+          className="py-12 md:pt-0 lg:grid lg:grid-cols-2 lg:max-h-[33vh]"
         >
-          <div className="mt-6 lg:-mt-4 lg:mx-10 lg:max-w-[30vw]">
+          <div className=" lg:mx-4 lg:max-w-[35vw]">
             <div className="flex justify-end lg:justify-start border-b-2 border-black ">
               <div className="flex lg:hidden items-center">
                 <h1 className="p-1 xs:p-6 max-w-[160px] font-italiana text-right text-xl xs:text-2xl sm:text-3xl text-black leading-1">
                   Product Studios
                 </h1>
               </div>
-              <div className="flex min-w-[70px] lg:min-w-[200px]">
+              <div className="flex min-w-[70px] lg:min-w-[160px]">
                 <Image
                   className="border-[1px] border-black"
                   src="/images/studio/ProductStudio.jpg"
-                  width={250}
+                  width={220}
                   height={200}
                   alt="Paulo Bastos"
                 />
@@ -102,7 +104,7 @@ const Studio = () => {
               studio in Porto.
             </p>
           </div>
-          <div className="ml-14 mr-10"></div>
+          <div className=""></div>
         </motion.div>
 
         {/*3rd, Bottom right section */}
@@ -110,17 +112,17 @@ const Studio = () => {
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="pb-16 md:-pt-8 lg:-mt-24 lg:grid lg:grid-cols-2"
+          className="pb-12  lg:grid lg:grid-cols-2 lg:max-h-[33vh]"
         >
-          <div className="mt-6 lg:ml-16 lg:mr-10"></div>
-          <div className="lg:ml-32 lg:-mt-6 lg:max-w-[30vw]">
+          <div className=""></div>
+          <div className="lg:ml-16 lg:-mt-8 lg:max-w-[35vw]">
             <div className="flex border-b-2 border-black ">
-              <div className="flex min-w-[70px] lg:min-w-[200px]">
+              <div className="flex min-w-[70px] lg:min-w-[160px]">
                 <Image
                   className="border-[1px] border-black"
                   src="/images/studio/Workshops.jpg"
                   width={230}
-                  height={200}
+                  height={160}
                   alt="Paulo Bastos"
                 />
               </div>
