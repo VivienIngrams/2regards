@@ -11,7 +11,7 @@ interface SplashScreenProps {
 
 const SplashScreen: React.FC<SplashScreenProps> = ({ finishLoading }) => {
   useEffect(() => {
-    const timeout = setTimeout(() => finishLoading(), 3500);
+    const timeout = setTimeout(() => finishLoading(), 3000);
     return () => clearTimeout(timeout);
   }, [finishLoading]);
 
@@ -22,12 +22,13 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ finishLoading }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.1 }}
+            exit={{ opacity: 0, x: 100 }}
           className="flex justify-center items-center h-screen w-screen bg-black"
         >
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: [0, 0.5, 0.8, 1, 1, 0.8, 0.5, 0.2], x: 0 }}
-            // exit={{ opacity: 0, x: 100 }}
+          
             transition={{ duration: 2.7, delay: 0.2 }}
             className=""
           >

@@ -36,7 +36,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Product/products (1).jpg",
-        width: "w-[80vw] sm:w-[60vw] md:w-[16vw]",
+        width: "w-[80vw] sm:w-[60vw] md:w-[15vw]",
         position: " justify-start md:items-start md:-mr-[6vw]",
         size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh]",
       },
@@ -64,7 +64,110 @@ export const productData: ProductDataType[] = [
       },
     },
   },
+  {
+    title: "Fluent Feldenkrais",
+    id: "fluent",
+    url: "/product/fluent",
+        images: {
+      image1: {
+        url: "/images/products/Fluent/fluent (2).jpg",
+        width: "w-[80vw] sm:w-[60vw] md:w-[26vw]",
+        position: " justify-start md:items-start md:-mr-[6vw]",
+        size: "mt-[5vh] h-[20vh] xs:h-[30vh] sm:h-[60vh] md:w-[30vw] md:h-[37vh] lg:w-[35vw] 2xl:w-[25vw] 2xl:h-[40vh] md:-mr-[6vw]",
+      },
+      image2: {
+        url: "/images/products/Fluent/fluent (3).jpg",
+        position: "justify-end md:items-end md:mb-2 md:-ml-[2vw]",
+        size: "w-[50vw] h-[30vh] xs:w-[70vw] xs:h-[50vh] sm:h-[50vh] md:w-[20vw] md:h-[40vh] lg:w-[25vw] 2xl:w-[15vw]",
+      },
+      image3: {
+        url: "/images/products/Fluent/fluent (5).jpg",
+        position:
+          " justify-start md:items-center md:-ml-[4vw] md:-mr-[8vw] md:-mt-[10vh]",
+        size: "mb-4 max-w-[80vw] h-[20vh] xs:h-[25vh]  md:w-[35vw] md:h-[35vh] lg:w-[40vw] lg:h-[45vh] 2xl:w-[35vw]",
+      },
+      image4: {
+        url: "/images/products/Fluent/fluent (4).jpg",
+       position:
+          "justify-end md:items-end md:-ml-[6vw] md:mb-2 md:-mr-[2vw] xl:-mr-[8vw]",
+        size: "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[35vw] md:h-[30vh] lg:w-[40vw] 2xl:w-[20vw] 2xl:h-[30vh]",
+      },
+      image5: {
+        url: "/images/products/Fluent/fluent (1).jpg",
+        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end",
+        size: "h-[45vh] xs:h-[40vh] md:w-[25vw] md:h-[40vh] lg:w-[35w] xl:w-[35vw]",
+      },
+    },
+  },
+  
+  {
+    title: "Packshot",
+    id: "packshot",
+    url: "/product/packshot",
+    images: {
+      image1: {
+        url: "/images/products/Packshot/packshot (1).jpg",
+        width: "w-[80vw] sm:[60vw] md:w-[15vw]",
+        position: " justify-start md:items-center ",
+        size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]",
+      },
+      image2: {
+        url: "/images/products/Packshot/packshot (2).jpg",
+        position: "justify-end md:items-start md:mr-[4vw]",
+        size: "max-w-[50vw] h-[30vh] xs:h-[45vh] sm:h-[50vh] md:w-[20vw] md:h-[35vh] lg:h-[40vh] ",
+      },
+      image3: {
+        url: "/images/products/Packshot/packshot (5).jpg",
+        position: " justify-start md:items-end",
+        size: "max-w-[50vw] h-[30vh] xs:h-[40vh]  md:w-[15vw] md:h-[30vh] 2xl:w-[18vw] md:-ml-[8vw] md:mr-[8vw] md:mb-4",
+      },
+      image4: {
+        url: "/images/products/Packshot/packshot (3).jpg",
+        position: "justify-end md:items-center ",
+        size: "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[60vw] md:h-[50vh] lg:w-[40vw] 2xl:w-[35vw] 2xl:h-[60vh] md:-ml-[15vw] md:-mr-[1vw]",
+      },
+      image5: {
+        url: "/images/products/Packshot/packshot (4).jpg",
+        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end ",
+        size: "h-[20vh] xs:h-[35vh] md:w-[18vw] md:h-[25vh] xl:w-[25vw]",
+      },
+    },
+  },
+  {
+    title: "CIF",
+    id: "cif",
+    url: "/product/cif",
+    images: {
+      image1: {
+        url: "/images/products/CIF/cif (1).jpg",
+        width: "w-[80vw] sm:[60vw] md:w-[32vw]",
+        position: " justify-start md:items-center ",
+        size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]",
+      },
+      image2: {
+        url: "/images/products/CIF/cif (2).jpg",
+        position: "justify-end md:items-start md:mr-[4vw]",
+        size: "max-w-[50vw] h-[30vh] xs:h-[50vh] sm:h-[60vh] md:w-[15vw] md:h-[40vh] 2xl:w-[15vw]  md:-ml-[2vw]",
+      },
+      image3: {
+        url: "/images/products/CIF/cif (3).jpg",
+        position: " justify-start md:items-end",
+        size: "max-w-[50vw] h-[30vh] xs:h-[40vh] sm:h-[70vh] md:w-[12vw] md:h-[35vh] 2xl:w-[15vw] md:-ml-[8vw] md:mr-[8vw] md:mb-2",
+      },
 
+      image4: {
+        url: "/images/products/CIF/cif (4).jpg",
+        position: "justify-end md:items-center",
+        size: "h-[45vh] xs:w-[75vw] xs:h-[45vh] sm:h-[60vh] sm:w-[70vw]  md:h-[65vh] xl:w-[40vw] xl:h-[55vh] md:-ml-[15vw] md:-mr-[1vw] xl:-mr-[2vw]",
+      },
+      image5: {
+        url: "/images/products/CIF/cif (5).jpg",
+        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end ",
+        size: "h-[25vh] xs:h-[32vh] md:w-[28vw] md:h-[30vh] xl:w-[25vw]  mb-12 ",
+      },
+    },
+  },
+  
   {
     title: "Meet",
     id: "meet",
@@ -99,75 +202,7 @@ export const productData: ProductDataType[] = [
       },
     },
   },
-  {
-    title: "Fluent Feldenkrais",
-    id: "fluent",
-    url: "/product/fluent",
-        images: {
-      image1: {
-        url: "/images/products/Fluent/fluent (2).jpg",
-        width: "w-[80vw] sm:w-[60vw] md:w-[16vw]",
-        position: " justify-start md:items-start md:-mr-[6vw]",
-        size: "mt-[5vh] h-[20vh] xs:h-[30vh] sm:h-[60vh] md:w-[30vw] md:h-[37vh] lg:w-[35vw] 2xl:w-[25vw] 2xl:h-[40vh] md:-mr-[6vw]",
-      },
-      image2: {
-        url: "/images/products/Fluent/fluent (3).jpg",
-        position: "justify-end md:items-end md:mb-2 md:-ml-[2vw]",
-        size: "w-[50vw] h-[30vh] xs:w-[70vw] xs:h-[50vh] sm:h-[50vh] md:w-[20vw] md:h-[40vh] lg:w-[25vw] 2xl:w-[15vw]",
-      },
-      image3: {
-        url: "/images/products/Fluent/fluent (5).jpg",
-        position:
-          " justify-start md:items-center md:-ml-[4vw] md:-mr-[8vw] md:-mt-[10vh]",
-        size: "mb-4 max-w-[80vw] h-[20vh] xs:h-[25vh]  md:w-[35vw] md:h-[35vh] lg:w-[40vw] lg:h-[45vh] 2xl:w-[35vw]",
-      },
-      image4: {
-        url: "/images/products/Fluent/fluent (4).jpg",
-       position:
-          "justify-end md:items-end md:-ml-[6vw] md:mb-2 md:-mr-[2vw] xl:-mr-[8vw]",
-        size: "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[35vw] md:h-[30vh] lg:w-[40vw] 2xl:w-[20vw] 2xl:h-[30vh]",
-      },
-      image5: {
-        url: "/images/products/Fluent/fluent (1).jpg",
-        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end",
-        size: "h-[45vh] xs:h-[40vh] md:w-[25vw] md:h-[40vh] lg:w-[35w] xl:w-[35vw]",
-      },
-    },
-  },
-  {
-    title: "CIF",
-    id: "cif",
-    url: "/product/cif",
-    images: {
-      image1: {
-        url: "/images/products/CIF/cif (1).jpg",
-        width: "w-[80vw] sm:[60vw] md:w-[35vw]",
-        position: " justify-start md:items-center ",
-        size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]",
-      },
-      image2: {
-        url: "/images/products/CIF/cif (2).jpg",
-        position: "justify-end md:items-start md:mr-[4vw]",
-        size: "max-w-[50vw] h-[30vh] xs:h-[50vh] sm:h-[60vh] md:w-[15vw] md:h-[40vh] 2xl:w-[15vw]  md:-ml-[2vw]",
-      },
-      image3: {
-        url: "/images/products/CIF/cif (3).jpg",
-        position: " justify-start md:items-end",
-        size: "max-w-[50vw] h-[30vh] xs:h-[40vh] sm:h-[70vh] md:w-[12vw] md:h-[35vh] 2xl:w-[15vw] md:-ml-[8vw] md:mr-[8vw] md:mb-2",
-      },
 
-      image4: {
-        url: "/images/products/CIF/cif (4).jpg",
-        position: "justify-end md:items-center",
-        size: "h-[45vh] xs:w-[75vw] xs:h-[45vh] sm:h-[60vh] sm:w-[70vw]  md:h-[65vh] xl:w-[40vw] xl:h-[55vh] md:-ml-[15vw] md:-mr-[1vw] xl:-mr-[2vw]",
-      },
-      image5: {
-        url: "/images/products/CIF/cif (5).jpg",
-        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end ",
-        size: "h-[25vh] xs:h-[32vh] md:w-[28vw] md:h-[30vh] xl:w-[25vw]  mb-12 ",
-      },
-    },
-  },
   {
     title: "Zoo",
     id: "zoo",
@@ -175,7 +210,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Zoo/zoo (1).jpg",
-        width: "w-[80vw] sm:w-[60vw] md:w-[16vw]",
+        width: "w-[80vw] sm:w-[60vw] md:w-[13vw]",
         position: " justify-start md:items-start md:-mr-[6vw]",
         size: "mt-[5vh] h-[50vh] xs:h-[60vh] sm:h-[75vh] md:w-[22vw] md:h-[60vh] xl:w-[20vw] xl:h-[65vh]",
       center: "object-right-bottom",
@@ -206,39 +241,6 @@ export const productData: ProductDataType[] = [
     },
   },
 
-  {
-    title: "Packshot",
-    id: "packshot",
-    url: "/product/packshot",
-    images: {
-      image1: {
-        url: "/images/products/Packshot/packshot (1).jpg",
-        width: "w-[80vw] sm:[60vw] md:w-[15vw]",
-        position: " justify-start md:items-center ",
-        size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]",
-      },
-      image2: {
-        url: "/images/products/Packshot/packshot (2).jpg",
-        position: "justify-end md:items-start md:mr-[4vw]",
-        size: "max-w-[50vw] h-[30vh] xs:h-[45vh] sm:h-[50vh] md:w-[20vw] md:h-[35vh] lg:h-[40vh] ",
-      },
-      image3: {
-        url: "/images/products/Packshot/packshot (5).jpg",
-        position: " justify-start md:items-end",
-        size: "max-w-[50vw] h-[30vh] xs:h-[40vh]  md:w-[15vw] md:h-[30vh] 2xl:w-[18vw] md:-ml-[8vw] md:mr-[8vw] md:mb-4",
-      },
-      image4: {
-        url: "/images/products/Packshot/packshot (3).jpg",
-        position: "justify-end md:items-center ",
-        size: "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[60vw] md:h-[50vh] lg:w-[40vw] 2xl:w-[35vw] 2xl:h-[60vh] md:-ml-[15vw] md:-mr-[1vw]",
-      },
-      image5: {
-        url: "/images/products/Packshot/packshot (4).jpg",
-        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end ",
-        size: "h-[20vh] xs:h-[35vh] md:w-[18vw] md:h-[25vh] xl:w-[25vw]",
-      },
-    },
-  },
 
   {
     title: "Paperflow",
@@ -317,9 +319,9 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Omaya/omaya (1).jpg",
+        width: "w-[80vw] sm:w-[60vw] md:w-[11vw]",
         position: " justify-start md:items-start md:-mr-[6vw]",
         size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] xl:w-[353w] xl:h-[65vh]",
-        width: "w-[80vw] sm:w-[60vw] md:w-[16vw]",
       },
       image2: {
         url: "/images/products/Omaya/omaya (5).jpg",
@@ -343,6 +345,42 @@ export const productData: ProductDataType[] = [
         url: "/images/products/Omaya/omaya (3).jpg",
         position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end",
         size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[50vh] xl:w-[40vw]",
+      },
+    },
+  },
+  {
+    title: "Plaid",
+    id: "plaid",
+    url: "/product/plaid",
+    images: {
+      image1: {
+        url: "/images/products/Plaid/plaid (1).jpg",
+        position: " justify-start md:items-start md:-mr-[6vw]",
+        size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh]",
+        width: "w-[80vw] sm:w-[60vw] md:w-[16vw]",
+      },
+      image2: {
+        url: "/images/products/Plaid/plaid (2).jpg",
+        position: "justify-end md:items-end md:mb-2 md:-ml-[2vw]",
+        size: "max-w-[50vw] h-[30vh] xs:h-[50vh] sm:h-[50vh] md:w-[15vw] md:h-[40vh] 2xl:w-[15vw]",
+      },
+      image3: {
+        url: "/images/products/Plaid/plaid (7).jpg",
+        position:
+          " justify-start md:items-center md:-ml-[4vw] md:-mr-[8vw] ",
+        size: "max-w-[50vw] h-[30vh] xs:h-[40vh]  md:w-[35vw] md:h-[67vh] 2xl:w-[25vw]",
+        center: "object-top",
+      },
+      image4: {
+        url: "/images/products/Plaid/plaid (6).jpg",
+        position:
+          "justify-end md:items-end md:-ml-[6vw] md:mb-2 md:-mr-[2vw] xl:-mr-[2vw]",
+        size: "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[30vw] md:h-[35vh] 2xl:w-[15vw] 2xl:h-[45vh]",
+      },
+      image5: {
+        url: "/images/products/Plaid/plaid (3).jpg",
+        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end",
+        size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[50vh] xl:w-[25vw]",
       },
     },
   },
@@ -495,7 +533,7 @@ export const productData: ProductDataType[] = [
         url: "/images/products/Takanap/takanap (1).jpg",
         position: " justify-start md:items-start md:-mr-[6vw]",
         size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] xl:w-[353w] xl:h-[45vh]",
-        width: "w-[80vw] sm:w-[60vw] md:w-[16vw]",
+        width: "w-[80vw] sm:w-[60vw] md:w-[20vw]",
       },
       image2: {
         url: "/images/products/Takanap/takanap (11).jpg",
@@ -555,42 +593,7 @@ export const productData: ProductDataType[] = [
       },
     },
   },
-  {
-    title: "Plaid",
-    id: "plaid",
-    url: "/product/plaid",
-    images: {
-      image1: {
-        url: "/images/products/Plaid/plaid (1).jpg",
-        position: " justify-start md:items-start md:-mr-[6vw]",
-        size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh]",
-        width: "w-[80vw] sm:w-[60vw] md:w-[16vw]",
-      },
-      image2: {
-        url: "/images/products/Plaid/plaid (2).jpg",
-        position: "justify-end md:items-end md:mb-2 md:-ml-[2vw]",
-        size: "max-w-[50vw] h-[30vh] xs:h-[50vh] sm:h-[50vh] md:w-[15vw] md:h-[40vh] 2xl:w-[15vw]",
-      },
-      image3: {
-        url: "/images/products/Plaid/plaid (7).jpg",
-        position:
-          " justify-start md:items-center md:-ml-[4vw] md:-mr-[8vw] ",
-        size: "max-w-[50vw] h-[30vh] xs:h-[40vh]  md:w-[35vw] md:h-[67vh] 2xl:w-[25vw]",
-        center: "object-top",
-      },
-      image4: {
-        url: "/images/products/Plaid/plaid (6).jpg",
-        position:
-          "justify-end md:items-end md:-ml-[6vw] md:mb-2 md:-mr-[2vw] xl:-mr-[2vw]",
-        size: "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[30vw] md:h-[35vh] 2xl:w-[15vw] 2xl:h-[45vh]",
-      },
-      image5: {
-        url: "/images/products/Plaid/plaid (3).jpg",
-        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end",
-        size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[50vh] xl:w-[25vw]",
-      },
-    },
-  },
+ 
 ];
 
 export const galleryData: GalleryDataType[] = [
