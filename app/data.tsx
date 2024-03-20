@@ -312,42 +312,6 @@ export const productData: ProductDataType[] = [
     },
   },
   {
-    title: "O-Mã-yã",
-    id: "omaya",
-    url: "/product/omaya",
-    images: {
-      image1: {
-        url: "/images/products/Omaya/omaya(1).jpg",
-        width: "w-[80vw] sm:w-[60vw] md:w-[11vw]",
-        position: " justify-start md:items-start md:-mr-[6vw]",
-        size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] xl:w-[353w] xl:h-[65vh]",
-      },
-      image2: {
-        url: "/images/products/Omaya/omaya(5).jpg",
-        position: "justify-end md:items-end md:mb-2 md:-ml-[2vw]",
-        size: "max-w-[50vw] h-[30vh] xs:h-[50vh] sm:h-[50vh] md:w-[15vw] md:h-[40vh] xl:h-[45vh] 2xl:w-[15vw]",
-      },
-      image3: {
-        url: "/images/products/Omaya/omaya(2).jpg",
-        position:
-          " justify-start md:items-center md:-ml-[4vw] md:-mr-[8vw] lg:mt-[6vh]",
-        size: "max-w-[50vw] h-[30vh] xs:h-[40vh]  md:w-[35vw] md:h-[50vh] xl:h-[68vh] 2xl:w-[25vw]",
-        center: "object-top"
-      },
-      image4: {
-        url: "/images/products/Omaya/omaya(4).jpg",
-        position:
-          "justify-end md:items-end md:-ml-[6vw] md:mb-2 md:-mr-[2vw] xl:-mr-[8vw]",
-        size: "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[30vw] md:h-[35vh] 2xl:w-[15vw] 2xl:h-[40vh]",
-      },
-      image5: {
-        url: "/images/products/Omaya/omaya(3).jpg",
-        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end",
-        size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[50vh] xl:w-[40vw]",
-      },
-    },
-  },
-  {
     title: "Plaid",
     id: "plaid",
     url: "/product/plaid",
@@ -380,6 +344,42 @@ export const productData: ProductDataType[] = [
         url: "/images/products/Plaid/plaid (3).jpg",
         position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end",
         size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[50vh] xl:w-[25vw]",
+      },
+    },
+  },
+  {
+    title: "O-Mã-yã",
+    id: "omaya",
+    url: "/product/omaya",
+    images: {
+      image1: {
+        url: "/images/products/Omaya/omaya (1).jpg",
+        width: "w-[80vw] sm:w-[60vw] md:w-[11vw]",
+        position: " justify-start md:items-start md:-mr-[6vw]",
+        size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] xl:w-[353w] xl:h-[65vh]",
+      },
+      image2: {
+        url: "/images/products/Omaya/omaya (5).jpg",
+        position: "justify-end md:items-end md:mb-2 md:-ml-[2vw]",
+        size: "max-w-[50vw] h-[30vh] xs:h-[50vh] sm:h-[50vh] md:w-[15vw] md:h-[40vh] xl:h-[45vh] 2xl:w-[15vw]",
+      },
+      image3: {
+        url: "/images/products/Omaya/omaya (2).jpg",
+        position:
+          " justify-start md:items-center md:-ml-[4vw] md:-mr-[8vw] lg:mt-[6vh]",
+        size: "max-w-[50vw] h-[30vh] xs:h-[40vh]  md:w-[35vw] md:h-[50vh] xl:h-[68vh] 2xl:w-[25vw]",
+        center: "object-top"
+      },
+      image4: {
+        url: "/images/products/Omaya/omaya (4).jpg",
+        position:
+          "justify-end md:items-end md:-ml-[6vw] md:mb-2 md:-mr-[2vw] xl:-mr-[8vw]",
+        size: "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[30vw] md:h-[35vh] 2xl:w-[15vw] 2xl:h-[40vh]",
+      },
+      image5: {
+        url: "/images/products/Omaya/omaya (3).jpg",
+        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end",
+        size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[50vh] xl:w-[40vw]",
       },
     },
   },
