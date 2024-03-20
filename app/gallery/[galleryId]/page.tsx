@@ -26,7 +26,7 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
     currentIndex < galleryData.length - 1 ? currentIndex + 1 : 0;
 
   return (
-    <div className="relative mr-8 md:mr-12 lg:mr-16 text-neutral-500 text-base md:text-xl h-full lg:max-h-[90vh]">
+    <div className="relative mr-8 md:mr-12 lg:mr-16 text-neutral-500 text-base md:text-xl h-full">
       {/* Nav buttons */}
       <div className="fixed md:hidden h-12 w-full top-4 left-4 z-50 bg-stone-200" />
       <div className="fixed z-50 top-6 left-6 md:left-10 md:top-10  cursor-pointer">
@@ -78,25 +78,25 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
       </div>
 
       {/* Title */}
-      <div className="z-100 flex absolute py-4 mb-2 lg:m-12 w-full  items-center justify-center ">
-        <div className="z-100 max-w-[300px] lg:max-w-[400px]">
+      <div className="z-10 flex absolute py-4 mb-2 lg:m-12 w-full  items-center justify-center ">
+        <div className="max-w-[300px] lg:max-w-[400px]">
           <h1 className="text-black  text-4xl lg:text-6xl xl:text-[80px] font-normal font-italiana text-center lg:leading-[26px] xl:leading-[38px] tracking-tighter">
             {title}
           </h1>
         </div>
       </div>
 
-      <div className="z-10 lg:grid lg:grid-cols-5 min-h-full lg:max-h-[86vh]">
+      <div className="lg:grid lg:grid-cols-5 min-h-full lg:max-h-[86vh]">
         {/* Left/top side of page */}
 
         <div
-          className={` col-span-3 w-full min-h-full lg:max-h-[90vh] lg:grid lg:grid-rows-3 mt-[10vh] mb-4 lg:mt-[2vh]`}
+          className={` col-span-3 w-full min-h-full lg:h-[90vh] lg:grid lg:grid-rows-3 mt-[10vh] mb-4 lg:mt-[2vh]`}
         >
           {Object.values(images).map((image, index) => (
             <div
               key={index}
               className={`flex flex-row ${image.position} -mt-[3vh] lg:mt-0 `}
-              style={{ zIndex: 10 + index }}
+              style={{ zIndex: 10 - index }}
             >
               <div
                 className={`relative ${image.size} w-[70vw] xs:w-[75vw] sm:w-[60vw] `}
@@ -115,7 +115,7 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
 
         {/* Right/bottom side of page */}
         <div className="col-span-2 flex flex-col items-end justify-center h-full">
-          <div className="flex flex-col justify-end xl:h-[70vh] md:mt-[10vh] md:m-[2vw] lg:ml-[8vw] xl:mr-[5vw]">
+          <div className="flex flex-col justify-end xl:h-[70vh] md:mt-[8vh] md:m-[5vw] lg:ml-[10vw] xl:mr-[5vw]">
             <h1 className="font-italiana py-4 text-4xl text-black leading-1 tracking-tight">
               {subtitle}
             </h1>
