@@ -36,7 +36,7 @@ const Studio = () => {
                   href="https://www.youtube.com/shorts/U5_XJuAa-tk"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hidden sm:block absolute bottom-0 right-0 p-1 m-1 bg-white font-italiana text-md text-black h-6 px-2 border border-black rounded "
+                  className="hidden sm:block absolute bottom-0 right-0 p-1 m-1 bg-white  text-md text-black h-6 px-2 border border-black rounded "
                 >
                   Teaser
                 </Link>
@@ -66,7 +66,7 @@ const Studio = () => {
             href="https://www.youtube.com/shorts/U5_XJuAa-tk"
             target="_blank"
             rel="noopener noreferrer"
-            className="sm:hidden bottom-0 right-0 p-1 m-1 bg-white font-italiana text-md text-black h-6 px-2 border border-black rounded "
+            className="sm:hidden bottom-0 right-0 p-1 m-1 bg-white  text-md text-black h-6 px-2 border border-black rounded "
           >
             Teaser
           </Link>

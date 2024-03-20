@@ -96,7 +96,7 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
             <div
               key={index}
               className={`flex flex-row ${image.position} -mt-[3vh] lg:mt-0 `}
-              style={{ zIndex: 10 - index }}
+              style={{ zIndex: 10 + index }}
             >
               <div
                 className={`relative ${image.size} w-[70vw] xs:w-[75vw] sm:w-[60vw] `}

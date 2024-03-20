@@ -171,14 +171,7 @@ const About = () => {
             company 2regards, which he co-founded with his partner Mathilde
             Cudeville.
           </p>
-          <Link
-              href="https://www.youtube.com/shorts/_8F3bTh_rkg"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-1 bg-white font-italiana text-xl text-black h-8 px-4 border border-black rounded "
-            >
-              Watch video
-            </Link>
+        
         </div>
       </motion.div>
         <div
