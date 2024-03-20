@@ -40,7 +40,7 @@ const Studio = () => {
                 >
                   Teaser
                 </Link>
-                <div className="relative flex w-[175px] h-[100px] xs:w-[200px] xs:h-[130px] md:w-[260px] md:h-[170px] lg:w-[270px]  xl:w-[320px] xl:h-[200px] 2xl:w-[350px] 2xl:h-[220px] 3xl:w-[380px] 3xl:h-[250px]">
+                <div className="relative flex w-[175px] h-[100px] xs:w-[200px] xs:h-[130px] md:w-[260px] md:h-[170px] lg:w-[270px]  xl:w-[300px] xl:h-[180px] 2xl:w-[340px] 2xl:h-[210px] 3xl:w-[380px] 3xl:h-[250px]">
                 <Image
                   className="border-[1px] border-black"
                   src="/images/studio/AnalogLab.jpg"
@@ -86,7 +86,7 @@ const Studio = () => {
                   Product Studios
                 </h1>
               </div>
-              <div className="relative flex w-[175px] h-[100px] xs:w-[200px] xs:h-[130px] md:w-[260px] md:h-[170px] lg:w-[270px]  xl:w-[320px] xl:h-[200px] 2xl:w-[350px] 2xl:h-[220px] 3xl:w-[380px] 3xl:h-[250px]">
+              <div className="relative flex w-[175px] h-[100px] xs:w-[200px] xs:h-[130px] md:w-[260px] md:h-[170px] lg:w-[270px]  xl:w-[300px] xl:h-[180px] 2xl:w-[340px] 2xl:h-[210px] 3xl:w-[380px] 3xl:h-[250px]">
                 <Image
                   className="border-[1px] border-black"
                   src="/images/studio/ProductStudio.jpg"
@@ -122,7 +122,7 @@ const Studio = () => {
           <div className=""></div>
           <div className="lg:ml-16 lg:-mt-16  lg:max-w-[35vw]">
             <div className="flex border-b-2 border-black ">
-            <div className="relative flex w-[175px] h-[100px] xs:w-[200px] xs:h-[130px] md:w-[260px] md:h-[170px] lg:w-[270px]  xl:w-[320px] xl:h-[200px] 2xl:w-[350px] 2xl:h-[220px] 3xl:w-[380px] 3xl:h-[250px]">
+            <div className="relative flex w-[175px] h-[100px] xs:w-[200px] xs:h-[130px] md:w-[260px] md:h-[170px] lg:w-[270px]  xl:w-[300px] xl:h-[180px] 2xl:w-[340px] 2xl:h-[210px] 3xl:w-[380px] 3xl:h-[250px]">
                 <Image
                   className="border-[1px] border-black"
                   src="/images/studio/Workshops.jpg"

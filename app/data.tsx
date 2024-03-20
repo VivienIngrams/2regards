@@ -36,7 +36,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Product/products (1).jpg",
-        width: "w-[80vw] sm:w-[60vw] md:w-[15vw]",
+        width: "w-[60vw] xs:w-[45vw] md:w-[15vw]",
         position: " justify-start md:items-start md:-mr-[6vw]",
         size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh]",
       },
@@ -71,7 +71,7 @@ export const productData: ProductDataType[] = [
         images: {
       image1: {
         url: "/images/products/Fluent/fluent(2).jpg",
-        width: "w-[80vw] sm:w-[60vw] md:w-[26vw]",
+        width: "w-[120vw] xs:w-[100vw] md:w-[26vw]",
         position: " justify-start md:items-start md:-mr-[6vw]",
         size: "mt-[5vh] h-[20vh] xs:h-[30vh] sm:h-[60vh] md:w-[30vw] md:h-[37vh] lg:w-[35vw] 2xl:w-[25vw] 2xl:h-[40vh] md:-mr-[6vw]",
       },
@@ -107,7 +107,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Packshot/packshot (1).jpg",
-        width: "w-[80vw] sm:[60vw] md:w-[15vw]",
+        width: "w-[60vw] xs:w-[45vw] md:w-[15vw]",
         position: " justify-start md:items-center ",
         size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]",
       },
@@ -140,7 +140,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/CIF/cif (1).jpg",
-        width: "w-[80vw] sm:[60vw] md:w-[32vw]",
+        width: "w-[120vw] xs:[100vw] md:w-[32vw]",
         position: " justify-start md:items-center ",
         size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]",
       },
@@ -176,7 +176,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Meet/meet (1).jpg",
-        width: "w-[80vw] sm:[60vw] md:w-[16vw]",
+        width: "w-[60vw] xs:[50vw] md:w-[16vw]",
         position: " justify-start md:items-center ",
         size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]",
       },
@@ -210,7 +210,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Zoo/zoo (1).jpg",
-        width: "w-[80vw] sm:w-[60vw] md:w-[13vw]",
+        width: "w-[65vw] xs:w-[50vw] md:w-[13vw]",
         position: " justify-start md:items-start md:-mr-[6vw]",
         size: "mt-[5vh] h-[50vh] xs:h-[60vh] sm:h-[75vh] md:w-[22vw] md:h-[60vh] xl:w-[20vw] xl:h-[65vh]",
       center: "object-right-bottom",
@@ -250,7 +250,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Paperflow/paperflow (2).jpg",
-        width: "w-[80vw] sm:w-[60vw] md:w-[16vw]",
+        width: "w-[70vw] xs:w-[55vw] md:w-[16vw]",
         position: " justify-start md:items-start md:-mr-[6vw]",
         size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] xl:w-[353w] xl:h-[60vh] ",
       },
@@ -285,7 +285,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/White/white (1).jpg",
-        width: "w-[80vw] sm:[60vw] md:w-[33vw]",
+        width: "w-[130vw] xs:[90vw] md:w-[33vw]",
         position: " justify-start md:items-center ",
         size: "mt-[5vh] h-[23vh] xs:h-[30vh] sm:h-[35vh] md:w-[38vw] md:h-[30vh] 2xl:w-[25vw] 2xl:h-[40vh] md:-mr-[6vw]",
       },
@@ -320,7 +320,7 @@ export const productData: ProductDataType[] = [
         url: "/images/products/Plaid/plaid (1).jpg",
         position: " justify-start md:items-start md:-mr-[6vw]",
         size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh]",
-        width: "w-[80vw] sm:w-[60vw] md:w-[16vw]",
+        width: "w-[70vw] xs:w-[55vw] md:w-[16vw]",
       },
       image2: {
         url: "/images/products/Plaid/plaid (2).jpg",
@@ -354,7 +354,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Omaya/omaya (2).jpg",
-        width: "w-[80vw] sm:w-[60vw] md:w-[11vw]",
+        width: "w-[50vw] xs:w-[40vw] md:w-[11vw]",
         position: " justify-start md:items-start md:-mr-[6vw]",
         size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] xl:w-[353w] xl:h-[65vh]",
       },
@@ -391,7 +391,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Miquelon/miquelon (2).jpg",
-        width: "w-[80vw] sm:[60vw] md:w-[37vw]",
+        width: "w-[150vw] xs:[100vw] md:w-[37vw]",
         position: "justify-start md:items-center",
         size: "mt-[2vh] mt-[5vh] h-[25vh] xs:h-[28vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] xl:w-[22vw] xl:h-[30vh] md:-mr-[6vw]",
       },
@@ -463,7 +463,7 @@ export const productData: ProductDataType[] = [
     images: {
       image1: {
         url: "/images/products/Design/design (7).png",
-        width: "w-[80vw] sm:[60vw] md:w-[30vw]",
+        width: "w-[120vw] xs:[100vw] md:w-[30vw]",
         position: " justify-start md:items-center ",
         size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[45vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]",
       },
@@ -497,7 +497,7 @@ export const productData: ProductDataType[] = [
       image1: {
         url: "/images/products/Hiima/hiima (2).jpg",
         position: " justify-start md:items-center ",
-        width: "w-[80vw] sm:[60vw] md:w-[14vw]",
+        width: "w-[65vw] xs:[50vw] md:w-[14vw]",
         size: "mt-[5vh] h-[48vh] xs:h-[58vh] sm:h-[65vh] md:w-[20vw] md:h-[45vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]",
       },
       image2: {
@@ -532,7 +532,7 @@ export const productData: ProductDataType[] = [
         url: "/images/products/Takanap/takanap (1).jpg",
         position: " justify-start md:items-start md:-mr-[6vw]",
         size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] xl:w-[353w] xl:h-[45vh]",
-        width: "w-[80vw] sm:w-[60vw] md:w-[20vw]",
+        width: "w-[100vw] xs:w-[90vw] md:w-[20vw]",
       },
       image2: {
         url: "/images/products/Takanap/takanap (11).jpg",
