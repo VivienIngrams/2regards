@@ -70,30 +70,30 @@ export const productData: ProductDataType[] = [
     url: "/product/fluent",
         images: {
       image1: {
-        url: "/images/Fluent/fluent (2).jpg",
+        url: "/images/products/Fluent/fluent(2).jpg",
         width: "w-[80vw] sm:w-[60vw] md:w-[26vw]",
         position: " justify-start md:items-start md:-mr-[6vw]",
         size: "mt-[5vh] h-[20vh] xs:h-[30vh] sm:h-[60vh] md:w-[30vw] md:h-[37vh] lg:w-[35vw] 2xl:w-[25vw] 2xl:h-[40vh] md:-mr-[6vw]",
       },
       image2: {
-        url: "/images/Fluent/fluent (3).jpg",
+        url: "/images/products/Fluent/fluent(3).jpg",
         position: "justify-end md:items-end md:mb-2 md:-ml-[2vw]",
         size: "w-[50vw] h-[30vh] xs:w-[70vw] xs:h-[50vh] sm:h-[50vh] md:w-[20vw] md:h-[40vh] lg:w-[25vw] 2xl:w-[15vw]",
       },
       image3: {
-        url: "/images/Fluent/fluent (5).jpg",
+        url: "/images/products/Fluent/fluent(5).jpg",
         position:
           " justify-start md:items-center md:-ml-[4vw] md:-mr-[8vw] md:-mt-[10vh]",
         size: "mb-4 max-w-[80vw] h-[20vh] xs:h-[25vh]  md:w-[35vw] md:h-[35vh] lg:w-[40vw] lg:h-[45vh] 2xl:w-[35vw]",
       },
       image4: {
-        url: "/images/Fluent/fluent (4).jpg",
+        url: "/images/products/Fluent/fluent(4).jpg",
        position:
           "justify-end md:items-end md:-ml-[6vw] md:mb-2 md:-mr-[2vw] xl:-mr-[8vw]",
         size: "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[35vw] md:h-[30vh] lg:w-[40vw] 2xl:w-[20vw] 2xl:h-[30vh]",
       },
       image5: {
-        url: "/images/Fluent/fluent (1).jpg",
+        url: "/images/products/Fluent/fluent(1).jpg",
         position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end",
         size: "h-[45vh] xs:h-[40vh] md:w-[25vw] md:h-[40vh] lg:w-[35w] xl:w-[35vw]",
       },
