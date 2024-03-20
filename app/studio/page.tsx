@@ -1,19 +1,14 @@
 "use client";
 
-"use client";
-
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-
 const Studio = () => {
   return (
     <div className="mr-8 lg:mr-12 lg:max-h-[92vh]  text-neutral-500 text-sm leading-tight text-justify lg:text-left">
       {/* Border right */}
-      <div className="w-4 lg:w-6 z-50 fixed h-screen right-0 top-0">
-        <div className="right-0 top-4 lg:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-200" />
       <div className="w-4 lg:w-6 z-50 fixed h-screen right-0 top-0">
         <div className="right-0 top-4 lg:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-200" />
       </div>
@@ -148,7 +143,6 @@ const Studio = () => {
           </div>
         </motion.div>
       </div>
-    </div>
     </div>
   );
 };
