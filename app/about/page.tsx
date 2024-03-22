@@ -181,9 +181,9 @@ const About = () => {
             href="https://www.youtube.com/shorts/_8F3bTh_rkg"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-1 bg-white font-italiana text-2xl text-black h-10 px-4 border border-black rounded "
+            className="p-1 tracking-wider font-italiana text-2xl text-black h-10 px-4 bg-white rounded "
           >
-            2regards Atelier
+            About
           </Link>
         </div>
     </div>

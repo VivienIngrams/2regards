@@ -97,7 +97,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
               className={`relative ${image.size} w-[70vw] xs:w-[75vw] sm:w-[60vw] `}
             >
               <Image
-                className={` ${image.center && image.center} absolute object-cover overflow-hidden shadow-md shadow-neutral-500 border-[1px] border-black`}
+                className={` ${image.center && image.center} absolute object-cover overflow-hidden shadow-md shadow-neutral-500 `}
                 src={image.url}
                 alt={title}
                 fill

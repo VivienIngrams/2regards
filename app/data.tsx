@@ -65,7 +65,7 @@ export const productData: ProductDataType[] = [
     },
   },
   {
-    title: "Fluent Feldenkrais",
+    title: "Fluent Feldenkrais Method",
     id: "fluent",
     url: "/product/fluent",
         images: {
@@ -243,7 +243,7 @@ export const productData: ProductDataType[] = [
 
 
   {
-    title: "Paperflow",
+    title: "PAPERFLOW",
     id: "paperflow",
     url: "/product/paperflow",
     videoLink: "https://www.youtube.com/watch?v=572uLi_rnn4",
@@ -278,39 +278,39 @@ export const productData: ProductDataType[] = [
       },
     },
   },
-  {
-    title: "White",
-    id: "white",
-    url: "/product/white",
-    images: {
-      image1: {
-        url: "/images/products/White/white (1).jpg",
-        width: "w-[130vw] xs:[90vw] md:w-[33vw]",
-        position: " justify-start md:items-center ",
-        size: "mt-[5vh] h-[23vh] xs:h-[30vh] sm:h-[35vh] md:w-[38vw] md:h-[30vh] 2xl:w-[25vw] 2xl:h-[40vh] md:-mr-[6vw]",
-      },
-      image2: {
-        url: "/images/products/White/white (2).jpg",
-        position: "justify-end md:items-start md:mr-[4vw]",
-        size: "max-w-[50vw] h-[30vh] xs:h-[40vh] sm:h-[50vh] md:w-[15vw] md:h-[28vh] 2xl:w-[15vw]  md:-ml-[2vw]",
-      },
-      image3: {
-        url: "/images/products/White/white (3).jpg",
-        position: " justify-start md:items-end",
-        size: "max-w-[50vw] h-[30vh] xs:h-[40vh]  md:w-[15vw] md:h-[40vh] 2xl:w-[15vw] md:-ml-[8vw] md:mr-[8vw] md:mb-2",
-      },
-      image4: {
-        url: "/images/products/White/white (4).jpg",
-        position: "justify-end md:items-center ",
-        size: "h-[30vh] xs:w-[75vw] xs:h-[40vh] md:w-[60vw] md:h-[50vh] 2xl:w-[35vw] 2xl:h-[55vh] md:-ml-[15vw] md:-mr-[2vw] xl:-mr-[2vw]",
-      },
-      image5: {
-        url: "/images/products/White/white (5).jpg",
-        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end ",
-        size: "h-[25vh] xs:h-[30vh] md:w-[28vw] md:h-[30vh] xl:w-[25vw]  mb-12 ",
-      },
-    },
-  },
+  // {
+  //   title: "White",
+  //   id: "white",
+  //   url: "/product/white",
+  //   images: {
+  //     image1: {
+  //       url: "/images/products/White/white (1).jpg",
+  //       width: "w-[130vw] xs:[90vw] md:w-[33vw]",
+  //       position: " justify-start md:items-center ",
+  //       size: "mt-[5vh] h-[23vh] xs:h-[30vh] sm:h-[35vh] md:w-[38vw] md:h-[30vh] 2xl:w-[25vw] 2xl:h-[40vh] md:-mr-[6vw]",
+  //     },
+  //     image2: {
+  //       url: "/images/products/White/white (2).jpg",
+  //       position: "justify-end md:items-start md:mr-[4vw]",
+  //       size: "max-w-[50vw] h-[30vh] xs:h-[40vh] sm:h-[50vh] md:w-[15vw] md:h-[28vh] 2xl:w-[15vw]  md:-ml-[2vw]",
+  //     },
+  //     image3: {
+  //       url: "/images/products/White/white (3).jpg",
+  //       position: " justify-start md:items-end",
+  //       size: "max-w-[50vw] h-[30vh] xs:h-[40vh]  md:w-[15vw] md:h-[40vh] 2xl:w-[15vw] md:-ml-[8vw] md:mr-[8vw] md:mb-2",
+  //     },
+  //     image4: {
+  //       url: "/images/products/White/white (4).jpg",
+  //       position: "justify-end md:items-center ",
+  //       size: "h-[30vh] xs:w-[75vw] xs:h-[40vh] md:w-[60vw] md:h-[50vh] 2xl:w-[35vw] 2xl:h-[55vh] md:-ml-[15vw] md:-mr-[2vw] xl:-mr-[2vw]",
+  //     },
+  //     image5: {
+  //       url: "/images/products/White/white (5).jpg",
+  //       position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end ",
+  //       size: "h-[25vh] xs:h-[30vh] md:w-[28vw] md:h-[30vh] xl:w-[25vw]  mb-12 ",
+  //     },
+  //   },
+  // },
   {
     title: "Plaid",
     id: "plaid",
@@ -387,7 +387,6 @@ export const productData: ProductDataType[] = [
     title: "Saint Pierre et Miquelon",
     id: "miquelon",
     url: "/product/miquelon",
-    videoLink: "https://www.youtube.com/watch?v=572uLi_rnn4",
     images: {
       image1: {
         url: "/images/products/Miquelon/miquelon (2).jpg",
@@ -456,39 +455,39 @@ export const productData: ProductDataType[] = [
       },
     },
   },
-  {
-    title: "Design",
-    id: "design",
-    url: "/product/design",
-    images: {
-      image1: {
-        url: "/images/products/Design/design (7).png",
-        width: "w-[120vw] xs:[100vw] md:w-[30vw]",
-        position: " justify-start md:items-center ",
-        size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[45vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]",
-      },
-      image2: {
-        url: "/images/products/Design/design (5).png",
-        position: "justify-end md:items-start md:mr-[4vw]",
-        size: "max-w-[50vw] h-[30vh] xs:h-[40vh] sm:h-[50vh] md:w-[15vw] md:h-[45h] 2xl:w-[15vw]  md:-ml-[2vw]",
-      },
-      image3: {
-        url: "/images/products/Design/design (2).jpg",
-        position: " justify-start md:items-end",
-        size: "h-[25vh] xs:h-[30vh] md:w-[28vw] md:h-[40vh] xl:w-[27vw] md:-ml-[12vw]  md:mb-2",
-      },
-      image4: {
-        url: "/images/products/Design/design (1).jpg",
-        position: "justify-end md:items-center ",
-        size: "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[65vw] md:h-[45vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-ml-[35vw] md:-mr-[2vw] xl:-mr-[0vw]",
-      },
-      image5: {
-        url: "/images/products/Design/design (3).jpg",
-        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end ",
-        size: "h-[25vh] xs:h-[35vh] md:w-[25vw] md:h-[55vh] md:-ml-[6vw] xl:w-[20vw] mb-12 ",
-      },
-    },
-  },
+  // {
+  //   title: "Design",
+  //   id: "design",
+  //   url: "/product/design",
+  //   images: {
+  //     image1: {
+  //       url: "/images/products/Design/design (7).png",
+  //       width: "w-[120vw] xs:[100vw] md:w-[30vw]",
+  //       position: " justify-start md:items-center ",
+  //       size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[45vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]",
+  //     },
+  //     image2: {
+  //       url: "/images/products/Design/design (5).png",
+  //       position: "justify-end md:items-start md:mr-[4vw]",
+  //       size: "max-w-[50vw] h-[30vh] xs:h-[40vh] sm:h-[50vh] md:w-[15vw] md:h-[45h] 2xl:w-[15vw]  md:-ml-[2vw]",
+  //     },
+  //     image3: {
+  //       url: "/images/products/Design/design (2).jpg",
+  //       position: " justify-start md:items-end",
+  //       size: "h-[25vh] xs:h-[30vh] md:w-[28vw] md:h-[40vh] xl:w-[27vw] md:-ml-[12vw]  md:mb-2",
+  //     },
+  //     image4: {
+  //       url: "/images/products/Design/design (1).jpg",
+  //       position: "justify-end md:items-center ",
+  //       size: "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[65vw] md:h-[45vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-ml-[35vw] md:-mr-[2vw] xl:-mr-[0vw]",
+  //     },
+  //     image5: {
+  //       url: "/images/products/Design/design (3).jpg",
+  //       position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end ",
+  //       size: "h-[25vh] xs:h-[35vh] md:w-[25vw] md:h-[55vh] md:-ml-[6vw] xl:w-[20vw] mb-12 ",
+  //     },
+  //   },
+  // },
   {
     title: "Hiima",
     id: "hiima",
@@ -565,30 +564,30 @@ export const productData: ProductDataType[] = [
     videoLink: " https://www.youtube.com/watch?v=3qe4XdC--hM",
     images: {
       image1: {
-        url: "/images/products/Becafire/becafire (3).jpg",
+        url: "/images/products/Becafire/becafire (7).jpg",
         width: "w-[80vw] sm:[60vw] md:w-[18vw]",
         position: " justify-start md:items-center ",
-        size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]",
+        size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[30vw] 2xl:h-[40vh] md:-mr-[6vw]",
       },
       image2: {
-        url: "/images/products/Becafire/becafire (2).jpg",
+        url: "/images/products/Becafire/becafire (6).jpg",
         position: "justify-end md:items-start md:mr-[4vw]",
-        size: "max-w-[50vw] h-[30vh] xs:h-[50vh] sm:h-[50vh] md:w-[15vw] md:h-[40vh] 2xl:w-[15vw]  md:-ml-[2vw]",
+        size: "max-w-[50vw] h-[30vh] xs:h-[50vh] sm:h-[50vh] md:w-[15vw] md:h-[30vh] 2xl:w-[35vw]  md:-ml-[2vw]",
       },
       image3: {
-        url: "/images/products/Becafire/becafire (1).jpg",
+        url: "/images/products/Becafire/becafire (3).jpg",
         position: " justify-start md:items-end",
         size: "max-w-[50vw] h-[30vh] xs:h-[40vh]  md:w-[15vw] md:h-[40vh] 2xl:w-[15vw] md:-ml-[8vw] md:mr-[8vw] md:mb-2",
       },
       image4: {
-        url: "/images/products/Becafire/becafire (4).jpg",
+        url: "/images/products/Becafire/becafire (9).jpg",
         position: "justify-end md:items-center ",
-        size: "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[70vw] md:h-[45vh] 2xl:w-[40vw] 2xl:h-[50vh] md:-ml-[15vw] md:-mr-[2vw] xl:-mr-[5vw]",
+        size: "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[70vw] md:h-[45vh] 2xl:w-[35vw] 2xl:h-[45vh] md:-ml-[15vw] md:-mr-[2vw] xl:-mr-[5vw]",
       },
       image5: {
-        url: "/images/products/Becafire/becafire (5).jpg",
+        url: "/images/products/Becafire/becafire (8).jpg",
         position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end ",
-        size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[40vh] xl:w-[15vw]",
+        size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[45vh] xl:w-[15vw]",
       },
     },
   },

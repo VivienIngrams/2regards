@@ -142,7 +142,7 @@ const Contact = () => {
               </div>
               <div className="pb-4">
                 <p>
-                  Info:
+                  Info:{" "}
                   <a href="mailto:atelier@2regards.com">atelier@2regards.com</a>
                 </p>
                 <p>+351 933 119 390</p>
