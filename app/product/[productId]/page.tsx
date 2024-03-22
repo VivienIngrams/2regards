@@ -113,7 +113,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
             href={videoLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-1 bg-white font-italiana text-xl text-black h-8 px-4 border border-black rounded "
+            className="p-1 bg-white font-italiana text-xl text-black h-8 px-4 rounded "
           >
             Watch video
           </Link>

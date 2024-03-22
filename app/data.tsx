@@ -596,6 +596,31 @@ export const productData: ProductDataType[] = [
 
 export const galleryData: GalleryDataType[] = [
   {
+    title: "BerriBlue",
+    id: "culminations",
+    url: "/gallery/culminations",
+    subtitle: "Ayala Braidman",
+    poster: "/images/gallery/BerriBlue/culminations.jpg",
+    description: "BerriBlue explores the convergence of her artistic past and present. The works reflect a sense of retrospection, but imbued with a forward momentum, signalling the closure of one chapter and the emergence of another. The artist has developed a private visual language through recurring themes and symbols. The evolution of form and image has been influenced by her immediate environment and her visual heritage. As a pan-European immigrant/emigrant, her skewed sense of belonging has lead to her imagining a personal folklore, creating an aesthetic “home”. ",
+        images: {
+      image1: {
+        url: "/images/gallery/BerriBlue/culminations (1).jpg",
+        position: "justify-start",
+        size: "mt-[10vh] lg:mt-[2vh] h-[25vh] xs:h-[35vh] md:h-[30vh] lg:w-[30vw] xl:h-[45vh]",
+      },
+      image2: {
+        url: "/images/gallery/BerriBlue/culminations (2).jpg",
+        position: "justify-end lg:items-center lg:justify-end ",
+        size: "h-[45vh] xs:h-[60vh] md:w-[50vw] md:h-[40vh] lg:w-[28vw] lg:h-[50vh] xl:w-[20vw] xl:h-[60vh] ",
+      },
+      image3: {
+        url: "/images/gallery/BerriBlue/culminations (3).jpg",
+        position: "lg:items-end lg:justify-center md:-mt-4 md:mr-10 lg:mb-16 ",
+        size: "h-[22vh] xs:h-[30vh] md:w-[20vw] xl:h-[30vh]",
+      },
+    },
+  },
+  {
     title: "Desert",
     id: "desert",
     url: "/gallery/desert",
