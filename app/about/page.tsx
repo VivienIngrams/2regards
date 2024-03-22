@@ -83,7 +83,7 @@ const About = () => {
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
-        className="mt-28 lg:grid lg:grid-cols-2 leading-normal text-sm  text-justify lg:text-left"
+        className="mt-20 lg:grid lg:grid-cols-2 leading-normal text-sm  text-justify lg:text-left"
       >
         {/* Mathilde */}
         <div className="sm:mr-8 lg:mr-20">
@@ -149,7 +149,10 @@ const About = () => {
             Paulo Bastos is a Portuguese video director based in Porto. After
             completing his higher education at HEI Lille in France, he worked as
             a civil engineering engineer. He expatriated to the USA, Central
-            America, and the Nordic countries. His extensive travels fueled his
+            America, and the Nordic countries. 
+          </p>
+          <p className="mt-2">
+            His extensive travels fueled his
             passion for visual storytelling. In 2017, he embarked on a career as
             a video director. Currently, he collaborates with various clients in
             advertising, communication, and documentary projects through the

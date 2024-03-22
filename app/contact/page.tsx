@@ -52,7 +52,7 @@ const Contact = () => {
                 </Link>
               </div>
             </div>
-            <div className="hidden md:flex relative h-[200px] w-[300px] lg:h-[270px] lg:w-[380px] xl:h-[350px] xl:w-[500px] my-4">
+            <div className="hidden md:flex relative h-[200px] w-[300px] lg:h-[270px] lg:w-[380px] 3xl:h-[350px] 3xl:w-[500px] my-4">
               <Image
                 className="border-[1px] border-black shadow-md"
                 src="/images/gallery/MathildePaulo/sentiment_oceanique (3).jpg"

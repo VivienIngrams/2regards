@@ -85,19 +85,21 @@ const Product = ({ params }: { params: { productId: string } }) => {
         </div>
       </div>
       <div
-        className={`md:grid md:grid-cols-5 z-500 pl-1 w-full min-h-full md:h-[75vh] mt-[15vh] md:mt-[2vh] `}
+        className={`md:grid md:grid-cols-5 z-400 pl-1 w-full min-h-full md:h-[75vh] mt-[15vh] md:mt-[2vh] `}
       >
         {Object.values(images).map((image, index) => (
           <div
             key={index}
-            className={`flex flex-row ${image.position} -mt-[3vh] md:mt-0 `}
+            className={`flex flex-row ${image.position} -mt-[3vh] md:mt-0 z-400`}
             style={{ zIndex: 10 - index }}
           >
             <div
               className={`relative ${image.size} w-[70vw] xs:w-[75vw] sm:w-[60vw] `}
             >
               <Image
-                className={` ${image.center && image.center} absolute object-cover overflow-hidden shadow-md shadow-neutral-500 `}
+                className={` ${
+                  image.center && image.center
+                } absolute object-cover overflow-hidden shadow-md shadow-neutral-500 `}
                 src={image.url}
                 alt={title}
                 fill
@@ -106,9 +108,8 @@ const Product = ({ params }: { params: { productId: string } }) => {
             </div>
           </div>
         ))}
-      </div>
       {videoLink && (
-        <div className="md:fixed md:bottom-10 md:right-10 relative pb-10 flex flex-col items-end justify-center m-2">
+        <div className="z-500 md:fixed md:bottom-10 md:right-10 relative flex flex-col items-end justify-center m-2">
           <Link
             href={videoLink}
             target="_blank"
@@ -119,6 +120,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
           </Link>
         </div>
       )}
+      </div>
     </div>
   );
 };

@@ -59,7 +59,7 @@ export const productData: ProductDataType[] = [
       },
       image5: {
         url: "/images/products/Product/products (3).jpg",
-        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end",
+        position: "mb-12 md:mt-10 justify-start md:items-start md:justify-end",
         size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[40vh] lg:w-[35vw] md:-ml-[5vw]",
       },
     },
@@ -94,7 +94,7 @@ export const productData: ProductDataType[] = [
       },
       image5: {
         url: "/images/products/Fluent/fluent(1).jpg",
-        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end",
+        position: "mb-12 md:mt-10 justify-start md:items-start md:justify-end",
         size: "h-[45vh] xs:h-[40vh] md:w-[25vw] md:h-[40vh] lg:w-[35w] xl:w-[35vw]",
       },
     },
@@ -128,7 +128,7 @@ export const productData: ProductDataType[] = [
       },
       image5: {
         url: "/images/products/Packshot/packshot (4).jpg",
-        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end ",
+        position: "mb-12 md:mt-10 justify-start md:items-start md:justify-end ",
         size: "h-[20vh] xs:h-[35vh] md:w-[18vw] md:h-[25vh] xl:w-[25vw]",
       },
     },
@@ -162,7 +162,7 @@ export const productData: ProductDataType[] = [
       },
       image5: {
         url: "/images/products/CIF/cif (5).jpg",
-        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end ",
+        position: "mb-12 md:mt-10 justify-start md:items-start md:justify-end ",
         size: "h-[25vh] xs:h-[32vh] md:w-[28vw] md:h-[30vh] xl:w-[25vw]  mb-12 ",
       },
     },
@@ -197,7 +197,7 @@ export const productData: ProductDataType[] = [
       },
       image5: {
         url: "/images/products/Meet/meet (4).jpg",
-        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end ",
+        position: "mb-12 md:mt-10 justify-start md:items-start md:justify-end ",
         size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[40vh] xl:w-[15vw] ",
       },
     },
@@ -234,7 +234,7 @@ export const productData: ProductDataType[] = [
       },
       image5: {
         url: "/images/products/Zoo/zoo (3).jpg",
-        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end lg:-ml-[2vw]",
+        position: "mb-12 md:mt-10 justify-start md:items-start md:justify-end lg:-ml-[2vw]",
         size: "h-[35vh] xs:h-[45vh] md:w-[28vw] md:h-[40vh] xl:w-[45vw] xl:h-[50vh]",
         center: "object-right-top",
       },
@@ -273,7 +273,7 @@ export const productData: ProductDataType[] = [
       },
       image5: {
         url: "/images/products/Paperflow/paperflow (4).jpg",
-        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end ",
+        position: "mb-12 md:mt-10 justify-start md:items-start md:justify-end ",
         size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[40vh] lg:h-[50vh] xl:w-[35vw]",
       },
     },
@@ -306,7 +306,7 @@ export const productData: ProductDataType[] = [
   //     },
   //     image5: {
   //       url: "/images/products/White/white (5).jpg",
-  //       position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end ",
+  //       position: "mb-12 md:mt-10 justify-start md:items-start md:justify-end ",
   //       size: "h-[25vh] xs:h-[30vh] md:w-[28vw] md:h-[30vh] xl:w-[25vw]  mb-12 ",
   //     },
   //   },
@@ -342,7 +342,7 @@ export const productData: ProductDataType[] = [
       },
       image5: {
         url: "/images/products/Plaid/plaid (3).jpg",
-        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end",
+        position: "mb-12 md:mt-10 justify-start md:items-start md:justify-end",
         size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[50vh] xl:w-[25vw]",
       },
     },
@@ -378,7 +378,7 @@ export const productData: ProductDataType[] = [
       },
       image5: {
         url: "/images/products/Omaya/omaya (4).jpg",
-        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end",
+        position: "mb-12 md:mt-10 justify-start md:items-start md:justify-end",
         size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[50vh] xl:w-[40vw]",
       },
     },
@@ -413,7 +413,7 @@ export const productData: ProductDataType[] = [
       image5: {
         url: "/images/products/Miquelon/miquelon (4).jpg",
         position:
-          "pb-12 md:mt-4 justify-start md:items-start md:justify-end md:-ml-[2vw] mb-12",
+          "mb-12 md:mt-4 justify-start md:items-start md:justify-end md:-ml-[2vw] mb-12",
         size: "mt-[2vh] h-[25vh] xs:h-[28vh] md:w-[28vw] md:h-[25vh] xl:w-[25vw]  ",
       },
     },
@@ -450,7 +450,7 @@ export const productData: ProductDataType[] = [
       },
       image5: {
         url: "/images/products/Vawo/vawo (5).jpg",
-        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end",
+        position: "mb-12 md:mt-10 justify-start md:items-start md:justify-end",
         size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[40vh] xl:w-[35vw]",
       },
     },
@@ -483,7 +483,7 @@ export const productData: ProductDataType[] = [
   //     },
   //     image5: {
   //       url: "/images/products/Design/design (3).jpg",
-  //       position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end ",
+  //       position: "mb-12 md:mt-10 justify-start md:items-start md:justify-end ",
   //       size: "h-[25vh] xs:h-[35vh] md:w-[25vw] md:h-[55vh] md:-ml-[6vw] xl:w-[20vw] mb-12 ",
   //     },
   //   },
@@ -516,7 +516,7 @@ export const productData: ProductDataType[] = [
       },
       image5: {
         url: "/images/products/Hiima/hiima (6).jpg",
-        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end ",
+        position: "mb-12 md:mt-10 justify-start md:items-start md:justify-end ",
         size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[40vh] xl:w-[15vw]",
       },
     },
@@ -552,7 +552,7 @@ export const productData: ProductDataType[] = [
       },
       image5: {
         url: "/images/products/Takanap/takanap (10).jpg",
-        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end",
+        position: "mb-12 md:mt-10 justify-start md:items-start md:justify-end",
         size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[40vh] xl:w-[35vw]",
       },
     },
@@ -586,7 +586,7 @@ export const productData: ProductDataType[] = [
       },
       image5: {
         url: "/images/products/Becafire/becafire (8).jpg",
-        position: "pb-12 md:mt-10 justify-start md:items-start md:justify-end ",
+        position: "mb-12 md:mt-10 justify-start md:items-start md:justify-end ",
         size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[45vh] xl:w-[15vw]",
       },
     },
@@ -596,10 +596,10 @@ export const productData: ProductDataType[] = [
 
 export const galleryData: GalleryDataType[] = [
   {
-    title: "BerriBlue",
+    title: "Culminations",
     id: "culminations",
     url: "/gallery/culminations",
-    subtitle: "Ayala Braidman",
+    subtitle: "BerriBlue",
     poster: "/images/gallery/BerriBlue/culminations.jpg",
     description: "BerriBlue explores the convergence of her artistic past and present. The works reflect a sense of retrospection, but imbued with a forward momentum, signalling the closure of one chapter and the emergence of another. The artist has developed a private visual language through recurring themes and symbols. The evolution of form and image has been influenced by her immediate environment and her visual heritage. As a pan-European immigrant/emigrant, her skewed sense of belonging has lead to her imagining a personal folklore, creating an aesthetic “home”. ",
         images: {
