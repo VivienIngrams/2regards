@@ -25,14 +25,19 @@ const Contact = () => {
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="mx-2 mt-[10vh] lg:mx-28 lg:w-[30vw]"
+          className="mx-2 sm:mt-[10vh] lg:mx-28 lg:w-[30vw]"
         >
           <div>
             <div className="flex justify-between  border-black border-b-[1px]">
-              <div className="text-black text-3xl  lg:text-5xl font-normal font-italiana pb-1 lg:pb-4">
+              {/* <div className="text-black text-2xl xs:text-3xl  :text-5xl font-normal font-italiana pb-1 :pb-4">
                 2regards atelier
-              </div>
-              <div className="lg:mt-2">
+              </div> */}
+              <div className="relative h-10 w-24">
+              <Image
+              src="/2regards-black-title.png"
+              alt="2regards Atelier"
+              fill /></div>
+              <div className="relative h-5 xs:h-6 xl:h-10 w-6 xs:w-10 xl:w-12 xl:mb-1 xl:mt-2">
                 <Link
                   href="https://www.google.com/maps/place/2regards+atelier+photos+films/@41.1472147,-8.6012507,17z/data=!3m1!4b1!4m6!3m5!1s0xd2465a5d3873983:0xbfff3607a844ac77!8m2!3d41.1472147!4d-8.5986758!16s%2Fg%2F11p_1z0qdh?entry=ttu"
                   target="_blank"
@@ -41,18 +46,17 @@ const Contact = () => {
                   <Image
                     priority
                     src={googlemapsIcon}
-                    height={32}
+                    fill
                     alt="Google Maps"
                   />
                 </Link>
               </div>
             </div>
-            <div className="flex min-w-[70px] pt-4">
+            <div className="hidden md:flex relative h-[200px] w-[300px] lg:h-[270px] lg:w-[380px] xl:h-[350px] xl:w-[500px] my-4">
               <Image
                 className="border-[1px] border-black shadow-md"
                 src="/images/gallery/MathildePaulo/sentiment_oceanique (3).jpg"
-                width={200}
-                height={200}
+                fill
                 alt="Gallery in Bomfin, Porto, Portugal"
               />
             </div>
@@ -70,12 +74,12 @@ const Contact = () => {
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="mx-2 mt-[8vh] lg:mr-28 lg:ml-auto md:mb-24 flex items-end  lg:w-[30vw]"
+          className="mx-2 sm:mt-[8vh] lg:mr-28 lg:ml-auto md:mb-24 flex items-end  lg:w-[30vw]"
         >
           <div className="w-full">
             <div className="flex justify-between border-black border-b-[1px]">
-              <div className="flex mt-1 lg:mt-4">
-                <div className="pr-2 lg:pr-4">
+              <div className="flex mt-1 xl:mt-4">
+              <div className="relative h-4 xs:h-6 xl:h-7 w-4 xs:w-8 xl:w-9 xl:mb-1 mr-2 xl:mr-4">
                   <Link
                     href="https://www.facebook.com/2regards.photosfilms"
                     target="_blank"
@@ -85,11 +89,10 @@ const Contact = () => {
                       priority
                       src={facebookIcon}
                       alt="Facebook"
-                      height={26}
-                    />
+fill                    />
                   </Link>
                 </div>
-                <div className="pr-[9px] lg:pr-5">
+                <div className="relative h-4 xs:h-6 xl:h-7 w-4 xs:w-8 xl:w-9 xl:mb-1 mr-[9px] xl:mr-5">
                   <Link
                     href="https://www.youtube.com/channel/UChl2gxRgunj929SvG_D8vyA"
                     target="_blank"
@@ -99,11 +102,11 @@ const Contact = () => {
                       priority
                       src={youtubeIcon}
                       alt="Youtube"
-                      height={26}
+                      fill
                     />
                   </Link>
                 </div>
-                <div className="pr-2 lg:pr-4">
+                <div className="relative h-4 xs:h-6 xl:h-7 w-4 xs:w-8 xl:w-9 xl:mb-1 mr-2 xl:mr-4">
                   <Link
                     href="https://www.instagram.com/2regards.photosfilms/"
                     target="_blank"
@@ -113,13 +116,13 @@ const Contact = () => {
                       priority
                       src={instagramIcon}
                       alt="Instagram"
-                      height={26}
+                      fill
                     />
                   </Link>
                 </div>
               </div>
 
-              <div className="text-black text-3xl lg:text-5xl font-normal text-right font-italiana pb-1 lg:pb-4">
+              <div className="text-black text-2xl xs:text-3xl :text-5xl font-normal text-right font-italiana pb-1 :pb-4">
                 contact
               </div>
             </div>

@@ -15,7 +15,7 @@ const About = () => {
       </div>
 
       {/* Main content */}
-      <div className="h-[95vh] max-h-screen lg:h-[40vh] 2xl:h-[40vh] flex flex-col grow justify-around">
+      <div className="h-[95vh] max-h-screen lg:ml-[10vw] lg:h-[40vh] 2xl:h-[40vh] flex flex-col grow justify-around">
         <div className=" lg:grid lg:grid-cols-2">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
@@ -35,37 +35,22 @@ const About = () => {
 
           {/* Title desktop */}
           <div className="hidden lg:flex justify-center items-center m-4 ">
-            {/* <div>
-              <h1 className=" hidden lg:block text-6xl lg:text-[80px] font-normal font-italiana leading-[30px] lg:leading-[42px] tracking-tighter">
-                2regards{" "}
-              </h1>
-              <h1 className="hidden lg:block text-6xl lg:text-[80px] font-normal font-italiana leading-[30px] lg:leading-[42px] tracking-tighter">
-                Atelier
-              </h1>
-            </div> */}
-            <Image
+            
+            {/* <Image
               src="/2regards-black.png"
               alt="2regards"
               width={300}
-              height={200} />
+              height={200} /> */}
           </div>
 
           {/* Title mobile */}
         </div>
         <div className="lg:hidden flex justify-center  m-4">
-        <Image
+        {/* <Image
               src="/2regards-black.png"
               alt="2regards"
               width={200}
-              height={100} />
-          {/* <div className="lg:hidden m-4 text-center text-black">
-            <h1 className="lg:hidden text-4xl xs:text-6xl  font-normal font-italiana leading-[20px] xs:leading-[30px]  tracking-tighter">
-              2regards{" "}
-            </h1>
-            <h1 className="lg:hidden text-5xl xs:text-6xl  font-normal font-italiana leading-[20px] xs:leading-[30px] tracking-tighter">
-              Atelier
-            </h1>
-          </div> */}
+              height={100} /> */}
         </div>
         <div className="flex flex-col justify-center items-center">
           <motion.div

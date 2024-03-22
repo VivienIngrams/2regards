@@ -25,7 +25,7 @@ const Footer = () => {
             <Link
               key={item.text}
               href={item.href}
-              className="bg-stone-200 px-1 relative"
+              className="bg-stone-200 px-[2px] xs:px-1 relative"
             >
               {item.href === pathname && (
                 <motion.span

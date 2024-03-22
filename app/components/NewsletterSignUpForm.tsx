@@ -36,13 +36,13 @@ export default function NewsLetterSignUpForm(): JSX.Element {
         required
         autoCapitalize="off"
         autoCorrect="off"
-        className="w-full sm:w-[400px] h-8 p-2 border border-black rounded my-2"
+        className="w-full sm:w-[400px] h-8 p-2 border font-italiana border-neutral-400 rounded my-2"
       />
       <button
         value=""
         name="subscribe"
         type="submit"
-        className="bg-neutral-400 text-white h-8 px-4 border border-black rounded "
+        className="bg-white  font-italiana text-black h-8 px-4  rounded "
       >
         Subscribe to our newsletter
       </button>
