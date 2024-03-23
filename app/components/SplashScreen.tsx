@@ -8,11 +8,11 @@ interface SplashScreenProps {
 }
 
 const SplashScreen: React.FC<SplashScreenProps> = ({ finishLoading }) => {
-  const [revealWidth, setRevealWidth] = useState(0);
+  const [revealWidth, setRevealWidth] = useState(100);
 
   useEffect(() => {
     const revealInterval = setInterval(() => {
-      setRevealWidth((prevWidth) => Math.min(prevWidth + 0.3, 100));
+      setRevealWidth((prevWidth) => Math.max(prevWidth - 0.3, 0));
     }, 1); // Adjust interval for smoother/faster animation
 
     setTimeout(() => {
@@ -26,10 +26,10 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ finishLoading }) => {
   return (
     <div className="flex justify-center items-center h-screen bg-black">
       <div className="relative w-60 h-40 overflow-hidden">
-        <motion.div
+        <div
           className="absolute inset-0"
           style={{
-            background: `linear-gradient(to right, rgba(0, 0, 0, 0) ${revealWidth}%, rgba(0, 0, 0, 1))`,
+            backgroundImage: `linear-gradient(to left, rgba(0, 0, 0, 1) ${revealWidth}%, rgba(0, 0, 0, 0))`,
           }}
         />
         <Image
