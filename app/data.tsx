@@ -43,7 +43,7 @@ export const productData: ProductDataType[] = [
       image2: {
         url: "/images/products/Product/products (7).jpg",
         position: "justify-end md:items-end md:mb-2 md:-ml-[2vw]",
-        size: "max-w-[50vw] h-[30vh] xs:h-[50vh] sm:h-[50vh] md:w-[15vw] md:h-[40vh] 2xl:w-[15vw]",
+        size: "max-w-[50vw] h-[30vh] xs:h-[50vh] sm:h-[50vh] md:w-[15vw] md:h-[37vh] 2xl:w-[15vw]",
       },
       image3: {
         url: "/images/products/Product/products (2).jpg",
@@ -567,27 +567,27 @@ export const productData: ProductDataType[] = [
         url: "/images/products/Becafire/becafire (7).jpg",
         width: "w-[80vw] sm:[60vw] md:w-[18vw]",
         position: " justify-start md:items-center ",
-        size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[30vw] 2xl:h-[40vh] md:-mr-[6vw]",
+        size: "mt-[5vh] h-[22vh] xs:h-[28vh] sm:h-[70vh] md:w-[25vw] md:h-[30vh] lg:h-[28vh] 2xl:w-[30vw] 2xl:h-[35vh] md:-mr-[6vw]",
       },
       image2: {
         url: "/images/products/Becafire/becafire (6).jpg",
-        position: "justify-end md:items-start md:mr-[4vw]",
-        size: "max-w-[50vw] h-[30vh] xs:h-[50vh] sm:h-[50vh] md:w-[15vw] md:h-[30vh] 2xl:w-[35vw]  md:-ml-[2vw]",
+        position: "justify-end md:items-start  md:mr-[4vw] md:mt-[6vh] lg:-ml-[6vw] 2xl:-mt-[1vh]",
+        size: "mt-[2vh] h-[22vh] xs:h-[28vh] sm:h-[50vh] md:w-[25vw] md:h-[30vh] lg:w-[40vw] lg:h-[25vh] 2xl:w-[35vw] 2xl:h-[30vh] md:-ml-[2vw]",
       },
       image3: {
         url: "/images/products/Becafire/becafire (3).jpg",
         position: " justify-start md:items-end",
-        size: "max-w-[50vw] h-[30vh] xs:h-[40vh]  md:w-[15vw] md:h-[40vh] 2xl:w-[15vw] md:-ml-[8vw] md:mr-[8vw] md:mb-2",
+        size: "mt-[2vh] h-[45vh] xs:h-[55vh]  md:w-[15vw] md:h-[40vh] lg:h-[30vh] 2xl:w-[15vw] 2xl:h-[40vh] md:-ml-[10vw] md:mr-[8vw] md:mb-2",
       },
       image4: {
         url: "/images/products/Becafire/becafire (9).jpg",
         position: "justify-end md:items-center ",
-        size: "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[70vw] md:h-[45vh] 2xl:w-[35vw] 2xl:h-[45vh] md:-ml-[15vw] md:-mr-[2vw] xl:-mr-[5vw]",
+        size: "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[70vw] md:h-[45vh] 2xl:w-[35vw] 2xl:h-[45vh] md:-ml-[20vw] ",
       },
       image5: {
         url: "/images/products/Becafire/becafire (8).jpg",
         position: "mb-12 md:mt-10 justify-start md:items-start md:justify-end ",
-        size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[45vh] xl:w-[15vw]",
+        size: " mt-[2vh] h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[50vh] lg:h-[35vh] xl:w-[15vw] 2xl:h-[40vh]",
       },
     },
   },

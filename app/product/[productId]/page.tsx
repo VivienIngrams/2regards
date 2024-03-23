@@ -76,7 +76,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
       </div>
 
       {/* Title */}
-      <div className="z-25 flex absolute -top-10 md:top-6 w-full  items-center justify-center  text-black">
+      <div className="z-25 flex absolute -top-10 md:top-0 w-full  items-center justify-center  text-black">
         <div className="max-w-[300px]">
           <h1 className="text-3xl lg:text-6xl xl:text-[80px] font-normal font-italiana text-center lg:leading-[26px] xl:leading-[38px] tracking-tighter">
             {/* {title} */}
