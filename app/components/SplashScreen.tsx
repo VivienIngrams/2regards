@@ -29,8 +29,8 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ finishLoading }) => {
         <div
           className="absolute inset-0"
           style={{
-            width: `-${revealWidth}%`,
-            backgroundImage: `linear-gradient(to left, rgba(0, 0, 0, 1) ${revealWidth}%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 0% )`,
+            width: `${revealWidth}%`,
+            backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 1) ${revealWidth}%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 0%)`, // Adjust gradient to transition from left to right
           }}
         />
         <Image
