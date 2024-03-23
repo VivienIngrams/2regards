@@ -37,7 +37,7 @@ const Footer = () => {
             </Link>
           ))}
         </div>
-        <div className="hidden md:flex absolute text-[10px] tracking-tight xs:tracking-normal  z-50 leading-loose -bottom-[22px] right-12 text-neutral-500"> Website by Vivien Ingrams</div>
+        <div className="hidden md:flex absolute text-[10px] tracking-tight xs:tracking-normal  z-50 leading-loose -bottom-[22px] right-5 text-neutral-500"> Website by Vivien Ingrams</div>
       </div>
     </footer>
   );

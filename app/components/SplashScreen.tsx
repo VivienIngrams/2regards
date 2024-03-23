@@ -1,8 +1,6 @@
-"use client";
-
-import React, { useEffect } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { TypingText } from "./TypingText";
+'use client'
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 interface SplashScreenProps {
@@ -10,37 +8,38 @@ interface SplashScreenProps {
 }
 
 const SplashScreen: React.FC<SplashScreenProps> = ({ finishLoading }) => {
+  const [revealWidth, setRevealWidth] = useState(0);
+
   useEffect(() => {
-    const timeout = setTimeout(() => finishLoading(), 3000);
-    return () => clearTimeout(timeout);
+    const revealInterval = setInterval(() => {
+      setRevealWidth((prevWidth) => Math.min(prevWidth + 0.3, 100));
+    }, 1); // Adjust interval for smoother/faster animation
+
+    setTimeout(() => {
+      clearInterval(revealInterval);
+      finishLoading();
+    }, 3000); // Finish loading after 3 seconds
+
+    return () => clearInterval(revealInterval);
   }, [finishLoading]);
 
   return (
-    <div>
-      <AnimatePresence>
+    <div className="flex justify-center items-center h-screen bg-black">
+      <div className="relative w-60 h-40 overflow-hidden">
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.1 }}
-            exit={{ opacity: 0, x: 100 }}
-          className="flex justify-center items-center h-screen w-screen bg-black"
-        >
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: [0, 0.5, 0.8, 1, 1, 0.8, 0.5, 0.2], x: 0 }}
-          
-            transition={{ duration: 2.7, delay: 0.2 }}
-            className=""
-          >
-            <Image
-              src="/2regards-black-white.png"
-              alt="2regards Atelier"
-              width={600}
-              height={600}
-            />
-          </motion.div>
-        </motion.div>
-      </AnimatePresence>
+          className="absolute inset-0"
+          style={{
+            background: `linear-gradient(to right, rgba(0, 0, 0, 0) ${revealWidth}%, rgba(0, 0, 0, 1))`,
+          }}
+        />
+        <Image
+          src="/2regards-black-white.png"
+          alt="2regards Atelier"
+          width={220}
+          height={220}
+          style={{ zIndex: 1 }}
+        />
+      </div>
     </div>
   );
 };
