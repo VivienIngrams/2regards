@@ -25,11 +25,12 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ finishLoading }) => {
 
   return (
     <div className="flex justify-center items-center h-screen bg-black">
-      <div className="relative w-60 h-40 overflow-hidden">
+      <div className="relative w-60 h-40 ">
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: `linear-gradient(to left, rgba(0, 0, 0, 1) ${revealWidth}%, rgba(0, 0, 0, 0))`,
+            width: `-${revealWidth}%`,
+            backgroundImage: `linear-gradient(to left, rgba(0, 0, 0, 1) ${revealWidth}%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 0% )`,
           }}
         />
         <Image
@@ -37,7 +38,7 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ finishLoading }) => {
           alt="2regards Atelier"
           width={220}
           height={220}
-          style={{ zIndex: 1 }}
+          style={{ zIndex: 5 }}
         />
       </div>
     </div>
