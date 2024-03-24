@@ -42,7 +42,7 @@ function Gallery() {
         animate={{ opacity: 1, x: 0 }}
         transition={{duration: 1}}
         onMouseEnter={disableScroll}
-        className="h-full gallery-container"
+        className="h-full gallery-container -ml-6"
         
       >
           <ScrollMenu onWheel={onWheel}    RightArrow={RightArrow} transitionBehavior="smooth" transitionDuration={isMobileScreen ? 500 : 4000}>

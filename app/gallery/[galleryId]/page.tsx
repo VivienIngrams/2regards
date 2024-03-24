@@ -102,7 +102,7 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
                 className={`relative ${image.size} w-[70vw] xs:w-[75vw] sm:w-[60vw] `}
               >
                 <Image
-                  className="object-cover overflow-hidden absolute shadow-md shadow-gray-500 "
+                  className="object-cover overflow-hidden absolute shadow-md shadow-neutral-500 "
                   src={image.url}
                   fill
                   alt={title}
