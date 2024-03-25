@@ -21,10 +21,10 @@ const About = () => {
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="my-[2vh] ml-[25%] xs:ml-[45%] lg:mx-auto text-right leading-[1.2em] lg:text-left lg:max-w-[30vw]"
+            className="my-[2vh] ml-[25%] xs:ml-[45%] lg:mx-auto text-right  lg:text-left lg:max-w-[30vw]"
           >
             <p>
-              <span className="text-3xl leading-none lg:leading-[22px]">D</span>edicated to
+              <span className="text-3xl  lg:leading-[22px]">D</span>edicated to
               creation and visual arts, 2regards Atelier was founded in Porto by
               the photographer Mathilde Cudeville and videographer Paulo Bastos.
               With a focus on advertising, they transform products into
@@ -34,36 +34,36 @@ const About = () => {
           </motion.div>
 
           {/* Title desktop */}
-          <div className="hidden lg:flex justify-center items-center m-4 ">
+          {/* <div className="hidden lg:flex justify-center items-center m-4 "> */}
             
             {/* <Image
               src="/2regards-black.png"
               alt="2regards"
               width={300}
               height={200} /> */}
-          </div>
+          {/* </div> */}
 
           {/* Title mobile */}
         </div>
-        <div className="lg:hidden flex justify-center  m-4">
+        {/* <div className="lg:hidden flex justify-center  m-4"> */}
         {/* <Image
               src="/2regards-black.png"
               alt="2regards"
               width={200}
               height={100} /> */}
-        </div>
+        {/* </div> */}
         <div className="flex flex-col justify-center items-center">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="mt-[2vh] mr-[25%] xs:mr-[45%] lg:m-auto leading-[1.2em] text-left lg:max-w-[30vw]"
+            className="mt-[2vh] mr-[25%] xs:mr-[45%] lg:m-auto  text-left lg:max-w-[30vw]"
           >
             <p>
-              <span className="text-3xl tracking-tighter leading-none lg:leading-[22px]">
+              <span className="text-3xl tracking-tighter lg:leading-[22px]">
                 T
               </span>
-              <span className="tracking-tighter leading-none">h</span>e Atelier features an
+              <span className="tracking-tighter ">h</span>e Atelier features an
               art gallery welcoming local and international artists throughout
               the year. The space includes a commercial photography studio, an
               analog laboratory and post-production offices, where training
@@ -125,7 +125,7 @@ const About = () => {
             liberated dual approach, using otherness as a vehicle, without
             artifice or mask.{" "}
           </p>
-          <p> MICHEL LE ROUX, Poet and friend</p>
+         
         </div>
         {/* Paulo */}
         <div className="py-10 sm:mr-6 lg:ml-12 lg:mr-10">
