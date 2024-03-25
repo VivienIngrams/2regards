@@ -24,7 +24,7 @@ const About = () => {
             className="my-[2vh] ml-[25%] xs:ml-[45%] lg:mx-auto text-right  lg:text-left lg:max-w-[30vw]"
           >
             <p>
-              <span className="text-3xl  lg:leading-[22px]">D</span>edicated to
+              <span className="text-3xl leading-none lg:leading-[22px]">D</span>edicated to
               creation and visual arts, 2regards Atelier was founded in Porto by
               the photographer Mathilde Cudeville and videographer Paulo Bastos.
               With a focus on advertising, they transform products into
@@ -60,10 +60,10 @@ const About = () => {
             className="mt-[2vh] mr-[25%] xs:mr-[45%] lg:m-auto  text-left lg:max-w-[30vw]"
           >
             <p>
-              <span className="text-3xl tracking-tighter lg:leading-[22px]">
+              <span className="text-3xl tracking-tighter leading-none lg:leading-[22px]">
                 T
               </span>
-              <span className="tracking-tighter ">h</span>e Atelier features an
+              <span className="tracking-tighter leading-none">h</span>e Atelier features an
               art gallery welcoming local and international artists throughout
               the year. The space includes a commercial photography studio, an
               analog laboratory and post-production offices, where training
