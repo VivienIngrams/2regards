@@ -18,7 +18,7 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ finishLoading }) => {
     setTimeout(() => {
       clearInterval(revealInterval);
       finishLoading();
-    }, 3000); // Finish loading after 3 seconds
+    }, 2700); // Finish loading after 3 seconds
 
     return () => clearInterval(revealInterval);
   }, [finishLoading]);
