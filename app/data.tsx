@@ -1,5 +1,6 @@
 type ProductDataType = {
   title: string;
+  subtitle?: string;
   id: string;
   url: string;
   videoLink?: string;
@@ -31,6 +32,7 @@ type GalleryDataType = {
 export const productData: ProductDataType[] = [
   {
     title: "Product",
+   
     id: "product",
     url: "/product/product",
     images: {
@@ -65,7 +67,8 @@ export const productData: ProductDataType[] = [
     },
   },
   {
-    title: "Fluent Feldenkrais Method",
+    title: "Fluent ",
+    subtitle:"Feldenkrais Method",
     id: "fluent",
     url: "/product/fluent",
         images: {
@@ -134,7 +137,8 @@ export const productData: ProductDataType[] = [
     },
   },
   {
-    title: "CIF",
+    title: "C I F",
+    subtitle:"Companhia Industrial de Fundição",
     id: "cif",
     url: "/product/cif",
     images: {
@@ -170,6 +174,7 @@ export const productData: ProductDataType[] = [
   
   {
     title: "Meet",
+    subtitle:"Office furniture",
     id: "meet",
     url: "/product/meet",
     videoLink: "https://www.youtube.com/watch?v=--CHqr5M0o4",
@@ -205,6 +210,7 @@ export const productData: ProductDataType[] = [
 
   {
     title: "Zoo",
+    subtitle: "Santo Inácio",
     id: "zoo",
     url: "/product/zoo",
     images: {
@@ -244,6 +250,7 @@ export const productData: ProductDataType[] = [
 
   {
     title: "PAPERFLOW",
+    subtitle: "Furniture factory",
     id: "paperflow",
     url: "/product/paperflow",
     videoLink: "https://www.youtube.com/watch?v=572uLi_rnn4",
@@ -278,70 +285,38 @@ export const productData: ProductDataType[] = [
       },
     },
   },
-  // {
-  //   title: "White",
-  //   id: "white",
-  //   url: "/product/white",
-  //   images: {
-  //     image1: {
-  //       url: "/images/products/White/white (1).jpg",
-  //       width: "w-[130vw] xs:[90vw] md:w-[33vw]",
-  //       position: " justify-start md:items-center ",
-  //       size: "mt-[5vh] h-[23vh] xs:h-[30vh] sm:h-[35vh] md:w-[38vw] md:h-[30vh] 2xl:w-[25vw] 2xl:h-[40vh] md:-mr-[6vw]",
-  //     },
-  //     image2: {
-  //       url: "/images/products/White/white (2).jpg",
-  //       position: "justify-end md:items-start md:mr-[4vw]",
-  //       size: "max-w-[50vw] h-[30vh] xs:h-[40vh] sm:h-[50vh] md:w-[15vw] md:h-[28vh] 2xl:w-[15vw]  md:-ml-[2vw]",
-  //     },
-  //     image3: {
-  //       url: "/images/products/White/white (3).jpg",
-  //       position: " justify-start md:items-end",
-  //       size: "max-w-[50vw] h-[30vh] xs:h-[40vh]  md:w-[15vw] md:h-[40vh] 2xl:w-[15vw] md:-ml-[8vw] md:mr-[8vw] md:mb-2",
-  //     },
-  //     image4: {
-  //       url: "/images/products/White/white (4).jpg",
-  //       position: "justify-end md:items-center ",
-  //       size: "h-[30vh] xs:w-[75vw] xs:h-[40vh] md:w-[60vw] md:h-[50vh] 2xl:w-[35vw] 2xl:h-[55vh] md:-ml-[15vw] md:-mr-[2vw] xl:-mr-[2vw]",
-  //     },
-  //     image5: {
-  //       url: "/images/products/White/white (5).jpg",
-  //       position: "mb-12 md:mt-10 justify-start md:items-start md:justify-end ",
-  //       size: "h-[25vh] xs:h-[30vh] md:w-[28vw] md:h-[30vh] xl:w-[25vw]  mb-12 ",
-  //     },
-  //   },
-  // },
   {
-    title: "Plaid",
-    id: "plaid",
-    url: "/product/plaid",
+    title: "Fabrics",
+    subtitle: "La Môme Loja",
+    id: "Fabrics",
+    url: "/product/Fabrics",
     images: {
       image1: {
-        url: "/images/products/Plaid/plaid (1).jpg",
+        url: "/images/products/Fabrics/fabrics (1).jpg",
         position: " justify-start md:items-start md:-mr-[6vw]",
         size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] 2xl:w-[20vw] 2xl:h-[60vh]",
         width: "w-[70vw] xs:w-[55vw] md:w-[16vw]",
       },
       image2: {
-        url: "/images/products/Plaid/plaid (2).jpg",
+        url: "/images/products/Fabrics/fabrics (2).jpg",
         position: "justify-end md:items-end md:mb-2 md:-ml-[2vw]",
         size: "max-w-[50vw] h-[30vh] xs:h-[50vh] sm:h-[50vh] md:w-[15vw] md:h-[40vh] 2xl:w-[15vw]",
       },
       image3: {
-        url: "/images/products/Plaid/plaid (7).jpg",
+        url: "/images/products/Fabrics/fabrics (4).jpg",
         position:
-          " justify-start md:items-center md:-ml-[4vw] md:-mr-[8vw] ",
+          " justify-start md:items-center md:-ml-[4vw] md:-mr-[8vw] md:mt-[6vh] ",
         size: "max-w-[50vw] h-[30vh] xs:h-[40vh]  md:w-[35vw] md:h-[67vh] 2xl:w-[25vw]",
         center: "object-top",
       },
       image4: {
-        url: "/images/products/Plaid/plaid (6).jpg",
+        url: "/images/products/Fabrics/fabrics (5).jpg",
         position:
           "justify-end md:items-end md:-ml-[6vw] md:mb-2 md:-mr-[2vw] xl:-mr-[2vw]",
         size: "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[30vw] md:h-[35vh] 2xl:w-[15vw] 2xl:h-[45vh]",
       },
       image5: {
-        url: "/images/products/Plaid/plaid (3).jpg",
+        url: "/images/products/Fabrics/fabrics (3).jpg",
         position: "mb-12 md:mt-10 justify-start md:items-start md:justify-end",
         size: "h-[45vh] xs:h-[55vh] md:w-[18vw] md:h-[50vh] xl:w-[25vw]",
       },
@@ -385,6 +360,7 @@ export const productData: ProductDataType[] = [
   },
   {
     title: "Saint Pierre et Miquelon",
+    subtitle:"Photo documentary",
     id: "miquelon",
     url: "/product/miquelon",
     images: {
@@ -392,12 +368,12 @@ export const productData: ProductDataType[] = [
         url: "/images/products/Miquelon/miquelon (2).jpg",
         width: "w-[150vw] xs:[100vw] md:w-[37vw]",
         position: "justify-start md:items-center",
-        size: "mt-[2vh] mt-[5vh] h-[25vh] xs:h-[28vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] xl:w-[22vw] xl:h-[30vh] md:-mr-[6vw]",
+        size: "mt-[12vh] mt-[5vh] h-[25vh] xs:h-[28vh] sm:h-[70vh] md:w-[20vw] md:h-[50vh] xl:w-[22vw] xl:h-[30vh] md:-mr-[6vw]",
       },
       image2: {
         url: "/images/products/Miquelon/miquelon (3).jpg",
         position: "justify-end md:items-start md:-ml-[4vw] ",
-        size: "mt-[5vh] h-[25vh] xs:h-[28vh] sm:h-[50vh] md:w-[15vw] md:h-[30vh] xl:w-[35vw] ",
+        size: "mt-[8vh] h-[25vh] xs:h-[28vh] sm:h-[50vh] md:w-[15vw] md:h-[30vh] xl:w-[35vw] ",
       },
       image3: {
         url: "/images/products/Miquelon/miquelon (1).jpg",
@@ -408,7 +384,7 @@ export const productData: ProductDataType[] = [
       image4: {
         url: "/images/products/Miquelon/miquelon (5).jpg",
         position: "justify-end md:items-center md:-ml-[12vw] md:-mr-[3vw] ",
-        size: "mt-[5vh] h-[25vh] xs:h-[28vh] md:w-[65vw] md:h-[42vh] xl:w-[40vw] xl:h-[45vh] ",
+        size: "mt-[8vh] h-[25vh] xs:h-[28vh] md:w-[65vw] md:h-[42vh] xl:w-[40vw] xl:h-[45vh] ",
       },
       image5: {
         url: "/images/products/Miquelon/miquelon (4).jpg",
@@ -421,6 +397,7 @@ export const productData: ProductDataType[] = [
 
   {
     title: "Vawo",
+    subtitle: "Urban electric bike",
     id: "vawo",
     url: "/product/vawo",
     videoLink: "https://www.youtube.com/watch?v=-lue-ELmY2U",
@@ -455,41 +432,9 @@ export const productData: ProductDataType[] = [
       },
     },
   },
-  // {
-  //   title: "Design",
-  //   id: "design",
-  //   url: "/product/design",
-  //   images: {
-  //     image1: {
-  //       url: "/images/products/Design/design (7).png",
-  //       width: "w-[120vw] xs:[100vw] md:w-[30vw]",
-  //       position: " justify-start md:items-center ",
-  //       size: "mt-[5vh] h-[45vh] xs:h-[55vh] sm:h-[70vh] md:w-[20vw] md:h-[45vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-mr-[6vw]",
-  //     },
-  //     image2: {
-  //       url: "/images/products/Design/design (5).png",
-  //       position: "justify-end md:items-start md:mr-[4vw]",
-  //       size: "max-w-[50vw] h-[30vh] xs:h-[40vh] sm:h-[50vh] md:w-[15vw] md:h-[45h] 2xl:w-[15vw]  md:-ml-[2vw]",
-  //     },
-  //     image3: {
-  //       url: "/images/products/Design/design (2).jpg",
-  //       position: " justify-start md:items-end",
-  //       size: "h-[25vh] xs:h-[30vh] md:w-[28vw] md:h-[40vh] xl:w-[27vw] md:-ml-[12vw]  md:mb-2",
-  //     },
-  //     image4: {
-  //       url: "/images/products/Design/design (1).jpg",
-  //       position: "justify-end md:items-center ",
-  //       size: "h-[25vh] xs:w-[75vw] xs:h-[30vh] md:w-[65vw] md:h-[45vh] 2xl:w-[20vw] 2xl:h-[60vh] md:-ml-[35vw] md:-mr-[2vw] xl:-mr-[0vw]",
-  //     },
-  //     image5: {
-  //       url: "/images/products/Design/design (3).jpg",
-  //       position: "mb-12 md:mt-10 justify-start md:items-start md:justify-end ",
-  //       size: "h-[25vh] xs:h-[35vh] md:w-[25vw] md:h-[55vh] md:-ml-[6vw] xl:w-[20vw] mb-12 ",
-  //     },
-  //   },
-  // },
-  {
+   {
     title: "Hiima",
+    subtitle:"Paris",
     id: "hiima",
     url: "/product/hiima",
     images: {
