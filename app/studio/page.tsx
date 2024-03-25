@@ -7,10 +7,10 @@ import Link from "next/link";
 
 const Studio = () => {
   return (
-    <div className=" lg:mr-12 lg:max-h-[92vh]  text-neutral-500 text-sm leading-tight text-justify lg:text-left">
-      {/* Border right */}
-      <div className="w-4 lg:w-6 z-50 fixed h-screen right-0 top-0">
-        <div className="right-0 top-4 lg:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-200" />
+    <div className="relative mr-8 md:mr-12 lg:mr-16 text-neutral-500 text-base md:text-xl h-full">
+      {/* Right border */}
+      <div className="w-4 md:w-6 z-50 fixed h-screen right-0 top-0">
+        <div className="right-0 top-4 md:top-6 relative min-h-screen border-l-black border-[1px] bg-stone-200" />
       </div>
 
       {/* Title */}
@@ -22,27 +22,72 @@ const Studio = () => {
         </div>
       </div>
 
-      {/* Grid 3 rows */}
-      <div className="pt-24 pr-9 lg:pr-0 min-h-[92vh] flex flex-col justify-around lg:max-h-[85vh] lg:grid lg:grid-rows-3">
-        {/* 1st section */}
-        <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-          className="flex flex-col lg:grid lg:grid-cols-5 "
+      <div className="lg:grid lg:grid-cols-5 min-h-full lg:max-h-[86vh]">
+        {/* Left/top side of page */}
+        <div
+          className={` col-span-3 w-full min-h-full lg:h-[90vh] lg:grid lg:grid-rows-3 mt-[10vh] mb-4 lg:mt-[2vh]`}
         >
-          <div className=" relative col-span-2 flex flex-col md:flex-row -my-8">
-            <div className="relative flex w-full h-[25vh] xs:h-[30vh] md:full md:h-[35vh] lg:w-[85%]  xl:h-full   3xl:w-[60%] ">
+          {/* 1st section */}
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="flex flex-row justify-start -mt-[3vh] lg:mt-0 "
+          >
+            <div className="relative mt-[10vh] lg:mt-[2vh] h-[25vh] xs:h-[35vh] md:h-[30vh] lg:h-[30vh] lg:w-[30vw] xl:w-[27vw] xl:h-[38vh] w-[70vw] xs:w-[75vw] sm:w-[60vw]">
               <Image
-                className="border-[1px] border-black shadow-md shadow-neutral-500"
+                className="object-cover overflow-hidden absolute border-[1px] border-black shadow-md shadow-neutral-500"
+                
+                src="/images/studio/ProductStudio.jpg"
+                fill
+                alt="Product Studio"
+                sizes="90vw sm:60vw md:30vw"
+              />
+            </div>
+          </motion.div>
+
+          {/* 2nd section */}
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="flex flex-row justify-end lg:items-center lg:justify-end -mt-[3vh] lg:mb-[14vh] "
+          >
+            <div className="relative w-[70vw] xs:w-[75vw] sm:w-[60vw] h-[25vh] xs:h-[35vh] md:w-[50vw] md:h-[48vh] lg:w-[25vw] lg:h-[50vh] xl:w-[25vw] xl:h-[40vh] ">
+
+              <Image
+                className="object-cover overflow-hidden absolute border-[1px] border-black shadow-md shadow-neutral-500"
                 src="/images/studio/AnalogLab.jpg"
                 fill
                 alt="Analog laboratory"
+                sizes="90vw sm:60vw md:30vw"
               />
             </div>
-          </div>
-          
-          <div className="px-24 col-span-3 lg:flex flex-col justify-center items-start">
+          </motion.div>
+
+          {/* 3rd section */}
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="flex flex-row lg:items-end lg:justify-center -mt-4 lg:mb-16"
+          >
+            <div className="relative  w-[70vw] xs:w-[75vw] sm:w-[60vw] h-[22vh] xs:h-[30vh] md:w-[20vw] lg:w-[22vw] xl:h-[32vh]">
+
+              <Image
+                className="object-cover overflow-hidden absolute border-[1px] border-black shadow-md shadow-neutral-500"
+                src="/images/studio/Workshops.jpg"
+                fill
+                alt="Paulo Bastos"
+                sizes="90vw sm:60vw md:30vw"
+              />
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Right/bottom side of page */}
+        <div className="col-span-2 flex flex-col items-end justify-center h-full">
+          <motion.div className="px-24  lg:flex flex-col justify-center items-start">
             <div className="flex justify-center items-center ">
               <h1 className="font-italiana text-xl xs:text-2xl sm:text-3xl text-black leading-1">
                 Analog Laboratory
@@ -63,18 +108,7 @@ const Studio = () => {
                 Teaser
               </Link>
             </div>
-          </div>
-        </motion.div>
-
-        {/*2nd section */}
-        <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-          className="flex flex-col lg:grid lg:grid-cols-5 "
-        >
-          
-
+          </motion.div>
           <div className="px-24 col-span-3 lg:flex flex-col justify-center items-start">
             <div className="flex justify-center items-center ">
               <h1 className="font-italiana text-xl xs:text-2xl sm:text-3xl text-black leading-1">
@@ -90,37 +124,6 @@ const Studio = () => {
               studio in Porto.
             </p>
           </div>
-          
-          <div className=" relative col-span-2 flex flex-col md:flex-row -my-8">
-            <div className="relative flex w-full h-[25vh] xs:h-[30vh] md:full md:h-[35vh] lg:w-[85%]  xl:h-full   3xl:w-[60%] ">
-              <Image
-                className="border-[1px] border-black shadow-md shadow-neutral-500"
-                src="/images/studio/ProductStudio.jpg"
-                fill
-                alt="Product Studio"
-              />
-            </div>
-          </div>
-        </motion.div>
-
-        {/*3rd section */}
-
-        <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-          className="flex flex-col lg:grid lg:grid-cols-5 "
-        >
-          <div className=" relative col-span-2 flex flex-col md:flex-row -my-8">
-            <div className="relative flex w-full h-[25vh] xs:h-[30vh] md:full md:h-[35vh] lg:w-[85%]  xl:h-full   3xl:w-[60%] ">
-              <Image
-                className="border-[1px] border-black shadow-md shadow-neutral-500"
-                src="/images/studio/Workshops.jpg"
-                fill
-                alt="Paulo Bastos"
-              />
-            </div>
-          </div>
           <div className="px-24 col-span-3 lg:flex flex-col justify-center items-start">
             <div className="flex justify-center items-center ">
               <h1 className="font-italiana text-xl xs:text-2xl sm:text-3xl text-black leading-1">
@@ -132,7 +135,7 @@ const Studio = () => {
               explore or deepen their knowledge in analog photography.
             </p>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
