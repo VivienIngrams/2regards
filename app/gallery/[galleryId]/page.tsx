@@ -26,7 +26,7 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
     currentIndex < galleryData.length - 1 ? currentIndex + 1 : 0;
 
   return (
-    <div className="relative mr-8 md:mr-12 lg:mr-16 text-neutral-500 text-base md:text-xl h-full">
+    <div className="relative mr-8 md:mr-12 lg:mr-16 text-neutral-500 text-sm h-full">
       {/* Nav buttons */}
       <div className="fixed md:hidden h-12 w-full top-4 left-4 z-50 bg-stone-200" />
       <div className="fixed z-50 top-6 left-6 md:left-10 md:top-10  cursor-pointer">
@@ -102,7 +102,7 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
                 className={`relative ${image.size} w-[70vw] xs:w-[75vw] sm:w-[60vw] `}
               >
                 <Image
-                  className="object-cover overflow-hidden absolute shadow-md shadow-neutral-500 "
+                  className="object-cover overflow-hidden absolute border-[1px] border-black  shadow-md shadow-neutral-500 "
                   src={image.url}
                   fill
                   alt={title}

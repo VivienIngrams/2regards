@@ -101,7 +101,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
               <Image
                 className={` ${
                   image.center && image.center
-                } absolute object-cover overflow-hidden shadow-md shadow-neutral-500 `}
+                } absolute object-cover overflow-hidden border-[1px] border-black shadow-md shadow-neutral-500 `}
                 src={image.url}
                 alt={title}
                 fill
