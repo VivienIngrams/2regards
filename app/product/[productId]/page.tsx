@@ -79,9 +79,9 @@ const Product = ({ params }: { params: { productId: string } }) => {
             {productData[currentIndex].title}
           </h1>
         </div>
-        <div className="pt-1 xl:ml-[250px]">
+        <div className="pt-1 lg:ml-[250px]">
 
-          <h2 className="text-xl lg:text-2xl xl:text-3xl leading-[0.8em] font-italiana text-center tracking-tighter">
+          <h2 className="text-xl  xl:text-3xl leading-[0.8em] font-italiana text-center tracking-tighter">
             {productData[currentIndex].subtitle}
           </h2>
           </div>
@@ -92,7 +92,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
         {Object.values(images).map((image, index) => (
           <div
             key={index}
-            className={`flex flex-row ${image.position} -mt-[3vh] md:mt-0 z-400`}
+            className={`flex flex-row ${image.position} -mt-[2vh] md:mt-0 z-400`}
             style={{ zIndex: 10 - index }}
           >
             <div
