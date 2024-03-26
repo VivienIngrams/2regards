@@ -153,11 +153,11 @@ fill                    />
               <div>
                 <p>
                   <a
-                    href="https://www.2regards.com"
+                    href="https://www.2regards.net"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    www.2regards.com
+                    www.2regards.net
                   </a>
                 </p>
               </div>
