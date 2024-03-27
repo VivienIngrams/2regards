@@ -28,7 +28,7 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
   return (
     <div className="relative mr-8 md:mr-12 lg:mr-16 text-neutral-500 text-sm h-full">
       {/* Nav buttons */}
-      <div className="fixed md:hidden h-12 w-full top-4 left-4 z-50 bg-stone-200" />
+      <div className="fixed md:hidden h-12 w-full top-4 left-5 z-50 bg-stone-200" />
       <div className="fixed z-50 top-6 left-6 md:left-10 md:top-10  cursor-pointer">
         <Link
           className="text-center m-2 text-black font-italiana"
