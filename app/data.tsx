@@ -541,7 +541,7 @@ export const productData: ProductDataType[] = [
 
 export const galleryData: GalleryDataType[] = [
   {
-    title: "Encaustic Paintings",
+    title: "Encaustic",
     id: "joao",
     url: "/gallery/joao",
     subtitle: "João Alexandre",
