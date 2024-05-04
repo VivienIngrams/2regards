@@ -541,6 +541,31 @@ export const productData: ProductDataType[] = [
 
 export const galleryData: GalleryDataType[] = [
   {
+    title: "Encaustic Paintings",
+    id: "joao",
+    url: "/gallery/joao",
+    subtitle: "João Alexandre",
+    poster: "/images/gallery/JoaoAlexandre/encaustic (1).jpg",
+    description: "An aesthetic celebration that combines technical skill and artistic expression, abstractionism, and encaustic. João Alexandre (1960, Sever do Vouga) is a visual artist specializing in encaustic painting. He lived in Brazil for 15 years, where he earned a degree in Fine Arts from the São Paulo College of Fine Arts. He has exhibited his work in various Portuguese galleries, as well as in numerous European cities, both individually and collectively. João Alexandre paints encaustic on various supports: wood, paper, and papyrus. According to his friend Adão Cruz, 'his painting appears as if the artist were blowing away the layer of dust that covers it, one does not know if it has been centuries, millennia, or a time outside of time.'",        
+    images: {
+      image1: {
+        url: "/images/gallery/JoaoAlexandre/encaustic (3).jpg",
+        position: "justify-start",
+        size: "mt-[10vh] lg:mt-[2vh] h-[25vh] xs:h-[35vh] md:h-[30vh] lg:w-[30vw] xl:h-[45vh]",
+      },
+      image2: {
+        url: "/images/gallery/JoaoAlexandre/encaustic (2).jpg",
+        position: "justify-end lg:items-center lg:justify-end ",
+        size: "h-[45vh] xs:h-[60vh] md:w-[50vw] md:h-[40vh] lg:w-[28vw] lg:h-[50vh] xl:w-[20vw] xl:h-[60vh] ",
+      },
+      image3: {
+        url: "/images/gallery/JoaoAlexandre/encaustic (4).jpg",
+        position: "lg:items-end lg:justify-center md:-mt-4 md:mr-10 lg:mb-16 ",
+        size: "h-[22vh] xs:h-[30vh] md:w-[20vw] xl:h-[30vh]",
+      },
+    },
+  },
+  {
     title: "Culminations",
     id: "culminations",
     url: "/gallery/culminations",
