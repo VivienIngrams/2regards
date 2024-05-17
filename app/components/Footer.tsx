@@ -15,6 +15,11 @@ const menuItems = [
 
 const Footer = () => {
   const pathname = usePathname();
+  console.log(pathname);
+ 
+  if (pathname.startsWith('/sanity')) {
+    return null; // Return null to hide the footer when the pathname starts with /sanity
+  }
 
   return (
     <footer className="fixed left-0 bottom-0 w-screen h-4 md:h-6 bg-stone-200 z-30">
