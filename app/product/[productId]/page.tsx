@@ -4,6 +4,21 @@ import Link from "next/link";
 import ArrowBack from "/public/ArrowBack.svg";
 import ArrowForward from "/public/ArrowForward.svg";
 import { productData } from "../../data";
+// import { client } from "../../../sanity/lib/client";
+
+// type ProductDataType = {
+//   title: string;
+//   subtitle?: string;
+//   slug: string;
+//   videoLink?: string;
+//   images: {
+//     image1: { url: string;  position: string; size: string; mainImage: boolean};
+//     image2: { url: string; position: string; size: string; mainImage: boolean};
+//     image3: { url: string; position: string; size: string; mainImage: boolean};
+//     image4: { url: string; position: string; size: string;  mainImage: boolean};
+//     image5: { url: string; position: string; size: string; mainImage: boolean};
+//   };
+// };
 
 const Product = ({ params }: { params: { productId: string } }) => {
   const currentIndex = productData.findIndex(
