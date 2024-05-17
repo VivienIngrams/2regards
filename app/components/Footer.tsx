@@ -15,7 +15,7 @@ const menuItems = [
 
 const Footer = () => {
   const pathname = usePathname();
-  console.log(pathname);
+  // console.log(pathname);
  
   if (pathname.startsWith('/sanity')) {
     return null; // Return null to hide the footer when the pathname starts with /sanity

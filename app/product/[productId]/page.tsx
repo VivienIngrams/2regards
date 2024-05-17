@@ -3,26 +3,54 @@ import Image from "next/image";
 import Link from "next/link";
 import ArrowBack from "/public/ArrowBack.svg";
 import ArrowForward from "/public/ArrowForward.svg";
-import { productData } from "../../data";
-// import { client } from "../../../sanity/lib/client";
+// import { productData } from "../../data";
+import { client } from "../../../sanity/lib/client";
+import { Slug } from "sanity";
+import { urlForImage } from "../../../sanity/lib/image";
 
-// type ProductDataType = {
-//   title: string;
-//   subtitle?: string;
-//   slug: string;
-//   videoLink?: string;
-//   images: {
-//     image1: { url: string;  position: string; size: string; mainImage: boolean};
-//     image2: { url: string; position: string; size: string; mainImage: boolean};
-//     image3: { url: string; position: string; size: string; mainImage: boolean};
-//     image4: { url: string; position: string; size: string;  mainImage: boolean};
-//     image5: { url: string; position: string; size: string; mainImage: boolean};
-//   };
-// };
+type ImageType = {
+  imageUrl: string;
+  position: string;
+  size: string;
+  mainImage: boolean;
+};
 
-const Product = ({ params }: { params: { productId: string } }) => {
-  const currentIndex = productData.findIndex(
-    (product) => product.id === params.productId
+type ProductDataType = {
+  title: string;
+  subtitle?: string;
+  slug: Slug;
+  videoLink?: string;
+  images: 
+     ImageType[];
+};
+
+type ProductProps = {
+  params: {
+    productId: string;
+  };
+};
+
+const Product: React.FC<ProductProps> = async ({ params }) => {
+  
+  const productData = await client.fetch(`
+  *[_type == "product"] {
+    title,
+    subtitle,
+    slug,
+    videoLink,
+    "images": images[]{
+      "imageUrl": image.asset->url,
+      position,
+      size,
+      mainImage
+    }
+  }
+`, { slug: params.productId });
+
+console.log(productData[0])
+// console.log(params.productId)
+  const currentIndex: number = productData.findIndex(
+    (product: ProductDataType) => product.slug.current === params.productId
   );
 
   // If the product is not found, you can handle it accordingly
@@ -31,7 +59,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
   }
 
   const { title, videoLink, images } = productData[currentIndex];
-
+console.log(images[0])
   // Calculate indices for previous and next products
   const prevIndex =
     currentIndex > 0 ? currentIndex - 1 : productData.length - 1;
@@ -51,7 +79,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
         <div className="flex justify-between">
           <div className="flex cursor-pointer">
             <Link
-              href={`/product/${productData[prevIndex].id}`}
+              href={`/product/${productData[prevIndex].slug.current}`}
               className="p-1"
             >
               <Image
@@ -68,7 +96,7 @@ const Product = ({ params }: { params: { productId: string } }) => {
           </div>
           <div className="flex items-end cursor-pointer">
             <Link
-              href={`/product/${productData[nextIndex].id}`}
+              href={`/product/${productData[nextIndex].slug.current}`}
               className="p-1"
             >
               <Image
@@ -107,17 +135,17 @@ const Product = ({ params }: { params: { productId: string } }) => {
         {Object.values(images).map((image, index) => (
           <div
             key={index}
-            className={`flex flex-row ${image.position} -mt-[2vh] md:mt-0 z-400`}
+            className={`flex flex-row ${(image as ImageType).position} -mt-[2vh] md:mt-0 z-400`}
             style={{ zIndex: 10 - index }}
           >
             <div
-              className={`relative ${image.size} w-[70vw] xs:w-[75vw] sm:w-[60vw] `}
+              className={`relative ${(image as ImageType).size} w-[70vw] xs:w-[75vw] sm:w-[60vw] `}
             >
               <Image
-                className={` ${
-                  image.center && image.center
-                } absolute object-cover overflow-hidden border-[1px] border-black shadow-md shadow-neutral-500 `}
-                src={image.url}
+                className= 
+                // ${(image as ImageType).center && (image as ImageType).center}
+                 "absolute object-cover overflow-hidden border-[1px] border-black shadow-md shadow-neutral-500"
+                src={urlForImage((image as ImageType).imageUrl)}
                 alt={title}
                 fill
                 sizes="90vw sm:60vw md:30vw"
