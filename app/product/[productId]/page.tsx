@@ -9,12 +9,12 @@ import { Slug } from "sanity";
 import { urlForImage } from "../../../sanity/lib/image";
 
 type ImageType = {
-  imageUrl: string;
+  imageUrl: URL;
   position: string;
   size: string;
   mainImage: boolean;
 };
-
+// need to adjust hotspot, centering on certain images!
 type ProductDataType = {
   title: string;
   subtitle?: string;
@@ -47,8 +47,7 @@ const Product: React.FC<ProductProps> = async ({ params }) => {
   }
 `, { slug: params.productId });
 
-console.log(productData[0])
-// console.log(params.productId)
+
   const currentIndex: number = productData.findIndex(
     (product: ProductDataType) => product.slug.current === params.productId
   );
@@ -145,7 +144,7 @@ console.log(images[0])
                 className= 
                 // ${(image as ImageType).center && (image as ImageType).center}
                  "absolute object-cover overflow-hidden border-[1px] border-black shadow-md shadow-neutral-500"
-                src={urlForImage((image as ImageType).imageUrl)}
+                src={urlForImage((image as ImageType).imageUrl as any)}
                 alt={title}
                 fill
                 sizes="90vw sm:60vw md:30vw"
