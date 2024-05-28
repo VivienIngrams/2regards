@@ -7,15 +7,13 @@ export default function ProductCards({
   img,
   title,
   id,
-  width,
-  
+    layout,
   url,
 }: {
   img: string;
   title: string;
   id: string;
-  width?: string;
-
+ layout: string;
   url: string;
 }) {
   const visibility = React.useContext(VisibilityContext);
@@ -23,7 +21,7 @@ export default function ProductCards({
   const visible = visibility.isItemVisible(id);
 
   return (
-    <div className={`relative grid grid-cols-1  ${width} h-full select-none`} tabIndex={0}>
+    <div className={`relative grid grid-cols-1  ${layout} h-full select-none`} tabIndex={0}>
       <div
         key={id}
         className="relative shadow-md m-2 shadow-neutral-500 h-[90%] border-[1px] border-black group hover:bg-gradient-to-r from-[black] to-neutral-600"

@@ -12,7 +12,8 @@ const HomeServer = async () => {
         "imageUrl": image.asset->url,
         position,
         size,
-        mainImage
+        main,
+        layout
       }
     }
   `);
@@ -21,3 +22,4 @@ const HomeServer = async () => {
 };
 
 export default HomeServer;
+

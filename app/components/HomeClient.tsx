@@ -17,7 +17,13 @@ interface Product {
   subtitle: string;
   slug: string;
   videoLink: string;
-  images: { imageUrl: string; position: string; size: string; mainImage: boolean }[];
+  images: {
+    imageUrl: string;
+    position: string;
+    size: string;
+    main: boolean; // Match the field name from the schema
+    layout: string;
+  }[];
 }
 
 interface HomeClientProps {
@@ -30,8 +36,7 @@ const HomeClient: React.FC<HomeClientProps> = ({ productData }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      const newIsMobileScreen = window.innerWidth <= 768;
-      setIsMobileScreen(newIsMobileScreen);
+      setIsMobileScreen(window.innerWidth <= 768);
     };
 
     // Set initial value
@@ -51,77 +56,76 @@ const HomeClient: React.FC<HomeClientProps> = ({ productData }) => {
   const firstHalf = productData.slice(0, halfLength);
   const secondHalf = productData.slice(halfLength);
 
+  const onWheel = (apiObj: scrollVisibilityApiType, ev: React.WheelEvent): void => {
+    const isTouchpad = Math.abs(ev.deltaX) !== 0 || Math.abs(ev.deltaY) < 15;
+
+    if (isTouchpad) {
+      ev.stopPropagation();
+      return;
+    }
+
+    if (ev.deltaY < 0) {
+      apiObj.scrollNext();
+    } else if (ev.deltaY > 0) {
+      apiObj.scrollPrev();
+    }
+  };
+
   return (
-    <>
-      <motion.div
-        initial={{ opacity: 0, x: 200 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
-        onMouseEnter={disableScroll}
-        className="h-full products-container"
+    <motion.div
+      initial={{ opacity: 0, x: 200 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1 }}
+      onMouseEnter={disableScroll}
+      onMouseLeave={enableScroll}
+      className="h-full products-container"
+    >
+      <ScrollMenu
+        onWheel={onWheel}
+        RightArrow={RightArrow}
+        transitionBehavior="smooth"
+        transitionDuration={isMobileScreen ? 500 : 5000}
       >
-        <ScrollMenu
-          onWheel={onWheel}
-          RightArrow={RightArrow}
-          transitionBehavior="smooth"
-          transitionDuration={isMobileScreen ? 500 : 5000}
-        >
-          {firstHalf.map(({ title, images }, index) => {
-            let mainImage = images.find((image) => image.mainImage);
-            if (!mainImage) {
-                mainImage = images[0];}
-            return (
-              <ProductCards
-                img={mainImage.imageUrl}
-                title={title}
-                id={index.toString()}
-                key={index}
-                width={mainImage?.size}
-                url={mainImage?.imageUrl}
-              />
-            );
-          })}
-        </ScrollMenu>
-        <ScrollMenu
-          onWheel={onWheel}
-          RightArrow={RightArrow}
-          transitionBehavior="smooth"
-          transitionDuration={isMobileScreen ? 500 : 5000}
-        >
-          {secondHalf.map(({ title, images }, index) => {
-            let mainImage = images.find((image) => image.mainImage);
-            if (!mainImage) {
-                mainImage = images[0];}
-            return (
-              <ProductCards
-                img={mainImage?.imageUrl}
-                title={title}
-                id={(halfLength + index).toString()}
-                key={halfLength + index}
-                width={mainImage?.size}
-                url={mainImage?.imageUrl}
-              />
-            );
-          })}
-        </ScrollMenu>
-      </motion.div>
-    </>
+        {firstHalf.map(({ title, images }, index) => {
+          let mainImage = images.find((image) => image.main);
+          if (!mainImage) mainImage = images[0];
+
+          return (
+            <ProductCards
+              img={mainImage.imageUrl}
+              title={title}
+              id={index.toString()}
+              key={index}
+              layout={mainImage.layout}
+              url={mainImage.imageUrl}
+            />
+          );
+        })}
+      </ScrollMenu>
+      <ScrollMenu
+        onWheel={onWheel}
+        RightArrow={RightArrow}
+        transitionBehavior="smooth"
+        transitionDuration={isMobileScreen ? 500 : 5000}
+      >
+        {secondHalf.map(({ title, images }, index) => {
+          let mainImage = images.find((image) => image.main);
+          if (!mainImage) mainImage = images[0];
+
+          return (
+            <ProductCards
+              img={mainImage.imageUrl}
+              title={title}
+              id={(halfLength + index).toString()}
+              key={halfLength + index}
+              layout={mainImage.layout}
+              url={mainImage.imageUrl}
+            />
+          );
+        })}
+      </ScrollMenu>
+    </motion.div>
   );
 };
 
 export default HomeClient;
-
-function onWheel(apiObj: scrollVisibilityApiType, ev: React.WheelEvent): void {
-  const isThouchpad = Math.abs(ev.deltaX) !== 0 || Math.abs(ev.deltaY) < 15;
-
-  if (isThouchpad) {
-    ev.stopPropagation();
-    return;
-  }
-
-  if (ev.deltaY < 0) {
-    apiObj.scrollNext();
-  } else if (ev.deltaY > 0) {
-    apiObj.scrollPrev();
-  }
-}

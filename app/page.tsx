@@ -1,3 +1,14 @@
+import HomeServer from "../app/components/HomeServer";
+import HomeClient from "../app/components/HomeClient";
+
+const Home: React.FC = async () => {
+  const productData = await HomeServer();
+
+  return <HomeClient productData={productData} />;
+};
+
+export default Home;
+
 // "use client";
 
 // import React, { useEffect, useState } from "react";
@@ -124,14 +135,5 @@
 // }
 
 // Home.tsx
-import HomeServer from "../app/components/HomeServer";
-import HomeClient from "../app/components/HomeClient";
 
-const Home: React.FC = async () => {
-  const productData = await HomeServer();
-
-  return <HomeClient productData={productData} />;
-};
-
-export default Home;
 

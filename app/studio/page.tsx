@@ -88,7 +88,7 @@ const Studio = () => {
           <h1 className="font-italiana pt-6 text-xl lg:text-3xl xl:text-4xl text-black leading-1 tracking-tight">
             Analog Laboratory
           </h1>
-          <p className="text-left lg:text-left text-sm mt-2 mr-10 md:leading-none">
+          <p className="text-left lg:text-left text-sm mt-2 mr-[30%] md:leading-none">
             2regards Atelier features an analog photography lab for development
             and printing. It is also possible to rent this space by the hour or
             day.
@@ -97,7 +97,7 @@ const Studio = () => {
           <h1 className="text-right font-italiana pt-6 text-xl lg:text-3xl xl:text-4xl text-black leading-1 tracking-tight">
             Product Studios
           </h1>
-          <p className="text-right lg:text-right text-sm mt-2 ml-10 md:leading-none">
+          <p className="text-right lg:text-right text-sm mt-2 ml-[30%] md:leading-none">
             2regards atelier offers professional quality photographic services
             to meet all your needs. We capture your studio shots for e-commerce,
             ranging from simple cutout packshots on a white background to
@@ -108,7 +108,7 @@ const Studio = () => {
           <h1 className="font-italiana pt-6 text-xl lg:text-3xl xl:text-4xl text-black leading-1 tracking-tight">
             Workshops
           </h1>
-          <p className="text-left lg:text-left text-sm mt-2 mr-10 md:leading-none">
+          <p className="text-left lg:text-left text-sm mt-2 mr-[30%] md:leading-none">
             Throughout the year, we organize workshops for participants to
             explore or deepen their knowledge in analog photography.
           </p></div>
