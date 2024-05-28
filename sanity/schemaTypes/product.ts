@@ -46,7 +46,7 @@ export default defineType({
             {
               name: "layout",
               type: "string",
-              title: "Layout",
+              title: "Layout if main image (for Products Home page)",
               options: {
                 list: [
                   { title: "Slim", value: "w-[50vw] xs:w-[40vw] md:w-[11vw]" },

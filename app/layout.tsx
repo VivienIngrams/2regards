@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${italiana.variable} ${roboto.variable} font-roboto bg-stone-200 h-screen`}
+        className={`${italiana.variable} ${roboto.variable} font-italiana bg-stone-200 h-screen`}
       >
         {isLoading && isHome ? (
           <SplashScreen finishLoading={() => setIsLoading(false)} />

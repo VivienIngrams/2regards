@@ -9,13 +9,14 @@ import "react-horizontal-scrolling-menu/dist/styles.css";
 import ProductCards from "./ProductCards";
 import usePreventBodyScroll from "./usePreventBodyScroll";
 import { RightArrow } from "./Arrows";
+import { Slug } from "sanity";
 
 type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
 interface Product {
   title: string;
   subtitle: string;
-  slug: string;
+  slug: Slug;
   videoLink: string;
   images: {
     imageUrl: string;
@@ -86,7 +87,7 @@ const HomeClient: React.FC<HomeClientProps> = ({ productData }) => {
         transitionBehavior="smooth"
         transitionDuration={isMobileScreen ? 500 : 5000}
       >
-        {firstHalf.map(({ title, images }, index) => {
+        {firstHalf.map(({ title, images, slug }, index) => {
           let mainImage = images.find((image) => image.main);
           if (!mainImage) mainImage = images[0];
 
@@ -97,7 +98,7 @@ const HomeClient: React.FC<HomeClientProps> = ({ productData }) => {
               id={index.toString()}
               key={index}
               layout={mainImage.layout}
-              url={mainImage.imageUrl}
+              slug={slug.current}
             />
           );
         })}
@@ -108,7 +109,7 @@ const HomeClient: React.FC<HomeClientProps> = ({ productData }) => {
         transitionBehavior="smooth"
         transitionDuration={isMobileScreen ? 500 : 5000}
       >
-        {secondHalf.map(({ title, images }, index) => {
+        {secondHalf.map(({ title, images, slug }, index) => {
           let mainImage = images.find((image) => image.main);
           if (!mainImage) mainImage = images[0];
 
@@ -119,7 +120,7 @@ const HomeClient: React.FC<HomeClientProps> = ({ productData }) => {
               id={(halfLength + index).toString()}
               key={halfLength + index}
               layout={mainImage.layout}
-              url={mainImage.imageUrl}
+              slug={slug.current}
             />
           );
         })}
