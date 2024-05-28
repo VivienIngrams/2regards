@@ -23,3 +23,26 @@ const HomeServer = async () => {
 
 export default HomeServer;
 
+export const GalleryData = async () => {
+  const galleryData = await client.fetch(`
+    *[_type == "exhibition"] {
+      title,
+      subtitle,
+      descritpion,
+      "poster": poster.asset->url
+      "slug": slug.current,
+      videoLink,
+      "images": images[]{
+        "imageUrl": image.asset->url,
+        position,
+        size,
+       
+      }
+    }
+  `);
+
+  return galleryData;
+};
+
+
+

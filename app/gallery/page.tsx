@@ -7,29 +7,49 @@ import "react-horizontal-scrolling-menu/dist/styles.css";
 
 import GalleryCards from "../components/GalleryCards";
 import usePreventBodyScroll from "../components/usePreventBodyScroll";
-import { galleryData } from "../data";
 import { RightArrow } from "../components/Arrows";
+import { GalleryData as fetchGalleryData } from "../components/HomeServer";
 
 type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
-function Gallery() {
+interface GalleryDataItem {
+  title: string;
+  subtitle: string;
+  descritpion: string;
+  poster: string;
+  slug: string;
+  videoLink: string;
+  images: {
+    imageUrl: string;
+    position: string;
+    size: string;
+  }[];
+}
+
+const Gallery: React.FC = () => {
   const { disableScroll, enableScroll } = usePreventBodyScroll();
   const [isMobileScreen, setIsMobileScreen] = useState(false);
+  const [galleryData, setGalleryData] = useState<GalleryDataItem[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await fetchGalleryData();
+      setGalleryData(data);
+    };
+
+    fetchData();
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
       const newIsMobileScreen = window.innerWidth <= 768;
       setIsMobileScreen(newIsMobileScreen);
-      // console.log("isMobileScreen", newIsMobileScreen);
     };
 
-    // Set initial value
     handleResize();
 
-    // Attach event listener for window resize
     window.addEventListener("resize", handleResize);
 
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -47,13 +67,13 @@ function Gallery() {
       >
           <ScrollMenu onWheel={onWheel}    RightArrow={RightArrow} transitionBehavior="smooth" transitionDuration={isMobileScreen ? 500 : 4000}>
            
-                {galleryData.map(({ poster, title, id, url }) => (
+                {galleryData.map(({ poster, title, slug, }) => (
                   <GalleryCards
                     img={poster}
                     title={title}
-                    id={id} 
-                    key={id}
-                    url={url}
+                    id={slug}
+                    key={slug}
+                    url={`/gallery/${slug}`}
                   />
                 ))}
              

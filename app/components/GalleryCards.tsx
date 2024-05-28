@@ -6,13 +6,12 @@ export default function GalleryCards({
   img,
   title,
   id,
-  width,
   url,
 }: {
   img: string;
   title: string;
   id: string;
-  width?: number;
+
   url: string;
 }) {
   return (

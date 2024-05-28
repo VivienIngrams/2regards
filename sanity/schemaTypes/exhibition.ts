@@ -1,57 +1,77 @@
-import {defineField, defineType} from 'sanity'
+import { defineField, defineType } from "sanity";
 
 export default defineType({
-  name: 'exhibition',
-  title: 'Gallery exhibition',
-  type: 'document',
+  name: "exhibition",
+  title: "Gallery exhibition",
+  type: "document",
   fields: [
     defineField({
-      name: 'name',
-      title: 'Name',
-      type: 'string',
+      name: "title",
+      title: "Title",
+      type: "string",
     }),
     defineField({
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
+      name: "slug",
+      title: "Slug (click on Generate!)",
+      type: "slug",
       options: {
-        source: 'name',
-        maxLength: 96,
+        source: "title",
+        maxLength: 60,
       },
     }),
     defineField({
-      name: 'image',
-      title: 'Image',
-      type: 'image',
+      name: "subtitle",
+      title: "Subtitle?",
+      type: "string",
+    }),
+    defineField({
+      name: "descritpion",
+      title: "Description",
+      type: "text",
+    }),
+    defineField({
+      name: "poster",
+      title: "Main image (poster) for Gallery page",
+      type: "image",
       options: {
         hotspot: true,
       },
-      fields: [
-        {
-          name: 'alt',
-          type: 'string',
-          title: 'Alternative Text',
-        }
-      ]
     }),
     defineField({
-      name: 'bio',
-      title: 'Bio',
-      type: 'array',
+      name: "images",
+      title: "Images",
+      type: "array",
       of: [
         {
-          title: 'Block',
-          type: 'block',
-          styles: [{title: 'Normal', value: 'normal'}],
-          lists: [],
+          type: "object",
+          fields: [
+            {
+              name: "image",
+              title: "Image",
+              type: "image",
+              options: {
+                hotspot: true,
+              },
+            },
+            {
+              name: "position",
+              type: "string",
+              title: "Position, plus padding and margins",
+            },
+            {
+              name: "size",
+              type: "string",
+              title:
+                "Height(h-) and width(w-) relative to screen height(vh) or screen width(vw)",
+            },
+          ],
         },
       ],
     }),
+    defineField({
+      name: "videoLink",
+      title: "Video Link URL",
+      type: "string",
+    }),
   ],
-  preview: {
-    select: {
-      title: 'name',
-      media: 'image',
-    },
-  },
-})
+});

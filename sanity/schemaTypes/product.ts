@@ -40,8 +40,8 @@ export default defineType({
                 hotspot: true,
               },
             },
-            { name: "position", type: "string", title: "Position" },
-            { name: "size", type: "string", title: "Sizes and adjustments" },
+            { name: "position", type: "string", title: "Position, plus padding and margins" },
+            { name: "size", type: "string", title: "Height(h-) and width(w-) relative to screen height(vh) or screen width(vw)" },
             { name: "main", type: "boolean", title: "Main Image?" }, // Ensure this matches what you expect
             {
               name: "layout",
