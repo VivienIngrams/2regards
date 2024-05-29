@@ -25,10 +25,20 @@ interface GalleryDataItem {
 
     const { title, subtitle, description, videoLink, images, slug } = galleryExpoData;
  
-    const currentIndex = gallerySlugs.indexOf(slug);
-    const prevSlug = gallerySlugs[(currentIndex - 1 + gallerySlugs.length) % gallerySlugs.length];
-    const nextSlug = gallerySlugs[(currentIndex + 1) % gallerySlugs.length];
+    // const currentIndex = gallerySlugs.indexOf(slug);
+    // const prevSlug = gallerySlugs[(currentIndex - 1 + gallerySlugs.length) % gallerySlugs.length];
+    // const nextSlug = gallerySlugs[(currentIndex + 1) % gallerySlugs.length];
+
+    const currentIndex = gallerySlugs.findIndex(
+        (gallerySlug) => gallerySlug === slug
+      );
     
+//  Calculate indices for previous and next gallerys
+      const prevIndex =
+        currentIndex > 0 ? currentIndex - 1 : gallerySlugs.length - 1;
+      const nextIndex =
+        currentIndex < gallerySlugs.length - 1 ? currentIndex + 1 : 0;
+
 return (
     <div className="relative mr-8 md:mr-12 lg:mr-16 text-neutral-500 text-sm h-full">
         {/* Nav buttons */}
@@ -45,7 +55,7 @@ return (
             <div className="flex justify-between">
                 <div className="flex cursor-pointer">
                     <Link
-                        href={`/gallery/${prevSlug}`}
+                        href={`/gallery/${gallerySlugs[prevIndex]}`}
                         className="p-1"
                     >
                         <Image
@@ -62,7 +72,7 @@ return (
                 </div>
                 <div className="flex items-end cursor-pointer">
                     <Link
-                        href={`/gallery/${nextSlug}`}
+                        href={`/gallery/${gallerySlugs[nextIndex]}`}
                         className="p-1"
                     >
               <Image
