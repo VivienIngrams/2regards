@@ -25,20 +25,19 @@ export default HomeServer;
 
 export const GalleryData = async () => {
   const galleryData = await client.fetch(`
-    *[_type == "exhibition"] {
-      title,
-      subtitle,
-      descritpion,
-      "poster": poster.asset->url
-      "slug": slug.current,
-      videoLink,
-      "images": images[]{
-        "imageUrl": image.asset->url,
-        position,
-        size,
-       
-      }
+  *[_type == "exhibition"] {
+    title,
+    subtitle,
+    description, // Corrected typo
+    "poster": poster.asset->url,
+    "slug": slug.current, // Added missing comma
+    videoLink,
+    "images": images[]{
+      "imageUrl": image.asset->url,
+      position,
+      size
     }
+  }
   `);
 
   return galleryData;
