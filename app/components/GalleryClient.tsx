@@ -9,24 +9,17 @@ import GalleryCards from "./GalleryCards";
 import usePreventBodyScroll from "./usePreventBodyScroll";
 import { RightArrow } from "./Arrows";
 
-
 type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
 interface GalleryDataItem {
   title: string;
-  subtitle: string;
-  descritpion: string;
   poster: string;
   slug: string;
-  videoLink: string;
-  images: {
-    imageUrl: string;
-    position: string;
-    size: string;
-  }[];
 }
 
-const GalleryClient: React.FC<{ galleryData: GalleryDataItem[] }> = ({galleryData}) => {
+const GalleryClient: React.FC<{ galleryData: GalleryDataItem[] }> = ({
+  galleryData,
+}) => {
   const { disableScroll, enableScroll } = usePreventBodyScroll();
   const [isMobileScreen, setIsMobileScreen] = useState(false);
 
@@ -47,31 +40,33 @@ const GalleryClient: React.FC<{ galleryData: GalleryDataItem[] }> = ({galleryDat
 
   return (
     <>
-       <motion.div
+      <motion.div
         initial={{ opacity: 0, x: 200 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{duration: 1}}
+        transition={{ duration: 1 }}
         onMouseEnter={disableScroll}
         className="h-full gallery-container -ml-6"
-        
       >
-          <ScrollMenu onWheel={onWheel}    RightArrow={RightArrow} transitionBehavior="smooth" transitionDuration={isMobileScreen ? 500 : 4000}>
-           
-                {galleryData.map(({ poster, title, slug, }) => (
-                  <GalleryCards
-                    img={poster}
-                    title={title}
-                    id={slug}
-                    key={slug}
-                    url={`/gallery/${slug}`}
-                  />
-                ))}
-             
-          </ScrollMenu>
-        </motion.div>
+        <ScrollMenu
+          onWheel={onWheel}
+          RightArrow={RightArrow}
+          transitionBehavior="smooth"
+          transitionDuration={isMobileScreen ? 500 : 4000}
+        >
+          {galleryData.map(({ poster, title, slug }) => (
+            <GalleryCards
+              img={poster}
+              title={title}
+              id={slug}
+              key={slug}
+              url={`/gallery/${slug}`}
+            />
+          ))}
+        </ScrollMenu>
+      </motion.div>
     </>
   );
-}
+};
 export default GalleryClient;
 
 function onWheel(apiObj: scrollVisibilityApiType, ev: React.WheelEvent): void {
