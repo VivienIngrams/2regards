@@ -1,5 +1,4 @@
-
-"use client";
+'use client'
 
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
@@ -9,22 +8,17 @@ import "react-horizontal-scrolling-menu/dist/styles.css";
 import ProductCards from "./ProductCards";
 import usePreventBodyScroll from "./usePreventBodyScroll";
 import { RightArrow } from "./Arrows";
-import { Slug } from "sanity";
 
-type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
+
+interface ImageType {
+  imageUrl: string;
+  layout: string;
+}
 
 interface Product {
   title: string;
-  subtitle: string;
-  slug: Slug;
-  videoLink: string;
-  images: {
-    imageUrl: string;
-    position: string;
-    size: string;
-    main: boolean; // Match the field name from the schema
-    layout: string;
-  }[];
+  slug: string;
+  mainImage: ImageType | null;
 }
 
 interface HomeClientProps {
@@ -34,7 +28,7 @@ interface HomeClientProps {
 const HomeClient: React.FC<HomeClientProps> = ({ productData }) => {
   const { disableScroll, enableScroll } = usePreventBodyScroll();
   const [isMobileScreen, setIsMobileScreen] = useState(false);
-
+console.log(productData)
   useEffect(() => {
     const handleResize = () => {
       setIsMobileScreen(window.innerWidth <= 768);
@@ -57,7 +51,7 @@ const HomeClient: React.FC<HomeClientProps> = ({ productData }) => {
   const firstHalf = productData.slice(0, halfLength);
   const secondHalf = productData.slice(halfLength);
 
-  const onWheel = (apiObj: scrollVisibilityApiType, ev: React.WheelEvent): void => {
+  const onWheel = (apiObj: any, ev: React.WheelEvent): void => {
     const isTouchpad = Math.abs(ev.deltaX) !== 0 || Math.abs(ev.deltaY) < 15;
 
     if (isTouchpad) {
@@ -87,21 +81,16 @@ const HomeClient: React.FC<HomeClientProps> = ({ productData }) => {
         transitionBehavior="smooth"
         transitionDuration={isMobileScreen ? 500 : 5000}
       >
-        {firstHalf.map(({ title, images, slug }, index) => {
-          let mainImage = images.find((image) => image.main);
-          if (!mainImage) mainImage = images[0];
-
-          return (
-            <ProductCards
-              img={mainImage.imageUrl}
-              title={title}
-              id={index.toString()}
-              key={index}
-              layout={mainImage.layout}
-              slug={slug.current}
-            />
-          );
-        })}
+        {firstHalf.map(({ title, mainImage, slug }, index) => (
+          <ProductCards
+            img={mainImage?.imageUrl ?? ""}
+            title={title}
+            id={index.toString()}
+            key={index}
+            layout={mainImage?.layout ?? ""}
+            slug={slug}
+          />
+        ))}
       </ScrollMenu>
       <ScrollMenu
         onWheel={onWheel}
@@ -109,21 +98,16 @@ const HomeClient: React.FC<HomeClientProps> = ({ productData }) => {
         transitionBehavior="smooth"
         transitionDuration={isMobileScreen ? 500 : 5000}
       >
-        {secondHalf.map(({ title, images, slug }, index) => {
-          let mainImage = images.find((image) => image.main);
-          if (!mainImage) mainImage = images[0];
-
-          return (
-            <ProductCards
-              img={mainImage.imageUrl}
-              title={title}
-              id={(halfLength + index).toString()}
-              key={halfLength + index}
-              layout={mainImage.layout}
-              slug={slug.current}
-            />
-          );
-        })}
+        {secondHalf.map(({ title, mainImage, slug }, index) => (
+          <ProductCards
+            img={mainImage?.imageUrl ?? ""}
+            title={title}
+            id={(halfLength + index).toString()}
+            key={halfLength + index}
+            layout={mainImage?.layout ?? ""}
+            slug={slug}
+          />
+        ))}
       </ScrollMenu>
     </motion.div>
   );

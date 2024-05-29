@@ -3,19 +3,14 @@ import { client } from "../../sanity/lib/client";
 
 const HomeServer = async () => {
   const productData = await client.fetch(`
-    *[_type == "product"] {
-      title,
-      subtitle,
-      slug,
-      videoLink,
-      "images": images[]{
-        "imageUrl": image.asset->url,
-        position,
-        size,
-        main,
-        layout
-      }
+  *[_type == "product"] {
+    title,
+    "slug": slug.current,
+    "mainImage": images[main == true][0]{
+      "imageUrl": image.asset->url,
+      layout
     }
+  }
   `);
 
   return productData;

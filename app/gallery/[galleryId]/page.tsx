@@ -18,7 +18,7 @@ const Gallery = ({ params }: { params: { galleryId: string } }) => {
 
   const { title, subtitle, description, videoLink, images } =
     galleryData[currentIndex];
-
+console.log(title, images)
   // Calculate indices for previous and next gallerys
   const prevIndex =
     currentIndex > 0 ? currentIndex - 1 : galleryData.length - 1;
