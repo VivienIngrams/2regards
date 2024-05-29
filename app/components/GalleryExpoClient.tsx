@@ -24,16 +24,10 @@ interface GalleryDataItem {
   const GalleryExpo: React.FC<{ galleryExpoData: GalleryDataItem; gallerySlugs: string[] }> = ({galleryExpoData, gallerySlugs}) => {    
 
     const { title, subtitle, description, videoLink, images, slug } = galleryExpoData;
- 
-    // const currentIndex = gallerySlugs.indexOf(slug);
-    // const prevSlug = gallerySlugs[(currentIndex - 1 + gallerySlugs.length) % gallerySlugs.length];
-    // const nextSlug = gallerySlugs[(currentIndex + 1) % gallerySlugs.length];
 
-    const currentIndex = gallerySlugs.findIndex(
-        (gallerySlug) => gallerySlug === slug
-      );
-    
-//  Calculate indices for previous and next gallerys
+    const currentIndex = gallerySlugs.indexOf(slug);
+      
+ 
       const prevIndex =
         currentIndex > 0 ? currentIndex - 1 : gallerySlugs.length - 1;
       const nextIndex =
