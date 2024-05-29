@@ -50,7 +50,6 @@ const Product: React.FC<ProductProps> = async ({ params }) => {
   const slugs = await client.fetch(`
   *[_type == "product"].slug.current
 `);
-console.log(slugs)
   return <ProductClient productData={productData} productSlugs={slugs} />;
 };
 

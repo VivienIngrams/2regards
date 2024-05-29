@@ -31,8 +31,6 @@ const GalleryExpoPage: React.FC<GalleryExpoProps> = async ({ params }) => {
   const slugs = await client.fetch(`
   *[_type == "exhibition"].slug.current
 `);
-// console.log(slugs)
-// console.log(galleryExpoData);
 
   return <GalleryExpo galleryExpoData={galleryExpoData} gallerySlugs={slugs}/>;
 };
