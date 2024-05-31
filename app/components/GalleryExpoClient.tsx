@@ -116,6 +116,10 @@ const GalleryExpo: React.FC<{
               image.position || defaultConfigurations[index].position;
             const size = image.size || defaultConfigurations[index].size;
 
+            if (!image?.imageUrl) {
+              console.error(`Image URL is missing or invalid for image at index ${index}`, image);
+              return null; // Skip this iteration if image URL is invalid
+            }
             return (
               <div
                 key={index}
