@@ -28,7 +28,7 @@ interface HomeClientProps {
 const HomeClient: React.FC<HomeClientProps> = ({ productData }) => {
   const { disableScroll, enableScroll } = usePreventBodyScroll();
   const [isMobileScreen, setIsMobileScreen] = useState(false);
-console.log(productData)
+
   useEffect(() => {
     const handleResize = () => {
       setIsMobileScreen(window.innerWidth <= 768);
