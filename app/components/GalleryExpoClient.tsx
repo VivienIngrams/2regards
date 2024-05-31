@@ -1,4 +1,4 @@
-'use  client';
+"use  client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -6,66 +6,62 @@ import ArrowBack from "/public/ArrowBack.svg";
 import ArrowForward from "/public/ArrowForward.svg";
 
 interface GalleryDataItem {
-    title: string;
-    subtitle: string;
-    description: string;
-    poster: string;
-    slug: string;
-    videoLink: string;
-    images: {
-      imageUrl: string;
-      position: string;
-      size: string;
-    }[];
-  }
+  title: string;
+  subtitle: string;
+  description: string;
+  poster: string;
+  slug: string;
+  videoLink: string;
+  images: {
+    imageUrl: string;
+    position: string;
+    size: string;
+  }[];
+}
 
-  
-  
-  const GalleryExpo: React.FC<{ galleryExpoData: GalleryDataItem; gallerySlugs: string[] }> = ({galleryExpoData, gallerySlugs}) => {    
-    const { title, subtitle, description, videoLink, images, slug } = galleryExpoData;
-    const currentIndex = gallerySlugs.indexOf(slug);
-  
-      const prevIndex =
-        currentIndex > 0 ? currentIndex - 1 : gallerySlugs.length - 1;
-      const nextIndex =
-        currentIndex < gallerySlugs.length - 1 ? currentIndex + 1 : 0;
+const GalleryExpo: React.FC<{
+  galleryExpoData: GalleryDataItem;
+  gallerySlugs: string[];
+}> = ({ galleryExpoData, gallerySlugs }) => {
+  const { title, subtitle, description, videoLink, images, slug } =
+    galleryExpoData;
+  const currentIndex = gallerySlugs.indexOf(slug);
 
-return (
+  const prevIndex =
+    currentIndex > 0 ? currentIndex - 1 : gallerySlugs.length - 1;
+  const nextIndex =
+    currentIndex < gallerySlugs.length - 1 ? currentIndex + 1 : 0;
+
+  return (
     <div className="relative mr-8 md:mr-12 lg:mr-16 text-neutral-500 text-sm h-full">
-        {/* Nav buttons */}
-        <div className="fixed md:hidden h-12 w-full top-4 left-5 z-50 bg-stone-200" />
-        <div className="fixed z-50 top-6 left-6 md:left-10 md:top-10  cursor-pointer">
-            <Link
-                className="text-center m-2 text-black font-italiana"
-                href="/gallery"
-            >
-                Back
+      {/* Nav buttons */}
+      <div className="fixed md:hidden h-12 w-full top-4 left-5 z-50 bg-stone-200" />
+      <div className="fixed z-50 top-6 left-6 md:left-10 md:top-10  cursor-pointer">
+        <Link
+          className="text-center m-2 text-black font-italiana"
+          href="/gallery"
+        >
+          Back
+        </Link>
+      </div>
+      <div className=" fixed z-50 right-6 top-6 md:right-10 md:top-10">
+        <div className="flex justify-between">
+          <div className="flex cursor-pointer">
+            <Link href={`/gallery/${gallerySlugs[prevIndex]}`} className="p-1">
+              <Image
+                priority
+                src={ArrowBack}
+                height={20}
+                alt="Previous gallery"
+              />
             </Link>
-        </div>
-        <div className=" fixed z-50 right-6 top-6 md:right-10 md:top-10">
-            <div className="flex justify-between">
-                <div className="flex cursor-pointer">
-                    <Link
-                        href={`/gallery/${gallerySlugs[prevIndex]}`}
-                        className="p-1"
-                    >
-                        <Image
-                            priority
-                            src={ArrowBack}
-                            height={20}
-                            alt="Previous gallery"
-                        />
-                    </Link>
-                </div>
-                <div className="flex flex-col w-4 md:w-10 h-10">
-                    <div className=" h-1/2"> </div>
-                    <div className="border-t-[1px] border-black h-1/2"></div>
-                </div>
-                <div className="flex items-end cursor-pointer">
-                    <Link
-                        href={`/gallery/${gallerySlugs[nextIndex]}`}
-                        className="p-1"
-                    >
+          </div>
+          <div className="flex flex-col w-4 md:w-10 h-10">
+            <div className=" h-1/2"> </div>
+            <div className="border-t-[1px] border-black h-1/2"></div>
+          </div>
+          <div className="flex items-end cursor-pointer">
+            <Link href={`/gallery/${gallerySlugs[nextIndex]}`} className="p-1">
               <Image
                 priority
                 src={ArrowForward}
@@ -97,25 +93,49 @@ return (
         <div
           className={` col-span-3 w-full min-h-full lg:h-[90vh] lg:grid lg:grid-rows-3 mt-[10vh] mb-4 lg:mt-[2vh]`}
         >
-          {Object.values(images).map((image, index) => (
-            <div
-              key={index}
-              className={`flex flex-row ${image.position} -mt-[3vh] lg:mt-0 `}
-              style={{ zIndex: 10 + index }}
-            >
+          {Object.values(images).map((image, index) => {
+            // Default values for each image based on the provided configurations
+            const defaultConfigurations = [
+              {
+                position: "justify-start",
+                size: "mt-[10vh] lg:mt-[2vh] h-[25vh] xs:h-[35vh] md:h-[30vh] lg:w-[30vw] xl:h-[45vh]",
+              },
+              {
+                position: "justify-end lg:items-center lg:justify-end",
+                size: "h-[45vh] xs:h-[60vh] md:w-[50vw] md:h-[40vh] lg:w-[28vw] lg:h-[50vh] xl:w-[20vw] xl:h-[60vh]",
+              },
+              {
+                position:
+                  "lg:items-end lg:justify-center md:-mt-4 md:mr-10 lg:mb-16",
+                size: "h-[22vh] xs:h-[30vh] md:w-[20vw] xl:h-[30vh]",
+              },
+            ];
+
+            // Assign default values if the current values are empty strings or null
+            const position =
+              image.position || defaultConfigurations[index].position;
+            const size = image.size || defaultConfigurations[index].size;
+
+            return (
               <div
-                className={`relative ${image.size} w-[70vw] xs:w-[75vw] sm:w-[60vw] `}
+                key={index}
+                className={`flex flex-row ${position} -mt-[3vh] lg:mt-0`}
+                style={{ zIndex: 10 + index }}
               >
-                <Image
-                  className="object-cover overflow-hidden absolute border-[1px] border-black  shadow-md shadow-neutral-500 "
-                  src={image.imageUrl}
-                  fill
-                  alt={title}
-                  sizes="90vw sm:60vw md:30vw"
-                />
+                <div
+                  className={`relative ${size} w-[70vw] xs:w-[75vw] sm:w-[60vw]`}
+                >
+                  <Image
+                    className="object-cover overflow-hidden absolute border-[1px] border-black shadow-md shadow-neutral-500"
+                    src={image.imageUrl}
+                    fill
+                    alt={title}
+                    sizes="90vw sm:60vw md:30vw"
+                  />
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Right/bottom side of page */}
