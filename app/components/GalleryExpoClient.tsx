@@ -24,25 +24,11 @@ interface GalleryDataItem {
   const GalleryExpo: React.FC<{ galleryExpoData: GalleryDataItem; gallerySlugs: string[] }> = ({galleryExpoData, gallerySlugs}) => {    
     const { title, subtitle, description, videoLink, images, slug } = galleryExpoData;
     const currentIndex = gallerySlugs.indexOf(slug);
-    
-    // Calculate indices for previous and next galleries
-    const prevIndex = (currentIndex > 0 ? currentIndex - 1 : gallerySlugs.length - 1) % gallerySlugs.length;
-    const nextIndex = (currentIndex + 1) % gallerySlugs.length;
-
-    // Ensure the indices are valid
-    if (prevIndex < 0 || nextIndex < 0) {
-        console.error("Invalid index calculated for gallery navigation");
-        return null;
-    }
-    // const { title, subtitle, description, videoLink, images, slug } = galleryExpoData;
-
-    // const currentIndex = gallerySlugs.indexOf(slug);
-      
- 
-    //   const prevIndex =
-    //     currentIndex > 0 ? currentIndex - 1 : gallerySlugs.length - 1;
-    //   const nextIndex =
-    //     currentIndex < gallerySlugs.length - 1 ? currentIndex + 1 : 0;
+  
+      const prevIndex =
+        currentIndex > 0 ? currentIndex - 1 : gallerySlugs.length - 1;
+      const nextIndex =
+        currentIndex < gallerySlugs.length - 1 ? currentIndex + 1 : 0;
 
 return (
     <div className="relative mr-8 md:mr-12 lg:mr-16 text-neutral-500 text-sm h-full">
