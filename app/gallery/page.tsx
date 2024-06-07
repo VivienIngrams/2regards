@@ -8,7 +8,13 @@ const Gallery = async () => {
     "slug": slug.current, 
     date,
   }
-  `);
+  `,
+  {},
+  {
+    next: {
+      revalidate: 60,
+    },
+  });
 
   return (
     <GalleryClient galleryData={galleryData} />

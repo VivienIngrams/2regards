@@ -40,17 +40,26 @@ const Product: React.FC<ProductProps> = async ({ params }) => {
       }
     }[0]
   `,
-    { slug: params.productId }
+    { slug: params.productId },
+    {
+      next: {
+        revalidate: 60,
+      },
+    }
   );
-
   if (!productData) {
     return <p>Product not found</p>;
   }
 
   const slugs = await client.fetch(`
-  *[_type == "product"].slug.current
-`);
-  return <ProductClient productData={productData} productSlugs={slugs} />;
+  *[_type == "product"] {
+    "slug": slug.current
+  }`);
+
+  const slugStrings = slugs.map((slugObj: { slug: any; }) => slugObj.slug);
+
+  console.log(slugStrings);
+  return <ProductClient productData={productData} productSlugs={slugStrings} />;
 };
 
 export default Product;

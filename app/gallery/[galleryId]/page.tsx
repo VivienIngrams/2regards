@@ -25,14 +25,23 @@ const GalleryExpoPage: React.FC<GalleryExpoProps> = async ({ params }) => {
         size
       }
     }[0]`,
-    { slug } // Pass the slug parameter to the query
-  );
+    { slug }, // Pass the slug parameter to the query
+    {
+      next: {
+        revalidate: 60,
+      },
+    });
 
   const slugs = await client.fetch(`
-  *[_type == "exhibition"].slug.current
-`);
+  *[_type == "exhibition"]{
+    "slug": slug.current
+  }`);
 
-  return <GalleryExpo galleryExpoData={galleryExpoData} gallerySlugs={slugs}/>;
+  const slugStrings = slugs.map((slugObj: { slug: any; }) => slugObj.slug);
+
+  console.log(slugStrings);
+
+  return <GalleryExpo galleryExpoData={galleryExpoData} gallerySlugs={slugStrings}/>;
 };
 
 export default GalleryExpoPage;
