@@ -6,6 +6,7 @@ const Gallery = async () => {
   *[_type == "exhibition"] {
     "poster": poster.asset->url,
     "slug": slug.current, 
+    date,
   }
   `);
 

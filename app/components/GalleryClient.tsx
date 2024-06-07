@@ -13,6 +13,7 @@ type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
 interface GalleryDataItem {
   title: string;
+  date: string;
   poster: string;
   slug: string;
 }
@@ -38,6 +39,15 @@ const GalleryClient: React.FC<{ galleryData: GalleryDataItem[] }> = ({
     };
   }, []);
 
+  const sortedGalleryData = [...galleryData].sort((a, b) => {
+    const dateA = new Date(a.date).getTime();
+    const dateB = new Date(b.date).getTime();
+    return dateB - dateA;
+  });
+
+  // Debugging: Log the sorted data
+  console.log("Sorted Gallery Data:", sortedGalleryData);
+
   return (
     <>
       <motion.div
@@ -53,7 +63,7 @@ const GalleryClient: React.FC<{ galleryData: GalleryDataItem[] }> = ({
           transitionBehavior="smooth"
           transitionDuration={isMobileScreen ? 500 : 4000}
         >
-          {galleryData.map(({ poster, title, slug }) => (
+          {sortedGalleryData.map(({ poster, title, slug }) => (
             <GalleryCards
               img={poster}
               title={title}

@@ -7,12 +7,12 @@ export default defineType({
   fields: [
     defineField({
       name: "title",
-      title: "Title",
+      title: "Title of exhibition",
       type: "string",
     }),
     defineField({
       name: "slug",
-      title: "Slug (click on Generate!)",
+      title: "Please click on Generate! (slug)",
       type: "slug",
       options: {
         source: "title",
@@ -21,12 +21,17 @@ export default defineType({
     }),
     defineField({
       name: "subtitle",
-      title: "Subtitle?",
+      title: "Name of artist(s)",
       type: "string",
     }),
     defineField({
+      name: "date",
+      title: "Opening Date of Exhibition",
+      type: "date",
+    }),
+    defineField({
       name: "description",
-      title: "Description",
+      title: "Description text in English",
       type: "text",
     }),
     defineField({
@@ -56,13 +61,13 @@ export default defineType({
             {
               name: "position",
               type: "string",
-              title: "Position, plus padding and margins",
+              title: "CODE FOR DEVELOPER: Position, plus padding and margins",
             },
             {
               name: "size",
               type: "string",
               title:
-                "Height(h-) and width(w-) relative to screen height(vh) or screen width(vw)",
+                "CODE FOR DEVELOPER: Height(h-) and width(w-) relative to screen height(vh) or screen width(vw)",
             },
           ],
         },
@@ -70,7 +75,7 @@ export default defineType({
     }),
     defineField({
       name: "videoLink",
-      title: "Video Link URL",
+      title: "Optional Video Link URL",
       type: "string",
     }),
   ],

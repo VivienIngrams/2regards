@@ -7,12 +7,12 @@ export default defineType({
   fields: [
     defineField({
       name: "title",
-      title: "Title",
+      title: "Product Title",
       type: "string",
     }),
     defineField({
       name: "slug",
-      title: "Slug (click on Generate!)",
+      title: "Please click on Generate! (slug)",
       type: "slug",
       options: {
         source: "title",
@@ -21,7 +21,7 @@ export default defineType({
     }),
     defineField({
       name: "subtitle",
-      title: "Subtitle?",
+      title: "Optional Subtitle?",
       type: "string",
     }),
     defineField({
@@ -40,9 +40,7 @@ export default defineType({
                 hotspot: true,
               },
             },
-            { name: "position", type: "string", title: "Position, plus padding and margins" },
-            { name: "size", type: "string", title: "Height(h-) and width(w-) relative to screen height(vh) or screen width(vw)" },
-            { name: "main", type: "boolean", title: "Main Image?" }, // Ensure this matches what you expect
+            { name: "main", type: "boolean", title: "Main Image?" }, 
             {
               name: "layout",
               type: "string",
@@ -59,6 +57,8 @@ export default defineType({
                 layout: "radio",
               },
             },
+            { name: "position", type: "string", title: "CODE FOR DEVELOPER: Position, plus padding and margins" },
+            { name: "size", type: "string", title: "CODE FOR DEVELOPER: Height(h-) and width(w-) relative to screen height(vh) or screen width(vw)" },
           ],
         },
       ],
