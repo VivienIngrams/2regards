@@ -3,7 +3,8 @@ import { client } from "../sanity/lib/client";
 import HomeClient from "./components/HomeClient";
 
 const Product = async () => {
-  const productData = await client.fetch(`
+  const productData = await client.fetch(
+    `
   *[_type == "product"] {
     title,
     "slug": slug.current,
@@ -11,13 +12,17 @@ const Product = async () => {
       "imageUrl": image.asset->url,
       layout
     }
-  }
-  `);
-
-  return (
-  <HomeClient productData={productData} />
+  }`,
+    {},
+    {
+      next: {
+        revalidate: 60,
+      },
+    }
   );
+
+  return <HomeClient productData={productData} />;
 };
 
-export default Product;
 
+export default Product;
