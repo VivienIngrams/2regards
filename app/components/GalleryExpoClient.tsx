@@ -153,7 +153,7 @@ console.log(image.imageUrl)
             </p>
             <div className="py-4"></div>
             {videoLink && (
-              <div className=" relative pb-10 flex flex-col items-start justify-center m-2">
+              <div className=" relative pb-10 flex flex-col items-start justify-center m-2 mb-16">
                 <Link
                   href={videoLink}
                   target="_blank"

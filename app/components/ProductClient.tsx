@@ -155,7 +155,7 @@ const ProductClient: React.FC<ProductClientProps> = ({
               href={videoLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-1 bg-white font-italiana text-xl text-black h-8 px-4 rounded "
+              className="p-1 bg-white font-italiana text-xl text-black h-8 px-4 rounded mb-12 md:mb-0"
             >
               Watch video
             </Link>
