@@ -63,7 +63,7 @@ const Contact = () => {
             <div className="mt-4 text-neutral-500 leading-tight">
               <div className="pb-4">
                 <p>Rua do Duque da Terceira 358</p>
-                <p>4300-096 Porto</p>
+                <p>4000-533 Porto</p>
               </div>
             </div>
           </div>
