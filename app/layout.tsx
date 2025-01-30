@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 
+import { Analytics } from "@vercel/analytics/react"
+
 import "./globals.css";
 import { Italiana, Roboto } from "next/font/google";
 import Header from "./components/Header";
@@ -48,6 +50,7 @@ export default function RootLayout({
             <Header />
             <div className="pl-[38px] md:pl-12 pb-4 md:pb-6 pt-6 md:pt-10 h-[95%]">
               {children}
+              <Analytics/>
             </div>
             <Footer />
           </>
