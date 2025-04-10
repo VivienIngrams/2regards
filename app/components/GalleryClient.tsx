@@ -55,7 +55,7 @@ const GalleryClient: React.FC<{ galleryData: GalleryDataItem[] }> = ({
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         onMouseEnter={disableScroll}
-        className="h-full gallery-container -ml-6"
+        className="h-full gallery-container "
       >
         <ScrollMenu
           onWheel={onWheel}
